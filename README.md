@@ -81,27 +81,6 @@ git push
 
 首次部署需在仓库 `Settings → Pages → Build and deployment` 将 Source 设为 `GitHub Actions`。`dist/` 是构建产物，不进入版本管理。
 
-## 云端部署
-
-阿里云首版上线请按[详细部署指南](docs/aliyun-deployment-guide.md)操作，包含学生套餐选择、备案确认、Windows 上传、已有日报迁移、HTTPS、任务互斥、备份和回退。下方为基础模板说明；实际启用定时任务前，应先应用指南中的共享锁和错峰配置。
-
-部署模板已提供，尚未连接云服务器或启用系统定时任务。Linux项目默认目录 `/opt/larrytoday`，不同路径需修改service。
-
-```sh
-docker compose up -d --build
-docker compose exec -T web python scripts/update_news.py
-sudo cp deploy/larrytoday-update.service deploy/larrytoday-update.timer deploy/larrytoday-collect.service deploy/larrytoday-collect.timer /etc/systemd/system/
-sudo systemctl daemon-reload
-sudo systemctl enable --now larrytoday-collect.timer larrytoday-update.timer
-systemctl list-timers 'larrytoday-*'
-```
-
-采集每30分钟，发布每天北京时间07:00。Compose从服务器 `.env` 注入凭证，`news-data`卷保存素材、缓存、刊期和修订；首次部署须采集，不自动复制本机日报。用 `docker compose cp data/manual.json web:/app/data/manual.json` 可上传人工稿。
-
-配置域名和 `deploy/Caddyfile`，将示例域名替换为真实域名。Caddy通过80/443提供HTTPS，应用端口仅本机访问。只读API无管理写入入口；发布工作台按约定留待后续版本。
-
-备份整个 `news-data` 卷。异常退出可能留下 `.update.lock` / `.collect.lock`，先确认没有任务运行再清理。发布中断应检查修订文件及索引，保留已存在版本并用修订说明重试。当前标准库HTTP服务适合个人小流量；更高并发可迁移静态API/CDN或生产服务。
-
 ## 验证与排障
 
 ```sh
