@@ -1,0 +1,293 @@
+[
+  {
+    "id": "karpathy-blog",
+    "url": "https://karpathy.bearblog.dev/feed/",
+    "checked_at": "2026-10-19T16:11:36.534655+00:00",
+    "http_status": 200,
+    "final_url": "https://karpathy.bearblog.dev/feed/",
+    "state": "parsed",
+    "count": 10,
+    "precise_count": 10,
+    "latest": "2026-04-30T16:00:00+00:00",
+    "samples": [
+      {
+        "id": "b6c090862f529eab",
+        "title": "Sequoia Ascent 2026 summary",
+        "url": "https://karpathy.bearblog.dev/sequoia-ascent-2026/",
+        "source_id": "karpathy-blog",
+        "category": "科技与 AI",
+        "published_at": "2026-04-30T16:00:00+00:00",
+        "feed_excerpt": "Summary of my talk at Sequoia Ascent",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验",
+        "date_precision": "timestamp",
+        "updated_at": "2026-04-30T16:30:08.883848+00:00",
+        "authors": [
+          "karpathy"
+        ]
+      },
+      {
+        "id": "ca5be40ee3c10c03",
+        "title": "2025 LLM Year in Review",
+        "url": "https://karpathy.bearblog.dev/year-in-review-2025/",
+        "source_id": "karpathy-blog",
+        "category": "科技与 AI",
+        "published_at": "2025-12-19T18:00:00+00:00",
+        "feed_excerpt": "2025 Year in Review of LLM paradigm changes",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验",
+        "date_precision": "timestamp",
+        "updated_at": "2025-12-20T00:24:51.072798+00:00",
+        "authors": [
+          "karpathy"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lenny-blog",
+    "url": "https://www.lennysnewsletter.com/feed",
+    "checked_at": "2026-10-19T16:11:36.535940+00:00",
+    "http_status": 200,
+    "final_url": "https://www.lennysnewsletter.com/feed",
+    "state": "parsed",
+    "count": 20,
+    "precise_count": 20,
+    "latest": "2026-10-19T15:03:35+00:00",
+    "samples": [
+      {
+        "id": "d34982012b9aedbf",
+        "title": "🎙️ How I AI: Meta Muse Wonder + How Brooke Lacey is scaling video with AI",
+        "url": "https://www.lennysnewsletter.com/p/how-i-ai-meta-muse-wonder-how-brooke",
+        "source_id": "lenny-blog",
+        "category": "科技与 AI",
+        "published_at": "2026-10-19T15:03:35+00:00",
+        "feed_excerpt": "Your weekly listens from How I AI, part of the Lenny's Podcast Network",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验",
+        "date_precision": "timestamp",
+        "authors": [
+          "Lenny Rachitsky"
+        ]
+      },
+      {
+        "id": "3013f9811fb1e14c",
+        "title": "“Claude cuts my TikTok”: How this creator is scaling video with AI | Brooke Lacey",
+        "url": "https://www.lennysnewsletter.com/p/claude-cuts-my-tiktok-how-this-creator",
+        "source_id": "lenny-blog",
+        "category": "科技与 AI",
+        "published_at": "2026-10-19T12:04:52+00:00",
+        "feed_excerpt": "Watch now (37 mins) | 🎙️ Brooke Lacey shows live how Claude Code turns a raw phone video into a captioned, jump-cut TikTok in about 15 seconds",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验",
+        "date_precision": "timestamp",
+        "authors": [
+          "Claire Vo"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lex-blog",
+    "url": "https://lexfridman.com/feed/",
+    "checked_at": "2026-10-19T16:11:36.536595+00:00",
+    "http_status": null,
+    "final_url": "https://lexfridman.com/feed/",
+    "state": "failed",
+    "error": "ValueError",
+    "error_kind": "parse_or_validation"
+  },
+  {
+    "id": "arxiv-ml",
+    "url": "https://rss.arxiv.org/rss/cs.LG",
+    "checked_at": "2026-10-19T16:11:36.537260+00:00",
+    "http_status": 200,
+    "final_url": "https://rss.arxiv.org/rss/cs.LG",
+    "state": "parsed",
+    "count": 24,
+    "precise_count": 24,
+    "latest": "2026-10-19T04:00:00+00:00",
+    "samples": [
+      {
+        "id": "aa178b575bb249be",
+        "title": "When is a large language model a good calibration agent? Physics-labeled prompting for budgeted engineering simulator calibration",
+        "url": "https://arxiv.org/abs/2610.22379",
+        "source_id": "arxiv",
+        "category": "科技与 AI",
+        "published_at": "2026-10-19T04:00:00+00:00",
+        "feed_excerpt": "arXiv:2610.22379v1 Announce Type: new Abstract: Calibrating expensive engineering simulators requires tuning model parameters to match reference data, a process heavily constrained by computational costs. This study investigates whether Large Language Models (LLMs), conditioned on physical diagnostic descriptions of simulation errors, can propose informative parameter updates more efficiently than conventional derivative-free optimizers. We test this on a cylinder-wake Large-Eddy Simulation and a damped-oscillator inverse problem. Physics-labeled prompts are evaluated against four text ablations (removed, anonymized, padded, misdirected) and standard optimizers (Nelder-Mead, Bayesian optimization, CMA-ES, and random search). Results demonstrate a strong early semantic advantage: the first physics-informed LLM proposal improves the initial design in 23 of 25 trials. After five evaluations, the median calibration error is 21.9 times lower than physics-free controls. However, this advantage is transient - disappearing by fifteen evaluations - and inherent LLM decoder variability yields a 9.8-fold performance spread. To address this, we introduce a hybrid workflow that uses the LLM as a warm-start, passing accumulated evaluations to a conventional optimizer. This two-stage numerical continuation policy reaches target accuracy in just 9 simulator runs, outperforming the LLM alone (12 runs), Nelder-Mead (17 runs), and Bayesian optimization (>60 runs). Supported by sensitivity analysis validating the test cases, this hybrid physics-labeled LLM scheme proves highly effective as a calibration agent under strict evaluation budgets.",
+        "summary": "",
+        "verification": "预印本 · 此版本未经同行评审核验",
+        "date_precision": "timestamp",
+        "authors": [
+          "Ruo-Qian Wang"
+        ],
+        "paper_id": "2610.22379",
+        "research_status": "preprint",
+        "source_kind": "research"
+      },
+      {
+        "id": "dd5a28f9c533e0ee",
+        "title": "Trust but Verify: Designing Region-Inhomogeneous Forward Dynamics for Discrete Diffusion",
+        "url": "https://arxiv.org/abs/2610.22380",
+        "source_id": "arxiv",
+        "category": "科技与 AI",
+        "published_at": "2026-10-19T04:00:00+00:00",
+        "feed_excerpt": "arXiv:2610.22380v1 Announce Type: new Abstract: Continuous diffusion treats the forward process as a design space; discrete language diffusion often uses absorbing corruption, leaving context fully trusted throughout generation. This makes trust binary: corrupted context is copied as ground truth, propagating errors into generated spans. We reopen this design space by combining absorbing and uniform-mixing kernels with region-dependent rates. Missing positions follow absorbing dynamics, while context undergoes low-rate random substitution, exposing the model to observed but uncertain tokens during training. At inference, a heuristic sampler re-injects noise into suspicious context under an annealed intensity and freezes context updates late in the trajectory. An 8,000-step finetune of a pretrained 170M-parameter masked diffusion model takes under five hours on a 6 GB laptop GPU. The base model assigns roughly 50% probability to observed tokens even when they are uniform-random garbage. For uniform-random corruption, finetuning detects corrupted context with 0.96 recall and 0.91 precision, improves infill token-F1 by 3.8 points at 10% corruption and 6.4 points at 20%, and removes the accuracy dip next to corruptions. Clean conditioning shows no measurable regression, with a false-edit rate below 0.4%. Gains for plausible corruptions are weaker: about 0.5 F1 points at 10% corruption, without statistical significance. Our results suggest that detectability and damage depend jointly on departure from the data conditional: nearby noise is hard to detect and semantically mild, while distant noise is conspicuous and destructive. We interpret absorbing diffusion as the infinite-contrast limit of a trust axis, analogous to the signal-to-noise gap between known and unknown region",
+        "summary": "",
+        "verification": "预印本 · 此版本未经同行评审核验",
+        "date_precision": "timestamp",
+        "authors": [
+          "Gunmay Jhingran"
+        ],
+        "paper_id": "2610.22380",
+        "research_status": "preprint",
+        "source_kind": "research"
+      }
+    ]
+  },
+  {
+    "id": "arxiv-cv",
+    "url": "https://rss.arxiv.org/rss/cs.CV",
+    "checked_at": "2026-10-19T16:11:37.807049+00:00",
+    "http_status": 200,
+    "final_url": "https://rss.arxiv.org/rss/cs.CV",
+    "state": "parsed",
+    "count": 24,
+    "precise_count": 24,
+    "latest": "2026-10-19T04:00:00+00:00",
+    "samples": [
+      {
+        "id": "fb49e20ce2251b9b",
+        "title": "Event-STVG: Spatio-Temporal Video Grounding for Long-Form Event Reasoning",
+        "url": "https://arxiv.org/abs/2610.22444",
+        "source_id": "arxiv",
+        "category": "科技与 AI",
+        "published_at": "2026-10-19T04:00:00+00:00",
+        "feed_excerpt": "arXiv:2610.22444v1 Announce Type: new Abstract: Spatio-Temporal Video Grounding (STVG) aims to jointly localize a target in space and time given a natural-language query. Despite continued advances, existing STVG benchmarks remain largely centered on localizing targets through instance-specific descriptions, leaving them largely decoupled from long-form reasoning increasingly emphasized in multimodal large language models (MLLMs). In this paper, we introduce Event-STVG, a task that shifts STVG from locating what is described toward event-level reasoning by unifying long-form context, repeated-event reasoning, event localization, role inference, and multi-target grounding. To facilitate research on Event-STVG, we construct a large-scale benchmark comprising 4,016 annotated event occurrences across soccer and seven additional domains. Experiments with state-of-the-art MLLMs reveal substantial difficulty, with the strongest model achieving only 5.4% m-vIoU at the 10-minute horizon. Across domains, we consistently observe confusion among repeated same-type events, spatial grounding bottlenecks, and rare success in jointly grounding all required roles. Event-STVG establishes a new challenge for visual understanding in MLLMs, calling for future models that can jointly reason about complex events across space and time. Code and annotations are available at https://github.com/THU-KEG/EventSTVG",
+        "summary": "",
+        "verification": "预印本 · 此版本未经同行评审核验",
+        "date_precision": "timestamp",
+        "authors": [
+          "Yizhe Zhang, Xujia Wang, Songqi Tang, Xujie Tang, Leo Jiahao Jiang, Jiacheng Wang, Bowen Qu, JinBo Li, Qin Wang, Ji Qi, Lei Hou, Bin Xu, Juanzi Li"
+        ],
+        "paper_id": "2610.22444",
+        "research_status": "preprint",
+        "source_kind": "research"
+      },
+      {
+        "id": "8b400c8cb3ad959e",
+        "title": "Star Light, Star Bright: Can Multimodal Models Parse an Astronomy Visual Question Answering Dataset Right?",
+        "url": "https://arxiv.org/abs/2610.22474",
+        "source_id": "arxiv",
+        "category": "科技与 AI",
+        "published_at": "2026-10-19T04:00:00+00:00",
+        "feed_excerpt": "arXiv:2610.22474v1 Announce Type: new Abstract: Figures are essential for scientific communication, and the field of Visual Question Answering (VQA) aims to test the figure understanding capabilities of large multimodal models (LMMs). Here, we investigate the accuracy of several low-cost LMMs on domain-specific VQA tasks for astronomical images of the sky. As instrument for this task we build a domain-specific VQA dataset comprising 2001 partially-synthetic figures divided evenly between contour plots, real telescope images drawn from NASA's SkyView, and \"fake\" sky images which share the axes and angular scales of the real images but draw their colors from a gaussian mixture model, alongside 47357 questions. Each figure is released as pristine and with realistic page-aging degradations mimicking the historical astronomical corpus. Testing three low-cost proprietary LMMs, we find models frequently fail to answer domain-specific questions at high accuracy. An initial comparison with 104 human-verified, astrometrically tagged figures from historical journal publications shows similar median errors in angular extent. All code is available on GitHub: https://github.com/jnaiman/SkyImagesWASP2026 and dataset is available on HuggingFace: https://huggingface.co/datasets/ReadingTimeMachine/astro_sky_image_vqa.",
+        "summary": "",
+        "verification": "预印本 · 此版本未经同行评审核验",
+        "date_precision": "timestamp",
+        "authors": [
+          "J. P. Naiman"
+        ],
+        "paper_id": "2610.22474",
+        "research_status": "preprint",
+        "source_kind": "research"
+      }
+    ]
+  },
+  {
+    "id": "arxiv-cl",
+    "url": "https://rss.arxiv.org/rss/cs.CL",
+    "checked_at": "2026-10-19T16:11:38.460967+00:00",
+    "http_status": 200,
+    "final_url": "https://rss.arxiv.org/rss/cs.CL",
+    "state": "parsed",
+    "count": 24,
+    "precise_count": 24,
+    "latest": "2026-10-19T04:00:00+00:00",
+    "samples": [
+      {
+        "id": "135cf67151de604c",
+        "title": "Embeddings Are Overpriced? A Frozen 16 MB Vocabulary for Small and Ternary Language Models",
+        "url": "https://arxiv.org/abs/2610.22428",
+        "source_id": "arxiv",
+        "category": "科技与 AI",
+        "published_at": "2026-10-19T04:00:00+00:00",
+        "feed_excerpt": "arXiv:2610.22428v1 Announce Type: new Abstract: In a small language model the vocabulary is the single largest part. In Gemma 3 270M the embedding table holds 168M of 268M parameters, and because quantisation methods leave the embedding in 16-bit, it is also most of the file once the rest of the model is compressed. We ask what that table actually buys. We replace it with one frozen table of 512-bit codes, 16 MB, with no trainable parameters, derived once from a pretrained embedding by principal-component projection and sign binarisation, and we train the same Gemma-shaped body from scratch on the same 2.05B tokens with and without it. The learned table buys 0.20 nats of validation loss for 2.6 times the trainable parameters, but on LAMBADA, HellaSwag and PIQA the frozen-table model is better or tied; only ARC-Easy favours the learned table. With a ternary BitNet b1.58 body the whole model is a 46 MB file, still ties the float model on LAMBADA and PIQA, and on a laptop CPU generates 615 to 740 tokens per second in 62 MB of memory, five to six times the speed of the float model's 8-bit GGUF in llama.cpp at a seventh of the memory. The frozen table wins by 1.7 to 2.3 nats on rare words, accepts 10,000 new words after training with a 3% cost where the learned table collapses by 43%, and all of it is released with the weights, the data and every evaluation answer.",
+        "summary": "",
+        "verification": "预印本 · 此版本未经同行评审核验",
+        "date_precision": "timestamp",
+        "authors": [
+          "Sai Kiran Bathula"
+        ],
+        "paper_id": "2610.22428",
+        "research_status": "preprint",
+        "source_kind": "research"
+      },
+      {
+        "id": "7537d7e9b5fa1afe",
+        "title": "Where Prefill Expert Reduction Hurts MoE Models: A Few Prompt Tokens Carry Most of the Short-Answer F1 Loss",
+        "url": "https://arxiv.org/abs/2610.22454",
+        "source_id": "arxiv",
+        "category": "科技与 AI",
+        "published_at": "2026-10-19T04:00:00+00:00",
+        "feed_excerpt": "arXiv:2610.22454v1 Announce Type: new Abstract: Running prompt tokens through fewer routed experts during prefill is a simple way to make mixture-of-experts (MoE) serving cheaper, yet it is unclear what this damages. We locate the damage with token-, layer- and attention-path interventions on short-answer question answering in four MoE families. At half the experts the F1 loss of three families is mostly answer form: the model still finds the answer but stops answering briefly. In Qwen3-30B-A3B this loss is made at the two chat-template tokens before the answer, and in DeepSeek-V2-Lite at the first 8-32 prompt tokens, where its instruction sits; by answer likelihood these positions account for about half and a fifth of the damage. Reduction changes the first token's attention mass, norm and largest activation by less than 4%, and restoring super experts or massive activations recovers at most about a quarter of the loss, well below keeping the sensitive positions full. On real prompts with about 4% of tokens at full experts, placing them on the task interface keeps F1 within one point of the unmodified model, while placing them at random in the documents is about 3 points worse (two of five prespecified primary comparisons; the others were undecided or not run). Because the answer boundary always ends a single-turn prompt, and DeepSeek's loss was no longer detectable once its instruction moved away from the start, the sensitive tokens lay at the prompt ends in every sensitive layout we found, so rules that keep the ends are not distinguished from rules that read application marks. Time to first token falls about 14% on 11K-token prompts and not at 2K tokens.",
+        "summary": "",
+        "verification": "预印本 · 此版本未经同行评审核验",
+        "date_precision": "timestamp",
+        "authors": [
+          "Zhiyuan Wang"
+        ],
+        "paper_id": "2610.22454",
+        "research_status": "preprint",
+        "source_kind": "research"
+      }
+    ]
+  },
+  {
+    "id": "people-all",
+    "url": "https://www.people.com.cn/rss/ywkx.xml",
+    "checked_at": "2026-10-19T16:11:38.779144+00:00",
+    "http_status": 200,
+    "final_url": "https://www.people.com.cn/rss/ywkx.xml",
+    "state": "parsed",
+    "count": 24,
+    "precise_count": 0,
+    "latest": "",
+    "samples": [
+      {
+        "id": "004d6b9a6d27e250",
+        "title": "高清:武警特战队员攀爬越障均瞄准备战要求",
+        "url": "http://military.people.com.cn/n1/2016/0405/c1011-28251279.html",
+        "source_id": "people",
+        "category": "科技与 AI",
+        "published_at": null,
+        "feed_excerpt": "",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验",
+        "date_precision": "unknown"
+      },
+      {
+        "id": "12d65c08b96b0636",
+        "title": "英联邦庆祝首位女秘书长正式任职",
+        "url": "http://world.people.com.cn/n1/2016/0405/c1002-28251339.html",
+        "source_id": "people",
+        "category": "科技与 AI",
+        "published_at": null,
+        "feed_excerpt": "",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验",
+        "date_precision": "unknown"
+      }
+    ]
+  },
+  {
+    "id": "chinadaily-cndy",
+    "url": "https://www.chinadaily.com.cn/rss/cndy_rss.xml",
+    "checked_at": "2026-10-19T16:11:39.547884+00:00",
+    "state": "failed",
+    "error": "HTTPError",
+    "error_kind": "http",
+    "http_status": 404
+  }
+]

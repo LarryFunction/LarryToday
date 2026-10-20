@@ -1,0 +1,25 @@
+[
+  {
+    "revision": 1,
+    "published_at": "2026-10-18T16:41:44.149566+00:00",
+    "note": "初版（历史版本迁移）"
+  },
+  {
+    "revision": 2,
+    "published_at": "2026-10-19T03:00:53.815927+00:00",
+    "note": "日报升级：固定07:00截稿窗口、扩展来源、事件合并与晨读精选；保留旧版供对照",
+    "content_hash": "ff16e708735f2deeceb5a595ca5f50d340c67b47a71ce0710a6054d01d9bacea"
+  },
+  {
+    "revision": 3,
+    "published_at": "2026-10-19T08:49:02.109338+00:00",
+    "note": "补齐未完成的AI编辑，并扩大同事件多源分析范围",
+    "content_hash": "97b78ec945fcb4fd6a28b7e91b4f1f1b3bab05075448ad2a3c16651877fa274f"
+  },
+  {
+    "revision": 4,
+    "published_at": "2026-10-19T08:49:47.711334+00:00",
+    "note": "修正综合媒体栏目分类，固定社交观点随刊快照",
+    "content_hash": "342001cc7d1c0f9826b8c773335d43d729230054dfbcd417c4be76ef308dcaeb"
+  }
+]

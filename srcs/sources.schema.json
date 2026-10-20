@@ -1,0 +1,195 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LarryToday source catalog",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "prepared_at",
+    "categories",
+    "sources"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "prepared_at": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "url",
+          "category",
+          "coverage_regions",
+          "languages",
+          "kind",
+          "evidence_role",
+          "usage_notes",
+          "priority",
+          "publisher_family_hint",
+          "ownership_verified",
+          "relationship_to_examples",
+          "example_references",
+          "verification_status",
+          "checked_at",
+          "evidence_url",
+          "observed_title",
+          "observed_redirect",
+          "access_and_reuse",
+          "enabled_for_ingestion",
+          "integration_ids"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]*$"
+          },
+          "name": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "category": {
+            "type": "string"
+          },
+          "coverage_regions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "languages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "kind": {
+            "enum": [
+              "news",
+              "official",
+              "data",
+              "research",
+              "company",
+              "analysis",
+              "factcheck",
+              "discovery"
+            ]
+          },
+          "evidence_role": {
+            "type": "string"
+          },
+          "usage_notes": {
+            "type": "string"
+          },
+          "priority": {
+            "enum": [
+              "P1",
+              "P2",
+              "P3"
+            ]
+          },
+          "publisher_family_hint": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ownership_verified": {
+            "type": "boolean"
+          },
+          "relationship_to_examples": {
+            "enum": [
+              "existing_host_enriched",
+              "existing_name_enriched",
+              "supplemental_candidate"
+            ]
+          },
+          "example_references": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "file",
+                "line"
+              ],
+              "properties": {
+                "file": {
+                  "type": "string"
+                },
+                "line": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "raw_url": {
+                  "type": "string"
+                },
+                "matched_name": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "verification_status": {
+            "enum": [
+              "page_observed",
+              "fetch_inconclusive",
+              "not_checked"
+            ]
+          },
+          "checked_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "evidence_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "observed_title": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "observed_redirect": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "access_and_reuse": {
+            "type": "string"
+          },
+          "enabled_for_ingestion": {
+            "type": "boolean"
+          },
+          "integration_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

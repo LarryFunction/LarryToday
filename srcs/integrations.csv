@@ -1,0 +1,31 @@
+﻿id,source_id,method,documentation_url,endpoint_url,auth_notes,notes,documentation_status,endpoint_status,enabled,endpoint_checked_at
+guardian-api,guardian,api,https://open-platform.theguardian.com/documentation/,https://content.guardianapis.com/search,API key；生产用途条款另查,检索文章元数据；全文及商业用途按许可,page_observed,not_integration_tested,False,
+guardian-rss,guardian,rss,https://www.theguardian.com/help/feeds,https://www.theguardian.com/world/rss,通常无key；实测见探测日志,只订阅world栏目；RSS不自动授予全文转载权,page_observed,feed_parsed,False,2026-10-18T06:07:35.946989+00:00
+bbc-rss,bbc,rss,https://support.bbc.co.uk/platform/feeds/NewsFeeds.htm,https://feeds.bbci.co.uk/news/world/rss.xml,通常无key；旧文档需复核,世界新闻订阅；检查条目更新时间,not_checked,feed_parsed,False,2026-10-18T06:07:35.947564+00:00
+france24-rss,france24,rss,https://www.france24.com/en/rss,https://www.france24.com/en/rss,待探测,英文频道候选；未确认不要投产,fetch_inconclusive,feed_parsed,False,2026-10-18T06:07:35.947921+00:00
+nyt-api,nyt,api,https://developer.nytimes.com/,,API key；文档本轮访问未确认,接入前选定Article Search或其他实际可用接口；勿套用旧配额,fetch_inconclusive,not_integration_tested,False,
+reuters-licensed,reuters,licensed,https://www.reutersagency.com/,,商务授权待确认,通过官方授权供稿；不填历史公共RSS地址,page_observed,not_integration_tested,False,
+ap-licensed,ap,licensed,https://www.ap.org/,,商务授权待确认,通过官方内容服务；不猜测历史RSS,page_observed,not_integration_tested,False,
+gdelt-data,gdelt,data,https://www.gdeltproject.org/,,按所选数据产品核实,发现文章后回源；旧项目介绍不等于每个子数据流仍更新,page_observed,not_integration_tested,False,
+mediacloud-api,mediacloud,api,https://www.mediacloud.org/,,账号和接口权限待核实,覆盖研究与检索；先选择当前文档版本,page_observed,not_integration_tested,False,
+arxiv-api,arxiv,api,https://info.arxiv.org/help/api/user-manual.html,https://export.arxiv.org/api/query,按官方使用说明,Atom查询接口；保存arXiv ID与version；按文档限速,page_observed,not_integration_tested,False,
+arxiv-rss,arxiv,rss,https://info.arxiv.org/help/rss.html,https://rss.arxiv.org/rss/cs.AI,通常无key；实测见探测日志,cs.AI不覆盖全部AI；可再补cs.LG、cs.CL、cs.CV、stat.ML,page_observed,empty_feed,False,2026-10-18T06:07:35.948241+00:00
+crossref-api,crossref,api,https://www.crossref.org/documentation/retrieve-metadata/rest-api/,https://api.crossref.org/works,公共接口与付费服务规则不同,DOI元数据与更新关联；设置可联系User-Agent及mailto,page_observed,not_integration_tested,False,
+openalex-api,openalex,api,https://help.openalex.org/api,https://api.openalex.org/works,当前key与额度按官方Access页核实,旧教程可能过时；索引是线索而非全文授权,page_observed,not_integration_tested,False,
+pubmed-api,pubmed,api,https://www.ncbi.nlm.nih.gov/books/NBK25501/,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/,key及限速按官方文档；本轮文档遇验证页,ESearch、ESummary、EFetch分阶段；区分摘要和全文,fetch_inconclusive,not_integration_tested,False,
+clinicaltrials-api,clinicaltrials,api,https://clinicaltrials.gov/data-api/api,https://clinicaltrials.gov/api/v2/studies,鉴权与参数待联调,试验注册和结果更新；按NCT ID去重,page_observed,not_integration_tested,False,
+reliefweb-api,reliefweb,api,https://apidoc.reliefweb.int/,https://api.reliefweb.int/v1/reports,appname及接入审批规则按当前文档,以报告实际发布机构为原始来源；不是独立第二份报告,page_observed,not_integration_tested,False,
+worldbank-api,worldbank,api,https://datahelpdesk.worldbank.org/knowledgebase/topics/125589-developer-information,https://api.worldbank.org/v2/,公共指标接口；具体产品另查,国家代码、指标代码、单位及最后更新时间,page_observed,not_integration_tested,False,
+fred-api,fred,api,https://fred.stlouisfed.org/docs/api/fred/,https://api.stlouisfed.org/fred/,API key,保留series_id、units与realtime/vintage时间；追溯原生产机构,page_observed,not_integration_tested,False,
+bls-api,bls,api,https://www.bls.gov/developers/,https://api.bls.gov/publicAPI/v2/timeseries/data/,注册key及访问额度按文档,保留seriesID、季调标识和统计期,page_observed,not_integration_tested,False,
+fed-rss,fed,rss,https://www.federalreserve.gov/feeds/feeds.htm,https://www.federalreserve.gov/feeds/press_all.xml,通常无key；实测见探测日志,全部新闻稿；政策决议、讲话、纪要是不同文种,page_observed,feed_parsed,False,2026-10-18T06:07:36.337423+00:00
+ecb-rss,ecb,rss,https://www.ecb.europa.eu/home/html/rss.en.html,https://www.ecb.europa.eu/rss/press.html,通常无key；实测见探测日志,虽以html结尾仍可能为XML订阅；以实际解析为准,page_observed,inconclusive,False,2026-10-18T06:07:36.455037+00:00
+sec-api,sec,api,https://www.sec.gov/search-filings/edgar-application-programming-interfaces,https://data.sec.gov/,识别性User-Agent及公平访问规则,submissions与XBRL；CIK、accession number、更正表单不可省略,page_observed,not_integration_tested,False,
+eia-api,eia,api,https://www.eia.gov/opendata/,https://api.eia.gov/v2/,API key,能源序列单位与频率必须保留；数据许可按系列确认,page_observed,not_integration_tested,False,
+usgs-geojson,usgs,geojson,https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php,https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson,公开端点；实测见探测日志,初值会修订；按事件ID更新而非重复发新闻,page_observed,geojson_parsed,False,2026-10-18T06:07:36.498714+00:00
+nasa-rss,nasa,rss,https://www.nasa.gov/rss-feeds/,https://www.nasa.gov/feed/,通常无key；实测见探测日志,NASA综合订阅；发射预告与成功结果不同,page_observed,feed_parsed,False,2026-10-18T06:07:36.500312+00:00
+hackernews-api,hackernews,api,https://github.com/HackerNews/API,https://hacker-news.firebaseio.com/v0/,公开接口；按文档使用,社区线索；item ID去重并回溯被链接文章,page_observed,not_integration_tested,False,
+cisa-data,cisa,data,https://www.cisa.gov/known-exploited-vulnerabilities-catalog,,本轮页面访问受限,从官网确认JSON/CSV下载链接后接入；不猜最新文件路径,fetch_inconclusive,not_integration_tested,False,
+cninfo-web,cninfo,web,https://www.cninfo.com.cn/,,动态站点；未确认公开API,优先公告原文和官方允许的渠道；不将内部XHR当公开API承诺,page_observed,not_integration_tested,False,
+hkex-web,hkex,web,https://www.hkexnews.hk/,,动态站点；自动访问及再分发权限待核实,保留发行人、公告类别、语言、披露时间及更正版本,page_observed,not_integration_tested,False,
+rsshub-adapter,rsshub,adapter,https://docs.rsshub.app/,,第三方路由；需部署及逐路由验证,不是官方RSS；上游变化会使路由失效,fetch_inconclusive,not_integration_tested,False,

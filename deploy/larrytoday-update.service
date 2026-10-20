@@ -1,0 +1,9 @@
+[Unit]
+Description=Update LarryToday daily edition
+Requires=docker.service
+After=docker.service network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/larrytoday
+ExecStart=/usr/bin/docker compose exec -T web python scripts/update_news.py

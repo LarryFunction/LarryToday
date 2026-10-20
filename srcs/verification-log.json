@@ -1,0 +1,3620 @@
+[
+  {
+    "url": "https://open-platform.theguardian.com/documentation/",
+    "title": "theguardian / open platform - documentation / overview",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://developer.nytimes.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://www.gdeltproject.org/",
+    "title": "The GDELT Project",
+    "status": "page_observed",
+    "redirect": "https://gdeltproject.org/",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://www.mediacloud.org/",
+    "title": "Media Cloud",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://www.reutersagency.com/",
+    "title": "Reuters: The Trusted, International News Agency",
+    "status": "page_observed",
+    "redirect": "https://reutersagency.com/",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://www.ap.org/",
+    "title": "The Associated Press | Video, Photo, Text, Audio & Data News Agency",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces",
+    "title": "SEC.gov | EDGAR Application Programming Interfaces (APIs)",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://fred.stlouisfed.org/docs/api/fred/",
+    "title": "St. Louis Fed Web Services: FRED® API",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://datahelpdesk.worldbank.org/knowledgebase/topics/125589-developer-information",
+    "title": "Developer Information – World Bank Data Help Desk",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://api.reliefweb.int/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://info.arxiv.org/help/api/index.html",
+    "title": "arXiv API Access - arXiv info",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+    "title": "REST API - Crossref",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://docs.openalex.org/",
+    "title": "OpenAlex Help Center",
+    "status": "page_observed",
+    "redirect": "https://help.openalex.org/",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php",
+    "title": "GeoJSON Summary Format",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://www.federalreserve.gov/feeds/feeds.htm",
+    "title": "Federal Reserve Board - RSS Feeds",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://www.ecb.europa.eu/home/html/rss.en.html",
+    "title": "RSS news feeds",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://www.bls.gov/developers/",
+    "title": "Getting Started : U.S. Bureau of Labor Statistics",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://restofworld.org/",
+    "title": "Rest of World - Reporting Global Tech Stories",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://404media.co/",
+    "title": "404 Media",
+    "status": "page_observed",
+    "redirect": "https://www.404media.co/",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://www.theregister.com/",
+    "title": "Technology news and analysis | The Register",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://www.technologyreview.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://www.techmeme.com/",
+    "title": "Techmeme",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://spectrum.ieee.org/",
+    "title": "IEEE Spectrum - The world's leading engineering magazine",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://www.theexamination.org/",
+    "title": "Fearless Health Journalism | The Examination",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://amabhungane.org/",
+    "title": "AmaBhungane Centre for Investigative Journalism",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://www.thecontinent.org/",
+    "title": "The Continent | Africa",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://apublica.org/",
+    "title": "Agência Pública: 15 anos de jornalismo investigativo no Brasil",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://www.ciperchile.cl/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://elfaro.net/",
+    "title": "elfaro.net",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://www.carbonbrief.org/",
+    "title": "Home - Carbon Brief",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://www.scidev.net/",
+    "title": "Home - SciDev.Net",
+    "status": "page_observed",
+    "redirect": "https://www.scidev.net/global/",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://www.mongabay.com/",
+    "title": "Conservation and environmental science news - Mongabay",
+    "status": "page_observed",
+    "redirect": "https://news.mongabay.com/",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://dialogue.earth/",
+    "title": "Dialogue Earth | Global climate and environment news",
+    "status": "page_observed",
+    "redirect": "https://dialogue.earth/en/",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://www.thenewhumanitarian.org/",
+    "title": "The New Humanitarian | Humanitarian news and analysis from Africa, Asia and the Middle East - updated daily",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://www.rnz.co.nz/international",
+    "title": "RNZ Pacific",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://www.bellingcat.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://www.occrp.org/",
+    "title": "Organized Crime and Corruption Reporting Project | OCCRP",
+    "status": "page_observed",
+    "redirect": "https://www.occrp.org/en",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://www.icij.org/",
+    "title": "International Consortium of Investigative Journalists - ICIJ",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://factcheck.afp.com/",
+    "title": "Fact Check",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://africacheck.org/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://chequeado.com/",
+    "title": "Chequeado",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://huggingface.co/blog",
+    "title": "Hugging Face – Blog",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://deepmind.google/discover/blog/",
+    "title": "News — Google DeepMind",
+    "status": "page_observed",
+    "redirect": "https://deepmind.google/blog/",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://www.anthropic.com/news",
+    "title": "Newsroom \\ Anthropic",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://github.com/deepseek-ai",
+    "title": "DeepSeek · GitHub",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://qwenlm.github.io/",
+    "title": "Qwen",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://hai.stanford.edu/ai-index",
+    "title": "hai.stanford.edu",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://www.stats.gov.cn/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://www.pbc.gov.cn/",
+    "title": "中国人民银行",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://www.cninfo.com.cn/",
+    "title": "巨潮资讯网",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://www.hkexnews.hk/",
+    "title": "HKEXnews",
+    "status": "page_observed",
+    "redirect": "https://www.hkexnews.hk/index.htm",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://www.caixin.com/",
+    "title": "财新网",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://www.yicai.com/",
+    "title": "第一财经_专业创造价值",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面级访问记录，不代表RSS/API联调或内容真实性核验"
+  },
+  {
+    "url": "https://www.reuters.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://apnews.com/",
+    "title": "Associated Press News: Breaking News, Latest Headlines and Videos | AP News",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.afp.com/",
+    "title": "Plateforme de l'info | AFP.com",
+    "status": "page_observed",
+    "redirect": "https://www.afp.com/fr",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.bbc.com/news",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.theguardian.com/international",
+    "title": "Latest news, sport and opinion from the Guardian",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.nytimes.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.washingtonpost.com/",
+    "title": "The Washington Post - Breaking news and latest headlines, U.S. news, world news, and video",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.cnn.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.foxnews.com/",
+    "title": "Fox News - Breaking News Updates | Latest News Headlines | Photos & News Videos",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.npr.org/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.pbs.org/newshour/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://abcnews.go.com/",
+    "title": "ABC News - Breaking News, Latest News and Videos",
+    "status": "page_observed",
+    "redirect": "https://abcnews.com/",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.cbc.ca/news",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.abc.net.au/news/",
+    "title": "ABC News & Headlines – Australian Broadcasting Corporation",
+    "status": "page_observed",
+    "redirect": "https://www.abc.net.au/",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.dw.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.france24.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.rfi.fr/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.euronews.com/",
+    "title": "Latest breaking news available as free video on demand | Euronews",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.aljazeera.com/",
+    "title": "Breaking News, World News and Video from Al Jazeera",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://english.alarabiya.net/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www3.nhk.or.jp/nhkworld/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://english.kyodonews.net/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://en.yna.co.kr/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.channelnewsasia.com/",
+    "title": "Breaking News and Analysis on Asia and the World | Real-Time Coverage out of Asia and Singapore - CNA",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.news.cn/",
+    "title": "新华网_让新闻离你更近",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.cgtn.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://tass.com/",
+    "title": "TASS Russian News Agency",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.aa.com.tr/en",
+    "title": "www.aa.com.tr",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://efe.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.ansa.it/english/",
+    "title": "ANSA English",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://asia.nikkei.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.scmp.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://hongkongfp.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://theinitium.com/",
+    "title": "端傳媒 Initium Media",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.twreporter.org/",
+    "title": "報導者 The Reporter",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.cna.com.tw/",
+    "title": "中央社 CNA",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.sixthtone.com/",
+    "title": "Fresh voices from today's China | Sixth Tone",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.jiemian.com/",
+    "title": "界面新闻-只服务于独立思考的人群-Jiemian.com",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.thepaper.cn/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.bjnews.com.cn/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.thehindu.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://indianexpress.com/",
+    "title": "Latest News Today, Breaking News, India News, Top Headlines | The Indian Express",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://scroll.in/",
+    "title": "Scroll.in - Latest News, In depth news, India news, Politics news, Indian Cinema, Indian sports, Culture, Video News",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://thewire.in/",
+    "title": "The Wire: The Wire News India, Latest News,News from India, Politics, External Affairs, Science, Economics, Gender and Culture",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.dawn.com/",
+    "title": "Home - DAWN.COM",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.thedailystar.net/",
+    "title": "www.thedailystar.net",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://kathmandupost.com/",
+    "title": "The Kathmandu Post | Read online latest news and articles from Nepal",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.frontiermyanmar.net/",
+    "title": "Frontier Myanmar | In-depth coverage of news, business and current events in Myanmar.",
+    "status": "page_observed",
+    "redirect": "https://www.frontiermyanmar.net/en/",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.irrawaddy.com/",
+    "title": "The Irrawaddy - Covering Burma and Southeast Asia",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.malaysiakini.com/",
+    "title": "Malaysiakini",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.rappler.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://pcij.org/",
+    "title": "PCIJ.org",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.thejakartapost.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.tempo.co/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://prachatai.com/english",
+    "title": "Prachatai English",
+    "status": "page_observed",
+    "redirect": "https://prachataienglish.com/",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.mekongeye.com/",
+    "title": "Mekong Eye",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://eurasianet.org/",
+    "title": "Home | Eurasianet",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://oc-media.org/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://meduza.io/en",
+    "title": "Meduza in English — The Real Russia. Today.",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://kyivindependent.com/",
+    "title": "The Kyiv Independent — News from Ukraine, Eastern Europe",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.pravda.com.ua/eng/",
+    "title": "Ukrainska Pravda - online news about Ukraine",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://balkaninsight.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.lemonde.fr/",
+    "title": "Le Monde.fr - Actualités et Infos en France et dans le monde",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://elpais.com/",
+    "title": "EL PAÍS: el periódico global",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.spiegel.de/international/",
+    "title": "International - DER SPIEGEL",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.politico.eu/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.haaretz.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.timesofisrael.com/",
+    "title": "The Times of Israel | News from Israel, the Middle East and the Jewish World",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.972mag.com/",
+    "title": "+972 Magazine - Independent commentary and news from Israel & Palestine",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://english.wafa.ps/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://en.irna.ir/",
+    "title": "IRNA English",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.al-monitor.com/",
+    "title": "AL-MONITOR: The Middle Eastʼs leading independent news source since 2012",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.madamasr.com/en/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://daraj.media/",
+    "title": "درج ميديا : الصحافة الإستقصائية وصحافة الأثر",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.theafricareport.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.dailymaverick.co.za/",
+    "title": "Daily Maverick — Defend Truth",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.premiumtimesng.com/",
+    "title": "Premium Times - Nigeria leading newspaper for news, investigations",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.thecable.ng/",
+    "title": "Home | TheCable",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://nation.africa/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.theeastafrican.co.ke/",
+    "title": "The EastAfrican",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://addisstandard.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://inkyfada.com/",
+    "title": "inkyfada.com, média indépendant basé à Tunis",
+    "status": "page_observed",
+    "redirect": "https://inkyfada.com/fr/",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.hespress.com/",
+    "title": "Hespress - هسبريس جريدة إلكترونية مغربية",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://reporterbrasil.org.br/",
+    "title": "Repórter Brasil",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.lasillavacia.com/",
+    "title": "La Silla Vacía – Política y poder en Colombia",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.idl-reporteros.pe/",
+    "title": "IDL – IDL Reporteros",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://animalpolitico.com/",
+    "title": "Animal Político | Noticias verificadas de México y el Mundo",
+    "status": "page_observed",
+    "redirect": "https://grupoanimal.mx/noticias",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://pina.com.fj/",
+    "title": "PINA | Pacific Islands News Association",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://techcrunch.com/",
+    "title": "TechCrunch | Startup and Technology News",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.theverge.com/",
+    "title": "The Verge",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://arstechnica.com/",
+    "title": "Ars Technica - Serving the Technologist since 1998. News, reviews, and analysis.",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.wired.com/",
+    "title": "WIRED - The Latest in Technology, Science, Culture and Business | WIRED",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.theinformation.com/",
+    "title": "The Information",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://venturebeat.com/",
+    "title": "VentureBeat | AI News & Analysis for Enterprise Leaders",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.techinasia.com/",
+    "title": "Tech in Asia - Connecting Asia's startup ecosystem",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://kr-asia.com/",
+    "title": "KrASIA | Decoding China's tech and business pulse",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://technode.com/",
+    "title": "TechNode - Latest China Tech Trends",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://36kr.com/",
+    "title": "36kr.com",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.jiqizhixin.com/",
+    "title": "机器之心",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.qbitai.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.ithome.com/",
+    "title": "IT之家",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://semianalysis.com/",
+    "title": "SemiAnalysis | AI and Semiconductor Research, Models, Advisory",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.trendforce.com/",
+    "title": "Global Market Intelligence & Consulting | TrendForce",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.techpowerup.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.phoronix.com/",
+    "title": "Linux Hardware Reviews & Performance Benchmarks, Open-Source News - Phoronix",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.bleepingcomputer.com/",
+    "title": "BleepingComputer | Cybersecurity, Technology News and Support",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://krebsonsecurity.com/",
+    "title": "Krebs on Security – In-depth security news and investigation",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://therecord.media/",
+    "title": "Cyber Security News | The Record from Recorded Future News",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.securityweek.com/",
+    "title": "Cybersecurity News, Insights and Analysis | SecurityWeek",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://nvd.nist.gov/",
+    "title": "NVD - Home",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.cert.org.cn/",
+    "title": "国家互联网应急中心",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://cert.europa.eu/",
+    "title": "CERT-EU",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://googleprojectzero.blogspot.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://openai.com/news/",
+    "title": "OpenAI News | OpenAI",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://research.google/blog/",
+    "title": "Latest News from Google Research Blog - Google Research",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://ai.meta.com/blog/",
+    "title": "AI at Meta Blog",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/research/blog/",
+    "title": "Microsoft Research Blog - Microsoft Research",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/",
+    "title": "NVIDIA Technical Blog",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.amd.com/en/newsroom.html",
+    "title": "AMD Newsroom",
+    "status": "page_observed",
+    "redirect": "https://newsroom.amd.com/",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://mistral.ai/news/",
+    "title": "Latest news | Mistral",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://cohere.com/blog",
+    "title": "The Cohere Blog",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://allenai.org/",
+    "title": "Ai2: Truly open breakthrough AI",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.eleuther.ai/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.baai.ac.cn/",
+    "title": "BAAI智源研究院",
+    "status": "fetch_inconclusive",
+    "redirect": "https://www.baai.ac.cn/zh-cn/",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.shlab.org.cn/",
+    "title": "首页 - 上海人工智能实验室",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://epoch.ai/",
+    "title": "Epoch AI",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://artificialanalysis.ai/",
+    "title": "AI Model & API Providers Analysis | Artificial Analysis",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://lmarena.ai/",
+    "title": "Arena AI: The Official AI Ranking & LLM Leaderboard",
+    "status": "page_observed",
+    "redirect": "https://arena.ai/",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://mlcommons.org/",
+    "title": "MLCommons - Standardize AI Measurement, Enable Informed Decisions",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://metr.org/",
+    "title": "METR",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.aisi.gov.uk/",
+    "title": "The AI Security Institute (AISI)",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://oecd.ai/",
+    "title": "The OECD Artificial Intelligence Policy Observatory - OECD.AI",
+    "status": "page_observed",
+    "redirect": "https://oecd.ai/en/",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://arxiv.org/",
+    "title": "arXiv.org e-Print archive",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://openreview.net/",
+    "title": "Venues | OpenReview",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://aclanthology.org/",
+    "title": "ACL Anthology",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://openaccess.thecvf.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://proceedings.mlr.press/",
+    "title": "Proceedings of Machine Learning Research | The Proceedings of Machine Learning Research (formerly JMLR Workshop and Conference Proceedings) is a series aimed specifically at publishing machine learning research presented at workshops and conferences. Each volume is separately titled and associated with a particular workshop or conference. Volumes are published online on the PMLR web site. The Series Editors are Neil D. Lawrence and Mark Reid.",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://proceedings.neurips.cc/",
+    "title": "List of Proceedings",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.ft.com/",
+    "title": "Home - Financial Times",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.bloomberg.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.wsj.com/",
+    "title": "The Wall Street Journal - Breaking News, Business, Financial & Economic News, World News and Video",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.economist.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.cnbc.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.marketwatch.com/",
+    "title": "MarketWatch: Stock Market News - Financial News - MarketWatch",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.barrons.com/",
+    "title": "Barron's | Financial and Investment News",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://economictimes.indiatimes.com/",
+    "title": "Business News Live, Share Market News - Read Latest Finance News, IPO, Mutual Funds News - The Economic Times",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.business-standard.com/",
+    "title": "Business News, Finance News, India News, Stock Markets BSE/NSE News, SENSEX, NIFTY, Personal Finance News",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://valor.globo.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.businesslive.co.za/bd/",
+    "title": "Business Day - Latest news and analysis from SA’s business sector",
+    "status": "page_observed",
+    "redirect": "https://www.businessday.co.za/",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.caijing.com.cn/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.21jingji.com/",
+    "title": "21经济网 - 21世纪经济报道官方网站",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.cls.cn/",
+    "title": "财联社-主流财经新闻集团和财经通讯社-cls.cn",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.eastmoney.com/",
+    "title": "东方财富网：财经门户，提供专业的财经、股票、行情、证券、基金、理财、银行、保险、信托、期货、黄金、股吧、博客等各类财经资讯及数据",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.coindesk.com/",
+    "title": "CoinDesk: Bitcoin, Ethereum, XRP, Crypto News and Price Data",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.theblock.co/",
+    "title": "The Block: Bitcoin, Ethereum & Crypto News | Live Prices, Data & Indices",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.imf.org/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://data.worldbank.org/",
+    "title": "World Bank Open Data | Data",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://data-explorer.oecd.org/",
+    "title": "data-explorer.oecd.org",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.bis.org/",
+    "title": "Welcome to the BIS | Bank for International Settlements",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.wto.org/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://unctad.org/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://comtradeplus.un.org/",
+    "title": "UN Comtrade",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://ilostat.ilo.org/",
+    "title": "The leading source of labour statistics - ILOSTAT",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://fred.stlouisfed.org/",
+    "title": "Federal Reserve Economic Data | FRED | St. Louis Fed",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://alfred.stlouisfed.org/",
+    "title": "Archival FRED | ALFRED | St. Louis Fed",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.federalreserve.gov/",
+    "title": "Federal Reserve Board - Home",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.ecb.europa.eu/",
+    "title": "European Central Bank",
+    "status": "page_observed",
+    "redirect": "https://www.ecb.europa.eu/home/html/index.en.html",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.bankofengland.co.uk/",
+    "title": "Home | Bank of England – the UK's central bank",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.boj.or.jp/en/",
+    "title": "Home : 日本銀行 Bank of Japan",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.rbi.org.in/",
+    "title": "Home | Official website of Reserve Bank of India",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.bcb.gov.br/",
+    "title": "Banco Central do Brasil",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.resbank.co.za/",
+    "title": "Home",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.mas.gov.sg/",
+    "title": "Monetary Authority of Singapore",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.bls.gov/",
+    "title": "U.S. Bureau of Labor Statistics : U.S. Bureau of Labor Statistics",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.bea.gov/",
+    "title": "U.S. Bureau of Economic Analysis (BEA)",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.census.gov/",
+    "title": "Census.gov | U.S. Census Bureau Homepage",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://ec.europa.eu/eurostat/",
+    "title": "Home - Eurostat",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.ons.gov.uk/",
+    "title": "Home - Office for National Statistics",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "http://www.customs.gov.cn/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.safe.gov.cn/",
+    "title": "国家外汇管理局门户网站",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.stat.go.jp/english/",
+    "title": "Statistics Bureau Home Page",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.mospi.gov.in/",
+    "title": "Ministry of Statistics and Program Implementation | Government Of India",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.ibge.gov.br/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.statssa.gov.za/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.sec.gov/edgar",
+    "title": "SEC.gov | Submit Filings",
+    "status": "page_observed",
+    "redirect": "https://www.sec.gov/submit-filings",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.sse.com.cn/",
+    "title": "首页 | 上海证券交易所",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.szse.cn/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.bse.cn/",
+    "title": "www.bse.cn",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.csrc.gov.cn/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.nfra.gov.cn/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.samr.gov.cn/",
+    "title": "国家市场监督管理总局",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.cac.gov.cn/",
+    "title": "中央网络安全和信息化委员会办公室",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.miit.gov.cn/",
+    "title": "中华人民共和国工业和信息化部",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.ndrc.gov.cn/",
+    "title": "中华人民共和国国家发展和改革委员会",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.mof.gov.cn/",
+    "title": "www.mof.gov.cn",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.mofcom.gov.cn/",
+    "title": "中华人民共和国商务部",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.ftc.gov/",
+    "title": "Federal Trade Commission | Protecting America's Consumers",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.justice.gov/",
+    "title": "Department of Justice | Homepage | United States Department of Justice",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.federalregister.gov/",
+    "title": "Federal Register :: Home - Monday, October 19th",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.congress.gov/",
+    "title": "Congress.gov | Library of Congress",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://eur-lex.europa.eu/",
+    "title": "EUR-Lex — Access to European Union law — choose your language",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://ec.europa.eu/commission/presscorner/home/en",
+    "title": "Press corner | European Commission",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://curia.europa.eu/",
+    "title": "Court of Justice of the European Union - curia",
+    "status": "page_observed",
+    "redirect": "https://curia.europa.eu/site/",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.courtlistener.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://find-and-update.company-information.service.gov.uk/",
+    "title": "Search the register - Find and update company information - GOV.UK",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.gleif.org/",
+    "title": "Home – GLEIF",
+    "status": "page_observed",
+    "redirect": "https://www.gleif.org/en",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://news.un.org/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://digitallibrary.un.org/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://webtv.un.org/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.icj-cij.org/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.icc-cpi.int/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.ohchr.org/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.unocha.org/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://reliefweb.int/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://data.humdata.org/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.unhcr.org/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.iom.int/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.wfp.org/",
+    "title": "UN World Food Programme (WFP)",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.icrc.org/",
+    "title": "ICRC: Neutral humanitarian action | Protecting lives in conflict",
+    "status": "page_observed",
+    "redirect": "https://www.icrc.org/en",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.msf.org/",
+    "title": "MSF - Médecins Sans Frontières | Medical humanitarian organisation",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://acleddata.com/",
+    "title": "ACLED",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://ucdp.uu.se/",
+    "title": "UCDP - Uppsala Conflict Data Program",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.sipri.org/",
+    "title": "Home | SIPRI",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.crisisgroup.org/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.mfa.gov.cn/",
+    "title": "中华人民共和国外交部",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.state.gov/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.eeas.europa.eu/",
+    "title": "The Diplomatic Service of the European Union | EEAS",
+    "status": "page_observed",
+    "redirect": "https://www.eeas.europa.eu/_en",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://au.int/",
+    "title": "Home | African Union",
+    "status": "page_observed",
+    "redirect": "https://au.int/en",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://asean.org/",
+    "title": "Homepage - ASEAN Main Portal",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.nature.com/news",
+    "title": "Latest science news, discoveries and analysis",
+    "status": "page_observed",
+    "redirect": "https://www.nature.com/news?error=cookies_not_supported&code=224afb53-55a9-44c8-b8d1-5beea33bfc63",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.science.org/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.sciencenews.org/",
+    "title": "Science News | The latest news from all areas of science",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.statnews.com/",
+    "title": "STAT | Reporting from the frontiers of health and medicine",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://kffhealthnews.org/",
+    "title": "KFF Health News",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/",
+    "title": "PubMed",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://europepmc.org/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.biorxiv.org/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.medrxiv.org/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://clinicaltrials.gov/",
+    "title": "ClinicalTrials.gov",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.cochrane.org/",
+    "title": "Statistics that save lives | Cochrane",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.who.int/",
+    "title": "World Health Organization (WHO)",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.who.int/emergencies/disease-outbreak-news",
+    "title": "Disease Outbreak News",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.cdc.gov/",
+    "title": "Centers for Disease Control and Prevention | CDC",
+    "status": "page_observed",
+    "redirect": "https://www.cdc.gov/index.html",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.ecdc.europa.eu/",
+    "title": "Homepage | European Centre for Disease Prevention and Control",
+    "status": "page_observed",
+    "redirect": "https://www.ecdc.europa.eu/en",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.chinacdc.cn/",
+    "title": "中国疾病预防控制中心",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://africacdc.org/",
+    "title": "Home – Africa CDC",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.fda.gov/",
+    "title": "U.S. Food and Drug Administration",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.ema.europa.eu/",
+    "title": "European Medicines Agency (EMA)",
+    "status": "page_observed",
+    "redirect": "https://www.ema.europa.eu/en/homepage",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.nmpa.gov.cn/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.crossref.org/",
+    "title": "Crossref",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://openalex.org/",
+    "title": "OpenAlex: The open catalog to the global research system",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://retractionwatch.com/",
+    "title": "Retraction Watch – Tracking retractions as a window into the scientific process",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://repec.org/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.nber.org/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.climatechangenews.com/",
+    "title": "Climate Home News",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://insideclimatenews.org/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://grist.org/",
+    "title": "Grist – Climate and environmental news | Grist",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.ipcc.ch/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://wmo.int/",
+    "title": "Homepage | World Meteorological Organization WMO",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://climate.copernicus.eu/",
+    "title": "Copernicus",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.noaa.gov/",
+    "title": "National Oceanic and Atmospheric Administration Home",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://earthquake.usgs.gov/",
+    "title": "USGS Earthquake Hazards Program",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.gdacs.org/",
+    "title": "GDACS - Global Disaster Awareness and Coordination System",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.cma.gov.cn/",
+    "title": "中国气象网-中国气象局政府门户网站",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.cea.gov.cn/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.iea.org/",
+    "title": "IEA - International Energy Agency",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.eia.gov/",
+    "title": "Homepage - U.S. Energy Information Administration (EIA)",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.irena.org/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.opec.org/",
+    "title": "Organization of the Petroleum Exporting Countries",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://ember-energy.org/",
+    "title": "ember-energy.org",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.energyinst.org/",
+    "title": "Home | Energy Institute",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.fao.org/",
+    "title": "Home | Food and Agriculture Organization of the United Nations",
+    "status": "page_observed",
+    "redirect": "https://www.fao.org/home/en/",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.usda.gov/",
+    "title": "We are here for you | USDA",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://fews.net/",
+    "title": "HOME | FEWS NET",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.globalforestwatch.org/",
+    "title": "Forest Monitoring, Land Use & Deforestation Trends | Global Nature Watch",
+    "status": "page_observed",
+    "redirect": "https://globalnaturewatch.org/",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.unesco.org/",
+    "title": "UNESCO : Building Peace through Education, Science and Culture, communication and information",
+    "status": "page_observed",
+    "redirect": "https://www.unesco.org/en",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.unicef.org/",
+    "title": "UNICEF, for every child",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.unwomen.org/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.pewresearch.org/",
+    "title": "Pew Research Center | Nonpartisan, nonadvocacy, public opinion polling and data-driven social science research",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://ourworldindata.org/",
+    "title": "Our World in Data",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://theconversation.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.chronicle.com/",
+    "title": "The Chronicle of Higher Education | Higher Ed News, Opinion, & Advice",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.timeshighereducation.com/",
+    "title": "Times Higher Education home | Times Higher Education (THE)",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://variety.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.hollywoodreporter.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.theartnewspaper.com/",
+    "title": "The Art Newspaper - International art news and events",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://olympics.com/ioc",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.fifa.com/",
+    "title": "www.fifa.com",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.wada-ama.org/",
+    "title": "Raising the game for clean sport | World Anti Doping Agency",
+    "status": "page_observed",
+    "redirect": "https://www.wada-ama.org/en",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.espn.com/",
+    "title": "www.espn.com",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.nytimes.com/athletic/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.propublica.org/",
+    "title": "ProPublica — Investigative Journalism and News in the Public Interest",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://forensic-architecture.org/",
+    "title": "Forensic Architecture",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.reuters.com/fact-check/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://apnews.com/hub/ap-fact-check",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://fullfact.org/",
+    "title": "Full Fact",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.factcheck.org/",
+    "title": "FactCheck.org - A Project of The Annenberg Public Policy Center",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.politifact.com/",
+    "title": "PolitiFact",
+    "status": "page_observed",
+    "redirect": "https://politifact.com/",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.snopes.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://maldita.es/",
+    "title": "Portada · Maldita.es",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://correctiv.org/",
+    "title": "CORRECTIV",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.altnews.in/",
+    "title": "Alt News – Alternative News and Views in the Post-Truth World",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.boomlive.in/",
+    "title": "BOOM Fact Check: Debunking Misinformation and Fake news",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://turnbackhoax.id/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://tfc-taiwan.org.tw/",
+    "title": "Home - 台灣事實查核中心",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.mygopen.com/",
+    "title": "MyGoPen",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://annielab.org/",
+    "title": "annie lab - @HKU School of Future Media",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.piyao.org.cn/",
+    "title": "中国互联网联合辟谣平台",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://gijn.org/",
+    "title": "Global Investigative Journalism Network",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.poynter.org/ifcn/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.invid-project.eu/tools-and-services/invid-verification-plugin/",
+    "title": "InVID Verification Plugin - InVID project",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://web.archive.org/",
+    "title": "Wayback Machine",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://newsapi.org/",
+    "title": "News API – Search News and Blog Articles on the Web",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://newsdata.io/",
+    "title": "Best News API for Real-Time & Historical News | NewsData.io",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://eventregistry.org/",
+    "title": "Event Registry",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://news.google.com/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://news.ycombinator.com/",
+    "title": "Hacker News",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://lobste.rs/",
+    "title": "Lobsters",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://github.com/trending",
+    "title": "Trending repositories on GitHub today · GitHub",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.reddit.com/",
+    "title": "Reddit - The heart of the internet",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.v2ex.com/",
+    "title": "V2EX",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://docs.rsshub.app/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://globalvoices.org/",
+    "title": "Global Voices · Local perspectives for a global audience",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.ipsnews.net/",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "页面访问；未做接口联调、更新频率或编辑质量审计"
+  },
+  {
+    "url": "https://www.theguardian.com/help/feeds",
+    "title": "How to use the Guardian’s RSS feeds | Help | The Guardian",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "文档或页面访问；JSON/XML格式及鉴权尚未联调"
+  },
+  {
+    "url": "https://www.nasa.gov/rss-feeds/",
+    "title": "RSS Feeds - NASA",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "文档或页面访问；JSON/XML格式及鉴权尚未联调"
+  },
+  {
+    "url": "https://info.arxiv.org/help/rss.html",
+    "title": "RSS Feeds - arXiv info",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "文档或页面访问；JSON/XML格式及鉴权尚未联调"
+  },
+  {
+    "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "文档或页面访问；JSON/XML格式及鉴权尚未联调"
+  },
+  {
+    "url": "https://www.ecb.europa.eu/rss/press.html",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "文档或页面访问；JSON/XML格式及鉴权尚未联调"
+  },
+  {
+    "url": "https://www.theguardian.com/world/rss",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "文档或页面访问；JSON/XML格式及鉴权尚未联调"
+  },
+  {
+    "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "文档或页面访问；JSON/XML格式及鉴权尚未联调"
+  },
+  {
+    "url": "https://www.france24.com/en/rss",
+    "title": "Internal Error ()",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "文档或页面访问；JSON/XML格式及鉴权尚未联调"
+  },
+  {
+    "url": "https://apidoc.reliefweb.int/",
+    "title": "Reliefweb API - Documentation",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "文档或页面访问；JSON/XML格式及鉴权尚未联调"
+  },
+  {
+    "url": "https://www.eia.gov/opendata/",
+    "title": "Opendata - U.S. Energy Information Administration (EIA)",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "文档或页面访问；JSON/XML格式及鉴权尚未联调"
+  },
+  {
+    "url": "https://www.weather.gov/documentation/services-web-api",
+    "title": "API Web Service",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "文档或页面访问；JSON/XML格式及鉴权尚未联调"
+  },
+  {
+    "url": "https://clinicaltrials.gov/data-api/api",
+    "title": "ClinicalTrials.gov",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "文档或页面访问；JSON/XML格式及鉴权尚未联调"
+  },
+  {
+    "url": "https://www.ncbi.nlm.nih.gov/books/NBK25501/",
+    "title": "Checking your browser - reCAPTCHA",
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "返回验证/错误页面，未确认目标内容"
+  },
+  {
+    "url": "https://www.mediawiki.org/wiki/API:Main_page",
+    "title": "API:Action API - MediaWiki",
+    "status": "page_observed",
+    "redirect": "https://www.mediawiki.org/wiki/API:Main_page",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "文档或页面访问；JSON/XML格式及鉴权尚未联调"
+  },
+  {
+    "url": "https://github.com/HackerNews/API",
+    "title": "GitHub - HackerNews/API: Documentation and Samples for the Official HN API · GitHub",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "文档或页面访问；JSON/XML格式及鉴权尚未联调"
+  },
+  {
+    "url": "https://api.crossref.org/works?rows=1",
+    "title": null,
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "文档或页面访问；JSON/XML格式及鉴权尚未联调"
+  },
+  {
+    "url": "https://www.sec.gov/search-filings",
+    "title": "SEC.gov | Search Filings",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "文档或页面访问；JSON/XML格式及鉴权尚未联调"
+  },
+  {
+    "url": "https://api.worldbank.org/v2/country?format=json",
+    "title": null,
+    "status": "fetch_inconclusive",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "文档或页面访问；JSON/XML格式及鉴权尚未联调"
+  },
+  {
+    "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson",
+    "title": null,
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "文档或页面访问；JSON/XML格式及鉴权尚未联调"
+  },
+  {
+    "url": "https://info.arxiv.org/help/api/user-manual.html",
+    "title": "arXiv API User's Manual - arXiv info",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "文档或页面访问；JSON/XML格式及鉴权尚未联调"
+  },
+  {
+    "url": "https://help.openalex.org/api",
+    "title": "API reference | OpenAlex Help Center",
+    "status": "page_observed",
+    "redirect": "https://help.openalex.org/api/",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "文档或页面访问；JSON/XML格式及鉴权尚未联调"
+  },
+  {
+    "url": "https://www.globalforestwatch.org/",
+    "title": "Forest Monitoring, Land Use & Deforestation Trends | Global Nature Watch",
+    "status": "page_observed",
+    "redirect": "https://globalnaturewatch.org/",
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "文档或页面访问；JSON/XML格式及鉴权尚未联调"
+  },
+  {
+    "url": "https://www.nasa.gov/",
+    "title": "NASA",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "文档或页面访问；JSON/XML格式及鉴权尚未联调"
+  },
+  {
+    "url": "https://www.esa.int/",
+    "title": "European Space Agency",
+    "status": "page_observed",
+    "redirect": null,
+    "checked_at": "2026-10-18",
+    "method": "web.open",
+    "note": "文档或页面访问；JSON/XML格式及鉴权尚未联调"
+  }
+]

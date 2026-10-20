@@ -1,0 +1,152 @@
+# 需要复核的入口
+
+失败不代表停运或用户无法访问；本次未使用用户VPN。重定向保留原入口，接入时确认栏目及身份。
+
+- `reuters` [Reuters 路透社](https://www.reuters.com/)：fetch_inconclusive
+- `afp` [AFP 法新社](https://www.afp.com/)：page_observed；观察到跳转：https://www.afp.com/fr
+- `bbc` [BBC News](https://www.bbc.com/news)：fetch_inconclusive
+- `nyt` [The New York Times](https://www.nytimes.com/)：fetch_inconclusive
+- `cnn` [CNN](https://www.cnn.com/)：fetch_inconclusive
+- `npr` [NPR](https://www.npr.org/)：fetch_inconclusive
+- `pbs` [PBS NewsHour](https://www.pbs.org/newshour/)：fetch_inconclusive
+- `abc-us` [ABC News 美国](https://abcnews.go.com/)：page_observed；观察到跳转：https://abcnews.com/
+- `cbc` [CBC News](https://www.cbc.ca/news)：fetch_inconclusive
+- `abc-au` [ABC News 澳大利亚](https://www.abc.net.au/news/)：page_observed；观察到跳转：https://www.abc.net.au/
+- `dw` [Deutsche Welle](https://www.dw.com/)：fetch_inconclusive
+- `france24` [France 24](https://www.france24.com/)：fetch_inconclusive
+- `rfi` [RFI](https://www.rfi.fr/)：fetch_inconclusive
+- `al-arabiya` [Al Arabiya English](https://english.alarabiya.net/)：fetch_inconclusive
+- `nhk` [NHK World](https://www3.nhk.or.jp/nhkworld/)：fetch_inconclusive
+- `kyodo` [Kyodo English](https://english.kyodonews.net/)：fetch_inconclusive
+- `yonhap` [Yonhap English](https://en.yna.co.kr/)：fetch_inconclusive
+- `cgtn` [CGTN](https://www.cgtn.com/)：fetch_inconclusive
+- `efe` [Agencia EFE](https://efe.com/)：fetch_inconclusive
+- `nikkei` [Nikkei Asia](https://asia.nikkei.com/)：fetch_inconclusive
+- `scmp` [South China Morning Post](https://www.scmp.com/)：fetch_inconclusive
+- `hkfp` [Hong Kong Free Press](https://hongkongfp.com/)：fetch_inconclusive
+- `thepaper` [澎湃新闻](https://www.thepaper.cn/)：fetch_inconclusive
+- `beijingnews` [新京报](https://www.bjnews.com.cn/)：fetch_inconclusive
+- `thehindu` [The Hindu](https://www.thehindu.com/)：fetch_inconclusive
+- `thewire` [The Wire](https://thewire.in/)：fetch_inconclusive
+- `frontier` [Frontier Myanmar](https://www.frontiermyanmar.net/)：page_observed；观察到跳转：https://www.frontiermyanmar.net/en/
+- `rappler` [Rappler](https://www.rappler.com/)：fetch_inconclusive
+- `jakartapost` [The Jakarta Post](https://www.thejakartapost.com/)：fetch_inconclusive
+- `tempo` [Tempo](https://www.tempo.co/)：fetch_inconclusive
+- `prachatai` [Prachatai](https://prachatai.com/english)：page_observed；观察到跳转：https://prachataienglish.com/
+- `ocmedia` [OC Media](https://oc-media.org/)：fetch_inconclusive
+- `balkaninsight` [Balkan Insight](https://balkaninsight.com/)：fetch_inconclusive
+- `politico-eu` [POLITICO Europe](https://www.politico.eu/)：fetch_inconclusive
+- `haaretz` [Haaretz](https://www.haaretz.com/)：fetch_inconclusive
+- `wafa` [WAFA](https://english.wafa.ps/)：fetch_inconclusive
+- `mada` [Mada Masr](https://www.madamasr.com/en/)：fetch_inconclusive
+- `africareport` [The Africa Report](https://www.theafricareport.com/)：fetch_inconclusive
+- `nation-africa` [Nation Africa](https://nation.africa/)：fetch_inconclusive
+- `addisstandard` [Addis Standard](https://addisstandard.com/)：fetch_inconclusive
+- `inkyfada` [Inkyfada](https://inkyfada.com/)：page_observed；观察到跳转：https://inkyfada.com/fr/
+- `ciper` [CIPER](https://www.ciperchile.cl/)：fetch_inconclusive
+- `elfaro` [El Faro](https://elfaro.net/)：fetch_inconclusive
+- `animalpolitico` [Animal Político](https://animalpolitico.com/)：page_observed；观察到跳转：https://grupoanimal.mx/noticias
+- `mitreview` [MIT Technology Review](https://www.technologyreview.com/)：fetch_inconclusive
+- `404media` [404 Media](https://404media.co/)：page_observed；观察到跳转：https://www.404media.co/
+- `qbitai` [量子位](https://www.qbitai.com/)：fetch_inconclusive
+- `anand-techpowerup` [TechPowerUp](https://www.techpowerup.com/)：fetch_inconclusive
+- `cisa` [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)：fetch_inconclusive
+- `nvd` [NIST NVD](https://nvd.nist.gov/)：fetch_inconclusive
+- `googlezero` [Google Project Zero](https://googleprojectzero.blogspot.com/)：fetch_inconclusive
+- `deepmind` [Google DeepMind](https://deepmind.google/discover/blog/)：page_observed；观察到跳转：https://deepmind.google/blog/
+- `amd` [AMD Newsroom](https://www.amd.com/en/newsroom.html)：page_observed；观察到跳转：https://newsroom.amd.com/
+- `eleuther` [EleutherAI](https://www.eleuther.ai/)：fetch_inconclusive
+- `baai` [北京智源人工智能研究院](https://www.baai.ac.cn/)：fetch_inconclusive；观察到跳转：https://www.baai.ac.cn/zh-cn/
+- `lmarena` [LMArena](https://lmarena.ai/)：page_observed；观察到跳转：https://arena.ai/
+- `oecd-ai` [OECD.AI](https://oecd.ai/)：page_observed；观察到跳转：https://oecd.ai/en/
+- `cvf` [CVF Open Access](https://openaccess.thecvf.com/)：fetch_inconclusive
+- `bloomberg` [Bloomberg](https://www.bloomberg.com/)：fetch_inconclusive
+- `economist` [The Economist](https://www.economist.com/)：fetch_inconclusive
+- `cnbc` [CNBC](https://www.cnbc.com/)：fetch_inconclusive
+- `valor` [Valor Econômico](https://valor.globo.com/)：fetch_inconclusive
+- `businessday` [Business Day](https://www.businesslive.co.za/bd/)：page_observed；观察到跳转：https://www.businessday.co.za/
+- `caijing` [财经杂志](https://www.caijing.com.cn/)：fetch_inconclusive
+- `imf` [International Monetary Fund](https://www.imf.org/)：fetch_inconclusive
+- `oecd` [OECD Data Explorer](https://data-explorer.oecd.org/)：fetch_inconclusive
+- `wto` [World Trade Organization](https://www.wto.org/)：fetch_inconclusive
+- `unctad` [UN Trade and Development](https://unctad.org/)：fetch_inconclusive
+- `comtrade` [UN Comtrade](https://comtradeplus.un.org/)：fetch_inconclusive
+- `ecb` [European Central Bank](https://www.ecb.europa.eu/)：page_observed；观察到跳转：https://www.ecb.europa.eu/home/html/index.en.html
+- `bcb` [Banco Central do Brasil](https://www.bcb.gov.br/)：fetch_inconclusive
+- `stats-cn` [国家统计局](https://www.stats.gov.cn/)：fetch_inconclusive
+- `customs-cn` [海关总署](http://www.customs.gov.cn/)：fetch_inconclusive
+- `mospi` [MoSPI](https://www.mospi.gov.in/)：fetch_inconclusive
+- `ibge` [IBGE](https://www.ibge.gov.br/)：fetch_inconclusive
+- `stats-sa` [Statistics South Africa](https://www.statssa.gov.za/)：fetch_inconclusive
+- `hkex` [HKEXnews](https://www.hkexnews.hk/)：page_observed；观察到跳转：https://www.hkexnews.hk/index.htm
+- `szse` [深圳证券交易所](https://www.szse.cn/)：fetch_inconclusive
+- `bse` [北京证券交易所](https://www.bse.cn/)：fetch_inconclusive
+- `csrc` [中国证监会](https://www.csrc.gov.cn/)：fetch_inconclusive
+- `nfra` [国家金融监督管理总局](https://www.nfra.gov.cn/)：fetch_inconclusive
+- `mof` [财政部](https://www.mof.gov.cn/)：fetch_inconclusive
+- `ecpress` [European Commission Press Corner](https://ec.europa.eu/commission/presscorner/home/en)：fetch_inconclusive
+- `curia` [Court of Justice of the EU](https://curia.europa.eu/)：page_observed；观察到跳转：https://curia.europa.eu/site/
+- `courtlistener` [CourtListener](https://www.courtlistener.com/)：fetch_inconclusive
+- `gleif` [GLEIF](https://www.gleif.org/)：page_observed；观察到跳转：https://www.gleif.org/en
+- `unnews` [UN News](https://news.un.org/)：fetch_inconclusive
+- `undocs` [UN Digital Library](https://digitallibrary.un.org/)：fetch_inconclusive
+- `unwebtv` [UN Web TV](https://webtv.un.org/)：fetch_inconclusive
+- `icj` [International Court of Justice](https://www.icj-cij.org/)：fetch_inconclusive
+- `icc` [International Criminal Court](https://www.icc-cpi.int/)：fetch_inconclusive
+- `ohchr` [OHCHR](https://www.ohchr.org/)：fetch_inconclusive
+- `ocha` [OCHA](https://www.unocha.org/)：fetch_inconclusive
+- `reliefweb` [ReliefWeb](https://reliefweb.int/)：fetch_inconclusive
+- `hdx` [Humanitarian Data Exchange](https://data.humdata.org/)：fetch_inconclusive
+- `unhcr` [UNHCR](https://www.unhcr.org/)：fetch_inconclusive
+- `iom` [IOM](https://www.iom.int/)：fetch_inconclusive
+- `icrc` [ICRC](https://www.icrc.org/)：page_observed；观察到跳转：https://www.icrc.org/en
+- `ucdp` [Uppsala Conflict Data Program](https://ucdp.uu.se/)：fetch_inconclusive
+- `crisisgroup` [International Crisis Group](https://www.crisisgroup.org/)：fetch_inconclusive
+- `state-us` [US Department of State](https://www.state.gov/)：fetch_inconclusive
+- `eeas` [European External Action Service](https://www.eeas.europa.eu/)：page_observed；观察到跳转：https://www.eeas.europa.eu/_en
+- `au` [African Union](https://au.int/)：page_observed；观察到跳转：https://au.int/en
+- `nature` [Nature News](https://www.nature.com/news)：page_observed；观察到跳转：https://www.nature.com/news?error=cookies_not_supported&code=224afb53-55a9-44c8-b8d1-5beea33bfc63
+- `science` [Science](https://www.science.org/)：fetch_inconclusive
+- `scidev` [SciDev.Net](https://www.scidev.net/)：page_observed；观察到跳转：https://www.scidev.net/global/
+- `europepmc` [Europe PMC](https://europepmc.org/)：fetch_inconclusive
+- `biorxiv` [bioRxiv](https://www.biorxiv.org/)：fetch_inconclusive
+- `medrxiv` [medRxiv](https://www.medrxiv.org/)：fetch_inconclusive
+- `cdc` [US CDC](https://www.cdc.gov/)：page_observed；观察到跳转：https://www.cdc.gov/index.html
+- `ecdc` [ECDC](https://www.ecdc.europa.eu/)：page_observed；观察到跳转：https://www.ecdc.europa.eu/en
+- `ema` [European Medicines Agency](https://www.ema.europa.eu/)：page_observed；观察到跳转：https://www.ema.europa.eu/en/homepage
+- `nmpa` [国家药品监督管理局](https://www.nmpa.gov.cn/)：fetch_inconclusive
+- `repec` [RePEc](https://repec.org/)：fetch_inconclusive
+- `nber` [NBER](https://www.nber.org/)：fetch_inconclusive
+- `mongabay` [Mongabay](https://www.mongabay.com/)：page_observed；观察到跳转：https://news.mongabay.com/
+- `dialogueearth` [Dialogue Earth](https://dialogue.earth/)：page_observed；观察到跳转：https://dialogue.earth/en/
+- `insideclimate` [Inside Climate News](https://insideclimatenews.org/)：fetch_inconclusive
+- `ipcc` [IPCC](https://www.ipcc.ch/)：fetch_inconclusive
+- `cea` [中国地震局](https://www.cea.gov.cn/)：fetch_inconclusive
+- `irena` [IRENA](https://www.irena.org/)：fetch_inconclusive
+- `fao` [FAO](https://www.fao.org/)：page_observed；观察到跳转：https://www.fao.org/home/en/
+- `globalforest` [Global Forest Watch](https://www.globalforestwatch.org/)：page_observed；观察到跳转：https://globalnaturewatch.org/
+- `unesco` [UNESCO](https://www.unesco.org/)：page_observed；观察到跳转：https://www.unesco.org/en
+- `unwomen` [UN Women](https://www.unwomen.org/)：fetch_inconclusive
+- `conversation` [The Conversation](https://theconversation.com/)：fetch_inconclusive
+- `variety` [Variety](https://variety.com/)：fetch_inconclusive
+- `hollywood` [The Hollywood Reporter](https://www.hollywoodreporter.com/)：fetch_inconclusive
+- `olympics` [IOC Olympics](https://olympics.com/ioc)：fetch_inconclusive
+- `fifa` [FIFA](https://www.fifa.com/)：fetch_inconclusive
+- `wada` [World Anti-Doping Agency](https://www.wada-ama.org/)：page_observed；观察到跳转：https://www.wada-ama.org/en
+- `athletic` [The Athletic](https://www.nytimes.com/athletic/)：fetch_inconclusive
+- `occrp` [OCCRP](https://www.occrp.org/)：page_observed；观察到跳转：https://www.occrp.org/en
+- `bellingcat` [Bellingcat](https://www.bellingcat.com/)：fetch_inconclusive
+- `forensic` [Forensic Architecture](https://forensic-architecture.org/)：fetch_inconclusive
+- `reuterscheck` [Reuters Fact Check](https://www.reuters.com/fact-check/)：fetch_inconclusive
+- `apcheck` [AP Fact Check](https://apnews.com/hub/ap-fact-check)：fetch_inconclusive
+- `politifact` [PolitiFact](https://www.politifact.com/)：page_observed；观察到跳转：https://politifact.com/
+- `snopes` [Snopes](https://www.snopes.com/)：fetch_inconclusive
+- `africacheck` [Africa Check](https://africacheck.org/)：fetch_inconclusive
+- `mafindo` [MAFINDO TurnBackHoax](https://turnbackhoax.id/)：fetch_inconclusive
+- `ifcn` [International Fact-Checking Network](https://www.poynter.org/ifcn/)：fetch_inconclusive
+- `gdelt` [GDELT Project](https://www.gdeltproject.org/)：page_observed；观察到跳转：https://gdeltproject.org/
+- `nyt-api` [NYT Developer Network](https://developer.nytimes.com/)：fetch_inconclusive
+- `newsdata` [NewsData.io](https://newsdata.io/)：fetch_inconclusive
+- `google-news` [Google News](https://news.google.com/)：fetch_inconclusive
+- `rsshub` [RSSHub 文档](https://docs.rsshub.app/)：fetch_inconclusive
+- `ips` [Inter Press Service](https://www.ipsnews.net/)：fetch_inconclusive

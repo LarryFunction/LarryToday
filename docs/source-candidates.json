@@ -1,0 +1,42 @@
+[
+  {
+    "id": "karpathy-blog",
+    "url": "https://karpathy.bearblog.dev/feed/",
+    "source_id": "karpathy-blog"
+  },
+  {
+    "id": "lenny-blog",
+    "url": "https://www.lennysnewsletter.com/feed",
+    "source_id": "lenny-blog"
+  },
+  {
+    "id": "lex-blog",
+    "url": "https://lexfridman.com/feed/",
+    "source_id": "lex-blog"
+  },
+  {
+    "id": "arxiv-ml",
+    "url": "https://rss.arxiv.org/rss/cs.LG",
+    "source_id": "arxiv"
+  },
+  {
+    "id": "arxiv-cv",
+    "url": "https://rss.arxiv.org/rss/cs.CV",
+    "source_id": "arxiv"
+  },
+  {
+    "id": "arxiv-cl",
+    "url": "https://rss.arxiv.org/rss/cs.CL",
+    "source_id": "arxiv"
+  },
+  {
+    "id": "people-all",
+    "url": "https://www.people.com.cn/rss/ywkx.xml",
+    "source_id": "people"
+  },
+  {
+    "id": "chinadaily-cndy",
+    "url": "https://www.chinadaily.com.cn/rss/cndy_rss.xml",
+    "source_id": "chinadaily"
+  }
+]

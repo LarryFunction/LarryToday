@@ -1,0 +1,1031 @@
+[
+  {
+    "id": "guardian-0",
+    "url": "https://www.theguardian.com/world/rss",
+    "checked_at": "2026-10-19T16:11:01.810817+00:00",
+    "http_status": 200,
+    "final_url": "https://www.theguardian.com/world/rss",
+    "state": "parsed",
+    "count": 24,
+    "precise_count": 24,
+    "latest": "2026-10-19T15:52:18+00:00",
+    "samples": [
+      {
+        "id": "766a23e8525d3c02",
+        "title": "Drone attack near market kills 80 in Sudan",
+        "url": "https://www.theguardian.com/world/2026/oct/19/drone-attack-market-al-dibab-west-kordofan-sudan",
+        "source_id": "guardian",
+        "category": "国际政治",
+        "published_at": "2026-10-19T14:45:53+00:00",
+        "feed_excerpt": "Witness says drone struck twice at transport hub in al-Dibab, in one of deadliest single attacks of war A drone strike near a market in southern Sudan on Sunday evening killed 80 people, mostly commuters catching rides home. Ahmed Wadi, a witness, said the attack in the town of al-Dibab in West Kordofan state left “50 bodies who I helped bury, one of them my own brother Mohamed”. Continue reading...",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      },
+      {
+        "id": "7d64c70b69146871",
+        "title": "Ebola cases in Kenya highlight US failures amid Trump cuts to key services",
+        "url": "https://www.theguardian.com/world/2026/oct/19/ebola-cases-kenya-us-quarantine",
+        "source_id": "guardian",
+        "category": "国际政治",
+        "published_at": "2026-10-19T14:11:08+00:00",
+        "feed_excerpt": "Opposition to US-led quarantine center in Kenya follows sweeping funding cuts and withdrawal from WHO An eighth person in Kenya has tested positive for the Bundibugyo strain of Ebola in the country’s first-ever cluster of cases of the virus, as the second-largest outbreak in history kills more than 4,300 and sickens more than 9,000 people in the region. It highlights the diminished role the US has played in the worsening Ebola outbreak by building a controversial quarantine center in Kenya, pulling back health support globally, and banning travelers from certain countries. All of this has also reduced the ability to identify and respond to the outbreak and exacerbated mistrust. Continue reading...",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      }
+    ]
+  },
+  {
+    "id": "bbc-1",
+    "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+    "checked_at": "2026-10-19T16:11:01.811912+00:00",
+    "http_status": 200,
+    "final_url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+    "state": "parsed",
+    "count": 24,
+    "precise_count": 24,
+    "latest": "2026-10-19T16:08:06+00:00",
+    "samples": [
+      {
+        "id": "45d412cb8cfe68b7",
+        "title": "Australian MP critically injured after being hit by car in apparent attack",
+        "url": "https://www.bbc.co.uk/news/articles/cwp9g43g2p07o?at_medium=RSS&at_campaign=rss",
+        "source_id": "bbc",
+        "category": "国际政治",
+        "published_at": "2026-10-19T14:09:54+00:00",
+        "feed_excerpt": "The independent politician is in hospital after what the prime minister says may have been a deliberate attack.",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      },
+      {
+        "id": "0d1ca7925e7422f4",
+        "title": "Kenya cult leader who told parents to starve children guilty of 191 murders",
+        "url": "https://www.bbc.co.uk/news/articles/ckd6d2l3dz4xo?at_medium=RSS&at_campaign=rss",
+        "source_id": "bbc",
+        "category": "国际政治",
+        "published_at": "2026-10-19T16:08:06+00:00",
+        "feed_excerpt": "Self-proclaimed pastor Paul Mackenzie was found guilty of 191 murder charges - all but one of them children.",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      }
+    ]
+  },
+  {
+    "id": "france24-2",
+    "url": "https://www.france24.com/en/rss",
+    "checked_at": "2026-10-19T16:11:01.812605+00:00",
+    "http_status": 200,
+    "final_url": "https://www.france24.com/en/rss",
+    "state": "parsed",
+    "count": 24,
+    "precise_count": 24,
+    "latest": "2026-10-19T15:58:06+00:00",
+    "samples": [
+      {
+        "id": "ec8ee72fba71b2c0",
+        "title": "DZ Mafia murder trial set to begin near Marseille",
+        "url": "https://www.france24.com/en/video/20261019-dz-mafia-murder-trial-set-to-begin-near-marseille",
+        "source_id": "france24",
+        "category": "国际政治",
+        "published_at": "2026-10-19T15:58:06+00:00",
+        "feed_excerpt": "Five men with alleged connections to the major criminal group DZ Mafia are accused of murdering, in 2020, the elder brother of anti-drug activist Amine Kessaci – now deputy mayor of Aix-en-Provence. The trial, set to begin on Monday, highlights the threat posed by mafia-style drug trafficking networks in the region. FRANCE 24’s Delano D’Souza reports.",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      },
+      {
+        "id": "49138a212dd7714f",
+        "title": "Ukraine deploys drone to airlift wounded soldier in 'world-first' operation",
+        "url": "https://www.france24.com/en/europe/20261019-ukraine-deploys-drone-airlift-wounded-soldier-world-first-operation",
+        "source_id": "france24",
+        "category": "国际政治",
+        "published_at": "2026-10-19T15:44:42+00:00",
+        "feed_excerpt": "Ukraine has evacuated a wounded soldier from the front line using an aerial drone in what a Ukrainian army brigade has described as a world-first operation. The successful mission highlights the growing role of unmanned technology in battlefield evacuations as drones continue to shape the conflict between Ukraine and Russia.",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      }
+    ]
+  },
+  {
+    "id": "fed-3",
+    "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+    "checked_at": "2026-10-19T16:11:01.813438+00:00",
+    "http_status": 200,
+    "final_url": "https://www.federalreserve.gov/feeds/press_all.xml",
+    "state": "parsed",
+    "count": 20,
+    "precise_count": 20,
+    "latest": "2026-10-16T15:00:00+00:00",
+    "samples": [
+      {
+        "id": "e2834c74f4065e96",
+        "title": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm",
+        "source_id": "fed",
+        "category": "经济与投资",
+        "published_at": "2026-10-16T15:00:00+00:00",
+        "feed_excerpt": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      },
+      {
+        "id": "ca688a27006cdc18",
+        "title": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
+        "source_id": "fed",
+        "category": "经济与投资",
+        "published_at": "2026-10-13T18:00:00+00:00",
+        "feed_excerpt": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      }
+    ]
+  },
+  {
+    "id": "nasa-4",
+    "url": "https://www.nasa.gov/feed/",
+    "checked_at": "2026-10-19T16:11:02.421162+00:00",
+    "http_status": 200,
+    "final_url": "https://www.nasa.gov/feed/",
+    "state": "parsed",
+    "count": 10,
+    "precise_count": 10,
+    "latest": "2026-10-19T16:03:51+00:00",
+    "samples": [
+      {
+        "id": "fbdb630466dd91a3",
+        "title": "Martian Dawn",
+        "url": "https://www.nasa.gov/image-article/martian-dawn/",
+        "source_id": "nasa",
+        "category": "科学与探索",
+        "published_at": "2026-10-19T16:03:51+00:00",
+        "feed_excerpt": "NASA’s Curiosity captures the dawn on Mars – as well as elongated ridges formed by wind erosion, or yardangs – in this close-up from a panorama released on Oct. 6, 2026. This is the most detailed view yet of distant, wind-carved Martian cliffs, highlighting features the mission’s scientists have long been waiting to see up […]",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      },
+      {
+        "id": "72e72c0e61b865e5",
+        "title": "APOD: 2026 October 19 – Treble Clef: Unusual X-ray Hot Radio Source",
+        "url": "https://science.nasa.gov/image-article/apod-2026-october-19-treble-clef-unusual-x-ray-hot-radio-source/",
+        "source_id": "nasa",
+        "category": "科学与探索",
+        "published_at": "2026-10-19T04:05:00+00:00",
+        "feed_excerpt": "APOD Science APOD APOD: 2026 October 19 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Treble Clef: Unusual […]",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      }
+    ]
+  },
+  {
+    "id": "guardian-5",
+    "url": "https://www.theguardian.com/technology/rss",
+    "checked_at": "2026-10-19T16:11:03.344871+00:00",
+    "state": "failed",
+    "error": "TimeoutError",
+    "error_kind": "timeout",
+    "http_status": null
+  },
+  {
+    "id": "guardian-6",
+    "url": "https://www.theguardian.com/business/rss",
+    "checked_at": "2026-10-19T16:11:03.379383+00:00",
+    "http_status": 200,
+    "final_url": "https://www.theguardian.com/uk/business/rss",
+    "state": "parsed",
+    "count": 24,
+    "precise_count": 24,
+    "latest": "2026-10-19T15:23:54+00:00",
+    "samples": [
+      {
+        "id": "329ea0e801f0cec3",
+        "title": "France hit by debt sell-off as violent protests unnerve investors",
+        "url": "https://www.theguardian.com/world/2026/oct/19/france-hit-by-debt-sell-off-as-protests-unnerve-investors",
+        "source_id": "guardian",
+        "category": "经济与投资",
+        "published_at": "2026-10-19T15:23:54+00:00",
+        "feed_excerpt": "Difference between French and German borrowing costs widens after public buildings burned and shops looted Business live – latest updates France has been hit by a fresh wave of selling in its bond and stock markets after violent protests over the weekend led to thousands of arrests and left public buildings burned and hundreds of shops looted across the country. The chaos has spooked investors as analysts worried that it would undermine Paris’s efforts to cut spending and reduce its debt. Continue reading...",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      },
+      {
+        "id": "759a65c6d2d58b25",
+        "title": "Bank of England said to be reviewing Barclays’ handling of private credit loans",
+        "url": "https://www.theguardian.com/business/2026/oct/19/bank-of-england-said-to-be-reviewing-barclays-handling-of-private-credit-loans",
+        "source_id": "guardian",
+        "category": "经济与投资",
+        "published_at": "2026-10-19T15:16:37+00:00",
+        "feed_excerpt": "Concerns financial contracts known as derivatives were incorrectly logged, potentially boosting Barclays’ profits The Bank of England is reportedly looking into Barclays’ handling of loans linked to the embattled private credit sector. The Bank’s regulatory arm, the Prudential Regulation Authority (PRA), started reviewing the matter this year after concerns were raised by a Barclays insider, according to the Financial Times. Continue reading...",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      }
+    ]
+  },
+  {
+    "id": "guardian-7",
+    "url": "https://www.theguardian.com/environment/rss",
+    "checked_at": "2026-10-19T16:11:04.166535+00:00",
+    "http_status": 200,
+    "final_url": "https://www.theguardian.com/uk/environment/rss",
+    "state": "parsed",
+    "count": 24,
+    "precise_count": 24,
+    "latest": "2026-10-19T12:20:08+00:00",
+    "samples": [
+      {
+        "id": "5bd3e489247c8488",
+        "title": "Stop ‘cash to trash’ housebuilding in Norfolk Broads, says Labour MP",
+        "url": "https://www.theguardian.com/environment/2026/oct/19/stop-cash-for-trash-housebuilding-norfolk-broads-labour-mp-chris-hinchcliffe",
+        "source_id": "guardian",
+        "category": "环境与气候",
+        "published_at": "2026-10-19T12:20:08+00:00",
+        "feed_excerpt": "Exclusive: Chris Hinchliff urges environment watchdog to block rules that will allow almost 16,000 new homes in one of UK’s most protected areas The environment watchdog is being urged to intervene in “cash to trash” planning rules that will allow almost 16,000 new homes in the Norfolk Broads despite the damage to one of the UK’s most environmentally protected areas. Labour’s flagship planning reforms allow damage to protected habitats and species to be overlooked if developers pay into a central nature restoration fund, which is used for conservation actions at a later date. These environmental delivery plans (EDPs) have been called “cash to trash” by critics , who say they roll back decades of environmental law and are a “licence to kill nature”. Continue reading...",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      },
+      {
+        "id": "a3b712a302f58f75",
+        "title": "Can countries deliver on a deal to save the world’s plants and animals?",
+        "url": "https://www.theguardian.com/environment/2026/oct/19/can-countries-deliver-on-a-deal-to-save-the-worlds-plants-and-animals",
+        "source_id": "guardian",
+        "category": "环境与气候",
+        "published_at": "2026-10-19T10:16:09+00:00",
+        "feed_excerpt": "Four years ago nearly every government on Earth agreed to protect nature. Now, as countries gather for Cop17, the pressure is on to follow through on those commitments Cop17 at a glance: everything you need to know about the UN’s nature summit Passersby could smell the dead fish before they saw them. In August, more than 3,000 pike, roach, carp and rudd were found lifeless along the River Wensum in Norwich. Some gasped for air in their final moments, desperate for the oxygen that heatwave conditions had depleted in the water. Investigators believe that the die-off was triggered by heavy rainfall that flushed through high concentrations of pollution at a time when wildlife were already struggling. The 45-mile (70km) chalk river is one of about 250 in the country. They are a geological accident almost unique to Britain – and one of Earth’s rarest habitats. They emerge from chalk aquifers and are home to species such as freshwater shrimp, otters and stoneflies, also providing drinking water for millions of people. But just 11 have formal protection, with many ravaged by sewage pollution and overextraction. The Norfolk river is one of the few that does have legal protection, but it is in poor ecological health. Continue reading...",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      }
+    ]
+  },
+  {
+    "id": "guardian-8",
+    "url": "https://www.theguardian.com/culture/rss",
+    "checked_at": "2026-10-19T16:11:05.769933+00:00",
+    "http_status": 200,
+    "final_url": "https://www.theguardian.com/uk/culture/rss",
+    "state": "parsed",
+    "count": 24,
+    "precise_count": 24,
+    "latest": "2026-10-19T15:46:12+00:00",
+    "samples": [
+      {
+        "id": "88cc1fc663f9368f",
+        "title": "‘They pulled a guy’s face off. It’s my favourite bit!’ Linda Cardellini on Freaks and Geeks, Mad Men and slasher horror Crystal Lake",
+        "url": "https://www.theguardian.com/tv-and-radio/2026/oct/19/linda-cardellini-freaks-and-geeks-mad-men-crystal-lake-friday-13th-dtf-st-louis",
+        "source_id": "guardian",
+        "category": "社会与文化",
+        "published_at": "2026-10-19T15:46:12+00:00",
+        "feed_excerpt": "She got to torment Don Draper in Mad Men and has just won an Emmy for DTF St Louis. But nothing prepared the star for all the gore as she switched to horror with the Friday 13th prequel ‘The first time I had the tooth in my hand,” says Linda Cardellini, “I thought, ‘Oh my God, this is what I’m doing.’” The star of Freaks and Geeks, ER, Dead to Me, Mad Men and DTF St Louis (for which she recently won an Emmy) is talking about her pivot towards full-blown horror. In Crystal Lake, the prequel to the Friday the 13th movies, Cardellini plays Pamela Voorhees, the original slasher of the 1980 film. The tooth, by the way, is human and gets embedded in Pam’s knuckle – until she yanks it out with a gruesome, revolting slurping sound. Casual filmgoers may associate Friday the 13th with Jason, the hockey-mask-wearing serial killer. But aficionados will know that Pam, Jason’s mother, is the villain of the first movie. “He didn’t even have the mask until the third movie,” says Cardellini, who has clearly done her homework. “Pam is the original killer, in vengeance of his death.” (There is some massaging of previous storylines in Crystal Lake, such as moving Jason’s drowning from the 1950s to the early 70s, but since the franchise is flexible enough to have sent Jason into space at one point, a bit of timeline tweaking feels fair game.) Continue reading...",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      },
+      {
+        "id": "3446bfc424b5aa72",
+        "title": "‘Someone served sushi off a guy’s naked chest!’ How we made Come Dine With Me",
+        "url": "https://www.theguardian.com/tv-and-radio/2026/oct/19/sushi-naked-chest-how-we-made-come-dine-with-me",
+        "source_id": "guardian",
+        "category": "社会与文化",
+        "published_at": "2026-10-19T14:09:26+00:00",
+        "feed_excerpt": "‘We’re not there to humiliate or to sneer. Channel 4 insisted everyone had to be a decent cook – the threshold was that contestants had to know what coriander was’ It all started in the early 00s when I tried to throw a dinner party. I was an executive producer during the early days of reality TV – and a house-proud young mum. My posh cousin and her even posher husband came for a meal. I was rushing to get the kids to bed and tidy up, so the food was an afterthought. I’d never made couscous before but decided to serve it with chicken. It was awful. Dry chicken with congealed couscous. At one point, my cousin’s husband stuck his fork in this rock-solid lump, lifted it up and said: “What actually is this?” Continue reading...",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      }
+    ]
+  },
+  {
+    "id": "nyt-9",
+    "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+    "checked_at": "2026-10-19T16:11:05.776939+00:00",
+    "http_status": 200,
+    "final_url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+    "state": "parsed",
+    "count": 24,
+    "precise_count": 24,
+    "latest": "2026-10-19T15:48:05+00:00",
+    "samples": [
+      {
+        "id": "f08f809e91b9f17d",
+        "title": "How a Trillion-Dollar Industry Launders Illegal Gold",
+        "url": "https://www.nytimes.com/2026/10/19/world/africa/dirty-gold-industry-coverup-launder-madagascar.html",
+        "source_id": "nyt",
+        "category": "国际政治",
+        "published_at": "2026-10-19T13:33:10+00:00",
+        "feed_excerpt": "The line between dirty and clean gold is an industry fiction. Wall Street and governments profit off gold from criminals, gangsters and those who exploit children.",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      },
+      {
+        "id": "4987f04d4ac54bae",
+        "title": "France Officials Acknowledge ‘Failure’ Around Riots",
+        "url": "https://www.nytimes.com/2026/10/19/world/europe/france-protests-riots.html",
+        "source_id": "nyt",
+        "category": "国际政治",
+        "published_at": "2026-10-19T15:29:08+00:00",
+        "feed_excerpt": "Prime Minister Sébastien Lecornu defended police efforts and pledged to restore order as government ministers acknowledged failures.",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      }
+    ]
+  },
+  {
+    "id": "nyt-10",
+    "url": "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
+    "checked_at": "2026-10-19T16:11:06.667384+00:00",
+    "http_status": 200,
+    "final_url": "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
+    "state": "parsed",
+    "count": 20,
+    "precise_count": 20,
+    "latest": "2026-10-19T14:23:08+00:00",
+    "samples": [
+      {
+        "id": "e51fac5f6da99129",
+        "title": "Elon Musk Says He Will Give a SpaceX Share to ‘Every Kid in America’",
+        "url": "https://www.nytimes.com/2026/10/19/business/elon-musk-spacex-stock-anthropic-giveaway.html",
+        "source_id": "nyt",
+        "category": "科技与 AI",
+        "published_at": "2026-10-19T14:23:08+00:00",
+        "feed_excerpt": "Anthropic, an A.I. rival to SpaceX, earlier said it would form a “public benefit fund” and other tech moguls have contributed to savings accounts for children.",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      },
+      {
+        "id": "927e12d9a0c7a045",
+        "title": "Meta Withdraws $25 Million from Its Midterms Push",
+        "url": "https://www.nytimes.com/2026/10/16/technology/meta-midterms-funding.html",
+        "source_id": "nyt",
+        "category": "科技与 AI",
+        "published_at": "2026-10-16T20:58:41+00:00",
+        "feed_excerpt": "The company outlined a $65 million budget last year when it embarked on an effort to elect state politicians friendly to the A.I. industry.",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      }
+    ]
+  },
+  {
+    "id": "npr-11",
+    "url": "https://feeds.npr.org/1004/rss.xml",
+    "checked_at": "2026-10-19T16:11:07.265651+00:00",
+    "http_status": 200,
+    "final_url": "https://feeds.npr.org/1004/rss.xml",
+    "state": "parsed",
+    "count": 10,
+    "precise_count": 10,
+    "latest": "2026-10-19T11:38:43+00:00",
+    "samples": [
+      {
+        "id": "2a0deb6236661875",
+        "title": "Australian prime minister says lawmaker critically injured by car is 'no accident'",
+        "url": "https://www.npr.org/2026/10/19/g-s1-148737/australia-lawmaker-critically-injured",
+        "source_id": "npr",
+        "category": "国际政治",
+        "published_at": "2026-10-19T11:38:43+00:00",
+        "feed_excerpt": "A car hit an Australian federal independent lawmaker on Monday, critically injuring her in an apparent deliberate attack, Prime Minister Anthony Albanese said. The driver was arrested.",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验",
+        "upstream_agency": "Associated Press"
+      },
+      {
+        "id": "ebe44b85612d8b12",
+        "title": "2026 midterms could be the most expensive on record. And, Macron condemns protests",
+        "url": "https://www.npr.org/2026/10/19/g-s1-148733/up-first-newsletter-ukraine-russia-campaign-finances-france-protests",
+        "source_id": "npr",
+        "category": "国际政治",
+        "published_at": "2026-10-19T11:15:43+00:00",
+        "feed_excerpt": "More than $15 billion has been raised in this year's midterm elections. And, France's president is condemning the violent protests erupting across the country.",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      }
+    ]
+  },
+  {
+    "id": "pbs-12",
+    "url": "https://www.pbs.org/newshour/feeds/rss/world",
+    "checked_at": "2026-10-19T16:11:07.702666+00:00",
+    "http_status": 200,
+    "final_url": "https://www.pbs.org/newshour/feeds/rss/world",
+    "state": "parsed",
+    "count": 20,
+    "precise_count": 20,
+    "latest": "2026-10-19T15:29:43+00:00",
+    "samples": [
+      {
+        "id": "8f43f123b9d6cb5f",
+        "title": "Iran-backed Houthi rebels strike Yemen's government forces with ballistic missiles, killing at least 53",
+        "url": "https://www.pbs.org/newshour/world/iran-backed-houthi-rebels-strike-yemens-government-forces-with-ballistic-missiles-killing-at-least-53",
+        "source_id": "pbs",
+        "category": "国际政治",
+        "published_at": "2026-10-19T15:29:43+00:00",
+        "feed_excerpt": "The escalating fighting shattered a 2022 ceasefire deal that largely stopped fighting in Yemen's civil war.",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验",
+        "upstream_agency": "Associated Press"
+      },
+      {
+        "id": "c3f99e283a8ef3d3",
+        "title": "Israeli police arrest 10 following weekend attacks by West Bank settlers on journalist and diplomats",
+        "url": "https://www.pbs.org/newshour/world/israeli-police-arrest-10-following-weekend-attacks-by-west-bank-settlers-on-journalist-and-diplomats",
+        "source_id": "pbs",
+        "category": "国际政治",
+        "published_at": "2026-10-19T14:39:39+00:00",
+        "feed_excerpt": "Israeli police did not identify the suspects or specify their roles in the attacks, which came during a spike in settler violence during the annual Palestinian olive harvest season.",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验",
+        "upstream_agency": "Associated Press"
+      }
+    ]
+  },
+  {
+    "id": "dw-13",
+    "url": "https://rss.dw.com/rdf/rss-en-all",
+    "checked_at": "2026-10-19T16:11:08.020987+00:00",
+    "http_status": 200,
+    "final_url": "https://rss.dw.com/rdf/rss-en-all",
+    "state": "parsed",
+    "count": 24,
+    "precise_count": 24,
+    "latest": "2026-10-19T15:49:00+00:00",
+    "samples": [
+      {
+        "id": "d8f7aa4f326dae5b",
+        "title": "Kenyan cult leader Paul Mackenzie found guilty over 191 starvation deaths",
+        "url": "https://www.dw.com/en/kenyan-cult-leader-paul-mackenzie-found-guilty-over-191-starvation-deaths/a-79706279?maca=en-rss-en-all-1573-rdf",
+        "source_id": "dw",
+        "category": "国际政治",
+        "published_at": "2026-10-19T15:49:00+00:00",
+        "feed_excerpt": "Preacher Paul Mackenzie is accused of telling his followers to starve themselves to death. He ran a Christian doomsday cult called the Good News International Church that claimed the end of the world was imminent.",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      },
+      {
+        "id": "e5d49d82a8b1a93b",
+        "title": "Canada: Alberta votes on holding independence referendum",
+        "url": "https://www.dw.com/en/canada-alberta-votes-on-holding-independence-referendum/a-79700283?maca=en-rss-en-all-1573-rdf",
+        "source_id": "dw",
+        "category": "国际政治",
+        "published_at": "2026-10-19T15:09:00+00:00",
+        "feed_excerpt": "Canada's oil-rich western province of Alberta is not deemed likely to vote in favor of a real breakaway plebiscite. Nevertheless the separatist movement hopes to gain leverage over Mark Carney's government.",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      }
+    ]
+  },
+  {
+    "id": "rfi-14",
+    "url": "https://www.rfi.fr/en/rss",
+    "checked_at": "2026-10-19T16:11:08.660983+00:00",
+    "http_status": 200,
+    "final_url": "https://www.rfi.fr/en/rss",
+    "state": "parsed",
+    "count": 21,
+    "precise_count": 21,
+    "latest": "2026-10-19T15:38:52+00:00",
+    "samples": [
+      {
+        "id": "6850e6022234cfe8",
+        "title": "French PM calls for partial curfews after weekend of violence, looting",
+        "url": "https://www.rfi.fr/en/france/20261019-french-pm-calls-for-partial-curfews-after-weekend-of-violence-looting",
+        "source_id": "rfi",
+        "category": "国际政治",
+        "published_at": "2026-10-19T14:49:07+00:00",
+        "feed_excerpt": "French Prime Minister Sébastien Lecornu has asked regional authorities to impose partial curfews in some cities as the government seeks to restore order after a weekend of protests over the cost of living and state of education led to rioting and looting that left hundreds of businesses damaged.",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      },
+      {
+        "id": "a70732c3f84eac9a",
+        "title": "Alberta votes on path to independence in test of Canadian unity",
+        "url": "https://www.rfi.fr/en/international/20261019-alberta-votes-on-path-to-independence-in-test-of-canadian-unity",
+        "source_id": "rfi",
+        "category": "国际政治",
+        "published_at": "2026-10-19T15:27:05+00:00",
+        "feed_excerpt": "Voters in Canada’s oil-rich Alberta province are being asked on Monday whether to open a path towards an independence referendum. Polls suggest separatists face an uphill battle, but the consultation has become a test of national unity as Prime Minister Mark Carney confronts a trade war with the US.",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      }
+    ]
+  },
+  {
+    "id": "lemonde-15",
+    "url": "https://www.lemonde.fr/international/rss_full.xml",
+    "checked_at": "2026-10-19T16:11:09.143074+00:00",
+    "http_status": 200,
+    "final_url": "https://www.lemonde.fr/international/rss_full.xml",
+    "state": "parsed",
+    "count": 20,
+    "precise_count": 20,
+    "latest": "2026-10-19T15:30:08+00:00",
+    "samples": [
+      {
+        "id": "d13fb9f4d119e310",
+        "title": "Dans une Allemagne en crise, le nombre de créations de start-up atteint un record",
+        "url": "https://www.lemonde.fr/economie/article/2026/10/19/dans-une-allemagne-en-crise-le-nombre-de-creations-de-start-up-atteint-un-record_6797550_3234.html",
+        "source_id": "lemonde",
+        "category": "国际政治",
+        "published_at": "2026-10-19T15:30:08+00:00",
+        "feed_excerpt": "L’intelligence artificielle et les tensions sur le marché du travail expliquent le rebond historique des créations d’entreprises innovantes.",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      },
+      {
+        "id": "eb2accf5854adf24",
+        "title": "Yémen : plus de 50 morts dans des frappes houthistes sur un camp des forces armées",
+        "url": "https://www.lemonde.fr/international/article/2026/10/19/yemen-plus-de-cinquante-morts-dans-des-frappes-houthistes-sur-un-camp-des-forces-armees_6797542_3210.html",
+        "source_id": "lemonde",
+        "category": "国际政治",
+        "published_at": "2026-10-19T14:21:48+00:00",
+        "feed_excerpt": "Cette attaque est la plus meurtrière depuis plusieurs semaines, dans un contexte d’intensification des combats entre les houthistes et le gouvernement yéménite.",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      }
+    ]
+  },
+  {
+    "id": "elpais-16",
+    "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada",
+    "checked_at": "2026-10-19T16:11:09.735525+00:00",
+    "http_status": 200,
+    "final_url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada",
+    "state": "parsed",
+    "count": 24,
+    "precise_count": 24,
+    "latest": "2026-10-19T16:01:41+00:00",
+    "samples": [
+      {
+        "id": "231d20e20726016c",
+        "title": "Última hora del temporal en España, en directo | Cuatro muertos por la dana que provoca inundaciones en Valencia y Alicante",
+        "url": "https://elpais.com/el-tiempo/2026-10-19/ultima-hora-del-temporal-en-espana-en-directo.html",
+        "source_id": "elpais",
+        "category": "国际政治",
+        "published_at": "2026-10-19T16:01:41+00:00",
+        "feed_excerpt": "Tres municipios valencianos de los ocho confinados siguen impracticables en vehículo | Los servicios de emergencias efectúan rescates en lanchas y helicópteros",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      },
+      {
+        "id": "4f4cc60b9f3e5381",
+        "title": "Mapas y gráficos de las inundaciones en Valencia y hacia dónde se dirige la tormenta",
+        "url": "https://elpais.com/espana/comunidad-valenciana/2026-10-19/mapas-y-graficos-de-las-inundaciones-en-valencia-y-hacia-donde-se-dirige-la-tormenta.html",
+        "source_id": "elpais",
+        "category": "国际政治",
+        "published_at": "2026-10-19T13:30:47+00:00",
+        "feed_excerpt": "Las lluvias torrenciales han anegado localidades del sur de Valencia y norte de Alicante, y se han saldado con al menos cuatro víctimas mortales",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      }
+    ]
+  },
+  {
+    "id": "rthk-17",
+    "url": "https://rthk.hk/rthk/news/rss/c_expressnews_greaterchina.xml",
+    "checked_at": "2026-10-19T16:11:09.889992+00:00",
+    "http_status": 200,
+    "final_url": "https://rthk9.rthk.hk/rthk/news/rss/c_expressnews_greaterchina.xml",
+    "state": "parsed",
+    "count": 20,
+    "precise_count": 20,
+    "latest": "2026-10-19T13:50:09+00:00",
+    "samples": [
+      {
+        "id": "623f662e721f1253",
+        "title": "李強晤白俄總理 稱中方願與白方加強地區及國際事務溝通協調",
+        "url": "https://news.rthk.hk/rthk/ch/component/k2/1874524-20261019.htm",
+        "source_id": "rthk",
+        "category": "国际政治",
+        "published_at": "2026-10-19T13:50:09+00:00",
+        "feed_excerpt": "國務院總理李強在杜尚別出席上海合作組織成員國政府首腦（總理）理事會會議期間，會見白俄羅斯總理圖爾欽。 李強表示，近年來一些霸權主義、強權政治的行為愈演愈烈，中方願與白方加強在地區及國際事務中的溝通協調，密切在上合組織、金磚國家等機制內協作，促進多邊主義和自由貿易，捍衛兩國共同利益，維護國際公平正義。 新華社報道，圖爾欽表示，中國是白俄羅斯真正的朋友和伙伴，是負責任大國的典範，白方願意與中方深化經貿、工業、汽車等領域互利合作，拓展合作新增長點，推動兩國全天候全面戰略伙伴關係不斷向前發展。 編輯：羅宇光",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      },
+      {
+        "id": "25567a421d3f3f68",
+        "title": "何立峰稱中俄務實合作呈良好發展勢頭 雙邊貿易保持增長",
+        "url": "https://news.rthk.hk/rthk/ch/component/k2/1874520-20261019.htm",
+        "source_id": "rthk",
+        "category": "国际政治",
+        "published_at": "2026-10-19T12:38:58+00:00",
+        "feed_excerpt": "國務院副總理何立峰指出，在雙方共同努力下，中俄務實合作呈現良好發展勢頭，雙邊貿易保持增長，重點項目有序推進，產業合作不斷深化，交流互訪持續密切。 中俄總理定期會晤委員會中方主席何立峰，與俄羅斯副總理、委員會俄方主席切爾內申科，以視像方式共同主持召開委員會第三十次會議。何立峰說，國家主席習近平與俄羅斯總統普京多次會晤，為新形勢下兩國關係向更高質量、更高水平發展作出部署、指明方向，中方願意與俄方共同全力落實好兩國元首重要共識。 新華社報道，切爾內申科表示，目前俄中戰略協作伙伴關係穩固，雙邊交往更加密切，多邊協作進一步加強，俄方願意與中方進一步提升合作規模質量。 編輯：羅宇光",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      }
+    ]
+  },
+  {
+    "id": "scmp-18",
+    "url": "https://www.scmp.com/rss/91/feed",
+    "checked_at": "2026-10-19T16:11:12.103543+00:00",
+    "http_status": 200,
+    "final_url": "https://www.scmp.com/rss/91/feed/",
+    "state": "parsed",
+    "count": 24,
+    "precise_count": 24,
+    "latest": "2026-10-19T15:51:17+00:00",
+    "samples": [
+      {
+        "id": "bbafe229d1f6a1f9",
+        "title": "Kenyan starvation cult leader found guilty of murder of 191 children, 1 adult",
+        "url": "https://www.scmp.com/news/world/africa/article/3371417/kenyan-starvation-cult-leader-found-guilty-murder-191-children-1-adult?utm_source=rss_feed",
+        "source_id": "scmp",
+        "category": "国际政治",
+        "published_at": "2026-10-19T15:51:17+00:00",
+        "feed_excerpt": "A Kenyan court on Monday found starvation cult leader ⁠Paul Mackenzie and about 30 others guilty of ⁠murder over the deaths of 190 children and one adult in ⁠one of the world’s worst cult-related disasters in recent history. Mackenzie and his co-accused will be given their sentence on November 6. Mackenzie was arrested in 2023 after police received a tip-off, and weeks later authorities began uncovering bodies in shallow graves in the Shakahola Forest near the coast in southeastern...",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验",
+        "upstream_agency": "Reuters"
+      },
+      {
+        "id": "3d1f0eb91b7ac934",
+        "title": "Houthi attack kills 53 at Yemen government training camp",
+        "url": "https://www.scmp.com/news/world/middle-east/article/3371416/houthi-attack-kills-53-yemen-government-training-camp?utm_source=rss_feed",
+        "source_id": "scmp",
+        "category": "国际政治",
+        "published_at": "2026-10-19T15:19:26+00:00",
+        "feed_excerpt": "Fifty-three people ⁠were killed and 200 were ⁠injured in an attack ⁠on Monday by the Iran-aligned Houthis on a government security forces training camp in Yemen’s Shabwa province, according to the local authority, as fighting in the impoverished country intensifies. Video verified by Reuters from Shabwa province ‌showed injured people and bloodied bodies scattered across the ground. The Houthis and the internationally recognised government, which is backed by a Saudi-led coalition, have been...",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验",
+        "upstream_agency": "Reuters"
+      }
+    ]
+  },
+  {
+    "id": "cna-19",
+    "url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=6311",
+    "checked_at": "2026-10-19T16:11:13.008359+00:00",
+    "http_status": 200,
+    "final_url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=6311",
+    "state": "parsed",
+    "count": 20,
+    "precise_count": 20,
+    "latest": "2026-10-19T12:08:05+00:00",
+    "samples": [
+      {
+        "id": "c5caf895ae1f917d",
+        "title": "CNA Explains: Why are AI stocks tumbling when demand is still booming?",
+        "url": "https://www.channelnewsasia.com/world/ai-stocks-tumbling-tech-giants-investing-demand-why-cna-explains-6471256",
+        "source_id": "cna",
+        "category": "国际政治",
+        "published_at": "2026-10-19T12:08:05+00:00",
+        "feed_excerpt": "AI demand is booming, chipmakers are posting record profits and tech giants are continuing to invest hundreds of billions. So why are semiconductor stocks tumbling? CNA speaks to experts about what's driving the sell-off.",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      },
+      {
+        "id": "f29d796bdb47a7d6",
+        "title": "Australian lawmaker 'critically' hurt in attack, officials say",
+        "url": "https://www.channelnewsasia.com/world/australia-mp-helen-haines-attacked-6471311",
+        "source_id": "cna",
+        "category": "国际政治",
+        "published_at": "2026-10-19T08:25:00+00:00",
+        "feed_excerpt": "Victoria Police said that a 43-year-old suspect had been arrested.",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      }
+    ]
+  },
+  {
+    "id": "people-20",
+    "url": "https://www.people.com.cn/rss/politics.xml",
+    "checked_at": "2026-10-19T16:11:13.673366+00:00",
+    "http_status": 200,
+    "final_url": "https://www.people.com.cn/rss/politics.xml",
+    "state": "parsed",
+    "count": 24,
+    "precise_count": 0,
+    "latest": "2025-06-05",
+    "samples": [
+      {
+        "id": "2e8fdbb8254b895e",
+        "title": "学习卡丨“人不负青山，青山定不负人”",
+        "url": "http://politics.people.com.cn/n1/2025/0605/c1001-40494898.html",
+        "source_id": "people",
+        "category": "国际政治",
+        "published_at": null,
+        "feed_excerpt": "生态环境是关系党的使命宗旨的重大政治问题，也是关系民生的重大社会问题。 习近平总书记多次指出，必须站在中华民族永续发展根本大计的高度，尊重自然、顺应自然、保护自然，建设人与自然和谐共生的现代化，建设望得见山、看得见水、记得住乡愁的美丽中国。 今天（6月5日）是世界环境日。如何像保护眼睛一样保护自然和生态环境？一起学习↓↓↓ 总监制丨闫帅南 监制丨李浙 主编丨王兴栋 编辑&制图丨马玮璐",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验",
+        "published_day": "2025-06-05"
+      },
+      {
+        "id": "5edb2d86415d690f",
+        "title": "镜观·足迹｜呵护千山万水 擘画永续发展",
+        "url": "http://politics.people.com.cn/n1/2025/0605/c1001-40494899.html",
+        "source_id": "people",
+        "category": "国际政治",
+        "published_at": null,
+        "feed_excerpt": "大美中国，江山如画。 党的十八大以来，习近平总书记的考察足迹遍及神州大地。祁连山麓、坝上林海，秦岭深处、黄河之滨，总书记在大江奔涌处谋划千秋大计，在山川锦绣间擘画生态蓝图。一系列重要论述，为新时代生态文明建设提供了根本遵循和行动指南。 世界环境日到来之际，我们跟随习近平总书记的脚步，一起呵护山水、寄情山水，领悟守护绿水青山、建设生态文明之道。 江河为脉 心系长江之变，习近平总书记前往沿江重镇，考察长江经济带发展。从三峡库区到洞庭湖畔，从港口码头到企业车间，总书记深入调研，作出一系列重要指示，为新时代江河保护治理提供了重要遵循。 2018年4月，习近平总书记来到湖南岳阳城陵矶水文站考察。在狭窄的站房外长廊上，习近平总书记举目远眺。 “共抓大保护，不搞大开发” 的战略定力，在这里化作守护一江碧水的坚定行动。 2023年10月10日下午，习近平总书记在江西九江市考察，冒雨在江边察看，了解当地长江国家文化公园建设、长江岸线生态修复等情况。10月12日，总书记在进一步推动长江经济带高质量发展座谈会上回顾长江经济带发展历程，感慨： “做就要做好，坚定做下去。笃行不怠，一以贯之，久久为功。” 黄河安澜是中华儿女的千年期盼。党的十八大以来，习近平总书记走遍黄河上中下游，望奔流激荡，思保护发展。在总书记的指挥下，一曲生态优先、绿色发展的“黄河大合唱”正在神州大地奏响。 2019年8月，习近平总书记考察甘肃时，亲临兰州考察黄河兰州段治理保护工作，对保护黄河、治理黄河作出重要指示，强调： “保护母亲河是事关中华民族伟大复兴和永续发展的千秋大计。” 2019年9月，习近平总书记在河南郑州黄河国家地质公园岸边驻足凝望。在随后举行的黄河流域生态保护和高质量发展座谈会上，习近平总书记再次强调 “让黄河成为造福人民的幸福河” 。 2024年9月，习近平总书记时隔五年后再次来到甘肃兰州，在中山桥段，驻足眺望。总书记由衷感慨：黄河很美，将来会更美。 从四次以长江经济带发展为主题的座谈会到三次围绕黄河流域生态保护和高质量发展为主题的座谈会，总书记“海晏河清”的期许，始终未变。 山川为脊 2019年8月，在甘肃山丹马场，习近平总书记步入草场，强调 “保护好祁连山的生态环境，对保护国家生态安全、对推动甘肃和河西走廊可持续发展都具有十分重要的战略意义。” 2020年4月，习近平总书记在位于商洛市柞水县的秦岭牛背梁国家级自然保护区，考察秦岭生态保护情况。他语重心长地说， “保护好秦岭生态环境，对确保中华民族长盛不衰、实现‘两个一百年’奋斗目标、实现可持续发展具有十分重大而深远的意义。” 2021年3月，习近平总书记来到福建考察。在武夷山，总书记谆谆告诫： “武夷山有着无与伦比的生态人文资源，是中华民族的骄傲，最重要的还是保护好。” 2021年8月，在塞罕坝林场，习近平总书记登上月亮山，俯瞰荒原变林海的人间奇迹。习近平总书记指出， “我们建这片林，它的生态屏障作用，要永远发挥下去。” 从“绿水青山就是金山银山”到“山水林田湖草沙一体化保护和系统治理”，习近平生态文明思想如同春风化雨，推动着矿坑蝶变、沙地披绿。放眼中华大地，生态屏障持续筑牢，人与自然和谐发展。 人民为本 2020年8月，习近平总书记来到马鞍山市，察看长江水情水势，了解岸线整治和渔民退捕工作落实情况。总书记特别强调， “长江禁渔也不是把渔民甩上岸就不管了，要把相关工作做细做实，多开发就业渠道和公益性岗位，让渔民们稳得住、能致富。” 2021年4月，在广西漓江的碧波上，习近平总书记回忆自己的深深的“漓江情结”，指出 “广西旅游产业大有可为。” 2021年9月，在陕西高西沟村的一处山头上，习近平总书记举目凝望，指出 “把生态治理和发展特色产业有机结合起来” 。生态治理的宏大战略，最终要落脚于人民群众的获得感。 长江十年禁渔让“江豚逐浪”再现，黄河滩区迁建让百万群众安居，塞罕坝林场造就“绿色银行”，这些生动实践印证着：良好生态环境是最普惠的民生福祉。 从长江黄河的奔涌浪涛，到祁连武夷的峻秀风骨，习近平总书记的足迹丈量着中华大地的脉络，也勾勒出生态文明建设的壮阔图景。 策划：赖向东 刘菁 统筹：毕晓洋杨玉华 主笔、制作：卢烨 陈诺 编辑：虞东升 张曼怡 刘军喜",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验",
+        "published_day": "2025-06-05"
+      }
+    ]
+  },
+  {
+    "id": "chinadaily-21",
+    "url": "https://www.chinadaily.com.cn/rss/china_rss.xml",
+    "checked_at": "2026-10-19T16:11:13.868239+00:00",
+    "state": "failed",
+    "error": "HTTPError",
+    "error_kind": "http",
+    "http_status": 404
+  },
+  {
+    "id": "xinhua-22",
+    "url": "https://www.xinhuanet.com/english/rss/chinarss.xml",
+    "checked_at": "2026-10-19T16:11:13.894028+00:00",
+    "http_status": 200,
+    "final_url": "https://www.xinhuanet.com/english/rss/chinarss.xml",
+    "state": "parsed",
+    "count": 20,
+    "precise_count": 0,
+    "latest": "2017-05-07",
+    "samples": [
+      {
+        "id": "d54913893b304ef3",
+        "title": "China Focus: Beijing firms bring tech to Belt and Road countries",
+        "url": "http://www.xinhuanet.com/english/2017-05/07/c_136263471.htm",
+        "source_id": "xinhua",
+        "category": "国际政治",
+        "published_at": null,
+        "feed_excerpt": "\"Borrow a boat to sail in the sea -- we will find more ways to use the opportunities brought by the Belt and Road Initiative,\" he said.",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验",
+        "published_day": "2017-05-07"
+      },
+      {
+        "id": "296ef2f19b0b69da",
+        "title": "Xi, Trump discuss ties, Korean Peninsula situation over phone",
+        "url": "http://www.xinhuanet.com/english/2017-04/24/c_136232199.htm",
+        "source_id": "xinhua",
+        "category": "国际政治",
+        "published_at": null,
+        "feed_excerpt": "Chinese President Xi Jinping and his U.S. counterpart Donald Trump on Monday discussed bilateral ties and the situation on the Korean Peninsula on phone, pledging close contact by various means to promptly exchange views on major issues of common concern.",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验",
+        "published_day": "2017-04-24"
+      }
+    ]
+  },
+  {
+    "id": "openai-news-23",
+    "url": "https://openai.com/news/rss.xml",
+    "checked_at": "2026-10-19T16:11:15.123427+00:00",
+    "http_status": 200,
+    "final_url": "https://openai.com/news/rss.xml",
+    "state": "parsed",
+    "count": 24,
+    "precise_count": 24,
+    "latest": "2026-10-16T19:00:00+00:00",
+    "samples": [
+      {
+        "id": "9732b2763df5a67a",
+        "title": "How Itaú is building generative AI for its entire customer base",
+        "url": "https://openai.com/index/itau-generative-ai",
+        "source_id": "openai-news",
+        "category": "科技与 AI",
+        "published_at": "2026-10-16T19:00:00+00:00",
+        "feed_excerpt": "With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees — in one of Brazil’s most regulated sectors.",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      },
+      {
+        "id": "b6756c0a180ee554",
+        "title": "Benefit Street Partners answers questions faster with Codex",
+        "url": "https://openai.com/index/benefit-street-partners",
+        "source_id": "openai-news",
+        "category": "科技与 AI",
+        "published_at": "2026-10-16T00:00:00+00:00",
+        "feed_excerpt": "Anant Kumar builds tools to compare loan valuations and analyze credit agreements, using Codex for code review and faster follow-ups.",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      }
+    ]
+  },
+  {
+    "id": "arxiv-24",
+    "url": "https://rss.arxiv.org/rss/cs.AI",
+    "checked_at": "2026-10-19T16:11:16.334433+00:00",
+    "http_status": 200,
+    "final_url": "https://rss.arxiv.org/rss/cs.AI",
+    "state": "empty",
+    "count": 0,
+    "precise_count": 0,
+    "latest": null,
+    "samples": []
+  },
+  {
+    "id": "nature-25",
+    "url": "https://www.nature.com/nature.rss",
+    "checked_at": "2026-10-19T16:11:17.416750+00:00",
+    "http_status": 200,
+    "final_url": "https://www.nature.com/nature.rss",
+    "state": "parsed",
+    "count": 24,
+    "precise_count": 0,
+    "latest": "",
+    "samples": [
+      {
+        "id": "b5398a859706e023",
+        "title": "Light and mirrors move large quantum computers closer to reality",
+        "url": "https://www.nature.com/articles/d41586-026-03237-2",
+        "source_id": "nature",
+        "category": "科学与探索",
+        "published_at": null,
+        "feed_excerpt": "",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      },
+      {
+        "id": "6b894cba0739d12b",
+        "title": "How pregnancy reshapes the brain throughout life",
+        "url": "https://www.nature.com/articles/d41586-026-03312-8",
+        "source_id": "nature",
+        "category": "科学与探索",
+        "published_at": null,
+        "feed_excerpt": "",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      }
+    ]
+  },
+  {
+    "id": "un-news-26",
+    "url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+    "checked_at": "2026-10-19T16:11:19.131794+00:00",
+    "http_status": 4,
+    "final_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+    "state": "failed",
+    "error": "ParseError",
+    "error_kind": "http"
+  },
+  {
+    "id": "aljazeera-27",
+    "url": "https://www.aljazeera.com/xml/rss/all.xml",
+    "checked_at": "2026-10-19T16:11:20.026343+00:00",
+    "http_status": 200,
+    "final_url": "https://www.aljazeera.com/xml/rss/all.xml",
+    "state": "parsed",
+    "count": 24,
+    "precise_count": 24,
+    "latest": "2026-10-19T15:34:22+00:00",
+    "samples": [
+      {
+        "id": "497264cd2f3f8e2a",
+        "title": "Kenyan court convicts starvation cult leader for murder of 191 people",
+        "url": "https://www.aljazeera.com/news/2026/10/19/kenyan-court-convicts-starvation-cult-leader-for-murder-of-191-people?traffic_source=rss",
+        "source_id": "aljazeera",
+        "category": "国际政治",
+        "published_at": "2026-10-19T15:34:22+00:00",
+        "feed_excerpt": "This is a breaking news story.",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      },
+      {
+        "id": "7e001bd83ef0c115",
+        "title": "How has the cost of living changed in France, Italy, Spain and Portugal?",
+        "url": "https://www.aljazeera.com/news/2026/10/19/how-has-the-cost-of-living-changed-in-france-italy-spain-and-portugal?traffic_source=rss",
+        "source_id": "aljazeera",
+        "category": "国际政治",
+        "published_at": "2026-10-19T15:19:04+00:00",
+        "feed_excerpt": "Protesters across Europe have hit the streets amid anger over the cost of living.",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      }
+    ]
+  },
+  {
+    "id": "chinanews-china",
+    "url": "https://www.chinanews.com.cn/rss/china.xml",
+    "checked_at": "2026-10-19T16:11:20.076101+00:00",
+    "http_status": 200,
+    "final_url": "https://www.chinanews.com.cn/rss/china.xml",
+    "state": "parsed",
+    "count": 24,
+    "precise_count": 24,
+    "latest": "2026-10-19T14:42:24+00:00",
+    "samples": [
+      {
+        "id": "9c43b1794020e185",
+        "title": "西藏拉萨“两会”即将开幕 过去五年履职答卷亮眼",
+        "url": "https://www.chinanews.com.cn/gn/2026/10-19/10717512.shtml",
+        "source_id": "chinanews",
+        "category": "国际政治",
+        "published_at": "2026-10-19T14:42:24+00:00",
+        "feed_excerpt": "中新网拉萨10月19日电 (贡嘎来松)19日，西藏自治区拉萨市召开市十三届人大一次会议、市政协十三届一次会议新闻发布会，通报过去五年市人大、市政协履职成效，并公布新一届“两会”召开时间。",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      },
+      {
+        "id": "bc495c80b8250ac6",
+        "title": "李强会见伊朗第一副总统阿雷夫",
+        "url": "https://www.chinanews.com.cn/gn/2026/10-19/10717477.shtml",
+        "source_id": "chinanews",
+        "category": "国际政治",
+        "published_at": "2026-10-19T14:24:11+00:00",
+        "feed_excerpt": "中新社杜尚别10月19日电 (记者 单璐)10月19日下午，中国国务院总理李强在杜尚别出席上海合作组织成员国政府首脑(总理)理事会第二十五次会议期间会见伊朗第一副总统阿雷夫。",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      }
+    ]
+  },
+  {
+    "id": "chinanews-finance",
+    "url": "https://www.chinanews.com.cn/rss/finance.xml",
+    "checked_at": "2026-10-19T16:11:20.118110+00:00",
+    "http_status": 200,
+    "final_url": "https://www.chinanews.com.cn/rss/finance.xml",
+    "state": "parsed",
+    "count": 24,
+    "precise_count": 24,
+    "latest": "2026-10-19T14:54:58+00:00",
+    "samples": [
+      {
+        "id": "70d5bab1040d198b",
+        "title": "“浙里出海”报告会开讲 专家为浙企解析全球经贸变局",
+        "url": "https://www.chinanews.com.cn/cj/2026/10-19/10717528.shtml",
+        "source_id": "chinanews",
+        "category": "经济与投资",
+        "published_at": "2026-10-19T14:54:58+00:00",
+        "feed_excerpt": "中新网杭州10月19日电(蓝伊旎)10月19日，第三期“浙里出海”宏观形势报告会在杭州举办，来自浙江外向型企业、相关机构的代表共320余人参会。",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      },
+      {
+        "id": "e1e205ad2f4c2377",
+        "title": "全国统一大市场下的郑州经开区以何招商？",
+        "url": "https://www.chinanews.com.cn/cj/2026/10-19/10717526.shtml",
+        "source_id": "chinanews",
+        "category": "经济与投资",
+        "published_at": "2026-10-19T14:52:50+00:00",
+        "feed_excerpt": "中新网郑州10月19日电 (张楠)在全国统一大市场建设背景下，地方招商引资的税费、土地等优惠空间明显压缩，招商需要靠什么？河南郑州经济技术开发区(下称“郑州经开区”)经济发展部部长张广明19日在郑州市“开局起步‘十五五’”系列新闻发布会经开区专场上表示，项目落地看“有什么”，不看“给多少”。",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      }
+    ]
+  },
+  {
+    "id": "chinanews-world",
+    "url": "https://www.chinanews.com.cn/rss/world.xml",
+    "checked_at": "2026-10-19T16:11:20.594492+00:00",
+    "http_status": 200,
+    "final_url": "https://www.chinanews.com.cn/rss/world.xml",
+    "state": "parsed",
+    "count": 24,
+    "precise_count": 24,
+    "latest": "2026-10-19T15:25:12+00:00",
+    "samples": [
+      {
+        "id": "67fd52e9da50d2b3",
+        "title": "欧盟今年前9个月非法入境人次同比下降近三分之一",
+        "url": "https://www.chinanews.com.cn/gj/2026/10-19/10717538.shtml",
+        "source_id": "chinanews",
+        "category": "国际政治",
+        "published_at": "2026-10-19T15:25:12+00:00",
+        "feed_excerpt": "中新社布鲁塞尔10月19日电 (记者 德永健)欧盟边境与海岸警卫局19日通报，由于中地中海一线、东地中海一线、西非一线等非法入境人次明显回落，今年前9个月欧盟非法入境人次较去年同期下降近三分之一。",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      },
+      {
+        "id": "a374ce7e3d4cc845",
+        "title": "韩国总统李在明：必须尽快收回战时作战指挥权",
+        "url": "https://www.chinanews.com.cn/gj/2026/10-19/10717535.shtml",
+        "source_id": "chinanews",
+        "category": "国际政治",
+        "published_at": "2026-10-19T15:05:41+00:00",
+        "feed_excerpt": "中新社首尔10月19日电 (记者 金旭)当地时间19日，韩国总统李在明在记者座谈会上表示，韩国必须尽快从美方手中收回战时作战指挥权，且完全有能力做到。韩美之间的协商基本上也朝着收回指挥权的方向推进，只是这一过程不会那么容易。",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      }
+    ]
+  },
+  {
+    "id": "chinanews-culture",
+    "url": "https://www.chinanews.com.cn/rss/culture.xml",
+    "checked_at": "2026-10-19T16:11:21.599357+00:00",
+    "http_status": 200,
+    "final_url": "https://www.chinanews.com.cn/rss/culture.xml",
+    "state": "parsed",
+    "count": 24,
+    "precise_count": 24,
+    "latest": "2026-10-19T13:53:35+00:00",
+    "samples": [
+      {
+        "id": "0aa549d591b9f2d2",
+        "title": "鲁迅逝世90周年 鲁迅文学版本馆千余册典籍对外开放",
+        "url": "https://www.chinanews.com.cn/cul/2026/10-19/10717469.shtml",
+        "source_id": "chinanews",
+        "category": "社会与文化",
+        "published_at": "2026-10-19T13:53:35+00:00",
+        "feed_excerpt": "中新社浙江绍兴10月19日电 (项菁)10月19日是鲁迅先生逝世90周年纪念日。坐落于浙江绍兴鲁迅故居附近的鲁迅文学版本馆当日开馆，千余册典籍在此永久展陈，面向海内外游客开放。",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      },
+      {
+        "id": "f8fcc1e9b1038c18",
+        "title": "2026天府书展：一纸文学，串联古今中外",
+        "url": "https://www.chinanews.com.cn/cul/2026/10-19/10717468.shtml",
+        "source_id": "chinanews",
+        "category": "社会与文化",
+        "published_at": "2026-10-19T13:51:25+00:00",
+        "feed_excerpt": "中新社成都10月19日电 (单鹏)2026天府书展19日在成都闭幕。众多读者专程前来，只为与心仪的文学作品相遇。",
+        "summary": "",
+        "verification": "来源报道 · 尚未交叉核验"
+      }
+    ]
+  }
+]

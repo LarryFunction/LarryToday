@@ -1,0 +1,110 @@
+{
+  "configured": false,
+  "enabled": false,
+  "accounts": 20,
+  "state": "disabled",
+  "checked_at": "2026-10-20T01:10:20.404583+00:00",
+  "account_statuses": [
+    {
+      "username": "karpathy",
+      "state": "disabled",
+      "identity_status": "official_site_linked"
+    },
+    {
+      "username": "lexfridman",
+      "state": "disabled",
+      "identity_status": "official_site_linked"
+    },
+    {
+      "username": "lennysan",
+      "state": "disabled",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "paulg",
+      "state": "disabled",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "nikitabier",
+      "state": "disabled",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "rrhoover",
+      "state": "disabled",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "bgurley",
+      "state": "disabled",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "OfficialLoganK",
+      "state": "disabled",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "vista8",
+      "state": "disabled",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "lijigang_com",
+      "state": "disabled",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "dotey",
+      "state": "disabled",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "op7418",
+      "state": "disabled",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "dongxi_nlp",
+      "state": "disabled",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "indigo11",
+      "state": "disabled",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "venturetwins",
+      "state": "disabled",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "GabrielPeterss4",
+      "state": "disabled",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "deedydas",
+      "state": "disabled",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "bobmcgrewai",
+      "state": "disabled",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "ding_liam",
+      "state": "disabled",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "levelsio",
+      "state": "disabled",
+      "identity_status": "user_supplied_unverified"
+    }
+  ],
+  "opinion_posts": 20
+}

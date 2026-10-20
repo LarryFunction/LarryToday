@@ -1,0 +1,73 @@
+{
+  "prepared_at": "2026-10-18",
+  "curated_sources": 367,
+  "categories": {
+    "international": 30,
+    "regional": 67,
+    "technology": 30,
+    "ai": 31,
+    "economy": 17,
+    "macro": 31,
+    "disclosure": 24,
+    "diplomacy": 24,
+    "science": 29,
+    "climate": 24,
+    "society": 16,
+    "verification": 27,
+    "discovery": 17
+  },
+  "kinds": {
+    "news": 160,
+    "discovery": 22,
+    "analysis": 8,
+    "official": 95,
+    "data": 22,
+    "company": 14,
+    "research": 28,
+    "factcheck": 18
+  },
+  "verification": {
+    "fetch_inconclusive": 114,
+    "page_observed": 253
+  },
+  "relationship_to_examples": {
+    "existing_host_enriched": 44,
+    "supplemental_candidate": 314,
+    "existing_name_enriched": 9
+  },
+  "legacy_unique_urls": 740,
+  "legacy_url_occurrences": 740,
+  "legacy_non_url_lines": 278,
+  "integration_entries": 30,
+  "unique_hosts_union": 1039,
+  "example_files": {
+    "forum.txt": {
+      "sha256": "f27e93387aa548715074ce65c1bf73f52676e9ad4710083bceb74e6ec877d5a0",
+      "bytes": 163
+    },
+    "media.txt": {
+      "sha256": "a932e2de9bd1b07c27d2210dc8f3ef6ff4449a6bcb9a5ce433b96bacdd4dd46f",
+      "bytes": 41
+    },
+    "news-need-VPN.txt": {
+      "sha256": "a7c70dafc288d7b0d3f401ebbc6c7ab06cccf19a027907e3c00142dcd6c47b88",
+      "bytes": 1231
+    },
+    "news-not-VPN.txt": {
+      "sha256": "87b4ec459fbc4e99bd94a5ff413d99305ffc76b294f0d61face04efbda7d6b02",
+      "bytes": 69045
+    },
+    "news-stars.txt": {
+      "sha256": "ad7b71e5ec8c1533cded1bf37b3f894a0654d6f0e2c00a88a9ca6c52da4ee484",
+      "bytes": 63
+    },
+    "scholar.txt": {
+      "sha256": "9b51d83029e7d7900e57b2a83f88069280dcb7b249519b88a5d4e11cdd38a12a",
+      "bytes": 2730
+    },
+    "X-AI.txt": {
+      "sha256": "3689c7e58dea0d29462e91647dd5987ea3cb7d3fd9f8c1ebd4f4a16c4ec4b026",
+      "bytes": 498
+    }
+  }
+}

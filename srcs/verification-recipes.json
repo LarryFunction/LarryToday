@@ -1,0 +1,370 @@
+[
+  {
+    "id": "diplomacy",
+    "topic": "国际外交",
+    "primary_candidates": [
+      "mfa-cn",
+      "state-us",
+      "eeas",
+      "undocs",
+      "unwebtv"
+    ],
+    "reporting_candidates": [
+      "reuters",
+      "ap",
+      "afp"
+    ],
+    "regional_candidates": [
+      "cna",
+      "eurasianet",
+      "aljazeera"
+    ],
+    "verification_candidates": [
+      "afpcheck"
+    ],
+    "selection_rule": "按具体事件选择适用条目并在文章级追踪证据链；这些列表不是独立性保证。",
+    "caution": "声明只能确认该方表态；使用事件相关当地机构，不能把所有外交部当同一事件的证据。"
+  },
+  {
+    "id": "conflict",
+    "topic": "战争冲突与人道",
+    "primary_candidates": [
+      "icrc",
+      "ocha",
+      "ohchr",
+      "wafa",
+      "irna"
+    ],
+    "reporting_candidates": [
+      "reuters",
+      "ap",
+      "newhumanitarian"
+    ],
+    "regional_candidates": [
+      "haaretz",
+      "mag972",
+      "kyivindependent",
+      "meduza"
+    ],
+    "verification_candidates": [
+      "bellingcat",
+      "acled",
+      "ucdp"
+    ],
+    "selection_rule": "按具体事件选择适用条目并在文章级追踪证据链；这些列表不是独立性保证。",
+    "caution": "按冲突地点选择；当事方与救援统计不一定独立，保留统计定义与截止时间。"
+  },
+  {
+    "id": "ai_release",
+    "topic": "AI模型与产品",
+    "primary_candidates": [
+      "deepseek",
+      "qwen",
+      "anthropic",
+      "deepmind",
+      "hf"
+    ],
+    "reporting_candidates": [
+      "restworld",
+      "register",
+      "mitreview"
+    ],
+    "regional_candidates": [
+      "jiqizhixin",
+      "technode"
+    ],
+    "verification_candidates": [
+      "arxiv",
+      "openreview",
+      "epoch",
+      "artificialanalysis",
+      "metr"
+    ],
+    "selection_rule": "按具体事件选择适用条目并在文章级追踪证据链；这些列表不是独立性保证。",
+    "caution": "选择实际发布方；发布、性能、安全是不同主张；外部评测需确认不是复制厂商结果。"
+  },
+  {
+    "id": "cybersecurity",
+    "topic": "安全漏洞与攻击",
+    "primary_candidates": [
+      "cisa",
+      "nvd",
+      "cert-cn",
+      "cert-eu"
+    ],
+    "reporting_candidates": [
+      "bleeping",
+      "krebs",
+      "record"
+    ],
+    "regional_candidates": [
+      "register",
+      "technode"
+    ],
+    "verification_candidates": [
+      "googlezero"
+    ],
+    "selection_rule": "按具体事件选择适用条目并在文章级追踪证据链；这些列表不是独立性保证。",
+    "caution": "同时寻找受影响厂商修复说明；KEV与CVE标签不替代具体受害证据。"
+  },
+  {
+    "id": "macro",
+    "topic": "宏观经济",
+    "primary_candidates": [
+      "stats-cn",
+      "pbc",
+      "bls",
+      "bea",
+      "eurostat",
+      "stat-jp"
+    ],
+    "reporting_candidates": [
+      "reuters",
+      "ft",
+      "caixin"
+    ],
+    "regional_candidates": [
+      "yicai",
+      "economic-times",
+      "businessday"
+    ],
+    "verification_candidates": [
+      "fred",
+      "alfred",
+      "worldbank"
+    ],
+    "selection_rule": "按具体事件选择适用条目并在文章级追踪证据链；这些列表不是独立性保证。",
+    "caution": "按相关经济体选取；FRED/World Bank可能复用官方数据，不计作独立测量。"
+  },
+  {
+    "id": "company",
+    "topic": "公司财报及投资新闻",
+    "primary_candidates": [
+      "sec",
+      "cninfo",
+      "hkex",
+      "sse",
+      "szse"
+    ],
+    "reporting_candidates": [
+      "reuters",
+      "bloomberg",
+      "ft"
+    ],
+    "regional_candidates": [
+      "caixin",
+      "yicai",
+      "nikkei"
+    ],
+    "verification_candidates": [
+      "gleif",
+      "companieshouse"
+    ],
+    "selection_rule": "按具体事件选择适用条目并在文章级追踪证据链；这些列表不是独立性保证。",
+    "caution": "按上市地选披露渠道；法律实体、会计口径、审计意见、修订附注都要匹配。"
+  },
+  {
+    "id": "regulation",
+    "topic": "法律监管",
+    "primary_candidates": [
+      "federalregister",
+      "congress",
+      "eurlex",
+      "curia",
+      "csrc",
+      "samr",
+      "cac"
+    ],
+    "reporting_candidates": [
+      "reuters",
+      "ap"
+    ],
+    "regional_candidates": [
+      "politico-eu",
+      "caixin"
+    ],
+    "verification_candidates": [
+      "courtlistener"
+    ],
+    "selection_rule": "按具体事件选择适用条目并在文章级追踪证据链；这些列表不是独立性保证。",
+    "caution": "按法域选择；法院聚合库与原判决同源；区分草案、通过、签署、生效和执法。"
+  },
+  {
+    "id": "health",
+    "topic": "医药健康",
+    "primary_candidates": [
+      "who",
+      "who-don",
+      "fda",
+      "ema",
+      "nmpa",
+      "clinicaltrials"
+    ],
+    "reporting_candidates": [
+      "statnews",
+      "kffnews",
+      "examination"
+    ],
+    "regional_candidates": [
+      "scidev",
+      "africacdc"
+    ],
+    "verification_candidates": [
+      "pubmed",
+      "cochrane",
+      "retractionwatch"
+    ],
+    "selection_rule": "按具体事件选择适用条目并在文章级追踪证据链；这些列表不是独立性保证。",
+    "caution": "索引不是独立研究；优先研究设计、绝对效应和证据确定性，避免把预印本当临床定论。"
+  },
+  {
+    "id": "climate_energy",
+    "topic": "气候能源",
+    "primary_candidates": [
+      "copernicus",
+      "noaa",
+      "wmo",
+      "eia",
+      "iea"
+    ],
+    "reporting_candidates": [
+      "carbonbrief",
+      "climatehome",
+      "insideclimate"
+    ],
+    "regional_candidates": [
+      "mongabay",
+      "dialogueearth"
+    ],
+    "verification_candidates": [
+      "ipcc",
+      "ember",
+      "globalforest"
+    ],
+    "selection_rule": "按具体事件选择适用条目并在文章级追踪证据链；这些列表不是独立性保证。",
+    "caution": "追踪共同底层观测，统一基准期、空间范围和时间窗口。"
+  },
+  {
+    "id": "disaster",
+    "topic": "自然灾害",
+    "primary_candidates": [
+      "usgs",
+      "cma",
+      "cea",
+      "gdacs"
+    ],
+    "reporting_candidates": [
+      "reuters",
+      "ap"
+    ],
+    "regional_candidates": [
+      "rnz",
+      "cna",
+      "abc-au"
+    ],
+    "verification_candidates": [
+      "reliefweb",
+      "hdx"
+    ],
+    "selection_rule": "按具体事件选择适用条目并在文章级追踪证据链；这些列表不是独立性保证。",
+    "caution": "选择实际发生地媒体及应急机构；二次汇总不重复计证据，修订震级与伤亡须更新。"
+  },
+  {
+    "id": "food_labor",
+    "topic": "农业粮食与劳动",
+    "primary_candidates": [
+      "fao",
+      "usda",
+      "wfp",
+      "ilo"
+    ],
+    "reporting_candidates": [
+      "ips",
+      "newhumanitarian"
+    ],
+    "regional_candidates": [
+      "reporterbrasil",
+      "continent"
+    ],
+    "verification_candidates": [
+      "fews",
+      "worldbank"
+    ],
+    "selection_rule": "按具体事件选择适用条目并在文章级追踪证据链；这些列表不是独立性保证。",
+    "caution": "预警与已观测结果分开；同一报告被多平台转发只算一条。"
+  },
+  {
+    "id": "polling_education",
+    "topic": "社会民调与教育",
+    "primary_candidates": [
+      "census",
+      "stats-cn",
+      "unesco",
+      "unicef"
+    ],
+    "reporting_candidates": [
+      "chronicle",
+      "timeshigher"
+    ],
+    "regional_candidates": [
+      "sixthtone",
+      "reporter-tw"
+    ],
+    "verification_candidates": [
+      "pew",
+      "ourworld"
+    ],
+    "selection_rule": "按具体事件选择适用条目并在文章级追踪证据链；这些列表不是独立性保证。",
+    "caution": "样本覆盖、问卷、加权与日期决定可比性；数据图表须回到原统计。"
+  },
+  {
+    "id": "sports_culture",
+    "topic": "体育文化",
+    "primary_candidates": [
+      "olympics",
+      "fifa",
+      "wada",
+      "unesco"
+    ],
+    "reporting_candidates": [
+      "espn",
+      "athletic",
+      "artnewspaper",
+      "variety"
+    ],
+    "regional_candidates": [
+      "abc-au",
+      "cna-tw"
+    ],
+    "verification_candidates": [
+      "apcheck"
+    ],
+    "selection_rule": "按具体事件选择适用条目并在文章级追踪证据链；这些列表不是独立性保证。",
+    "caution": "比赛结果、转会、奖项均查具体官方记录；治理争议需要组织之外的独立调查。"
+  },
+  {
+    "id": "misinformation",
+    "topic": "网络传言",
+    "primary_candidates": [],
+    "reporting_candidates": [
+      "reuters",
+      "ap"
+    ],
+    "regional_candidates": [
+      "tfc",
+      "annie",
+      "mafindo"
+    ],
+    "verification_candidates": [
+      "afpcheck",
+      "fullfact",
+      "africacheck",
+      "chequeado",
+      "altnews",
+      "invid",
+      "wayback"
+    ],
+    "selection_rule": "按具体事件选择适用条目并在文章级追踪证据链；这些列表不是独立性保证。",
+    "caution": "按语言地区选择；多个核查机构可能引用同一图片或视频，必须回溯原始载体。"
+  }
+]

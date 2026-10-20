@@ -1,0 +1,85 @@
+[
+  {
+    "integration_id": "guardian-rss",
+    "url": "https://www.theguardian.com/world/rss",
+    "checked_at": "2026-10-18T06:07:35.946989+00:00",
+    "status": "feed_parsed",
+    "http_status": 200,
+    "final_url": "https://www.theguardian.com/world/rss",
+    "content_type": "text/xml; charset=UTF-8",
+    "format": "rss",
+    "entries": 45
+  },
+  {
+    "integration_id": "bbc-rss",
+    "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+    "checked_at": "2026-10-18T06:07:35.947564+00:00",
+    "status": "feed_parsed",
+    "http_status": 200,
+    "final_url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+    "content_type": "text/xml; charset=utf-8",
+    "format": "rss",
+    "entries": 29
+  },
+  {
+    "integration_id": "france24-rss",
+    "url": "https://www.france24.com/en/rss",
+    "checked_at": "2026-10-18T06:07:35.947921+00:00",
+    "status": "feed_parsed",
+    "http_status": 200,
+    "final_url": "https://www.france24.com/en/rss",
+    "content_type": "application/rss+xml; charset=utf-8",
+    "format": "rss",
+    "entries": 24
+  },
+  {
+    "integration_id": "arxiv-rss",
+    "url": "https://rss.arxiv.org/rss/cs.AI",
+    "checked_at": "2026-10-18T06:07:35.948241+00:00",
+    "status": "empty_feed",
+    "http_status": 200,
+    "final_url": "https://rss.arxiv.org/rss/cs.AI",
+    "content_type": "application/rss+xml",
+    "format": "rss",
+    "entries": 0
+  },
+  {
+    "integration_id": "fed-rss",
+    "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+    "checked_at": "2026-10-18T06:07:36.337423+00:00",
+    "status": "feed_parsed",
+    "http_status": 200,
+    "final_url": "https://www.federalreserve.gov/feeds/press_all.xml",
+    "content_type": "text/xml",
+    "format": "rss",
+    "entries": 20
+  },
+  {
+    "integration_id": "ecb-rss",
+    "url": "https://www.ecb.europa.eu/rss/press.html",
+    "checked_at": "2026-10-18T06:07:36.455037+00:00",
+    "status": "inconclusive",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+  },
+  {
+    "integration_id": "usgs-geojson",
+    "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson",
+    "checked_at": "2026-10-18T06:07:36.498714+00:00",
+    "status": "geojson_parsed",
+    "http_status": 200,
+    "final_url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson",
+    "content_type": "application/json; charset=utf-8",
+    "entries": 175
+  },
+  {
+    "integration_id": "nasa-rss",
+    "url": "https://www.nasa.gov/feed/",
+    "checked_at": "2026-10-18T06:07:36.500312+00:00",
+    "status": "feed_parsed",
+    "http_status": 200,
+    "final_url": "https://www.nasa.gov/feed/",
+    "content_type": "application/rss+xml; charset=UTF-8",
+    "format": "rss",
+    "entries": 10
+  }
+]

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<opml version="2.0">
+  <head>
+    <title>LarryToday - feeds parsed in audit</title>
+  </head>
+  <body>
+    <outline text="guardian" title="guardian" type="rss" xmlUrl="https://www.theguardian.com/world/rss" />
+    <outline text="bbc" title="bbc" type="rss" xmlUrl="https://feeds.bbci.co.uk/news/world/rss.xml" />
+    <outline text="france24" title="france24" type="rss" xmlUrl="https://www.france24.com/en/rss" />
+    <outline text="fed" title="fed" type="rss" xmlUrl="https://www.federalreserve.gov/feeds/press_all.xml" />
+    <outline text="nasa" title="nasa" type="rss" xmlUrl="https://www.nasa.gov/feed/" />
+  </body>
+</opml>

@@ -1,0 +1,1 @@
+{"name":"larrytoday","private":true,"scripts":{"dev":"python server.py","start":"python server.py","update":"python scripts/update_news.py","build:pages":"python scripts/build_pages.py","test":"python -m unittest discover -s tests"}}

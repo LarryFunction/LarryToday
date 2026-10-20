@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.env
+dist/
+.DS_Store
+Thumbs.db
+data/.update.lock
+data/.collect.lock
+data/ai-cache/
+data/article-pool.json
+data/background-candidates.json

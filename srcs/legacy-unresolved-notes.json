@@ -1,0 +1,1670 @@
+[
+  {
+    "file": "examples/forum.txt",
+    "line": 1,
+    "text": "国内：",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/forum.txt",
+    "line": 2,
+    "text": "知乎",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/forum.txt",
+    "line": 3,
+    "text": "贴吧",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/forum.txt",
+    "line": 4,
+    "text": "果壳网",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/forum.txt",
+    "line": 5,
+    "text": "豆瓣",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/forum.txt",
+    "line": 6,
+    "text": "简书",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/forum.txt",
+    "line": 7,
+    "text": "SegmentFault",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/forum.txt",
+    "line": 8,
+    "text": "虎扑",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/forum.txt",
+    "line": 10,
+    "text": "国外：",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/forum.txt",
+    "line": 11,
+    "text": "Quora",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/forum.txt",
+    "line": 12,
+    "text": "Reddit",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/forum.txt",
+    "line": 13,
+    "text": "wikiHow",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/forum.txt",
+    "line": 14,
+    "text": "Stack Exchange",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/forum.txt",
+    "line": 15,
+    "text": "Medium",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/forum.txt",
+    "line": 16,
+    "text": "WIKIAnswers",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/forum.txt",
+    "line": 17,
+    "text": "V2EX",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/forum.txt",
+    "line": 18,
+    "text": "LinuxDo",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/media.txt",
+    "line": 1,
+    "text": "国内：",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/media.txt",
+    "line": 2,
+    "text": "bilibili",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/media.txt",
+    "line": 4,
+    "text": "海外：",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/media.txt",
+    "line": 5,
+    "text": "YouTube",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 2,
+    "text": "可直接访问的海内外新闻网站清单：覆盖全球197个国家",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 3,
+    "text": "突破信息茧房，跨越单一叙事，交叉信源验证，主动获取各国本土报道——助力新闻媒体工作者。",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 6,
+    "text": "🧰联合国及独立新闻机构",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 7,
+    "text": "联合国",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 14,
+    "text": "非营利独立新闻机构",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 18,
+    "text": "🧰 亚洲（48国）",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 19,
+    "text": "1 中国",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 40,
+    "text": "2 日本",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 48,
+    "text": "3 韩国",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 56,
+    "text": "4 土耳其",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 67,
+    "text": "5 沙特阿拉伯",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 74,
+    "text": "6 巴基斯坦",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 82,
+    "text": "7 以色列",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 91,
+    "text": "8 伊朗",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 101,
+    "text": "9 阿联酋",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 108,
+    "text": "10 新加坡",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 112,
+    "text": "11 马来西亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 115,
+    "text": "12 印度尼西亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 120,
+    "text": "13 越南",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 123,
+    "text": "14 阿富汗",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 129,
+    "text": "15 阿塞拜疆",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 136,
+    "text": "16 伊拉克",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 142,
+    "text": "17 卡塔尔",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 148,
+    "text": "18 泰国",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 152,
+    "text": "19 孟加拉国",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 156,
+    "text": "20 菲律宾",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 162,
+    "text": "21 哈萨克斯坦",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 165,
+    "text": "22 科威特",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 171,
+    "text": "23 印度",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 175,
+    "text": "24 巴勒斯坦",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 185,
+    "text": "25 亚美尼亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 189,
+    "text": "26 巴林",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 193,
+    "text": "27 文莱",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 197,
+    "text": "28 柬埔寨",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 201,
+    "text": "29 朝鲜",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 204,
+    "text": "30 东帝汶",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 208,
+    "text": "31 格鲁吉亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 213,
+    "text": "32 约旦",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 219,
+    "text": "33 吉尔吉斯斯坦",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 227,
+    "text": "34 老挝",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 231,
+    "text": "35 黎巴嫩",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 238,
+    "text": "36 马尔代夫",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 243,
+    "text": "37 蒙古",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 248,
+    "text": "38 缅甸",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 252,
+    "text": "39 尼泊尔",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 255,
+    "text": "40 阿曼",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 260,
+    "text": "41 斯里兰卡",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 264,
+    "text": "42 叙利亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 268,
+    "text": "43 塔吉克斯坦",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 271,
+    "text": "44 土库曼斯坦",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 275,
+    "text": "45 乌兹别克斯坦",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 281,
+    "text": "46 也门",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 287,
+    "text": "47 塞浦路斯",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 291,
+    "text": "48 不丹",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 295,
+    "text": "🧰 欧洲（44国）",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 296,
+    "text": "49 俄罗斯",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 304,
+    "text": "50 德国",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 310,
+    "text": "51 英国",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 315,
+    "text": "52 法国",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 321,
+    "text": "53 意大利",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 324,
+    "text": "54 乌克兰",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 333,
+    "text": "55 波兰",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 336,
+    "text": "56 立陶宛",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 341,
+    "text": "57 丹麦",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 343,
+    "text": "58 西班牙",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 347,
+    "text": "59 荷兰",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 352,
+    "text": "60 瑞士",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 355,
+    "text": "61 瑞典",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 358,
+    "text": "62 比利时",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 360,
+    "text": "63 挪威",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 364,
+    "text": "64 奥地利",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 373,
+    "text": "65 芬兰",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 376,
+    "text": "66 希腊",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 380,
+    "text": "67 葡萄牙",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 385,
+    "text": "68 爱尔兰",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 389,
+    "text": "69 捷克",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 395,
+    "text": "70 匈牙利",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 400,
+    "text": "71 罗马尼亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 405,
+    "text": "72 梵蒂冈",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 408,
+    "text": "73 阿尔巴尼亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 414,
+    "text": "74 安道尔",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 420,
+    "text": "75 白俄罗斯",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 426,
+    "text": "76 波黑",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 433,
+    "text": "77 保加利亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 439,
+    "text": "78 克罗地亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 445,
+    "text": "79 爱沙尼亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 450,
+    "text": "80 冰岛",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 456,
+    "text": "81 拉脱维亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 462,
+    "text": "82 列支敦士登",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 465,
+    "text": "83 卢森堡",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 470,
+    "text": "84 马耳他",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 476,
+    "text": "85 摩尔多瓦",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 482,
+    "text": "86 摩纳哥",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 486,
+    "text": "87 黑山",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 489,
+    "text": "88 北马其顿",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 495,
+    "text": "89 圣马力诺",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 497,
+    "text": "90 塞尔维亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 503,
+    "text": "91 斯洛伐克",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 508,
+    "text": "92 斯洛文尼亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 514,
+    "text": "🧰 美洲（35国）",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 515,
+    "text": "93 美国",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 526,
+    "text": "94 加拿大",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 530,
+    "text": "95 巴西",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 532,
+    "text": "96 阿根廷",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 537,
+    "text": "97 墨西哥",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 541,
+    "text": "98 智利",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 544,
+    "text": "99 秘鲁",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 547,
+    "text": "100 哥伦比亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 550,
+    "text": "101 安提瓜和巴布达",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 553,
+    "text": "102 巴哈马",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 557,
+    "text": "103 巴巴多斯",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 561,
+    "text": "104 伯利兹",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 564,
+    "text": "105 玻利维亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 569,
+    "text": "106 哥斯达黎加",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 573,
+    "text": "107 古巴",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 577,
+    "text": "108 多米尼克",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 580,
+    "text": "109 多米尼加",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 584,
+    "text": "110 厄瓜多尔",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 589,
+    "text": "111 萨尔瓦多",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 594,
+    "text": "112 格林纳达",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 597,
+    "text": "113 危地马拉",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 600,
+    "text": "114 圭亚那",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 605,
+    "text": "115 海地",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 611,
+    "text": "116 洪都拉斯",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 614,
+    "text": "117 牙买加",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 617,
+    "text": "118 尼加拉瓜",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 619,
+    "text": "119 巴拿马",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 624,
+    "text": "120 巴拉圭",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 629,
+    "text": "121 圣基茨和尼维斯",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 633,
+    "text": "122 圣卢西亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 637,
+    "text": "123 圣文森特和格林纳丁斯",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 641,
+    "text": "124 苏里南",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 644,
+    "text": "125 特立尼达和多巴哥",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 647,
+    "text": "126 乌拉圭",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 651,
+    "text": "127 委内瑞拉",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 655,
+    "text": "🧰 非洲（54国）",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 656,
+    "text": "128 南非",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 660,
+    "text": "129 埃及",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 663,
+    "text": "130 肯尼亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 666,
+    "text": "131 尼日利亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 670,
+    "text": "132 阿尔及利亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 676,
+    "text": "133 安哥拉",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 679,
+    "text": "134 贝宁",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 682,
+    "text": "135 博茨瓦纳",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 685,
+    "text": "136 布基纳法索",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 688,
+    "text": "137 布隆迪",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 691,
+    "text": "138 佛得角",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 695,
+    "text": "139 喀麦隆",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 698,
+    "text": "140 中非",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 701,
+    "text": "141 乍得",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 704,
+    "text": "142 科摩罗",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 706,
+    "text": "143 科特迪瓦",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 710,
+    "text": "144 刚果（布）",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 713,
+    "text": "145 刚果（金）",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 715,
+    "text": "146 吉布提",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 719,
+    "text": "147 赤道几内亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 722,
+    "text": "148 厄立特里亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 724,
+    "text": "149 埃塞俄比亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 729,
+    "text": "150 加蓬",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 732,
+    "text": "151 冈比亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 735,
+    "text": "152 加纳",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 740,
+    "text": "153 几内亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 743,
+    "text": "154 几内亚比绍",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 747,
+    "text": "155 莱索托",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 750,
+    "text": "156 利比里亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 752,
+    "text": "157 利比亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 755,
+    "text": "158 马达加斯加",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 759,
+    "text": "159 马拉维",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 763,
+    "text": "160 马里",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 767,
+    "text": "161 毛里塔尼亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 771,
+    "text": "162 毛里求斯",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 776,
+    "text": "163 摩洛哥",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 780,
+    "text": "164 莫桑比克",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 785,
+    "text": "165 纳米比亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 787,
+    "text": "166 尼日尔",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 789,
+    "text": "167 卢旺达",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 794,
+    "text": "168 圣多美和普林西比",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 797,
+    "text": "169 塞内加尔",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 802,
+    "text": "170 塞舌尔",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 804,
+    "text": "171 塞拉利昂",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 807,
+    "text": "172 索马里",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 815,
+    "text": "173 南苏丹",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 819,
+    "text": "174 苏丹",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 827,
+    "text": "175 斯威士兰（2018年更名为史瓦帝尼王国）",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 829,
+    "text": "176 坦桑尼亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 835,
+    "text": "177 多哥",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 840,
+    "text": "178 突尼斯",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 845,
+    "text": "179 乌干达",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 851,
+    "text": "180 赞比亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 854,
+    "text": "181 津巴布韦",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 862,
+    "text": "🧰 大洋洲（14国）",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 863,
+    "text": "182 澳大利亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 866,
+    "text": "183 新西兰",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 869,
+    "text": "184 斐济",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 873,
+    "text": "185 基里巴斯",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 875,
+    "text": "186 马绍尔群岛",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 877,
+    "text": "187 密克罗尼西亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 879,
+    "text": "188 瑙鲁",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 881,
+    "text": "189 帕劳",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 883,
+    "text": "190 巴布亚新几内亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 887,
+    "text": "191 萨摩亚",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 890,
+    "text": "192 所罗门群岛",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 894,
+    "text": "193 汤加",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 897,
+    "text": "194 图瓦卢",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 899,
+    "text": "195 瓦努阿图",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 902,
+    "text": "🧰 其他国家（2国）",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 903,
+    "text": "196 库克群岛",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 905,
+    "text": "197 纽埃",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 907,
+    "text": "🧰 其他讯息类网站",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 911,
+    "text": "¡\t太平洋岛国：斐济、巴布亚新几内亚、所罗门群岛、汤加、萨摩亚、瓦努阿图、基里巴斯、密克罗尼西亚、马绍尔群岛、帕劳、瑙鲁、图瓦卢、库克群岛、纽埃",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 915,
+    "text": "📌 补充说明",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 916,
+    "text": "\t无法访问？ 可尝试切换手机流量/热点，或更换浏览器、清除缓存、关闭广告拦截插件。",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 917,
+    "text": "\t验证码拦截？ 个别网站Cloudflare验证级别高，频繁访问会被临时拉黑，稍后再试即可。",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 918,
+    "text": "\t看不懂外语？ Edge、Safari等浏览器自带网页翻译功能，也可安装翻译插件（如沉浸式翻译下载链接）。",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 919,
+    "text": "\t网站选用标准：可访问>权威>主流>普通",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 920,
+    "text": "\t标识说明：🟢流畅 / 🟡适中 / 🔴缓慢（主观感受），★为该国家或组织具有代表性或官方背景的权威媒体。",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 921,
+    "text": "\t访问速度受物理距离、网站服务器配置、本地网络节点等多重因素影响，部分网站可能确实较慢，请耐心等待。",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 922,
+    "text": "🔍 百度必应等搜索引擎使用技巧",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 923,
+    "text": "\t搜索引擎会优先展示关键词同语言的结果。",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 924,
+    "text": "\t例如你想获取国外关于特朗普的报道，应该优先使用“Donald Trump”作为关键词，而不是“特朗普”。",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 925,
+    "text": "\t更进一步可以用“Donald Trump news”作为关键词。",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-not-VPN.txt",
+    "line": 926,
+    "text": "\t搜索结果如果还有中文讯息例如“百度百科”可以用“Donald Trump news -baike”作为关键词，搜索引擎会将-后内容作为排除项。（搜索引擎通用操作符还蛮多的，site:、filetype:、inurl:等等）",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-stars.txt",
+    "line": 1,
+    "text": "精选新闻源：",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-stars.txt",
+    "line": 2,
+    "text": "BBC",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-stars.txt",
+    "line": 3,
+    "text": "CNN",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-stars.txt",
+    "line": 4,
+    "text": "ABC",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-stars.txt",
+    "line": 5,
+    "text": "CCTV",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-stars.txt",
+    "line": 6,
+    "text": "新浪",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-stars.txt",
+    "line": 7,
+    "text": "塔斯社",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/news-stars.txt",
+    "line": 8,
+    "text": "NHK",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/scholar.txt",
+    "line": 1,
+    "text": "🌍 综合性/跨学科数据库",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/scholar.txt",
+    "line": 2,
+    "text": "这类数据库覆盖多个学科，适合做广泛的文献调研或探索跨领域研究。",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/scholar.txt",
+    "line": 4,
+    "text": "Web of Science：老牌引文数据库，覆盖自然科学、社会科学、艺术人文等领域，其引文分析功能很强大。",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/scholar.txt",
+    "line": 6,
+    "text": "Scopus：与 Web of Science 齐名的跨学科数据库，同样侧重引文分析，覆盖范围广。",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/scholar.txt",
+    "line": 8,
+    "text": "Google Scholar（谷歌学术）：免费的学术搜索引擎，覆盖面极广，是快速查找和定位文献的利器，但高级检索功能不如专业数据库。",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/scholar.txt",
+    "line": 10,
+    "text": "OpenAlex：一个免费的、开放获取的学术索引，集成了大量数据源，适合进行大规模文献计量分析。",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/scholar.txt",
+    "line": 12,
+    "text": "中国知网：中国人最熟悉的学术网站",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/scholar.txt",
+    "line": 14,
+    "text": "💻 计算机科学专属（对你可能最实用）",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/scholar.txt",
+    "line": 15,
+    "text": "结合你的背景，这几个是 CS 领域的核心信息源。",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/scholar.txt",
+    "line": 17,
+    "text": "ACM Digital Library：美国计算机协会（ACM）的全文数据库，收录其期刊和会议论文，是 CS 领域的顶级资源。",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/scholar.txt",
+    "line": 19,
+    "text": "IEEE Xplore：电气电子工程师学会（IEEE）的数据库，在计算机、电子工程领域文献极其丰富，包含大量高质量会议论文。",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/scholar.txt",
+    "line": 21,
+    "text": "arXiv.org：这是物理、数学、计算机科学等领域最重要的预印本平台。它的特点是未经同行评审，但能让你看到最前沿、最快的研究进展。",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/scholar.txt",
+    "line": 23,
+    "text": "📚 其他学科核心数据库",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/scholar.txt",
+    "line": 24,
+    "text": "生物医学：PubMed 是绝对的核心，由美国国家医学图书馆维护，收录 MEDLINE 等数据库的文献。",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/scholar.txt",
+    "line": 26,
+    "text": "经济学/商科：EconLit 是经济学文献的权威数据库。SSRN 和 RePEc 则是获取经济学、金融学工作论文（Working Papers） 的主要平台，适合追踪尚未正式发表的最新研究。",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/scholar.txt",
+    "line": 28,
+    "text": "数学：MathSciNet 和 zbMATH Open 是数学领域的两大核心评论与检索数据库。",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/scholar.txt",
+    "line": 30,
+    "text": "📄 预印本平台（获取前沿进展）",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/scholar.txt",
+    "line": 31,
+    "text": "各学科都有自己主流的预印本平台，用于快速分享未经同行评审的初步成果。",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/scholar.txt",
+    "line": 33,
+    "text": "bioRxiv 和 medRxiv：分别是生物学和医学/临床健康科学领域的预印本服务器。",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/scholar.txt",
+    "line": 35,
+    "text": "ChinaXiv：中国科学院建设的中文预印本平台，方便你获取国内学者的快速研究成果。",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/scholar.txt",
+    "line": 37,
+    "text": "Preprints.org：一个多学科的预印本平台，由 MDPI 支持。",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/scholar.txt",
+    "line": 39,
+    "text": "🎯 顶尖会议（CS 领域尤其重要）",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/scholar.txt",
+    "line": 40,
+    "text": "在计算机科学领域，会议论文往往比期刊论文更新、更重要。你可以直接去这些会议的官网查找论文集。",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/scholar.txt",
+    "line": 42,
+    "text": "人工智能/机器学习：NeurIPS, ICML, ICLR, AAAI, IJCAI 是公认的顶级会议。",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/scholar.txt",
+    "line": 44,
+    "text": "计算机视觉：CVPR, ICCV 是视觉领域的顶会。",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/scholar.txt",
+    "line": 46,
+    "text": "系统/操作系统：SOSP, OSDI, USENIX ATC 是系统方向的旗舰会议。",
+    "status": "legacy_unreviewed_note"
+  },
+  {
+    "file": "examples/scholar.txt",
+    "line": 48,
+    "text": "网络：SIGCOMM 是网络领域的顶级会议。",
+    "status": "legacy_unreviewed_note"
+  }
+]

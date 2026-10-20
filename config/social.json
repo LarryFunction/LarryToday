@@ -1,0 +1,131 @@
+{
+  "enabled": false,
+  "accounts": [
+    {
+      "username": "karpathy",
+      "name": "Andrej Karpathy",
+      "role": "commentator",
+      "identity_status": "official_site_linked",
+      "identity_evidence": "https://karpathy.ai/",
+      "identity_checked_at": "2026-10-20"
+    },
+    {
+      "username": "lexfridman",
+      "name": "Lex Fridman",
+      "role": "commentator",
+      "identity_status": "official_site_linked",
+      "identity_evidence": "https://lexfridman.com/",
+      "identity_checked_at": "2026-10-20"
+    },
+    {
+      "username": "lennysan",
+      "name": "lennysan",
+      "role": "commentator",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "paulg",
+      "name": "paulg",
+      "role": "commentator",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "nikitabier",
+      "name": "nikitabier",
+      "role": "commentator",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "rrhoover",
+      "name": "rrhoover",
+      "role": "commentator",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "bgurley",
+      "name": "bgurley",
+      "role": "commentator",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "OfficialLoganK",
+      "name": "OfficialLoganK",
+      "role": "commentator",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "vista8",
+      "name": "vista8",
+      "role": "commentator",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "lijigang_com",
+      "name": "lijigang_com",
+      "role": "commentator",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "dotey",
+      "name": "dotey",
+      "role": "commentator",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "op7418",
+      "name": "op7418",
+      "role": "commentator",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "dongxi_nlp",
+      "name": "dongxi_nlp",
+      "role": "commentator",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "indigo11",
+      "name": "indigo11",
+      "role": "commentator",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "venturetwins",
+      "name": "venturetwins",
+      "role": "commentator",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "GabrielPeterss4",
+      "name": "GabrielPeterss4",
+      "role": "commentator",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "deedydas",
+      "name": "deedydas",
+      "role": "commentator",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "bobmcgrewai",
+      "name": "bobmcgrewai",
+      "role": "commentator",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "ding_liam",
+      "name": "ding_liam",
+      "role": "commentator",
+      "identity_status": "user_supplied_unverified"
+    },
+    {
+      "username": "levelsio",
+      "name": "levelsio",
+      "role": "commentator",
+      "identity_status": "user_supplied_unverified"
+    }
+  ],
+  "instructions": "Set X_BEARER_TOKEN locally; verify each account via official homepage links, set identity_status to official_site_linked or manually_verified, record identity_evidence and user_id when known. Enable globally only after API access is available. Individual enabled:false skips an account. Personal posts remain opinions; timeline excludes replies/retweets, max 3 pages of 100 per account per run.",
+  "max_pages_per_account": 3
+}

@@ -1,0 +1,928 @@
+ 
+可直接访问的海内外新闻网站清单：覆盖全球197个国家
+突破信息茧房，跨越单一叙事，交叉信源验证，主动获取各国本土报道——助力新闻媒体工作者。
+
+ 
+🧰联合国及独立新闻机构
+联合国
+	🟢 ★ 联合国新闻网：https://news.un.org/zh/ （联合国官方中文新闻平台）
+	🟢 ★ 联合国数字图书馆：https://digitallibrary.un.org/ （联合国官方文献库）
+	🟢 ★ 联合国国际法院：https://www.icj-cij.org/ （联合国主要司法机关官网）
+	🟢 ★ 联合国官方网络电视：https://webtv.un.org/zh （联合国会议直播与视频）
+	🟢 ★ 联合国官方文件系统：https://documents.un.org/ （联合国正式文件检索）
+	🟢 ★ 联合国人权办公室：https://www.ohchr.org/ （联合国人权事务高级专员办事处）
+非营利独立新闻机构
+	🟢 国际新闻社：https://www.ipsnews.net （专注全球南方与发展议题的通讯社）
+	🟢 ProPublica：https://www.propublica.org （美国非营利调查新闻机构，首个获得普利策奖的纯网络媒体）
+	🟢蒙多维斯：https://mondoweiss.net/（美国独立非营利性质的新闻网站，致力于报道主流媒体未提及的有关巴勒斯坦人权的相关消息，常被亲以势力评价为反犹主义）
+🧰 亚洲（48国）
+1 中国
+	🟢 ★ 新华网：https://www.news.cn/ （国家通讯社官方网站）
+	🟢 ★ 人民网：https://www.people.com.cn/ （《人民日报》官方网站）
+	🟢 ★ 央视网：https://www.cctv.com/ （中央广播电视总台官网）
+	🟢 ★ 中国日报英文：https://www.chinadaily.com.cn/ （中国官方英文报纸）
+	🟢 ★ 中国日报中文：https://cn.chinadaily.com.cn/ （中国日报中文版）
+	🟢 ★ 中国国际电视台：https://www.cgtn.com/ （中国国际电视台）
+	🟢 环球网：https://huanqiu.com/ （《环球时报》旗下综合新闻网站）
+	🟢 光明网：https://www.gmw.cn/ （《光明日报》官方网站）
+	🟢 香港新闻网：https://hkcna.hk （香港中国通讯社旗下新闻网站）
+	🟢 香港文汇网：https://www.wenweipo.com/hongkong （香港《文汇报》官网）
+	🟢 香港商报：https://www.hkcd.com.hk/index.html（历史悠久、立场鲜明的香港中文财经报纸）
+	🟢 台湾中时新闻：https://www.chinatimes.com/ （台湾《中国时报》旗下新闻网站）
+	🔴 台湾ETtoday：https://www.ettoday.net/ （台湾东森集团旗下网络新闻媒体）
+	🔴 上报：https://www.upmedia.mg/（首任总编辑为前黎智英《壹周刊》副总编辑谢忠良）
+	🟢 钜闻天下：https://www.bigmedia.com.tw/（立足台灣、放眼全球的即時新聞資訊平台）
+	🟢 澳门日报：https://www.macaodaily.com （澳门主要中文日报）
+	🟢 澳门新闻：https://www.exmoo.com/ （澳门《力报》官方网站）
+	🟢 台海网：https://www.taihainet.com/ （福建日报报业集团主办的两岸新闻网站）
+	🟢 星岛环球网：https://www.stnn.cc/ （以全球华人为服务对象的大型综合性新闻门户）
+	🟢 华传媒：https://hua.media/（立足北美、面向全球的华人中文博客平台）
+2 日本
+	🟢 雅虎日本新闻：https://news.yahoo.co.jp/ （日本主要门户网站新闻聚合平台）
+	🟢 ★ NHK新闻网：https://news.web.nhk/newsweb （日本放送协会新闻网站）
+	🟢 ★ NHK World：https://www3.nhk.or.jp/nhkworld/ （NHK国际英语频道）
+	🟢 ★ 共同通讯社：https://www.kyodo.co.jp/ （日本主要通讯社官网）
+	🟢 日本电视台：https://news.ntv.co.jp/ （日本电视台新闻网）
+	🟢 ★ 共同网：https://china.kyodonews.net/ （共同社中文新闻）
+	🟢 朝日新闻：https://www.asahi.com/ （日本五大全国性报纸之一）
+3 韩国
+	🟢 ★ 韩联社：https://www.yna.co.kr/ （韩国国家指定重点通讯社）
+	🟡 ★ 韩国放送公社：https://news.kbs.co.kr/news/pc/main/main.html （韩国国家公营电视台KBS）
+	🟢 韩国时报：https://www.koreatimes.co.kr/ （韩国主要英文日报之一）
+	🟡 朝鲜日报：https://www.chosun.com/ （韩国主要保守派日报；https://chosun-chosun-prod.cdn.arcpublishing.com/english/）
+	🟡 Naver新闻：https://news.naver.com/ （韩国主要门户网站新闻聚合平台）
+	🟡 中央日报：https://joongang.co.kr/ （韩国三大报纸之一）
+	🟡 MBC News：https://imnews.imbc.com/ （韩国文化广播公司新闻网站）
+4 土耳其
+	🟡 自由报：https://www.hurriyet.com.tr/ （土耳其主要主流日报）
+	🔴 Milliyet：https://www.milliyet.com.tr/ （土耳其主流全国性日报）
+	🟢 ★ 阿纳多卢通讯社：https://www.aa.com.tr/ （土耳其国家官方通讯社）
+	🟢 晨报：https://www.sabah.com.tr/ （土耳其亲政府主流日报）
+	🟡 Sözcü：https://www.sozcu.com.tr/ （土耳其反对派倾向的高销量报纸）
+	🟡 Mynet：https://www.mynet.com/ （土耳其大型门户网站）
+	🟡 En Son Haber：https://www.ensonhaber.com/ （土耳其新闻聚合网站）
+	🟢 伊尔凯通讯社：https://ilkha.com/english （土耳其宗教保守倾向通讯社）
+	🟡 阿纳多卢通讯社：https://mobil.aa.com.tr/en（土耳其的国家级权威新闻机构）
+	🟢 ★TRT中文：https://www.trtzhongwen.com/（土耳其的国营广播电台和电视台运营的中文新闻平台）
+5 沙特阿拉伯
+	🟢 阿拉伯新闻：https://www.arabnews.com/ （沙特主要英文日报）
+	🟢 沙特公报：https://saudigazette.com.sa/ （沙特主要英文日报之一）
+	🟢 阿拉伯卫视：https://english.alarabiya.net/ （沙特MBC集团旗下新闻频道）
+	🟢 中东报：https://aawsat.com/ （总部位于伦敦的泛阿拉伯权威报纸）
+	🟡 ★ 沙特官方通讯社：https://www.spa.gov.sa/ （沙特国家通讯社）
+	🟢 奥卡兹报：https://www.okaz.com.sa/ （沙特主要阿拉伯语日报）
+6 巴基斯坦
+	🟢 SAMAA TV：https://www.samaa.tv/ （巴基斯坦主要私营乌尔都语新闻频道）
+	🟢 ARY News：https://arynews.tv/ （巴基斯坦主流私营新闻频道）
+	🟢 战斗报：https://jang.com.pk/ （巴基斯坦主要乌尔都语报纸）
+	🟢 ★ 巴基斯坦联合通讯社：https://www.app.com.pk/ （巴基斯坦国营通讯社）
+	🟢 巴基斯坦dailytimes：https://dailytimes.com.pk/ （巴基斯坦英文日报）
+	🟢 巴基斯坦主流媒体之一：https://www.pakistantoday.com.pk （巴基斯坦英文日报）
+	🟢 巴基斯坦观察家：https://pakobserver.net/（第一份在巴基斯坦首都出版的英文报纸，被外界描述为持保守主义编辑立场。）
+7 以色列
+	🟢 以色列时报：https://www.timesofisrael.com/ （以色列主要英文新闻网站）
+	🟢 ★ 国土报：https://www.haaretz.com/ （以色列主要自由派大报）
+	🟢 Ynetnews：https://www.ynetnews.com/ （以色列主要报纸《新消息报》英文网）
+	🟢 ★ The Jerusalem Post耶路撒冷邮报：https://www.jpost.com/ （以色列历史悠久英文大报）
+	🟡 Israel Hayom：https://www.israelhayom.com/ （以色列主要免费报纸）
+	🟢 Arutz Sheva以色列国家新闻：https://www.israelnationalnews.com/ （以色列宗教犹太复国主义倾向新闻网站）
+	🟢 Aurora媒体旗下：https://www.aurora-israel.co.il/en/ （面向以色列西班牙语裔犹太人的新闻网站）
+	🟢🔴全以色列新闻/宗教性质新闻网站：https://allisraelnews.com/（面向全球福音派基督徒，报道神今日在以色列的作为）
+8 伊朗
+	🔴 ★ 伊朗伊斯兰共和国通讯社：https://en.irna.ir/  （伊朗官方通讯社）
+	🔴 ★ 伊朗学生通讯社ISNA：https://en.isna.ir/  （伊朗半官方主流通讯社）
+	🟢 ★ Press TV：https://www.presstv.ir/ （伊朗官方英语国际新闻频道）
+	🟢 伊朗观察：https://www.iranmonitor.org/ （关注伊朗国内动态的新闻整合网站）
+	🟢 伊朗先驱报：https://www.iranherald.com/ （澳大利亚运营的伊朗新闻网站）
+	🟡赛帕新闻网：https://sepahnews.ir/（与伊朗伊斯兰革命卫队有关的官方新闻网站，了解伊朗强硬派和军事机构观点的直接渠道）
+	🟡塔斯尼姆通讯社：https://www.tasnimnews.ir/en（与伊朗革命卫队关系密切，是伊朗最具影响力的媒体平台之一）
+	🟡西亚通讯社：https://wanaen.com/（一家已获得伊朗官方所有必要许可和执照的新闻机构，其团队拥有与路透社、美联社电视新闻（APTN）、BBC等国际主流媒体合作的经验）
+	🟡 ★今日帕尔斯https://parstoday.ir/zh/（伊朗的国家对外广播机构，隶属于拥有70多年历史的伊朗广播电视总局国际部）
+9 阿联酋
+	🟢 海湾新闻：https://gulfnews.com/ （阿联酋主要英文日报）
+	🟢 国家报：https://www.thenationalnews.com/ （阿联酋政府背景的英文严肃大报）
+	🟢 宣言报：https://www.albayan.ae/ （迪拜政府拥有的阿拉伯语报纸）
+	🟢 ★ 阿联酋国家通讯社：https://www.wam.ae/ar/home/main （阿联酋官方通讯社）
+	🟡 哈利吉时报：https://www.khaleejtimes.com/ （阿联酋历史悠久的英文日报）
+	🟡 Emirates Today：https://www.emirates247.com/ （阿联酋英文商业新闻网站）
+10 新加坡
+	🟡 Mothership：https://mothership.sg/ （新加坡新一代主流数字媒体）
+	🟢 ★ 联合早报：https://www.zaobao.com/ （新加坡主要华文严肃大报）
+	🔴 新加坡眼：https://www.yan.sg/ （新加坡生活资讯类华文新媒体）
+11 马来西亚
+	🟢 星报：https://www.thestar.com.my/ （马来西亚主要英文日报）
+	🟢 ★ 马来西亚通讯社：https://bernama.com/bm/index.php （马来西亚国家通讯社）
+12 印度尼西亚
+	🟢 ★ 安塔拉通讯社：https://en.antaranews.com/ （印度尼西亚国家通讯社）
+	🟡 Detik.com：https://www.detik.com/ （印尼主要新闻门户网站）
+	🟡 Kompas.com：https://www.kompas.com/ （印尼主要报纸《罗盘报》数字版）
+	🟡 CNBC Indonesia：https://www.cnbcindonesia.com/ （印尼财经新闻频道）
+13 越南
+	🟢 ★ 越南新闻：https://vietnamnews.vn/ （越南官方英文日报）
+	🟢 VnExpress：https://e.vnexpress.net/ （越南主要新闻门户）
+14 阿富汗
+	🟢 阿富汗新闻网：https://www.afghanistannews.net/ （阿富汗新闻聚合网站）
+	🟡 Tolo News：https://tolonews.com/ （阿富汗主要私营新闻电视台）
+	🟡 ★ Pajhwok Afghan News：https://www.pajhwok.com/ （阿富汗主要独立通讯社）
+	🔴 Ariana News：https://www.ariananews.af/ （阿富汗私营新闻电视台）
+	🟡 巴赫特通讯社：https://www.bakhtarnews.af/ （阿富汗国营通讯社）
+15 阿塞拜疆
+	🟢 阿塞拜疆新闻：https://www.azernews.az/ （阿塞拜疆英文新闻网站）
+	🟡 趋势通讯社（Trend News Agency）：https://en.trend.az/ （阿塞拜疆主要独立通讯社）
+	🟡 报告通讯社（Report.az）：https://report.az/en/ （阿塞拜疆新闻通讯社）
+	🟡 第一新闻频道（1news.az）：https://1news.az/ （阿塞拜疆新闻门户）
+	🟡 ★ 阿塞拜疆国家新闻社（AZERTAC）：https://azertag.az/en/ （阿塞拜疆官方通讯社）
+	🟢 阿塞拜疆偏商业媒体：https://caliber.az/en （亲政府商业媒体）
+16 伊拉克
+	🟢 ★ 伊拉克国家通讯社：http://www.ina.iq/ （伊拉克官方通讯社）
+	🟡 伊拉克媒体网（Iraqi Media Network）：https://www.imn.iq/ （伊拉克官方广播电视网络）
+	🟡 苏美尔新闻（Al-Sumaria News）：https://www.alsumaria.tv/ （伊拉克主要私营卫星电视台）
+	🟡 沙法克新闻（Shafaq News）：https://shafaq.com/ （伊拉克独立新闻网站）
+	🟡 萨巴赫报：https://alsabaah.iq/ （伊拉克政府背景的官方报纸）
+17 卡塔尔
+	🟢 海湾时报：https://www.gulf-times.com/ （卡塔尔主要英文日报之一）
+	🟢 半岛报：https://thepeninsulaqatar.com/ （卡塔尔主要英文报纸）
+	🟢 论坛报：https://www.qatar-tribune.com/ （卡塔尔英文新闻网站）
+	🟢 Al-Sharq：https://al-sharq.com/ （卡塔尔主要阿拉伯语报纸）
+	🟢 总部在英国：https://www.newarab.com/ （关注阿拉伯世界的独立英文新闻网站）
+18 泰国
+	🟢 Sanook：https://www.sanook.com/ （泰国大型门户网站）
+	🟢 ★ 泰叻报：https://www.thairath.co.th/ （泰国主要泰文日报）
+	🟢 考苏得英文报：https://www.khaosod.co.th/ （泰国主要泰文报纸的英文版）
+19 孟加拉国
+	🟢 bdnews24：https://bdnews24.com/ （孟加拉国首家网络新闻通讯社）
+	🟢 每日星报：https://www.thedailystar.net/ （孟加拉国主要英文日报）
+	🟢 ★ 孟加拉国新闻通讯社BSS：https://www.bssnews.net/ （孟加拉国国家通讯社）
+20 菲律宾
+	🟢 Rappler：https://www.rappler.com/ （菲律宾知名独立数字新闻媒体）
+	🟢 GMA新闻：https://www.gmanetwork.com/news/ （菲律宾主要商业广播电视网新闻部）
+	🟡 ★ Philippine News Agency：https://www.pna.gov.ph/ （菲律宾官方通讯社）
+	🟡 The Manila Times：https://www.manilatimes.net/ （菲律宾历史悠久英文日报）
+	🟡 Philippine Star：https://www.philstar.com/ （菲律宾主要报纸之一）
+21 哈萨克斯坦
+	🟢 ★ Qazinform：https://qazinform.com/ （哈萨克斯坦国家通讯社）
+	🟢 Tengrinews：https://tengrinews.kz/ （哈萨克斯坦主要新闻门户）
+22 科威特
+	🟢 科威特时报：https://kuwaittimes.com/ （科威特主要英文日报）
+	🟡 Al Qabas：https://alqabas.com/ （科威特主要阿拉伯语报纸）
+	🟡 Al Rai：https://www.alraimedia.com/ （科威特主要报纸之一）
+	🟡 阿拉伯时报：https://www.arabtimesonline.com/ （科威特英文日报）
+	🟡 Indians in Kuwait：https://www.indiansinkuwait.com/ （面向科威特印度社群的新闻网站）
+23 印度
+	🟢 Aaj Tak：https://www.aajtak.in/ （印度主要印地语新闻频道）
+	🟢 Scroll：https://scroll.in/ （印度著名独立深度新闻数字媒体）
+	🟢 孟买mid-day：https://www.mid-day.com/ （孟买地区知名小报）
+24 巴勒斯坦
+	🟢 972 Magazine：https://www.972mag.com/ （以巴地区独立新闻评论网站）
+	🟢 ★ 巴勒斯坦通讯社：https://english.wafa.ps/ （巴勒斯坦官方通讯社）
+	🟡 巴勒斯坦广播公司：http://www.pbc.ps/ （巴勒斯坦公共广播机构）
+	🟢 电子起义：https://electronicintifada.net/ （关注巴勒斯坦议题的独立新闻网站）
+	🟢 Maan News：https://www.maannews.net/ （巴勒斯坦主要独立通讯社）
+	🟢 巴勒斯坦纪事报：https://www.palestinechronicle.com/ （巴勒斯坦事务英文新闻网站）
+	🟢 Palestine News Network：https://pnn.ps/ （巴勒斯坦独立新闻网络）
+	🟢 圣城报：https://www.alquds.com/ar/ （总部位于伦敦的巴勒斯坦阿拉伯语报纸）
+	🟢以色列-巴勒斯坦新闻：https://israelpalestinenews.org/（由美国非营利组织If Americans Knew创办，提供亲巴勒斯坦视角的新闻网站）
+25 亚美尼亚
+	🟢 ★ 亚美尼亚公共广播电台：https://en.armradio.am/ （亚美尼亚国家广播电台）
+	🟢 CivilNet：https://www.civilnet.am/ （亚美尼亚主要独立新闻机构）
+	🟢 News Armenia：https://newsarmenia.am/ （亚美尼亚新闻网站）
+26 巴林
+	🟢 巴林本周：https://www.bahrainthisweek.com/ （巴林英文周报）
+	🟢 巴林镜报：https://bahrainmirror.com/ （巴林英文新闻网站）
+	🟢 ★ 巴林通讯社：https://www.bna.bh/ （巴林国家通讯社）
+27 文莱
+	🟢 ★ 文莱灯塔报：https://www.pelitabrunei.gov.bn/ （文莱政府官方马来语报纸）
+	🟢 文莱快报：https://www.brudirect.com/ （文莱主要新闻门户网站）
+	🟢 文莱商业网：https://www.bizbrunei.com/ （文莱商业财经新闻网站）
+28 柬埔寨
+	🟢 Fresh News：https://freshnews.com.kh/ （柬埔寨主要新闻通讯社）
+	🟢 ★ 柬埔寨通讯社：https://www.akp.gov.kh/ （柬埔寨国家通讯社）
+	🟢 金边邮报：https://www.phnompenhpost.com/ （柬埔寨主要英文报纸）
+29 朝鲜
+	🟢 ★ Uriminzokkiri：https://www.minjok.com/ （朝鲜祖国和平统一委员会官网）
+	🟢 ★ 朝鲜之声：https://www.vok.rep.kp/ （朝鲜国际广播电台官网）
+30 东帝汶
+	🟢 帝力周报：https://thediliweekly.com/ （东帝汶英文新闻周报）
+	🟢 Media One Timor：https://mediaonetimor.co/ （东帝汶新闻网站）
+	🟢 Timor News：https://www.timornews.tl/ （东帝汶新闻聚合网站）
+31 格鲁吉亚
+	🟢 IPN新闻社：https://www.interpressnews.ge/ka/ （格鲁吉亚独立通讯社）
+	🟢 Netgazeti：https://netgazeti.ge/ （格鲁吉亚网络报纸）
+	🟢 Tabula：https://tabula.ge/ge （格鲁吉亚周刊杂志）
+	🟢 ★ Civil.ge：https://civil.ge/ （格鲁吉亚知名英文独立新闻网站）
+32 约旦
+	🟢 约旦时报：https://jordantimes.com/ （约旦主要英文日报）
+	🟢 言论报：https://alrai.com/ （约旦主要阿拉伯语日报）
+	🟢 ammonnews：https://www.ammonnews.net/ （约旦新闻通讯社）
+	🟢 alghad：https://alghad.com/ （约旦独立阿拉伯语报纸）
+	🟢 道路报：https://assabeel.net/ （约旦阿拉伯语报纸）
+33 吉尔吉斯斯坦
+	🟢 TCA：https://timesca.com/ （关注中亚地区事务的英文新闻网站）
+	🟢 Kyrgyzstan News：https://www.kyrgyzstannews.net/ （吉尔吉斯斯坦新闻聚合网）
+	🟢 24kg：https://24.kg/ （吉尔吉斯斯坦主要独立通讯社）
+	🟢 ★ 吉尔吉斯斯坦国家广播电视公司：https://ktrk.kg/ （吉尔吉斯斯坦国营广电）
+	🟢 K-News：https://knews.kg/ （吉尔吉斯斯坦新闻网站）
+	🟢 吉尔吉斯斯坦通讯社之一：https://akipress.org/ （吉尔吉斯斯坦独立通讯社）
+	🟢 吉尔吉斯坦新闻：https://kloop.kg/ （吉尔吉斯斯坦著名独立调查新闻网站）
+34 老挝
+	🟢 万象时报：https://www.vientianetimeslao.la/ （老挝主要英文报纸）
+	🟡 老挝广播电台：https://lnr.org.la/ （老挝国家广播电台）
+	🔴 ★ 老挝国家通讯社：https://kpl.gov.la/ （老挝官方通讯社）
+35 黎巴嫩
+	🟢 ★ 黎巴嫩国家通讯社：https://nna-leb.gov.lb/ar （黎巴嫩官方通讯社）
+	🟢 安纳哈尔报：https://www.annahar.com/ （黎巴嫩主要阿拉伯语大报）
+	🟢 Naharnet：https://www.naharnet.com/ （黎巴嫩主要英文新闻网站）
+	🟢 东方日报：https://www.lorientlejour.com/ （黎巴嫩主要法语报纸）
+	🟢 Al-Akhbar：https://www.al-akhbar.com/ （黎巴嫩左翼倾向阿拉伯语报纸）
+	🟢 The Cradle：https://thecradle.co/（主要关注西亚地区的地缘政治）
+36 马尔代夫
+	🟢 马尔代夫独立版：https://maldivesindependent.com/ （马尔代夫主要英文新闻网站）
+	🟡 马尔代夫官方公共媒体：https://psmnews.mv/ （马尔代夫公共广播公司新闻）
+	🟡 太阳报：https://see.mv/ （马尔代夫主要迪维希语报纸）
+	🟡 Mihaaru：https://mihaaru.com/ （马尔代夫主要迪维希语新闻网站）
+37 蒙古
+	🟡 Gogo：https://gogo.mn/ （蒙古主要新闻门户网站）
+	🟡 Sonin：https://sonin.mn/ （蒙古新闻网站）
+	🔴 ★ 蒙古国家通讯社：https://montsame.mn/ （蒙古国家通讯社）
+	🔴 ★ 蒙古国家公共广播电视台：https://www.mnb.mn/ （蒙古国家广播电视台）
+38 缅甸
+	🟢 缅甸现在新闻：https://myanmar-now.org/en/ （缅甸著名独立新闻媒体）
+	🔴 ★ 缅甸官方英文日报：https://www.gnlm.com.mm/ （缅甸政府机关报《缅甸环球新光报》）
+	🟢 伊洛瓦底新闻网：https://www.irrawaddy.com/ （由缅甸流亡人士创办的著名独立媒体）
+39 尼泊尔
+	🟡 坎蒂普尔日报：https://gorkhapatraonline.com/ （尼泊尔主要报纸之一）
+	🟡 尼泊尔国家日报：https://ekantipur.com/ （坎蒂普尔媒体集团旗下新闻门户）
+40 阿曼
+	🟡 ★ 阿曼新闻社：https://www.omannews.gov.om/ （阿曼国家通讯社）
+	🟡 国报：https://alwatan.om/ （阿曼主要阿拉伯语报纸）
+	🟡 青年报：https://shabiba.com/ （阿曼阿拉伯语报纸）
+	🟡 阿曼每日观察：https://www.omanobserver.om/ （阿曼主要英文日报）
+41 斯里兰卡
+	🟢 胜利雄狮：https://www.virakesari.lk/ （斯里兰卡主要泰米尔语报纸）
+	🟢 Adaderana：https://www.adaderana.lk/ （斯里兰卡主要僧伽罗语新闻网站）
+	🔴 每日新闻：https://dailynews.lk/ （斯里兰卡国营英文报纸）
+42 叙利亚
+	🟢 时代新闻：https://zamanalwsl.net/ （叙利亚反对派倾向新闻网站）
+	🟢 ★ 叙利亚阿拉伯通讯社：https://sana.sy/ （叙利亚国家通讯社）
+	🟢 叙利亚直击：https://syriadirect.org/ （叙利亚本地记者培训与报道机构）
+43 塔吉克斯坦
+	🟢 ★ 塔吉克斯坦国家通讯社：https://khovar.tj/ （塔吉克斯坦官方通讯社）
+	🟢 共和国报：https://jumhuriyat.tj/ （塔吉克斯坦政府机关报）
+44 土库曼斯坦
+	🟢 ★ 综合新闻：https://turkmenistan.gov.tm/tk （土库曼斯坦国家新闻网站）
+	🟢 ★ 土库曼斯坦国家通讯社：https://tdh.gov.tm/tk （土库曼斯坦官方通讯社）
+	🟢 ★ 中立土库曼斯坦报：https://neutrality.gov.tm/ （土库曼斯坦政府机关报）
+45 乌兹别克斯坦
+	🟢 KUN.UZ：https://kun.uz/kr/ （乌兹别克斯坦主要独立新闻网站）
+	🟡 ★ UzA：https://uza.uz/ （乌兹别克斯坦国家通讯社）
+	🟡 Gazeta.uz：https://www.gazeta.uz/ （乌兹别克斯坦俄语新闻网站）
+	🟡 Daryo.uz：https://daryo.uz/ （乌兹别克斯坦新闻门户）
+	🟢 ★ 乌兹别克斯坦国家通讯社：https://uza.uz/uz （乌兹别克斯坦国家通讯社）
+46 也门
+	🟢 革命报：https://althawrah.ye/ （也门政府背景报纸）
+	🟢 马雷卜新闻社：https://marebpress.net/ （也门知名独立新闻网站）
+	🟢 Yemen Times：https://yementimes.com/ （也门主要英文报纸）
+	🔴 胡塞：https://saba.ye/ar （胡塞武装控制的萨巴通讯社）
+	🔴 哈迪/阿里米：https://www.sabanew.net/ （也门合法政府官方通讯社）
+47 塞浦路斯
+	🟢 自由爱好者报：https://www.philenews.com/ （塞浦路斯主要希腊语报纸）
+	🟡 ★ 塞浦路斯通讯社：https://cna.org.cy/ （塞浦路斯半官方通讯社）
+	🔴 塞浦路斯广播：https://rik.cy/ （塞浦路斯公共广播公司）
+48 不丹
+	🟢 ★ 不丹国家官方日报：https://kuenselonline.com/ （不丹国家报纸《昆色尔》）
+	🟢 不丹广播公司：https://www.bbs.bt/235279/ （不丹国家广播公司）
+	🔴 Daily Bhutan：https://www.dailybhutan.com/ （不丹独立英文新闻博客）
+🧰 欧洲（44国）
+49 俄罗斯
+	🟢 今日俄罗斯：https://www.rt.com/ （俄罗斯国家资助的国际新闻频道）
+	🟢 ★ 塔斯社：https://tass.com/ （俄罗斯国家通讯社）
+	🟢 ★ 俄罗斯卫星通讯社中文版：https://sputniknews.cn/ （俄罗斯政府资助通讯社中文网）
+	🟢 俄罗斯卫星通讯社英文版：https://sputnikglobe.com/ （俄罗斯政府资助通讯社英文网）
+	🟢消息报：https://en.iz.ru/en/（俄罗斯历史悠久的全国性日报，在苏联时期是苏联最高苏维埃的机关报，即官方的“政府报”。苏联解体后，该报转为私营的社会政治类报纸。）
+	🟢真理报：https://english.pravda.ru/（由前《真理报》记者于1999年创办的独立网络报纸。真理报在苏联时期是苏联共产党中央委员会的机关报，即“党报”。）
+	🔴URA.RU：https://ura.news/（位列俄罗斯被引用率最高的互联网资源前十名）
+50 德国
+	🟢 ★ 时代周报：https://www.zeit.de/ （德国主要严肃周报）
+	🟢 ★ 德新社：https://www.dpa.com/de （德国主要通讯社）
+	🟢 德国概况：https://www.deutschland.de/en （德国官方对外形象展示网站）
+	🟢 德意志电台：https://www.ard.de/ （德国公共广播联盟ARD官网）
+	🟢每日镜报：https://www.tagesspiegel.de/（德国最具影响力的日报之一，以其高质量的分析和自由主义立场在德国媒体中占有一席之地。）
+51 英国
+	🟢 每日电讯报：https://www.telegraph.co.uk/ （英国保守派主流大报）
+	🟢 ★ 天空新闻：https://news.sky.com/ （英国主流24小时新闻频道）
+	🟢 ★ 泰晤士报：https://www.thetimes.com/ （英国历史悠久的主流大报）
+	🟢 ★ 英国独立电台：https://www.itv.com/news （英国主要商业电视网新闻部）
+52 法国
+	🟢 ★ France 24：https://www.france24.com/en/ （法国国有国际新闻电视台）
+	🟢 BFM TV：https://www.bfmtv.com/ （法国主要新闻频道）
+	🟢 ★ 回声报：https://www.lesechos.fr/ （法国权威财经大报）
+	🟢 ★ 巴黎人报：https://www.leparisien.fr/ （法国主要大众报纸之一）
+	🟢西部法兰西报：https://www.ouest-france.fr/（法国发行量最大的日报）
+53 意大利
+	🟢 ★ 晚邮报：https://www.corriere.it/ （意大利主要权威报纸）
+	🟢 ★ 安莎通讯社：https://www.ansa.it/english （意大利国家通讯社）
+54 乌克兰
+	🟢 ★ 乌克兰国家通讯社：https://www.ukrinform.net/ （乌克兰国家通讯社）
+	🟢 ★ 基辅独立报：https://kyivindependent.com/ （俄乌战争期间受国际广泛引用的英文独立媒体）
+	🟢 乌克兰独立新闻社：https://www.unian.net/ （乌克兰主要私营通讯社）
+	🟢 基辅邮报：https://www.kyivpost.com/ （乌克兰历史悠久的英文报纸）
+	🟢乌克兰国家新闻：https://unn.ua/en（独立的乌克兰新闻通讯社）
+	🟢乌克兰ANTIKOR ：https://antikor.info/en/（自称“乌克兰反腐败门户”的公共平台)
+	🟢Gwara Media：https://gwaramedia.com/en/（非营利组织旗下的媒体项目）
+	🟢乌克兰真理报：https://www.pravda.com.ua/（乌克兰非常受欢迎的在线报纸，主要关注乌克兰政治热点和腐败问题，以调查性报道著称。）
+55 波兰
+	🟢 华沙之声：https://www.warsawvoice.pl/ （波兰英文周报）
+	🟢 ★ Rzeczpospolita：https://www.rp.pl/ （波兰主要保守派严肃大报）
+56 立陶宛
+	🟢 Delfi：https://www.delfi.lt/ （立陶宛及波罗的海主要新闻门户）
+	🟢 Lrytas：https://www.lrytas.lt/english （立陶宛主要新闻门户）
+	🟡 15min：https://www.15min.lt/ （立陶宛主流新闻网站）
+	🟡 LNK电视台（LNK）：https://lnk.lt/ （立陶宛商业电视台）
+57 丹麦
+	🟢 ★ 丹麦广播公司：https://www.dr.dk/ （丹麦国家公共广播机构）
+58 西班牙
+	🟢 ★ 世界报：https://www.elmundo.es/ （西班牙主要全国性大报）
+	🟡 ★ La Vanguardia：https://www.lavanguardia.com/ （西班牙百年历史大报）
+	🟡 20minutos：https://www.20minutos.es/ （西班牙免费报纸数字版）
+59 荷兰
+	🟢 电讯报：https://www.telegraaf.nl/ （荷兰主要报纸）
+	🟢 https://www.nu.nl/ （荷兰主要新闻网站之一）
+	🟡 ★ NRC：https://www.nrc.nl/ （荷兰高质量严肃大报）
+	🟡 AD：https://www.ad.nl/ （荷兰大众化报纸）
+60 瑞士
+	🟢 20 Minuten：https://www.20min.ch/ （瑞士主要免费报纸）
+	🟢 ★ 每日导报：https://www.tagesanzeiger.ch/ （瑞士德语区权威严肃报纸）
+61 瑞典
+	🟢 Aftonbladet：https://www.aftonbladet.se/ （瑞典主要晚报）
+	🟢 ★ Sveriges kvalitetssajt för nyheter：https://www.svd.se/ （瑞典主要保守派大报《瑞典日报》）
+62 比利时
+	🟢 ★ Het Nieuwsblad：https://www.nieuwsblad.be/ （比利时主要荷兰语报纸）
+63 挪威
+	🟢 Dagbladet：https://www.dagbladet.no/ （挪威主要小报）
+	🟡 ★ VG：https://www.vg.no/ （挪威主要报纸）
+	🟢 经济日报（Dagens Næringsliv）：https://www.dn.no/ （挪威权威财经报纸）
+64 奥地利
+	🟢 Krone：https://www.krone.at/ （奥地利主要报纸《皇冠报》）
+	🟢 Heute：https://www.heute.at/ （奥地利免费报纸）
+	🟢 ★ ORF：https://news.orf.at/ （奥地利公共广播公司新闻网站）
+	🟡 ★ Der Standard：https://www.derstandard.at/ （奥地利自由派高质量大报）
+	🟡 Die Presse：https://www.diepresse.com/ （奥地利保守派严肃报纸）
+	🟡 Kurier：https://kurier.at/ （奥地利主流日报）
+	🟡 Kleine Zeitung：https://www.kleinezeitung.at/ （奥地利区域性大报）
+	🟡 OE24：https://www.oe24.at/ （奥地利《奥地利报》数字平台）
+65 芬兰
+	🟢 赫尔辛基日报：https://www.hs.fi/ （芬兰主要报纸）
+	🟢 ★ 芬兰广播公司：https://www.yle.fi/ （芬兰国家公共广播公司）
+66 希腊
+	🟢 每日报：https://www.kathimerini.gr/ （希腊主要权威日报）
+	🟢 Protothema：https://www.protothema.gr/ （希腊主要报纸之一）
+	🟢 希腊主流英文综合新闻网站：https://en.parapolitika.gr/ （希腊政治新闻英文网）
+67 葡萄牙
+	🟢 公众报：https://www.publico.pt/ （葡萄牙权威严肃报纸）
+	🟡 Expresso：https://expresso.pt/ （葡萄牙主要新闻周报）
+	🟡 Jornal de Notícias：https://www.jn.pt/ （葡萄牙主流日报）
+	🟡 Diário de Notícias：https://www.dn.pt/ （葡萄牙历史悠久的报纸）
+68 爱尔兰
+	🟢 ★ RTÉ News：https://www.rte.ie/news/ （爱尔兰国家广播电视公司新闻部）
+	🟢 爱尔兰新闻：https://www.thejournal.ie/ （爱尔兰主流纯数字新闻媒体）
+	🟢爱尔兰观察报：https://www.irishexaminer.com/（爱尔兰历史最悠久的日报，是爱尔兰第三大印刷报刊）
+69 捷克
+	🟢 iDNES：https://www.idnes.cz/ （捷克主要新闻门户网站）
+	🟢 Novinky：https://www.novinky.cz/ （捷克主要新闻网站）
+	🟢 Denik：https://www.denik.cz/ （捷克区域性报纸网络）
+	🟡 Aktuálně.cz：https://www.aktualne.cz/ （捷克主流新闻网站）
+	🟡 ★ ČT24：https://ct24.ceskatelevize.cz/ （捷克公共电视台新闻频道）
+70 匈牙利
+	🟢 24.hu：https://24.hu/ （匈牙利主要数字新闻媒体）
+	🟢 Index：https://index.hu/ （匈牙利著名新闻门户）
+	🟡 Origo：https://www.origo.hu/ （匈牙利亲政府新闻门户）
+	🟡 Magyar Nemzet：https://magyarnemzet.hu/ （匈牙利亲政府日报）
+71 罗马尼亚
+	🟢 HotNews：https://hotnews.ro/ （罗马尼亚主要新闻网站）
+	🟢 Digi24：https://www.digi24.ro/ （罗马尼亚主流新闻电视台）
+	🟢 Adevărul：https://adevarul.ro/ （罗马尼亚主流日报）
+	🟢新闻观察报：https://monitoruldestiri.ro/（新闻聚合类网站，主要是从其他媒体来源收集并汇总新闻）
+72 梵蒂冈
+	🟢 ★ 梵蒂冈新闻网：http://www.vaticannews.cn/zh.html （梵蒂冈官方多语种新闻网）
+	🟢 ★ 罗马观察报：https://www.osservatoreromano.va/it.html （梵蒂冈官方报纸）
+73 阿尔巴尼亚
+	🟢 ★ 阿尔巴尼亚 通讯社：https://ata.gov.al/ （阿尔巴尼亚国家通讯社）
+	🟢 世纪报：https://shekulli.com.al/ （阿尔巴尼亚独立报纸）
+	🟢 全景报：https://www.panorama.com.al/ （阿尔巴尼亚主要报纸）
+	🟢 阿尔巴尼亚官方英文媒体：https://www.tiranatimes.com/ （阿尔巴尼亚英文周报）
+	🟢 今日报：https://gazetadita.al/ （阿尔巴尼亚报纸）
+74 安道尔
+	🟢 安道尔报：https://elperiodic.ad/ （安道尔主要报纸）
+	🟢 早安报：https://www.bondia.ad/ （安道尔报纸）
+	🟢 通讯社：https://www.ana.ad/ （安道尔国家通讯社）
+	🟡 Fòrum：https://forum.ad/ （安道尔新闻网站）
+	🟡 安道尔广播：https://www.rtva.ad/ （安道尔公共广播电视台）
+75 白俄罗斯
+	🟢 ★ 白俄罗斯通讯社：https://belta.by/ （白俄罗斯国家通讯社）
+	🟢 ★ 白俄语日报：https://zviazda.by/ （白俄罗斯政府机关报）
+	🟢 白俄罗斯国家官网新闻中心：https://www.belarus.by/cn/press-center （白俄罗斯官方新闻中心）
+	🟡 明斯克先驱报：https://minskherald.com/ （白俄罗斯独立英文新闻网站）
+	🟡 Naviny.by：https://naviny.by/ （白俄罗斯主要独立新闻网站）
+76 波黑
+	🟢 萨拉热窝时报：https://sarajevotimes.com/ （波黑英文新闻网站）
+	🟢 Fokus.ba：https://www.fokus.ba/ （波黑新闻杂志）
+	🟢 自由波斯尼亚：https://www.slobodna-bosna.ba/ （波黑新闻周刊）
+	🟡 每日之声：https://avaz.ba/ （波黑主要报纸《每日之声报》）
+	🟡 n1info：https://n1info.ba/ （波黑CNN独家合作新闻频道）
+	🟢 ★ 波黑广播电视总台：https://www.bhrt.ba/ （波黑国家公共广播机构）
+77 保加利亚
+	🟢 ★ 保加利亚通讯社：https://www.bta.bg/en （保加利亚国家通讯社）
+	🟢 Dnevnik：https://www.dnevnik.bg/ （保加利亚主要商业日报）
+	🟡 Standart News：https://www.standartnews.com/ （保加利亚报纸）
+	🟡 24 Chasa：https://www.24chasa.bg/ （保加利亚主要报纸）
+	🟢 保加利亚广播电台：https://bnrnews.bg/en （保加利亚国家广播电台）
+78 克罗地亚
+	🟢 Index.hr：https://www.index.hr/ （克罗地亚主流新闻门户）
+	🟢 Večernji List：https://www.vecernji.hr/ （克罗地亚主流日报）
+	🟢 24sata：https://www.24sata.hr/ （克罗地亚主要报纸）
+	🟢 ★ 克罗地亚国家广播：https://www.hrt.hr/ （克罗地亚国家广播电视台）
+	🟢 Croatia Week：https://www.croatiaweek.com/ （克罗地亚英文新闻网站）
+79 爱沙尼亚
+	🟢 Delfi.ee：https://www.delfi.ee/ （爱沙尼亚主要新闻门户）
+	🟢 ★ 爱沙尼亚国家广播：https://www.err.ee/ （爱沙尼亚公共广播公司）
+	🟢 爱沙尼亚快报：https://ekspress.delfi.ee/ （爱沙尼亚新闻周报）
+	🟡 Õhtuleht：https://www.ohtuleht.ee/ （爱沙尼亚晚报）
+80 冰岛
+	🟢 Morgunblaðið ：https://www.mbl.is/frettir/ （冰岛主要报纸《晨报》）
+	🟢 Visir：https://www.visir.is/ （冰岛主要新闻网站）
+	🟢 ★ 冰岛国家广播：https://www.ruv.is/ （冰岛国家广播公司）
+	🟢 日报：https://www.dv.is/ （冰岛报纸）
+	🟡 冰岛评论：https://www.icelandreview.com/news/ （冰岛主要英文杂志）
+81 拉脱维亚
+	🟢 NRA.lv：https://nra.lv/ （拉脱维亚报纸）
+	🟢 Delfi.lv：https://www.delfi.lv/ （拉脱维亚主要新闻门户）
+	🟡 The Baltic Times：https://www.baltictimes.com/ （波罗的海地区英文报纸）
+	🟡 ★ 拉脱维亚公共广播：https://www.lsm.lv/ （拉脱维亚公共广播公司）
+	🟡 Diena.lv：https://www.diena.lv/ （拉脱维亚主要日报）
+82 列支敦士登
+	🟢 祖国报：https://www.vaterland.li/ （列支敦士登主要报纸）
+	🔴 国家镜报：https://landesspiegel.li/ （列支敦士登新闻网站）
+83 卢森堡
+	🟢 卢森堡言论报：https://www.wort.lu/ （卢森堡主要德语报纸）
+	🟢 卢森堡日报：https://journal.lu/de （卢森堡报纸）
+	🟡 Le Quotidien：https://lequotidien.lu/ （卢森堡法语独立报纸）
+	🟢 卢森堡广播：https://www.rtl.lu/ （卢森堡主要广播集团）
+84 马耳他
+	🟢 马耳他时报：https://timesofmalta.com/ （马耳他主要报纸）
+	🟢 MaltaToday：https://www.maltatoday.com.mt/ （马耳他主要新闻周报）
+	🟢 马耳他独立报：https://www.independent.com.mt/ （马耳他主要英文日报）
+	🟡 Lovin Malta：https://lovinmalta.com/ （马耳他数字生活新闻媒体）
+	🟢 马耳他通讯社：https://www.maltanewsagency.com/ （马耳他独立通讯社）
+85 摩尔多瓦
+	🟢 MoldovaLive：https://moldovalive.md/ （摩尔多瓦新闻网站）
+	🟢 TV8：https://tv8.md/ （摩尔多瓦独立新闻电视台）
+	🟢 Telegraph：https://telegraph.md/ （摩尔多瓦新闻网站）
+	🟡 Newsmaker：https://newsmaker.md/ （摩尔多瓦独立俄语新闻网站）
+	🔴 ★ 摩尔多瓦通讯社：https://www.moldpres.md/ （摩尔多瓦国家通讯社）
+86 摩纳哥
+	🟢 摩纳哥公报：https://journaldemonaco.gouv.mc/ （摩纳哥官方公报）
+	🟢 论坛报：https://www.monaco-tribune.com/ （摩纳哥英文新闻网站）
+	🟢 NEWS.MC：https://news.mc/ （摩纳哥新闻网站）
+87 黑山
+	🔴 Pobjeda：https://www.pobjeda.me/ （黑山历史悠久的报纸）
+	🔴 ★ 黑山国家广播：https://rtcg.me/ （黑山国家广播电视台）
+88 北马其顿
+	🟡 Makfax：https://makfax.com.mk/ （北马其顿独立通讯社）
+	🟡 新马其顿报：https://novamakedonija.com.mk/ （北马其顿历史悠久的日报）
+	🟡 Vecer：https://vecer.mk/ （北马其顿日报）
+	🟡 Sloboden Pechat：https://www.slobodenpecat.mk/ （北马其顿新闻网站）
+	🟡 Republika：https://republika.mk/ （北马其顿新闻门户）
+89 圣马力诺
+	🟢 Libertas：https://www.libertas.sm/ （圣马力诺主要新闻网站）
+90 塞尔维亚
+	🟢 闪电报：https://www.blic.rs/ （塞尔维亚主要报纸）
+	🟢 Politika：https://www.politika.rs/ （塞尔维亚历史悠久的报纸）
+	🟢 N1 Info：https://n1info.rs/ （塞尔维亚CNN独家合作新闻频道）
+	🟢 ★ 塞尔维亚国家广电：https://www.rts.rs/sr/index.html （塞尔维亚国家广播电视台）
+	🟢 Vecernje Novosti：https://www.novosti.rs/ （塞尔维亚主流晚报）
+91 斯洛伐克
+	🟢 Pravda：https://www.pravda.sk/ （斯洛伐克主流日报）
+	🟢 Denník N：https://dennikn.sk/ （斯洛伐克主要独立报纸）
+	🟢 24 小时新闻电视台：https://www.ta3.com/ （斯洛伐克新闻电视台）
+	🟢 ★ TASR：https://www.tasr.sk/ （斯洛伐克国家通讯社）
+92 斯洛文尼亚
+	🟢 24ur：https://www.24ur.com/ （斯洛文尼亚主流新闻门户）
+	🟢 Delo：https://www.delo.si/ （斯洛文尼亚权威严肃报纸）
+	🟢 Slovenske Novice：https://slovenskenovice.delo.si/ （斯洛文尼亚主要报纸）
+	🟡 Dnevnik：https://www.dnevnik.si/ （斯洛文尼亚主要报纸）
+	🟢 ★ 斯洛文尼亚通讯社：https://english.sta.si/ （斯洛文尼亚国家通讯社）
+🧰 美洲（35国）
+93 美国
+	🟢 ★ 美国有线电视新闻网：https://us.cnn.com/ （美国主流24小时新闻频道）
+	🟢 ★ 洛杉矶时报：https://www.latimes.com/ （美国西海岸主要报纸）
+	🟢 ★ 美联社：https://apnews.com/ （美国主要通讯社）
+	🟢 ★ 美国全国公共广播电台：https://www.npr.org/ （美国非营利高质量广播）
+	🟢 ★ ABC新闻：https://abcnews.com/ （美国三大商业电视网之一新闻部）
+	🟢 U.S. News：https://www.usnews.com （美国新闻与世界报道杂志）
+	🟢 由美国政府资助的中东新闻平台：https://alhurra.com/en/ （美国资助的阿拉伯语卫星电视台）
+	🟢 右翼反战网站：https://www.antiwar.com/ （美国自由意志主义反战网站）
+	🟢 左翼网站Common Dreams：https://www.commondreams.org/ （美国进步主义新闻评论网站）
+	🟢基督教广播网旗下/宗教性质网站：https://cbn.com/lp/cbn-news（从基督教视角进行新闻报道，为全球基督教社群提供新闻和深度报道。）
+94 加拿大
+	🟢 ★ CTV新闻：https://www.ctvnews.ca/ （加拿大主要商业电视网新闻部）
+	🟢 ★ Global News：https://globalnews.ca/ （加拿大主要商业电视网新闻部）
+	🟢 安大略省乔治亚湾综合新闻网站：https://georgianbaynews.com/ （加拿大地方新闻网站）
+95 巴西
+	🟢 ★ Folha de S.Paulo：https://www.folha.uol.com.br/ （巴西主要权威报纸）
+96 阿根廷
+	🟢 ★ 民族报：https://www.lanacion.com.ar/ （阿根廷保守派主流大报）
+	🟢 ★ 号角报：http://www.clarin.com/ （阿根廷主要报纸）
+	🟡 Página12：https://www.pagina12.com.ar/ （阿根廷左翼倾向报纸）
+	🟢 阿根廷著名西班牙语新闻网站：https://www.infobae.com/america/ （阿根廷主流数字新闻媒体）
+97 墨西哥
+	🟢 ★ 宇宙报：https://www.eluniversal.com.mx/ （墨西哥百年历史权威大报）
+	🟡 La Jornada：https://www.jornada.com.mx/ （墨西哥左翼倾向大报）
+	🟡 Excélsior：https://www.excelsior.com.mx/ （墨西哥历史悠久的报纸之一）
+98 智利
+	🟢 ★ El Mercurio：https://www.emol.com/ （智利历史悠久的西班牙语报纸）
+	🟢 BioBioChile：https://www.biobiochile.cl/ （智利主要广播电台新闻网站）
+99 秘鲁
+	🟢 ★ RPP Noticias：https://rpp.pe/ （秘鲁主要广播新闻网络）
+	🟢 La República：https://larepublica.pe/ （秘鲁主流报纸）
+100 哥伦比亚
+	🟢 ★ El Tiempo：https://www.eltiempo.com/ （哥伦比亚主要报纸）
+	🟢 El Colombiano：https://www.elcolombiano.com/ （麦德林地区主要报纸）
+101 安提瓜和巴布达
+	🟢 ABS TV：https://abstvradio.com/ （安提瓜和巴布达广播电视台）
+	🟡 观察家报：https://antiguaobserver.com/ （安提瓜主要报纸）
+102 巴哈马
+	🟢 Tribune 242：https://www.tribune242.com/ （巴哈马主要日报《论坛报》）
+	🟢 ★ ZNS Bahamas广电：https://znsbahamas.com/ （巴哈马国家广播公司）
+	🟡 Bahamas Press：https://www.bahamaspress.com/ （巴哈马新闻网站）
+103 巴巴多斯
+	🟢 Nation News：https://nationnews.com/ （巴巴多斯主要报纸《民族报》）
+	🟢 Barbados Today：https://barbadostoday.bb/ （巴巴多斯新闻网站）
+	🟢 ★ CBC广电：https://www.cbc.bb/ （加勒比广播公司巴巴多斯）
+104 伯利兹
+	🟢 7newsbelize：https://www.7newsbelize.com/ （伯利兹主要电视新闻台）
+	🟢 lovefm：https://lovefm.com/ （伯利兹主要广播电台新闻网站）
+105 玻利维亚
+	🟡 El Diario：https://www.eldiario.net/portal/ （玻利维亚历史悠久的报纸）
+	🟡 El Deber：https://eldeber.com.bo/ （圣克鲁斯主要报纸）
+	🟡 Los Tiempos：https://www.lostiempos.com/ （科恰班巴主要报纸）
+	🟡 La Razón：https://larazon.bo/ （拉巴斯主要报纸）
+106 哥斯达黎加
+	🟢 ★ La Nación：https://www.nacion.com/ （哥斯达黎加主要报纸）
+	🟢 Diario Extra：https://www.diarioextra.com/ （哥斯达黎加通俗报纸）
+	🔴 The Costa Rica News：https://thecostaricanews.com/ （哥斯达黎加英文新闻网站）
+107 古巴
+	🟢 14ymedio：https://www.14ymedio.com/ （古巴独立数字媒体）
+	🟢 ★ Granma：https://www.granma.cu/ （古巴共产党机关报）
+	🟡 Juventud Rebelde：https://www.juventudrebelde.cu/ （古巴共产主义青年团报纸）
+108 多米尼克
+	🟢 DNO：https://dominicanewsonline.com/news/ （多米尼克新闻在线）
+	🟢 emonews：https://emonewsdm.com/ （多米尼克新闻网站）
+109 多米尼加
+	🟢 Diario Libre：https://www.diariolibre.com/ （多米尼加共和国主流免费报纸）
+	🟡 El Nacional：https://elnacional.com.do/ （多米尼加共和国报纸）
+	🟡 Dominican Today：https://dominicantoday.com/ （多米尼加共和国英文新闻网站）
+110 厄瓜多尔
+	🟢 Hoy：https://www.hoy.com.ec/ （厄瓜多尔主流报纸《今日报》）
+	🟢 Vistazo：https://www.vistazo.com/ （厄瓜多尔主流新闻杂志）
+	🟢 El Universo：https://www.eluniverso.com/ （厄瓜多尔主要报纸）
+	🟢 La Hora：https://lahoradiario.com/ （厄瓜多尔报纸）
+111 萨尔瓦多
+	🟢 世界报：https://diario.elmundo.sv/ （萨尔瓦多保守派报纸）
+	🟡 萨尔瓦多日报：https://diarioelsalvador.com/ （萨尔瓦多政府背景报纸）
+	🔴 今日报：https://www.eldiariodehoy.com/ （萨尔瓦多主要报纸）
+	🔴 Diario Co Latino：https://www.diariocolatino.com/ （萨尔瓦多左翼报纸）
+112 格林纳达
+	🔴 Now Grenada：https://nowgrenada.com/ （格林纳达新闻网站）
+	🟢 The Grenada Informer：https://thegrenadainformer.com/ （格林纳达新闻网站）
+113 危地马拉
+	🟢 ★ Prensa Libre：https://www.prensalibre.com/ （危地马拉主要报纸）
+	🔴 Diario de Centro América：https://dca.gob.gt/ （危地马拉政府机关报）
+114 圭亚那
+	🟢 斯塔布鲁克新闻报：https://www.stabroeknews.com/ （圭亚那主要独立报纸）
+	🟢 Demerara Waves：https://demerarawaves.com/ （圭亚那新闻网站）
+	🟢 凯丘新闻报：https://kaieteurnewsonline.com/ （圭亚那报纸）
+	🟡 Guyana Chronicle：https://guyanachronicle.com/ （圭亚那国营报纸）
+115 海地
+	🟢 Gazette Haiti：https://www.gazettehaiti.com/ （海地新闻网站）
+	🟢 海地自由报：https://www.haitilibre.com/ （海地新闻网站）
+	🟢 Le Nouvelliste：https://www.lenouvelliste.com/ （海地历史悠久法语报纸）
+	🟡 Le Quotidien 509：https://lequotidien509.com/ （海地新闻网站）
+	🔴 Haiti Liberté：https://haitiliberte.com/ （海地新闻周报）
+116 洪都拉斯
+	🟡 La Prensa：https://www.laprensa.hn/ （洪都拉斯主要报纸之一）
+	🟡 El Heraldo：https://www.elheraldo.hn/ （洪都拉斯主要报纸）
+117 牙买加
+	🟡 The Gleaner：https://jamaica-gleaner.com/ （牙买加历史悠久报纸《集锦报》）
+	🟡 Jamaica Observer：https://www.jamaicaobserver.com/ （牙买加主要日报《观察家报》）
+118 尼加拉瓜
+	🟡 El 19 Digital：https://www.el19digital.com/ （尼加拉瓜官方新闻网站）
+119 巴拿马
+	🟡 La Prensa：https://www.prensa.com/ （巴拿马主要独立报纸）
+	🟡 Panamá América：https://www.panamaamerica.com.pa/ （巴拿马报纸）
+	🟡 El Siglo：https://elsiglo.com.pa/ （巴拿马报纸）
+	🟡 TVN Noticias：https://www.tvn-2.com/ （巴拿马主要电视台新闻部）
+120 巴拉圭
+	🟢 ★ ABC Color：https://www.abc.com.py/ （巴拉圭主要报纸）
+	🟢 Última Hora：https://www.ultimahora.com/ （巴拉圭主流报纸）
+	🟢 Noticias Paraguay：https://www.npy.com.py/ （巴拉圭电视新闻）
+	🟡 国家报：https://www.lanacion.com.py/ （巴拉圭报纸）
+121 圣基茨和尼维斯
+	🟢 The St. Kitts-Nevis Observer：https://www.thestkittsnevisobserver.com/ （圣基茨和尼维斯主要报纸）
+	🟡 SKN News：https://sknis.gov.kn/ （圣基茨和尼维斯政府新闻服务）
+	🟡 SKN Vibes：https://www.sknvibes.com/ （圣基茨和尼维斯新闻网站）
+122 圣卢西亚
+	🟢 The Voice：https://thevoiceslu.com/ （圣卢西亚主要报纸）
+	🟢 St. Lucia Star：https://stluciastar.com/ （圣卢西亚新闻网站）
+	🟡 St. Lucia Times：https://stluciatimes.com/ （圣卢西亚新闻网站）
+123 圣文森特和格林纳丁斯
+	🟢 Searchlight：https://www.searchlight.vc/ （圣文森特主要报纸）
+	🟢 The Vincentian：https://thevincentian.com/ （圣文森特报纸）
+	🟡 St. Vincent Times：https://www.stvincenttimes.com/ （圣文森特新闻网站）
+124 苏里南
+	🟡 StarNieuws：https://www.starnieuws.com/ （苏里南主要新闻网站）
+	🟡 De Ware Tijd：https://www.dwtonline.com/ （苏里南历史悠久荷兰语报纸）
+125 特立尼达和多巴哥
+	🟡 Trinidad and Tobago Newsday：https://newsday.co.tt/ （特多主要日报《新闻日报》）
+	🟡 Guardian Trinidad：https://www.guardian.co.tt/ （特多主要日报《卫报》）
+126 乌拉圭
+	🟡 El País：https://www.elpais.com.uy/ （乌拉圭主要报纸）
+	🟡 El Observador：https://www.elobservador.com.uy/ （乌拉圭主流报纸）
+	🟡 Montevideo Portal：https://www.montevideo.com.uy/ （乌拉圭新闻门户）
+127 委内瑞拉
+	🟡 宇宙报：https://www.eluniversal.com/ （委内瑞拉主要报纸之一）
+	🟡 国民报：https://www.elnacional.com/ （委内瑞拉反对派倾向报纸）
+	🔴 Últimas Noticias：https://ultimasnoticias.com.ve/ （委内瑞拉主要报纸）
+🧰 非洲（54国）
+128 南非
+	🟢 ★ Mail & Guardian：https://mg.co.za/ （南非著名调查性新闻周报）
+	🟢 独立在线（IOL）：https://www.iol.co.za/ （南非主要新闻集团数字平台）
+	🟡 时代直播（TimesLIVE）：https://www.timeslive.co.za/ （南非《星期日泰晤士报》数字版）
+129 埃及
+	🟢 ★ 金字塔报：https://english.ahram.org.eg/ （埃及主要官方报纸）
+	🟡 Daily News Egypt：https://www.dailynewsegypt.com/ （埃及主要独立英文报纸）
+130 肯尼亚
+	🟢 ★ 民族日报：https://nation.africa/ （肯尼亚主要报纸）
+	🟢 标准报：https://www.standardmedia.co.ke/ （肯尼亚主流媒体集团）
+131 尼日利亚
+	🟢 Premium Times：https://www.premiumtimesng.com/ （尼日利亚著名调查新闻媒体）
+	🟢 卫报：https://guardian.ng/ （尼日利亚主流独立报纸）
+	🟢 每日邮报：https://dailypost.ng/（该媒体以突发新闻报道著称）
+132 阿尔及利亚
+	🟡 El Khabar：https://www.elkhabar.com/ （阿尔及利亚主要阿拉伯语报纸）
+	🟡 ★ Algérie Presse Service：https://www.aps.dz/ （阿尔及利亚国家通讯社）
+	🟡 El Watan：https://elwatan-dz.com/ （阿尔及利亚法语独立报纸）
+	🟡 Liberté：https://www.liberte-algerie.com/ （阿尔及利亚法语报纸）
+	🟡 Tout sur l'Algérie：https://www.tsa-algerie.com/ （阿尔及利亚法语新闻网站）
+133 安哥拉
+	🟡 ★ Jornal de Angola：https://www.jornaldeangola.ao/ （安哥拉国营报纸）
+	🟡 Novo Jornal：https://novojornal.co.ao/ （安哥拉独立周报）
+134 贝宁
+	🟡 Benin Web TV：https://beninwebtv.com/ （贝宁新闻网站）
+	🟡 Banouto：https://banouto.bj/ （贝宁新闻网站）
+135 博茨瓦纳
+	🟡 Mmegi Online：https://www.mmegi.bw/ （博茨瓦纳主要独立报纸）
+	🟡 The Botswana Gazette：https://www.thegazette.news/ （博茨瓦纳周报）
+136 布基纳法索
+	🟡 Le Faso：https://www.lefaso.net/ （布基纳法索主要新闻网站）
+	🟡 Burkina 24：https://www.burkina24.com/ （布基纳法索新闻网站）
+137 布隆迪
+	🟡 Iwacu：https://www.iwacu-burundi.org/ （布隆迪主要独立媒体）
+	🟡 RTNB：http://www.rtnb.bi/ （布隆迪国家广播电视台）
+138 佛得角
+	🟡 ★ Inforpress：https://inforpress.cv/ （佛得角国家通讯社）
+	🟡 A Nação：https://anacao.cv/ （佛得角报纸）
+	🟡 Expresso das Ilhas：https://expressodasilhas.cv/ （佛得角周报）
+139 喀麦隆
+	🟡 ★ Cameroon Tribune：https://www.cameroon-tribune.cm/ （喀麦隆国营双语日报）
+	🟡 Journal du Cameroun：https://www.journalducameroun.com/ （喀麦隆法语新闻网站）
+140 中非
+	🟡 Radio Ndeke Luka：https://www.radiondekeluka.org/ （中非共和国主要独立广播电台）
+	🟡 Centrafrique Presse：https://centrafrique-presse.info/ （中非共和国新闻网站）
+141 乍得
+	🟡 Alwihda Info：https://www.alwihdainfo.com/ （乍得主要独立新闻网站）
+	🟡 Tchad Infos：https://tchadinfos.com/ （乍得新闻网站）
+142 科摩罗
+	🟡 La Gazette des Comores：https://lagazettedescomores.com/ （科摩罗主要新闻网站）
+143 科特迪瓦
+	🟡 Abidjan.net：https://www.abidjan.net/ （科特迪瓦主要新闻门户）
+	🟡 Fraternité Matin：https://www.fratmat.info/ （科特迪瓦国营报纸）
+	🟡 Le Point Sur：https://lepointsur.com/ （科特迪瓦新闻网站）
+144 刚果（布）
+	🟡 Les Dépêches de Brazzaville：https://www.lesdepechesdebrazzaville.fr/ （刚果（布）新闻网站）
+	🟡 ADIAC：https://www.adiac-congo.com/ （刚果（布）通讯社）
+145 刚果（金）
+	🟡 Actualite.cd：https://actualite.cd/ （刚果（金）主要新闻网站）
+146 吉布提
+	🟡 ★ ADI：http://www.adi.dj/ （吉布提国家通讯社）
+	🟡 La Nation：http://www.lanation.dj/ （吉布提政府机关报）
+	🟡 Djibouti Post：https://www.djiboutipost.com/ （吉布提新闻网站）
+147 赤道几内亚
+	🟡 AhoraEG：https://ahoraeg.com/ （赤道几内亚新闻网站）
+	🟡 ★ Guinea Ecuatorial Press：https://www.guineaecuatorialpress.com/ （赤道几内亚官方新闻网站）
+148 厄立特里亚
+	🟡 ★ Shabait：http://www.shabait.com/ （厄立特里亚新闻部官方网站）
+149 埃塞俄比亚
+	🟡 ★ Ethiopian News Agency：https://www.ena.et/ （埃塞俄比亚国家通讯社）
+	🟡 The Reporter Ethiopia：https://www.thereporterethiopia.com/ （埃塞俄比亚英文周报）
+	🟡 Addis Standard：https://addisstandard.com/ （埃塞俄比亚英文独立月刊）
+	🟡 Borkena：https://borkena.com/ （埃塞俄比亚新闻网站）
+150 加蓬
+	🟡 Gabon Review：https://www.gabonreview.com/ （加蓬新闻网站）
+	🟡 Gabon Media Time：https://www.gabonmediatime.com/ （加蓬新闻网站）
+151 冈比亚
+	🟡 The Point：https://thepoint.gm/ （冈比亚主要英文报纸）
+	🟡 Standard Gambia：https://standard.gm/ （冈比亚报纸）
+152 加纳
+	🟡 ★ Ghana News Agency：https://www.gna.org.gh/ （加纳国家通讯社）
+	🟡 Daily Graphic：https://www.graphic.com.gh/ （加纳主要国营报纸）
+	🟡 Joy Online：https://www.myjoyonline.com/ （加纳主要广播集团数字平台）
+	🟡 Citinewsroom：https://citinewsroom.com/ （加纳主要广播电台新闻网站）
+153 几内亚
+	🟢 Le Djely：https://ledjely.com/ （几内亚主要独立新闻网站）
+	🟢 guineenews：https://guineenews.org/ （几内亚新闻网站）
+154 几内亚比绍
+	🟡 O Democrata：http://www.odemocratagb.com/ （几内亚比绍报纸）
+	🟡 Jornal Nô Pintcha：https://jornalnopintcha.gw/ （几内亚比绍国营报纸）
+	🟡 Rádio Sol Mansi：https://www.radiosolmansi.net/ （几内亚比绍广播电台）
+155 莱索托
+	🟡 Lesotho Times：https://lestimes.com/ （莱索托主要周报）
+	🟡 Informative News：https://www.informativenews.co.ls/ （莱索托新闻网站）
+156 利比里亚
+	🟡 FrontPage Africa：https://frontpageafricaonline.com/ （利比里亚主要调查性报纸）
+157 利比亚
+	🟡 Libya Herald：https://www.libyaherald.com/ （利比亚英文新闻网站）
+	🟡 The Libya Observer：https://www.libyaobserver.ly/ （利比亚英文新闻网站）
+158 马达加斯加
+	🟡 Midi Madagasikara：https://www.midi-madagasikara.mg/ （马达加斯加主要法语日报）
+	🟡 L'Express de Madagascar：https://lexpress.mg/ （马达加斯加法语报纸）
+	🟡 NewsMada：https://newsmada.com/ （马达加斯加新闻网站）
+159 马拉维
+	🟢 ★ The Nation：https://www.mwnation.com/ （马拉维主要独立报纸）
+	🟡 Nyasa Times：https://www.nyasatimes.com/ （马拉维新闻网站）
+	🟡 Malawi24：https://malawi24.com/ （马拉维新闻网站）
+160 马里
+	🟡 Bamada.net：https://bamada.net/ （马里主要新闻门户）
+	🟡 MaliJet：https://malijet.com/ （马里新闻网站）
+	🟡 Studio Tamani：https://www.studiotamani.org/ （马里广播电台新闻网站）
+161 毛里塔尼亚
+	🟡 ★ AMI：http://www.ami.mr/ （毛里塔尼亚国家通讯社）
+	🟡 Cridem：https://cridem.org/ （毛里塔尼亚新闻网站）
+	🟡 Al Akhbar：https://alakhbar.info/ （毛里塔尼亚独立阿拉伯语新闻网站）
+162 毛里求斯
+	🟡 L'Express：https://lexpress.mu/ （毛里求斯主要法语报纸）
+	🟡 Le Mauricien：https://www.lemauricien.com/ （毛里求斯主要独立报纸）
+	🟡 Mauritius Times：https://mauritiustimes.com/ （毛里求斯英文报纸）
+	🟡 Defimedia：https://defimedia.info/ （毛里求斯新闻集团）
+163 摩洛哥
+	🟡 Le360：https://fr.le360.ma/ （摩洛哥主要数字新闻媒体）
+	🟡 Hespress：https://www.hespress.com/ （摩洛哥主要阿拉伯语数字报纸）
+	🟡 Medias24：https://www.medias24.com/ （摩洛哥法语经济新闻网站）
+164 莫桑比克
+	🟡 ★ AIM：https://aimnews.org/ （莫桑比克国家通讯社）
+	🟡 O País：https://opais.co.mz/ （莫桑比克主流独立报纸）
+	🟡 Carta de Moçambique：https://cartamz.com/ （莫桑比克新闻网站）
+	🟡 Notícias：https://www.jornalnoticias.co.mz/ （莫桑比克国营报纸）
+165 纳米比亚
+	🟡 ★ The Namibian：https://www.namibian.com.na/ （纳米比亚主要报纸）
+166 尼日尔
+	🟡 ★ Le Sahel：http://www.lesahel.org/ （尼日尔国营报纸）
+167 卢旺达
+	🟢 ★ The New Times：https://www.newtimes.co.rw/ （卢旺达主要英文日报）
+	🟢 KT Press：https://www.ktpress.rw/ （卢旺达新闻通讯社）
+	🟡 IGIHE：https://www.igihe.com/ （卢旺达主要基尼亚卢旺达语新闻网站）
+	🟡 Umuseke：https://umuseke.rw/ （卢旺达新闻网站）
+168 圣多美和普林西比
+	🟡 Téla Nón：https://www.telanon.info/ （圣普主要独立新闻网站）
+	🟡 STP-Press：https://www.stp-press.st/ （圣普国家通讯社）
+169 塞内加尔
+	🟡 ★ APS：https://aps.sn/ （塞内加尔国家通讯社）
+	🟡 Le Soleil：https://lesoleil.sn/ （塞内加尔国营报纸）
+	🟡 Seneweb：https://www.seneweb.com/ （塞内加尔主要新闻门户）
+	🟡 Dakaractu：https://www.dakaractu.com/ （塞内加尔新闻网站）
+170 塞舌尔
+	🟡 ★ Seychelles Nation：http://www.nation.sc/ （塞舌尔政府机关报）
+171 塞拉利昂
+	🟡 ★ SLENA：https://slena.gov.sl/ （塞拉利昂国家通讯社）
+	🟡 Politico SL：https://www.politicosl.com/ （塞拉利昂主要独立报纸）
+172 索马里
+	🟢 ★ 索马里国家电视台：https://sntv.so/ （索马里国营电视台）
+	🟡 Somali Dispatch：https://www.somalidispatch.com/ （索马里新闻网站）
+	🟡 Goobjoog Media：https://goobjoog.com/ （索马里主要独立媒体集团）
+	🟡 Hiiraan Online：https://www.hiiraan.com/ （索马里主要独立新闻门户）
+	🟡 ★ SONNA：https://sonna.so/ （索马里国家通讯社）
+	🟡 Garowe Online：https://www.garoweonline.com/ （邦特兰地区主要新闻网站）
+	🟡 Caasimada Online：https://www.caasimada.net/ （索马里新闻网站）
+173 南苏丹
+	🟡 Eye Radio：https://eyeradio.org/ （南苏丹主要独立广播电台）
+	🟡 Radio Tamazuj：https://radiotamazuj.org/ （南苏丹主要独立新闻广播）
+	🟡 Sudans Post：https://sudanspost.com/ （南苏丹新闻网站）
+174 苏丹
+	🟢 Sudan Tribune：https://sudantribune.com/ （苏丹主要独立英文新闻网站）
+	🟢 Dabanga Sudan：https://www.dabangasudan.org/en （达尔富尔地区主要广播电台）
+	🟡 Sudanese Net：https://www.sudaninet.net/ （苏丹新闻门户）
+	🟢 Sudanile：https://www.sudannews.net/ （苏丹新闻网站）
+	🟢 ★ 苏丹通讯社：https://suna-sd.net/ （苏丹国家通讯社）
+	🔴 Al Rakoba：https://www.alrakoba.net/ （苏丹新闻网站）
+	🔴 Sudan Press：https://www.sudaress.com/ （苏丹报纸聚合平台）
+175 斯威士兰（2018年更名为史瓦帝尼王国）
+	🟢 ★ 埃斯瓦蒂尼时报：https://www.times.co.sz/ （斯威士兰主要独立报纸）
+176 坦桑尼亚
+	🟢 Mwananchi：https://www.mwananchi.co.tz/ （坦桑尼亚主要斯瓦希里语报纸）
+	🟢 ★ 坦桑尼亚国家广播：https://www.tbc.go.tz/ （坦桑尼亚广播公司）
+	🟡 IPP Media：https://ippmedia.com/the-guardian （坦桑尼亚主要媒体集团）
+	🟡 Daily News：https://dailynews.co.tz/ （坦桑尼亚国营英文报纸）
+	🟡 桑给巴尔广播：https://www.zbc.go.tz/ （桑给巴尔广播公司）
+177 多哥
+	🟡 Lomé Infos：https://www.lomeinfos.com/ （多哥新闻网站）
+	🟡 多哥新闻报：https://togopresse.tg/ （多哥新闻网站）
+	🟡 Togo First：https://www.togofirst.com/fr （多哥经济新闻网站）
+	🟡 27 Avril：https://www.27avril.com/ （多哥国营报纸）
+178 突尼斯
+	🟢 Nawaat：https://nawaat.org/ （突尼斯著名独立公民媒体）
+	🟢 曙光报：https://www.assabahnews.tn/ar/ （突尼斯主要阿拉伯语报纸）
+	🟢 Inkyfada：https://inkyfada.com/fr/ （突尼斯调查性新闻媒体）
+	🟢 Business News：https://www.businessnews.com.tn/ （突尼斯法语经济新闻网站）
+179 乌干达
+	🟢 观察者报：https://observer.ug/ （乌干达主要独立周报）
+	🟢 Daily Monitor：https://www.monitor.co.ug/ （乌干达主要独立报纸）
+	🟡 New Vision：https://www.newvision.co.ug/ （乌干达国营报纸）
+	🟡 尼罗河邮报：https://nilepost.co.ug/ （乌干达新闻网站）
+	🟡 Bukedde：https://www.bukedde.co.ug/ （乌干达主要卢干达语报纸）
+180 赞比亚
+	🟢 Zambia 24：https://zambia24.com/ （赞比亚新闻网站）
+	🟢 News Diggers：https://diggers.news/ （赞比亚主要调查性新闻网站）
+181 津巴布韦
+	🟢 Pindula：https://www.pindula.co.zw/Welcome_to_Pindula （津巴布韦主要新闻门户）
+	🟢 New Zimbabwe：https://www.newzimbabwe.com/ （津巴布韦新闻网站）
+	🟡 iHarare：https://iharare.com/ （津巴布韦新闻网站）
+	🟡 My Zimbabwe：https://www.myzimbabwe.co.zw/ （津巴布韦新闻网站）
+	🟡 The Zimbabwean：https://www.thezimbabwean.co/ （津巴布韦独立报纸）
+	🟡 Nehanda Radio：https://nehandaradio.com/ （津巴布韦新闻网站）
+	🟢 Techzim：https://www.techzim.co.zw/ （津巴布韦科技新闻网站）
+🧰 大洋洲（14国）
+182 澳大利亚
+	🟢 ★ 澳大利亚联合通讯社：https://aapnews.aap.com.au/ （澳大利亚国家通讯社）
+	🟢 ★ 7news：https://7news.com.au/ （澳大利亚主要商业电视网七号台新闻）
+183 新西兰
+	🟢 ★ Stuff：https://www.stuff.co.nz/ （新西兰主要新闻网站）
+	🟢 ★ 新西兰先驱报：https://www.nzherald.co.nz/ （新西兰主要报纸）
+184 斐济
+	🟢 太阳报： https://fijisun.com.fj/ （斐济英文日报）
+	🟢 斐济时报：https://www.fijitimes.com.fj/ （斐济历史悠久的报纸）
+	🟢 Fiji Village：https://fijivillage.com/ （斐济主要新闻网站）
+185 基里巴斯
+	🟢 ★ 基里巴斯政府网站：https://kiribati.gov.ki/ （基里巴斯政府官网新闻）
+186 马绍尔群岛
+	🟢 马绍尔群岛日报：https://marshallislandsjournal.com/category/news/ （马绍尔群岛报纸）
+187 密克罗尼西亚
+	🟢 ★ 密克罗尼西亚政府官网：https://gov.fm/ （密联邦政府新闻发布）
+188 瑙鲁
+	🟢 ★ 瑙鲁政府官网：https://www.nauru.gov.nr/ （瑙鲁政府官方新闻）
+189 帕劳
+	🟢 岛屿时报：https://islandtimes.org/ （帕劳主要英文报纸）
+190 巴布亚新几内亚
+	🟢 EMTV 电视台：https://emtv.com.pg/ （巴新主要商业电视台）
+	🟢 The National：https://www.thenational.com.pg/ （巴新主要英文日报）
+	🟢 信使邮报：https://www.postcourier.com.pg/ （巴新历史悠久的报纸）
+191 萨摩亚
+	🔴 萨摩亚观察：https://www.samoaobserver.ws/ （萨摩亚主要英文报纸）
+	🟡 Samoa Global News：https://samoaglobalnews.com/ （萨摩亚新闻网站）
+192 所罗门群岛
+	🟢 所罗门星报：https://www.solomonstarnews.com/ （所罗门群岛主要报纸）
+	🟡 群岛报:https://sundayisles.islesmedia.net/ （所罗门群岛报纸）
+	🟡 所罗门群岛广播公司：https://www.sibconline.com.sb/ （所罗门群岛国家广播公司）
+193 汤加
+	🟢 汤加风：https://matangitonga.to/ （汤加主要独立新闻网站）
+	🟢 汤加广播：https://tbc.to/ （汤加广播委员会）
+194 图瓦卢
+	🟢 图瓦卢时报：https://www.tuvalutimes.com/ （图瓦卢新闻网站）
+195 瓦努阿图
+	🟢 维拉港新闻：https://portvilagazette.com/ （瓦努阿图新闻网站）
+	🟡 瓦努阿图广播：https://vbtc.vu/ （瓦努阿图广播电视台）
+🧰 其他国家（2国）
+196 库克群岛
+	🟢 库克群岛新闻：https://www.cookislandsnews.com/ （库克群岛主要报纸）
+197 纽埃
+	🟢 纽埃广播：https://tvniue.com/ （纽埃广播公司）
+🧰 其他讯息类网站
+	🟢 聚焦中亚五国：https://centralasia.media/ （中亚地区事务新闻聚合网站）
+	🟡 NewsNow：https://www.newsnow.co.uk/h/ （英国实时新闻聚合平台）
+	🟢 太平洋岛国新闻协会：https://pina.com.fj/ （太平洋岛国新闻协会官网）
+¡	太平洋岛国：斐济、巴布亚新几内亚、所罗门群岛、汤加、萨摩亚、瓦努阿图、基里巴斯、密克罗尼西亚、马绍尔群岛、帕劳、瑙鲁、图瓦卢、库克群岛、纽埃
+	🟢 OnlineNewspapers ：http://www.onlinenewspapers.com （全球报纸在线目录）
+	🟢 World-Newspapers ：https://www.world-newspapers.com （全球英文报纸与杂志链接目录）
+	🟢 AllYouCanRead  ：https://www.allyoucanread.com （全球在线报纸与杂志目录）
+📌 补充说明
+	无法访问？ 可尝试切换手机流量/热点，或更换浏览器、清除缓存、关闭广告拦截插件。
+	验证码拦截？ 个别网站Cloudflare验证级别高，频繁访问会被临时拉黑，稍后再试即可。
+	看不懂外语？ Edge、Safari等浏览器自带网页翻译功能，也可安装翻译插件（如沉浸式翻译下载链接）。
+	网站选用标准：可访问>权威>主流>普通
+	标识说明：🟢流畅 / 🟡适中 / 🔴缓慢（主观感受），★为该国家或组织具有代表性或官方背景的权威媒体。
+	访问速度受物理距离、网站服务器配置、本地网络节点等多重因素影响，部分网站可能确实较慢，请耐心等待。
+🔍 百度必应等搜索引擎使用技巧
+	搜索引擎会优先展示关键词同语言的结果。
+	例如你想获取国外关于特朗普的报道，应该优先使用“Donald Trump”作为关键词，而不是“特朗普”。
+	更进一步可以用“Donald Trump news”作为关键词。
+	搜索结果如果还有中文讯息例如“百度百科”可以用“Donald Trump news -baike”作为关键词，搜索引擎会将-后内容作为排除项。（搜索引擎通用操作符还蛮多的，site:、filetype:、inurl:等等）
+
+
