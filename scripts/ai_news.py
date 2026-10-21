@@ -2,15 +2,19 @@
 import hashlib
 import json
 import os
+import re
+import threading
 import time
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
-from concurrent.futures import ThreadPoolExecutor
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = 'editorial-v1'
+VERSION = 'editorial-v1'  # Preserve reusable existing article caches.
+
+class BudgetExceeded(RuntimeError):
+    pass
 
 def settings():
     values = {}
@@ -39,16 +43,45 @@ class Client:
         if not all(self.keys): raise ValueError('Three AI keys are required')
         self.model = self.config.get('AI_MODEL','')
         self.opener = urllib.request.build_opener(NoRedirect)
+        self.budget = int(self.config.get('AI_TOKEN_BUDGET','300000'))
+        if self.budget < 0: raise ValueError('AI_TOKEN_BUDGET must be nonnegative')
+        self.editorial_budget=self.budget
+        self.used_bound=0
+        self.usage={'calls':0,'retries':0,'prompt_tokens':0,'completion_tokens':0,'missing_usage':0,'stages':{}}
+        self.lock=threading.Lock()
 
     def request(self, route, slot, payload=None):
         data = json.dumps(payload,ensure_ascii=False).encode() if payload else None
         req = urllib.request.Request(self.base+route,data=data,headers={'Authorization':'Bearer '+self.keys[slot], 'Content-Type':'application/json'})
         for attempt in range(3):
+            reservation=0
+            stage=('edit','review','compare')[slot]
+            if payload:
+                # UTF-8 byte count plus framing is deliberately conservative, not a bill estimate.
+                reservation=len(data)+2048+payload.get('max_tokens',0)
+                with self.lock:
+                    ceiling=self.budget if slot==2 else self.editorial_budget
+                    if self.used_bound+reservation>ceiling: raise BudgetExceeded('AI token reservation budget reached')
+                    self.used_bound+=reservation
+                    self.usage['calls']+=1
+                    self.usage['retries']+=int(attempt>0)
+                    self.usage['stages'].setdefault(stage,{'calls':0,'prompt_tokens':0,'completion_tokens':0})['calls']+=1
             try:
                 with self.opener.open(req,timeout=90) as response:
                     body = response.read(4_000_001)
                 if len(body)>4_000_000: raise ValueError('AI response too large')
-                return json.loads(body)
+                result=json.loads(body)
+                if payload:
+                    usage=result.get('usage') or {}
+                    prompt=usage.get('prompt_tokens'); completion=usage.get('completion_tokens')
+                    with self.lock:
+                        if isinstance(prompt,int) and isinstance(completion,int) and prompt>=0 and completion>=0:
+                            self.used_bound+=prompt+completion-reservation
+                            for key,value in [('prompt_tokens',prompt),('completion_tokens',completion)]:
+                                self.usage[key]+=value
+                                self.usage['stages'][stage][key]+=value
+                        else: self.usage['missing_usage']+=1
+                return result
             except urllib.error.HTTPError as error:
                 if error.code in (429,500,502,503,504) and attempt<2:
                     time.sleep(2**attempt); continue
@@ -94,10 +127,11 @@ def clean_editorial(value, rows):
 
 FORMAT = '返回 {"articles":[{"id":"输入ID","title_zh":"中文标题","title_en":"英文标题","summary_zh":"中文概述","tags":["标签"],"grounded":true}]}，每篇恰好一次。'
 
-def edit_batch(client, rows):
+def edit_batch(client, rows, review=False):
     raw = [evidence(r) for r in rows]
     glossary=json.loads((ROOT/'config/glossary.json').read_text(encoding='utf-8'))
     draft = client.chat(0, FORMAT+'忠实翻译标题，中文标题尽量45字以内，保留关键事实；中文概述用1到3句，突出材料中的新增信息，避免重复标题。统一术语：'+json.dumps(glossary,ensure_ascii=False)+'。只根据标题与 feed_excerpt。没有摘要时只概括标题并明确“仅据标题”。不添加原因、数字、背景和预测。保留金额、币种、统计期和观点归属。research_status 为 preprint 时明确是预印本，不宣称经过同行评审；个人观点不得改写成已经证实的事实。标签2到4个，短且具体。英文原题为英文时保留原题。',raw)
+    if not review: return clean_editorial(draft,rows)
     reviewed = client.chat(1, FORMAT+'复核草稿相对于原始证据的每个主张。删除无依据的细节、夸张、确定性和推断；保留说法归属。纠正中英文翻译，输出完整修订稿。仅当全部文字有输入依据时 grounded=true。输入只有标题时明确“仅据标题”，不要伪称已阅读全文。',{'evidence':raw,'draft':draft})
     return clean_editorial(reviewed,rows)
 
@@ -122,14 +156,43 @@ def clean_comparisons(value, rows):
         result.append({'title_zh':title,'common_ground':common,'article_ids':ids,'comparison_type':kind,'differences':[{'article_id':d['article_id'],'focus':d['focus']} for d in differences], 'basis':'仅比较所列来源的标题与 RSS 摘要；不代表全文立场或独立核验。'})
     return result
 
+def candidate_groups(rows, maximum=12):
+    """Cheap lexical candidates; AI still must confirm same event. No chronological windows."""
+    from scripts.editorial import timestamp
+    stop={'the','and','for','with','from','that','this','after','over','says','news','new','into','will','have','been','about','their','more','than','研究','新闻','人工智能','预印本'}
+    def terms(row):
+        text=(row.get('title_en') or row.get('title') or '').lower()
+        words=set(re.findall(r'[a-z]{3,}',text))-stop
+        for run in re.findall(r'[\u4e00-\u9fff]+',text):
+            words.update(run[i:i+2] for i in range(len(run)-1))
+        return words
+    indexed=[(r,terms(r),timestamp(r.get('published_at'))) for r in rows]
+    used=set(); groups=[]
+    for row,words,when in indexed:
+        if row['id'] in used or not when or len(words)<3: continue
+        group=[row]
+        for other,tokens,at in indexed:
+            if other['id']==row['id'] or other['id'] in used or not at or abs((when-at).total_seconds())>172800: continue
+            if other['source_id']==row['source_id']: continue
+            overlap=words & tokens
+            if len(overlap)>=3 and len(overlap)/max(1,min(len(words),len(tokens)))>=.45:
+                group.append(other)
+                if len(group)==4: break
+        if len(group)>1:
+            groups.append(group);used.update(r['id'] for r in group)
+            if len(groups)>=maximum: break
+    return groups if maximum>0 else []
+
+
 def enrich(rows, data_dir, limit=None):
     from scripts.update_news import atomic_json
+    from scripts.editorial import diverse
     config=settings()
     if not config.get('BASE_URL'): return rows, [], {'state':'not_configured','enriched':0}
     client=Client(config)
     client.discover()
     cache_dir=data_dir/'ai-cache'
-    stats={'state':'complete','model':client.model,'enriched':0,'cached':0,'failed':0,'processed_at':datetime.now(timezone.utc).isoformat()}
+    stats={'state':'complete','model':client.model,'enriched':0,'cached':0,'failed':0,'reviewed':0,'budget_exhausted':False,'processed_at':datetime.now(timezone.utc).isoformat()}
     pending=[]
     for row in rows:
         fingerprint=hashlib.sha256(json.dumps([VERSION,client.model,evidence(row)],sort_keys=True,ensure_ascii=False).encode()).hexdigest()
@@ -140,59 +203,59 @@ def enrich(rows, data_dir, limit=None):
             row.update(valid,ai_basis='rss_excerpt' if row.get('feed_excerpt') else 'title_only',ai_model=client.model)
             stats['cached']+=1
         except (OSError,ValueError,KeyError,TypeError): pending.append((row,path))
-    selected=pending if limit is None else pending[:limit]
-    batches=[selected[i:i+6] for i in range(0,len(selected),6)]
-    def work(batch):
-        try: return batch,edit_batch(client,[r for r,p in batch]),None
-        except (ValueError,KeyError,TypeError):
-            # One malformed/rejected article must not discard five valid peers.
-            edited={}
-            for row,path in batch:
-                try: edited.update(edit_batch(client,[row]))
-                except Exception: pass
-            return batch,edited,None
-        except Exception as error: return batch,None,type(error).__name__
-    with ThreadPoolExecutor(max_workers=3) as pool:
-        for batch,edited,error in pool.map(work,batches):
-            if error:
-                stats['failed']+=len(batch)
-                print(f'AI batch failed ({error}); original news retained',flush=True)
-                continue
-            for row,path in batch:
-                if row['id'] not in edited:
-                    stats['failed']+=1
-                    continue
-                row.update(edited[row['id']],ai_basis='rss_excerpt' if row.get('feed_excerpt') else 'title_only',ai_model=client.model)
-                atomic_json(path,edited[row['id']])
-                stats['enriched']+=1
-            print(f"AI processed {stats['enriched']+stats['cached']}/{len(rows)}",flush=True)
-    # Compare only bounded, dated evidence; third key never invents additional URLs.
-    eligible=[r for r in rows if r.get('title_zh') and r.get('published_at')]
+    eligible=[r for r in rows if r.get('published_at')]
+    candidates=candidate_groups(eligible,max(0,int(config.get('AI_COMPARISON_LIMIT','12'))))
+    if candidates: client.editorial_budget=int(client.budget*.8)
+    # Balance source/category representation rather than spending the budget on one large feed.
+    selected_rows=diverse([r for r,p in pending],len(pending) if limit is None else limit)
+    paths={r['id']:p for r,p in pending}
+    review_limit=max(0,int(config.get('AI_REVIEW_LIMIT','12')))
+    priority={r['id'] for r in selected_rows[:review_limit]}
+    # Separate priority and regular batches so one priority item doesn't double-edit its peers.
+    batches=[]
+    for review in (True,False):
+        subset=[r for r in selected_rows if (r['id'] in priority)==review]
+        batches.extend((subset[i:i+6],review) for i in range(0,len(subset),6))
+    for batch,review in batches:
+        try:
+            edited=edit_batch(client,batch,review=review)
+        except BudgetExceeded:
+            stats['budget_exhausted']=True;break
+        except Exception as error:
+            stats['failed']+=len(batch)
+            print(f'AI batch skipped ({type(error).__name__}); original news retained',flush=True)
+            continue  # No expensive per-article fan-out after a malformed response.
+        for row in batch:
+            row.update(edited[row['id']],ai_basis='rss_excerpt' if row.get('feed_excerpt') else 'title_only',ai_model=client.model,ai_review='reviewed' if review else 'single_pass')
+            atomic_json(paths[row['id']],edited[row['id']])
+            stats['enriched']+=1
+            stats['reviewed']+=int(review)
     comparisons=[]
-    if len({r['source_id'] for r in eligible})>=2:
-        signature=hashlib.sha256(json.dumps([VERSION,'comparison-v3',client.model,[evidence(r) for r in eligible]],sort_keys=True).encode()).hexdigest()
+    stats['comparison_candidates']=len(candidates)
+    stats['comparison_cached']=0
+    for group in candidates:
+        signature=hashlib.sha256(json.dumps(['comparison-candidates-v1',client.model,sorted([evidence(r) for r in group],key=lambda r:r['id'])],sort_keys=True,ensure_ascii=False).encode()).hexdigest()
         cp=cache_dir/('comparison-'+signature+'.json')
         try:
-            if cp.exists(): value=json.loads(cp.read_text(encoding='utf-8'))
+            if cp.exists():
+                value=json.loads(cp.read_text(encoding='utf-8'));stats['comparison_cached']+=1
             else:
-                groups=[]
-                # Small overlapping chronological windows bound output and allow close events to meet.
-                for offset in range(0,len(eligible),24):
-                    window=eligible[offset:offset+30]
-                    if len({r['source_id'] for r in window})<2: continue
-                    response=client.chat(2,'寻找同一具体事件的跨媒体报道，不能只按大主题拼接，地点、主体和时间必须兼容。不足则 comparisons=[]。最多3组，每组2到4篇；比较实际材料的共同事实与报道侧重点，不推测媒体立场。不声称交叉核实。没有实质差异时 comparison_type=主要信息一致；有矛盾才标记说法冲突，保留各方归属与时间。comparison_type仅选信息互补、侧重点不同、说法冲突、主要信息一致。每段限100个中文字。返回 {"comparisons":[{"title_zh":"事件","same_event":true,"article_ids":["id1","id2"],"common_ground":"共同报道了什么","differences":[{"article_id":"id1","focus":"该材料侧重点"},{"article_id":"id2","focus":"该材料侧重点"}]}]}。', [evidence(r) for r in window])
-                    groups.extend(dict(g,same_event=True) for g in clean_comparisons(response,window))
-                unique={tuple(sorted(g['article_ids'])):g for g in groups}
-                value={'comparisons':list(unique.values())}
-            comparisons=clean_comparisons(value,eligible)
-            atomic_json(cp,{'comparisons':[dict(g,same_event=True) for g in comparisons]})
+                value=client.chat(2,'判断是否同一具体事件，不能按大主题拼接；地点、主体和时间须兼容。否则 comparisons=[]。只比较材料实际共同事实与侧重点，不推测立场，不声称交叉核实。每段限100字。返回 {"comparisons":[{"title_zh":"事件","same_event":true,"article_ids":["id1","id2"],"common_ground":"共同报道","comparison_type":"侧重点不同","differences":[{"article_id":"id1","focus":"侧重点"},{"article_id":"id2","focus":"侧重点"}]}]}', [evidence(r) for r in group])
+            clean=clean_comparisons(value,group)
+            comparisons.extend(clean)
+            atomic_json(cp,{'comparisons':[dict(g,same_event=True) for g in clean]})
+        except BudgetExceeded:
+            stats['budget_exhausted']=True;break
         except Exception as error:
-            stats['comparison_state']='unavailable'
             stats['comparison_error']=type(error).__name__
-    if 'comparison_state' not in stats:
-        stats['comparison_state']='complete' if comparisons else 'no_matches'
+    stats['comparison_state']='partial' if stats['budget_exhausted'] or stats.get('comparison_error') else 'complete' if comparisons else 'no_matches'
     stats['remaining']=len(rows)-stats['cached']-stats['enriched']
     if stats['remaining']: stats['state']='partial'
+    stats['usage']=client.usage
+    stats['token_budget']=client.budget
+    stats['accounted_tokens']=client.used_bound
+    stats['budget_basis']='UTF-8 bytes + framing + max output reserved before every attempt; settled from provider usage when available; unknown attempts retain reservation. Not a billing guarantee.'
+    atomic_json(data_dir/'ai-usage.json',stats)
     return rows,comparisons,stats
 
 if __name__=='__main__':

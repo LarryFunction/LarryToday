@@ -1,3 +1,5 @@
+let currentPage=1, pageSignature='', renderVersion=0;
+const PAGE_SIZE=30;
 const $ = s => document.querySelector(s);
 const categories = ['全部','国际政治','科技与 AI','经济与投资','科学与探索','环境与气候','社会与文化'];
 const mapping = {international:'国际政治',regional:'国际政治',diplomacy:'国际政治',technology:'科技与 AI',ai:'科技与 AI',economy:'经济与投资',macro:'经济与投资',disclosure:'经济与投资',science:'科学与探索',climate:'环境与气候',society:'社会与文化'};
@@ -35,15 +37,19 @@ function comparisonPanel(a){
   const groups=a._event?.comparison?[a._event.comparison]:(edition.comparisons||[]).filter(g=>g.article_ids.includes(a.id));
   return groups.map(g=>`<details class="comparison"><summary>${esc(g.comparison_type||'多源视角')} <span>${esc(g.title_zh)} ↗</span></summary><div class="comparison-body"><p class="comparison-common">${esc(g.common_ground)}</p>${g.differences.map(d=>{const source=edition.articles.find(r=>r.id===d.article_id);return source?`<div class="source-perspective"><a href="${safe(source.url)}" target="_blank" rel="noopener noreferrer">${esc(name(source.source_id))} ↗</a><p>${esc(d.focus)}</p></div>`:'';}).join('')}<p class="ai-note">AI 辅助对比 · ${esc(g.basis)}</p></div></details>`).join('');
 }
+function geoMark(a){
+  const g=a.geography||{code:'—',label:'未明确地域',kind:'unknown',basis:'材料不足，不推断国家'};
+  return `<div class="geo-mark geo-${esc(g.kind)} theme-${themes[a.category]?.[0]||'world'}" title="${esc(g.basis)}"><span class="geo-rule" aria-hidden="true"></span><b>${esc(g.code)}</b><small>${esc(g.label)}</small></div>`;
+}
 function articleRow(a,i){
   const bilingual=a.title_zh?`<div class="english-title" lang="en">${esc(a.title_en||a.title)}</div>`:'';
-  const summary=a.summary_zh||a.summary;
-  return `<article class="news-row" id="${esc(a._event?.id||'event-'+a.id)}"><div class="row-index"><span>${String(i+1).padStart(2,'0')}</span>${kicker(a)}<div class="row-source">${esc(name(a.source_id))}</div><time>${date(a.published_at)}</time></div><div class="row-story"><h3>${link(a)}</h3>${bilingual}<div class="story-kind">${esc(a.content_type||'新闻')}${a.research_status==='preprint'?' · 同行评审状态未核实':''}${a._editionDate?' · 收藏自 '+esc(a._editionDate):''}</div>${summary?`<p class="news-summary">${esc(summary)}</p>`:''}<div class="tags">${(a.tags||[]).map(t=>`<button data-tag="${esc(t)}">${esc(t)}</button>`).join('')}</div><div class="row-foot"><span class="ai-note">${a.title_zh?`AI 辅助编辑 · ${a.ai_basis==='title_only'?'仅据标题':'基于来源摘要'} · 未独立核验`:'来源原文 · AI 导读暂未生成'}</span><a href="${safe(a.url)}" target="_blank" rel="noopener noreferrer">阅读原文 ↗</a></div>${eventSources(a)}${comparisonPanel(a)}</div><button class="row-save" data-save="${esc(a.id)}" aria-label="${saved.has(a.id)?'取消收藏':'收藏文章'}" aria-pressed="${saved.has(a.id)}">${saved.has(a.id)?'★':'☆'}</button></article>`;
+  const summary=a.summary_zh||a.summary||a.feed_excerpt;
+  return `<article class="news-row" id="${esc(a._event?.id||'event-'+a.id)}"><div class="row-index"><span>${String(i+1).padStart(2,'0')}</span>${kicker(a)}<div class="row-source">${esc(name(a.source_id))}</div><time>${date(a.published_at)}</time>${geoMark(a)}</div><div class="row-story"><h3>${link(a)}</h3>${bilingual}<div class="story-kind">${esc(a.content_type||'新闻')}${a.research_status==='preprint'?' · 同行评审状态未核实':''}${a._editionDate?' · 收藏自 '+esc(a._editionDate):''}</div>${summary?`<p class="news-summary">${esc(summary)}</p>`:''}<div class="tags">${(a.tags||[]).map(t=>`<button data-tag="${esc(t)}">${esc(t)}</button>`).join('')}</div><div class="row-foot"><span class="ai-note">${a.title_zh?`AI 辅助编辑 · ${a.ai_basis==='title_only'?'仅据标题':'基于来源摘要'} · 未独立核验`:'来源原文 · AI 导读暂未生成'}</span><a href="${safe(a.url)}" target="_blank" rel="noopener noreferrer">阅读原文 ↗</a></div>${eventSources(a)}${comparisonPanel(a)}</div><button class="row-save" data-save="${esc(a.id)}" aria-label="${saved.has(a.id)?'取消收藏':'收藏文章'}" aria-pressed="${saved.has(a.id)}">${saved.has(a.id)?'★':'☆'}</button></article>`;
 }
 function notify(t){$('#toast').textContent=t;$('#toast').style.display='block';setTimeout(()=>$('#toast').style.display='none',2200);}
 function matches(a,q){
   const members=a._event?.article_ids.map(id=>edition.articles.find(r=>r.id===id)).filter(Boolean)||[a];
-  return members.some(r=>`${r.title} ${r.title_zh||''} ${r.title_en||''} ${r.summary_zh||r.summary||''} ${(r.tags||[]).join(' ')} ${name(r.source_id)}`.toLowerCase().includes(q));
+  return members.some(r=>`${r.title} ${r.title_zh||''} ${r.title_en||''} ${r.summary_zh||r.summary||r._search||''} ${(r.tags||[]).join(' ')} ${name(r.source_id)}`.toLowerCase().includes(q));
 }
 function eventSources(a){
   const ids=a._event?.article_ids||[];
@@ -55,7 +61,7 @@ function morning(){
   if(category!=='全部' && !focusOnly && items.length<3){
     for(const event of edition.events||[]){
       const row=edition.articles.find(a=>a.id===event.lead_id);
-      if(row?.category===category && !items.some(b=>b.event_id===event.id)) items.push({event_id:event.id,category:row.category,title:row.title_zh||row.title,summary:row.summary_zh||row.summary||''});
+      if(row?.category===category && !items.some(b=>b.event_id===event.id)) items.push({event_id:event.id,category:row.category,title:row.title_zh||row.title,summary:row.summary_zh||row.summary||row._search||''});
       if(items.length>=3)break;
     }
   }
@@ -86,17 +92,31 @@ function healthSummary(){
   return `<div class="health-summary"><p>${health.length} 个配置入口 · ${new Set(available.map(h=>h.source_id)).size} 家来源有可用精确日期订阅 · ${health.filter(h=>h.state==='stale').length} 个过时入口</p><p>本期来源地区：${Object.entries(regions).map(([r,n])=>esc(r)+' '+n).join(' / ')||'旧版暂无统计'}</p><p class="ai-note">统计反映接入与收录，不代表独立性或事实核验。X：${socialStatus.configured?'已配置凭证':'未配置凭证'}。</p></div>`;
 }
 function persistSaved(){localStorage.setItem('larrytoday-saved-articles',JSON.stringify(savedArticles));}
-function rememberSaved(){for(const a of edition.articles){if(saved.has(a.id)&&!savedArticles[a.id])savedArticles[a.id]={...a,_editionDate:edition.date};}try{persistSaved();}catch{}}
+function rememberSaved(){for(const a of edition.articles){if(saved.has(a.id)&&!savedArticles[a.id]&&(!a._chunk||a._loaded))savedArticles[a.id]={...a,_editionDate:edition.date};}try{persistSaved();}catch{}}
 async function hydrateSaved(){
   if([...saved].every(id=>savedArticles[id]))return;
-  try{const days=await get('api/archive.json');for(const day of days){const n=await get('api/editions/'+day+'.json');for(const a of n.articles){if(saved.has(a.id)&&!savedArticles[a.id])savedArticles[a.id]={...a,_editionDate:day};}if([...saved].every(id=>savedArticles[id]))break;}persistSaved();}catch{notify('部分旧收藏暂未恢复，可打开对应原刊恢复。');}
+  try{const days=await get('api/archive.json');for(const day of days){const n=await get('api/editions/'+day+'.json');for(const a of n.articles){if(saved.has(a.id)&&!savedArticles[a.id]&&(!a._chunk||a._loaded))savedArticles[a.id]={...a,_editionDate:day};}if([...saved].every(id=>savedArticles[id]))break;}persistSaved();}catch{notify('部分旧收藏暂未恢复，可打开对应原刊恢复。');}
 }
-function resetEdition(){directory=false;savedOnly=false;focusOnly=false;category='全部';$('#search').value='';updateEditionLabel();render();}
+function resetEdition(){currentPage=1;pageSignature='';directory=false;savedOnly=false;focusOnly=false;category='全部';$('#search').value='';updateEditionLabel();render();}
 async function revisionDialog(day){const history=await get('api/revisions/'+day+'.json');showDialog(`<h2>${esc(day)} · 版本记录</h2><p>初版与每次修订分别保存，可随时查阅当时内容。</p>${history.map(h=>`<button class="archive-day" data-rev="${h.revision}" data-date="${day}">${h.revision===1?'初版':'修订 '+h.revision} · ${date(h.published_at)}<br>${esc(h.note)}</button>`).join('')}`);}
 $('#focus-button').onclick=()=>{focusOnly=!focusOnly;render();};
-$('#latest-button').onclick=async()=>{try{edition=await get('api/news.json');resetEdition();}catch{notify('无法读取最新一期');}};
+$('#latest-button').onclick=async()=>{try{edition=await latestEdition();resetEdition();}catch{notify('无法读取最新一期');}};
 $('#revision-button').onclick=async()=>{try{await revisionDialog(edition.date);}catch{notify('版本记录暂不可用');}};
-function render(){
+async function loadRows(ids, snapshot=edition){
+  const paths=[...new Set(snapshot.articles.filter(a=>ids.has(a.id)&&a._chunk&&!a._loaded).map(a=>a._chunk))];
+  await Promise.all(paths.map(async path=>{
+    const rows=await get(path);
+    if(!Array.isArray(rows))throw Error('正文块格式错误');
+    const byId=new Map(rows.map(a=>[a.id,a]));
+    if(snapshot.articles.some(a=>a._chunk===path&&!byId.has(a.id)))throw Error('日报版本已变化，请刷新');
+    for(const a of snapshot.articles){if(a._chunk===path&&byId.has(a.id))Object.assign(a,byId.get(a.id),{_loaded:true});}
+  }));
+}
+async function latestEdition(){try{return await get('api/reader.json');}catch{return get('api/news.json');}}
+async function render(){
+  const version=++renderVersion;
+  const signature=JSON.stringify([edition.date,edition.revision,category,savedOnly,focusOnly,directory,$('#search').value]);
+  if(signature!==pageSignature){currentPage=1;pageSignature=signature;}
   $('#categories').innerHTML=categories.map(c=>`<button class="${c===category?'active':''}" aria-pressed="${c===category}" data-category="${c}">${c}</button>`).join('');
   $('#news-view').hidden=directory;$('#sources-view').hidden=!directory;
   $('#sources-button').textContent=directory?'返回日报 ↗':'信息源目录 ↗';
@@ -123,7 +143,22 @@ function render(){
   $('#morning').innerHTML=showHero?morning():'';
   $('#focus-button').setAttribute('aria-pressed',focusOnly);
   $('#window-note').textContent=edition.window?`收录 ${date(edition.window.start)} — ${date(edition.window.end)}（北京时间） · 约 ${edition.reading_minutes||1} 分钟`:'历史版本 · 尚未采用固定截稿窗口';
-  $('#articles').innerHTML=filtered.map((a,i)=>articleRow(a,i)).join('');
+  const pages=Math.max(1,Math.ceil(filtered.length/PAGE_SIZE));
+  currentPage=Math.max(1,Math.min(currentPage,pages));
+  $('#result-count').textContent+=` · 第 ${currentPage} / ${pages} 页`;
+  const start=(currentPage-1)*PAGE_SIZE;
+  const visible=filtered.slice(start,start+PAGE_SIZE);
+  const ids=new Set(visible.flatMap(a=>a._event?.article_ids||[a.id]));
+  for(const event of edition.background_events||[])for(const id of event.article_ids)ids.add(id);
+  $('#articles').setAttribute('aria-busy','true');
+  $('#articles').innerHTML='<p class="page-loading" role="status">正在读取本页报道…</p>';
+  try{await loadRows(ids);}catch{if(version===renderVersion){$('#articles').innerHTML='<p role="alert">本页加载失败，请重试；若日报刚更新，请刷新页面。</p><button data-retry>重新加载</button>';$('#articles').setAttribute('aria-busy','false');}return;}
+  if(version!==renderVersion)return;
+  $('#articles').setAttribute('aria-busy','false');
+  $('#articles').innerHTML=visible.map((a,i)=>articleRow({...a,...(!savedOnly?edition.articles.find(r=>r.id===a.id):{})},start+i)).join('');
+  let pagination=$('#pagination');
+  if(!pagination){pagination=document.createElement('nav');pagination.id='pagination';pagination.setAttribute('aria-label','新闻分页');$('#articles').after(pagination);}
+  pagination.innerHTML=`<span>共 ${filtered.length} 条 · 第 ${currentPage} / ${pages} 页</span><div><button data-page="${currentPage-1}" ${currentPage===1?'disabled':''}>← 上一页</button><label>跳至 <input id="page-number" type="number" min="1" max="${pages}" value="${currentPage}" aria-label="页码"></label><button data-jump="${pages}">前往</button><button data-page="${currentPage+1}" ${currentPage===pages?'disabled':''}>下一页 →</button></div>`;
   $('#supplements').innerHTML=!savedOnly&&!focusOnly?supplements(q):'';
   $('#empty').hidden=filtered.length>0;
   $('#empty').textContent=savedOnly?'此分类下暂无收藏。收藏会在此浏览器保留原刊快照，可跨日期阅读。':'本期没有符合条件的事件。可查看下方背景阅读，或切换分类和关键词。';
@@ -145,4 +180,12 @@ $('#archive-button').onclick=async()=>{try{const days=await get('api/archive.jso
 $('#dialog-content').addEventListener('click',async e=>{const day=e.target.closest('[data-day]');const rev=e.target.closest('[data-rev]');try{if(day)await revisionDialog(day.dataset.day);if(rev){edition=await get('api/revisions/'+rev.dataset.date+'/'+rev.dataset.rev+'.json');resetEdition();$('#dialog').close();}}catch{notify('该期版本暂时不可用');}});
 
 $('#clock').textContent=new Date().toLocaleDateString('zh-CN',{timeZone:'Asia/Shanghai',year:'numeric',month:'long',day:'numeric',weekday:'long'});
-Promise.all([get('api/news.json'),get('api/sources.json'),get('api/source-health.json').catch(()=>[]),get('api/social-status.json').catch(()=>({})),get('api/social-posts.json').catch(()=>[])]).then(([n,s,h,ss,sp])=>{edition=n;sources=s.sources;health=h;socialStatus=ss;socialPosts=sp;updateEditionLabel();render();}).catch(()=>{$('#result-count').textContent='日报加载失败，请刷新重试。';$('#empty').hidden=false;$('#empty').textContent='暂时无法连接新闻服务。';});
+Promise.all([latestEdition(),get('api/sources.json'),get('api/source-health.json').catch(()=>[]),get('api/social-status.json').catch(()=>({})),get('api/social-posts.json').catch(()=>[])]).then(([n,s,h,ss,sp])=>{edition=n;sources=s.sources;health=h;socialStatus=ss;socialPosts=sp;updateEditionLabel();render();}).catch(()=>{$('#result-count').textContent='日报加载失败，请刷新重试。';$('#empty').hidden=false;$('#empty').textContent='暂时无法连接新闻服务。';});
+
+document.addEventListener('click',async e=>{
+  const retry=e.target.closest('[data-retry]');if(retry){render();return;}
+  const page=e.target.closest('[data-page]'),jump=e.target.closest('[data-jump]');
+  if(page||jump){currentPage=page?Number(page.dataset.page):Math.max(1,Math.min(Number(jump.dataset.jump),Math.trunc(Number($('#page-number').value))||1));await render();$('#articles').scrollIntoView({block:'start'});return;}
+  const morningLink=e.target.closest('#morning a[href^="#"]');
+  if(morningLink){e.preventDefault();const id=morningLink.getAttribute('href').slice(1);const events=(edition.events||[]).filter(a=>category==='全部'||a.category===category);const at=events.findIndex(a=>a.id===id);if(at<0)return;focusOnly=false;currentPage=Math.floor(at/PAGE_SIZE)+1;pageSignature=JSON.stringify([edition.date,edition.revision,category,savedOnly,focusOnly,directory,$('#search').value]);await render();document.getElementById(id)?.scrollIntoView({block:'center'});}
+});

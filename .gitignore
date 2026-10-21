@@ -9,3 +9,5 @@ data/.collect.lock
 data/ai-cache/
 data/article-pool.json
 data/background-candidates.json
+
+.test-tmp/

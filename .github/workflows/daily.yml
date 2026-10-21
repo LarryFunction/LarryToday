@@ -1,0 +1,72 @@
+name: Daily newspaper
+
+on:
+  schedule:
+    # 07:17 Asia/Shanghai; avoid the busy top of the hour.
+    - cron: '17 23 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily-newspaper
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/cache/restore@v4
+        with:
+          path: |
+            data/ai-cache
+            data/article-pool.json
+            data/background-candidates.json
+          key: newspaper-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: newspaper-
+      - name: Publish once per edition
+        env:
+          AI_ENABLED: ${{ vars.AI_ENABLED }}
+          AI_TOKEN_BUDGET: ${{ vars.AI_TOKEN_BUDGET || '300000' }}
+          AI_REVIEW_LIMIT: ${{ vars.AI_REVIEW_LIMIT || '12' }}
+          AI_COMPARISON_LIMIT: ${{ vars.AI_COMPARISON_LIMIT || '12' }}
+          BASE_URL: ${{ secrets.BASE_URL }}
+          BASE_KEY_1: ${{ secrets.BASE_KEY_1 }}
+          BASE_KEY_2: ${{ secrets.BASE_KEY_2 }}
+          BASE_KEY_3: ${{ secrets.BASE_KEY_3 }}
+          AI_MODEL: ${{ vars.AI_MODEL }}
+        run: python scripts/daily_update.py
+      - uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: |
+            data/ai-cache
+            data/article-pool.json
+            data/background-candidates.json
+          key: newspaper-${{ github.run_id }}-${{ github.run_attempt }}
+      - name: Save published data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/latest.json data/archive.json data/editions data/revisions data/last-update.json data/source-health.json
+          for file in data/social-posts.json data/social-status.json data/opinion-posts.json data/ai-usage.json; do
+            if [ -f "$file" ]; then git add "$file"; fi
+          done
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish daily newspaper"
+            git push origin HEAD:main
+          fi
+  # GITHUB_TOKEN pushes do not start the push workflow; invoke deployment explicitly.
+  deploy:
+    needs: publish
+    uses: ./.github/workflows/pages.yml

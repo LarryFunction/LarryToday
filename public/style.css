@@ -43,3 +43,13 @@ html{scroll-behavior:smooth;scroll-padding-top:28px}.reading-controls{display:fl
 @media(max-width:900px){.morning-grid{gap:12px}.morning-card>a{padding:18px 17px 22px}.morning-card h3{font-size:21px}.morning-category{letter-spacing:0}}
 @media(max-width:680px){.morning{padding-top:20px}.morning-heading{align-items:start}.morning h2{font-size:25px}.morning-label{font-size:8px;letter-spacing:1.5px}.morning-heading>p{font-size:12px}.morning-heading>p span{font-size:10px;max-width:100px}.morning-grid{grid-template-columns:1fr}.morning-card>a{padding:20px 22px}.morning-card h3{font-size:23px}.morning-card p{font-size:14px}.morning-card-top{margin-bottom:11px}.morning-number{font-size:32px}}
 @media(prefers-reduced-motion:reduce){.morning-card>a{transition:none}}
+
+/* Geographic print marks share each section's existing ink palette. */
+.geo-mark{position:relative;margin-top:24px;padding:12px 0 8px;border-top:1px solid currentColor;overflow:hidden;max-width:145px;color:var(--accent,var(--red));}
+.geo-mark b{display:block;font-family:Georgia,'Times New Roman',serif;font-size:32px;line-height:1.05;letter-spacing:-2px;overflow-wrap:anywhere;position:relative}
+.geo-mark small{display:block;font-size:11px;line-height:1.7;margin-top:7px;color:var(--ink);letter-spacing:1px}
+.geo-rule{display:block;width:30px;height:5px;background:currentColor;margin-bottom:9px;transform:skewX(-25deg)}
+.geo-pair b{font-size:25px}.geo-multi .geo-rule{width:58px}.geo-unknown{opacity:.55}.geo-scope b{font-size:22px;letter-spacing:-1px}
+#pagination{display:flex;justify-content:space-between;gap:16px;align-items:center;border-top:2px solid var(--ink);padding:22px 0;margin-bottom:22px;font-size:14px}
+#pagination div{display:flex;align-items:center;gap:12px;flex-wrap:wrap}#pagination button{padding:8px 12px;border:1px solid currentColor;background:transparent;cursor:pointer}#pagination button:disabled{opacity:.35;cursor:default}#page-number{width:55px;padding:7px;border:1px solid currentColor;background:transparent;color:inherit}.page-loading{padding:40px}
+@media(max-width:700px){.geo-mark{margin-top:10px;max-width:110px;padding-top:6px}.geo-mark b{font-size:24px}.geo-mark small{font-size:10px}.geo-scope b{font-size:17px}#pagination{align-items:flex-start;flex-direction:column}}

@@ -2,6 +2,7 @@
 import json
 import os
 import re
+from functools import lru_cache
 from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
 from pathlib import Path
 from urllib.parse import urlsplit
@@ -9,11 +10,29 @@ from scripts.site_payloads import merged_sources
 
 ROOT = Path(__file__).parent.resolve()
 
+@lru_cache(maxsize=2)
+def reader_payload(path, modified, size):
+    from scripts.build_pages import paged_payload
+    return paged_payload(json.loads(Path(path).read_text(encoding='utf-8')))
+
 class Handler(BaseHTTPRequestHandler):
     def do_GET(self):
         path = urlsplit(self.path).path
         if path.startswith('/api/') and path.endswith('.json'):
             path = path[:-5]
+        if path == '/api/reader' or re.fullmatch(r'/api/chunks/\d+',path):
+            from scripts.build_pages import paged_payload
+            file=ROOT/'data/latest.json'
+            if file.exists():
+                stat=file.stat()
+                manifest,chunks=reader_payload(str(file),stat.st_mtime_ns,stat.st_size)
+            else: manifest,chunks=paged_payload({'articles':[]})
+            if path == '/api/reader': payload=manifest
+            else:
+                i=int(path.rsplit('/',1)[1])
+                if i>=len(chunks): return self.send_error(404)
+                payload=chunks[i]
+            return self.send_body(json.dumps(payload,ensure_ascii=False).encode(),'application/json')
         routes = {'/':'public/index.html','/app.js':'public/app.js','/style.css':'public/style.css','/api/news':'data/latest.json','/api/archive':'data/archive.json','/api/sources':'srcs/sources.json','/api/status':'data/last-update.json'}
         target = routes.get(path)
         if path=='/api/sources':

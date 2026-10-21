@@ -9,6 +9,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from scripts.site_payloads import merged_sources
+from scripts.geography import geography
 
 
 def read_json(path):
@@ -22,7 +23,36 @@ def write_json(path, value):
 
 def copy_json(source, target):
     target.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(source, target)
+    value=read_json(source)
+    if isinstance(value,dict) and 'articles' in value:
+        value['articles']=[dict(r,geography=geography(r)) for r in value['articles']]
+    write_json(target,value)
+
+
+def paged_payload(edition):
+    """Keep full archives; latest reader downloads index and needed chunks."""
+    chunks=[]
+    articles=edition.get('articles',[])
+    manifest={k:v for k,v in edition.items() if k!='articles'}
+    manifest['paged']=True
+    manifest['articles']=[]
+    for offset in range(0,len(articles),30):
+        chunk=f'api/chunks/{offset//30}.json'
+        rows=[]
+        for original in articles[offset:offset+30]:
+            row=dict(original,geography=geography(original))
+            rows.append(row)
+            small={k:row[k] for k in ('id','title','title_zh','title_en','category','source_id','source_name','published_at','url','tags','section','geography') if k in row}
+            small['_chunk']=chunk
+            small['_search']=' '.join(str(row.get(k) or '') for k in ('summary_zh','summary'))
+            manifest['articles'].append(small)
+        chunks.append(rows)
+    return manifest,chunks
+
+def write_paged(api, edition):
+    manifest,chunks=paged_payload(edition)
+    for i,rows in enumerate(chunks): write_json(api/'chunks'/f'{i}.json',rows)
+    write_json(api/'reader.json',manifest)
 
 
 def build_site(root=ROOT, out=None):
@@ -56,13 +86,14 @@ def build_site(root=ROOT, out=None):
     latest_path = root / 'data' / 'latest.json'
     latest = read_json(latest_path) if latest_path.exists() else {}
     latest_date = latest.get('date')
+    write_paged(api, latest)
 
     edition_days = []
     editions = root / 'data' / 'editions'
     if editions.exists():
         (api / 'editions').mkdir(parents=True, exist_ok=True)
         for path in sorted(editions.glob('*.json')):
-            shutil.copy2(path, api / 'editions' / path.name)
+            copy_json(path, api / 'editions' / path.name)
             edition_days.append(path.stem)
     if latest_date and latest_date not in edition_days:
         write_json(api / 'editions' / f'{latest_date}.json', latest)
@@ -85,6 +116,8 @@ def build_site(root=ROOT, out=None):
     write_json(api / 'archive.json', archive)
 
     for day in archive:
+        if not (api / 'revisions' / day / '1.json').exists():
+            copy_json(api / 'editions' / f'{day}.json', api / 'revisions' / day / '1.json')
         if not (api / 'revisions' / f'{day}.json').exists():
             edition = read_json(api / 'editions' / f'{day}.json')
             write_json(api / 'revisions' / f'{day}.json', [{

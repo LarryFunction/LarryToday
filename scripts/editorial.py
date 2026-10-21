@@ -22,6 +22,8 @@ def window(now=None, day=None):
     return {'start':(end-timedelta(days=1)).isoformat(),'end':end.isoformat(),'timezone':'Asia/Shanghai','date':end.date().isoformat()}
 
 def classify(row):
+    from scripts.geography import geography
+    row['geography']=geography(row)
     text=' '.join(str(row.get(k,'')) for k in ('title','title_zh','title_en','feed_excerpt')).lower()
     row.setdefault('original_category',row['category'])
     rules=[('科技与 AI',r'\b(ai|artificial intelligence|openai|anthropic|semiconductor|cybersecurity|llm)\b|人工智能|大模型|芯片'),('环境与气候',r'\b(climate|emissions|renewable|biodiversity)\b|气候|碳排放'),('科学与探索',r'\b(nasa|astronomy|spacecraft|clinical trial)\b|航天|天文学'),('经济与投资',r'\b(inflation|interest rates|stock market|central bank|gdp)\b|通胀|央行|经济增长')]
