@@ -12,7 +12,6 @@ const safe = u => {try {const v=new URL(u); return ['http:','https:'].includes(v
 const name = id => sources.find(s=>s.id===id)?.name || edition.articles.find(a=>a.source_id===id)?.source_name || (edition.social_posts||[]).find(a=>a.source_id===id)?.source_name || id;
 const date = v => v ? new Date(v).toLocaleString('zh-CN',{timeZone:'Asia/Shanghai',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false}) : '发布时间未提供';
 const link = a => `<a href="${safe(a.url)}" target="_blank" rel="noopener noreferrer">${esc(a.title_zh||a.title)}</a>`;
-const meta = a => `<div class="meta"><span>${esc(name(a.source_id))}<br>${date(a.published_at)}</span><a href="${safe(a.url)}" target="_blank" rel="noopener noreferrer" aria-label="阅读原文">原文 ↗</a><button data-save="${esc(a.id)}" aria-label="${saved.has(a.id)?'取消收藏':'收藏文章'}" aria-pressed="${saved.has(a.id)}">${saved.has(a.id)?'★':'☆'}</button></div>`;
 const kicker = a => `<div class="kicker theme-${themes[a.category]?.[0]||'world'}">${esc(a.category)}</div>`;
 const themes = {
   '全部': ['world','A WORLD IN MOTION','GLOBAL PERSPECTIVES','地球上的每一天','从纷繁的新闻中，寻找世界的脉络。'],
@@ -35,16 +34,19 @@ function editionArt(){
 }
 function comparisonPanel(a){
   const groups=a._event?.comparison?[a._event.comparison]:(edition.comparisons||[]).filter(g=>g.article_ids.includes(a.id));
-  return groups.map(g=>`<details class="comparison"><summary>${esc(g.comparison_type||'多源视角')} <span>${esc(g.title_zh)} ↗</span></summary><div class="comparison-body"><p class="comparison-common">${esc(g.common_ground)}</p>${g.differences.map(d=>{const source=edition.articles.find(r=>r.id===d.article_id);return source?`<div class="source-perspective"><a href="${safe(source.url)}" target="_blank" rel="noopener noreferrer">${esc(name(source.source_id))} ↗</a><p>${esc(d.focus)}</p></div>`:'';}).join('')}<p class="ai-note">AI 辅助对比 · ${esc(g.basis)}</p></div></details>`).join('');
+  return groups.map(g=>`<details class="comparison"><summary>${esc(g.comparison_type||'多源视角')} <span>${esc(g.title_zh)} ↗</span></summary><div class="comparison-body"><p class="comparison-common">${esc(g.common_ground)}</p>${g.differences.map(d=>{const source=edition.articles.find(r=>r.id===d.article_id);return source?`<div class="source-perspective"><a href="${safe(source.url)}" target="_blank" rel="noopener noreferrer">${esc(name(source.source_id))} ↗</a><p>${esc(d.focus)}</p></div>`:'';}).join('')}</div></details>`).join('');
 }
 function geoMark(a){
-  const g=a.geography||{code:'—',label:'未明确地域',kind:'unknown',basis:'材料不足，不推断国家'};
-  return `<div class="geo-mark geo-${esc(g.kind)} theme-${themes[a.category]?.[0]||'world'}" title="${esc(g.basis)}"><span class="geo-rule" aria-hidden="true"></span><b>${esc(g.code)}</b><small>${esc(g.label)}</small></div>`;
+  const g=a.geography||{code:'—',label:'未明确地域',kind:'unknown'};
+  const codes=String(g.code).split(/\s*\/\s*/);
+  return `<aside class="geo-mark geo-${esc(g.kind)} ${codes.join('').length>4?'geo-wide':''} ${codes.join('').length>6?'geo-long':''}" aria-label="报道地域：${esc(g.label)}"><div class="geo-composition" aria-hidden="true"><i class="geo-orbit"></i><i class="geo-bar"></i><i class="geo-axis"></i></div><b class="geo-code">${codes.map(c=>`<span>${esc(c)}</span>`).join('')}</b><div class="geo-label">${esc(g.label)}</div></aside>`;
 }
 function articleRow(a,i){
   const bilingual=a.title_zh?`<div class="english-title" lang="en">${esc(a.title_en||a.title)}</div>`:'';
   const summary=a.summary_zh||a.summary||a.feed_excerpt;
-  return `<article class="news-row" id="${esc(a._event?.id||'event-'+a.id)}"><div class="row-index"><span>${String(i+1).padStart(2,'0')}</span>${kicker(a)}<div class="row-source">${esc(name(a.source_id))}</div><time>${date(a.published_at)}</time>${geoMark(a)}</div><div class="row-story"><h3>${link(a)}</h3>${bilingual}<div class="story-kind">${esc(a.content_type||'新闻')}${a.research_status==='preprint'?' · 同行评审状态未核实':''}${a._editionDate?' · 收藏自 '+esc(a._editionDate):''}</div>${summary?`<p class="news-summary">${esc(summary)}</p>`:''}<div class="tags">${(a.tags||[]).map(t=>`<button data-tag="${esc(t)}">${esc(t)}</button>`).join('')}</div><div class="row-foot"><span class="ai-note">${a.title_zh?`AI 辅助编辑 · ${a.ai_basis==='title_only'?'仅据标题':'基于来源摘要'} · 未独立核验`:'来源原文 · AI 导读暂未生成'}</span><a href="${safe(a.url)}" target="_blank" rel="noopener noreferrer">阅读原文 ↗</a></div>${eventSources(a)}${comparisonPanel(a)}</div><button class="row-save" data-save="${esc(a.id)}" aria-label="${saved.has(a.id)?'取消收藏':'收藏文章'}" aria-pressed="${saved.has(a.id)}">${saved.has(a.id)?'★':'☆'}</button></article>`;
+  const kind=a.research_status==='preprint'?'预印本':a.content_type;
+  const typeTag=kind&&kind!=='新闻'?`<span class="type-tag">${esc(kind)}</span>`:'';
+  return `<article class="news-row theme-${themes[a.category]?.[0]||'world'}" id="${esc(a._event?.id||'event-'+a.id)}"><div class="row-index"><span>${String(i+1).padStart(2,'0')}</span>${kicker(a)}<div class="row-source">${esc(name(a.source_id))}</div><time>${date(a.published_at)}</time></div><div class="row-story"><h3>${link(a)}</h3>${bilingual}${summary?`<p class="news-summary">${esc(summary)}</p>`:''}<div class="tags">${typeTag}${(a.tags||[]).map(t=>`<button data-tag="${esc(t)}">${esc(t)}</button>`).join('')}</div>${eventSources(a)}${comparisonPanel(a)}</div>${geoMark(a)}</article>`;
 }
 function notify(t){$('#toast').textContent=t;$('#toast').style.display='block';setTimeout(()=>$('#toast').style.display='none',2200);}
 function matches(a,q){
