@@ -23,7 +23,6 @@ def window(now=None, day=None):
 
 def classify(row):
     from scripts.geography import geography
-    row['geography']=geography(row)
     text=' '.join(str(row.get(k,'')) for k in ('title','title_zh','title_en','feed_excerpt')).lower()
     row.setdefault('original_category',row['category'])
     rules=[('科技与 AI',r'\b(ai|artificial intelligence|openai|anthropic|semiconductor|cybersecurity|llm)\b|人工智能|大模型|芯片'),('环境与气候',r'\b(climate|emissions|renewable|biodiversity)\b|气候|碳排放'),('科学与探索',r'\b(nasa|astronomy|spacecraft|clinical trial)\b|航天|天文学'),('经济与投资',r'\b(inflation|interest rates|stock market|central bank|gdp)\b|通胀|央行|经济增长')]
@@ -41,6 +40,7 @@ def classify(row):
     elif re.search(r'\b(best .{0,35}(gifts|deals|toys)|shopping|discount)\b|购物推荐|优惠券',title): row['content_type']='消费推荐'
     if row.get('research_status')=='preprint': row['content_type']='预印本修订' if row.get('announcement_type') in ('replace','replace-cross') else '预印本'
     elif row.get('source_kind')=='opinion': row['content_type']='观点'
+    row['geography']=geography(row)
     return row
 
 def partition(rows, bounds):

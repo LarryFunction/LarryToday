@@ -10,7 +10,7 @@ from scripts.build_pages import paged_payload
 
 class ReadingCostTests(unittest.TestCase):
     def test_geography_uses_content_not_publisher(self):
-        self.assertEqual(geography({'title': 'New algorithm', 'source_region': '美国'})['kind'], 'unknown')
+        self.assertEqual(geography({'title': 'New algorithm', 'source_region': '美国'})['kind'], 'topic')
         self.assertEqual(geography({'title': 'China and United States agree'})['countries'], ['CN', 'US'])
         self.assertEqual(geography({'title': 'New algorithm', 'research_status': 'preprint'})['code'], 'RESEARCH')
         self.assertEqual(geography({'title': 'Global climate report'})['code'], 'WORLD')

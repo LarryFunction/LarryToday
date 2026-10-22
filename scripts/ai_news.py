@@ -122,10 +122,13 @@ def clean_editorial(value, rows):
         if not isinstance(tags,list) or not 1<=len(tags)<=5 or any(not isinstance(t,str) or not t.strip() or len(t)>24 for t in tags): raise ValueError('Invalid tags')
         if item.get('grounded') is not True: raise ValueError('Editorial review rejected unsupported claims')
         result[item['id']]={k:item[k] for k in ('title_zh','title_en','summary_zh','tags')}
+        from scripts.geography import clean_country_mentions
+        mentions = clean_country_mentions(item.get('country_mentions'), next(r for r in rows if r['id'] == item['id']))
+        if mentions is not None: result[item['id']]['country_mentions'] = mentions
     if set(result)!=expected: raise ValueError('AI omitted articles')
     return result
 
-FORMAT = '返回 {"articles":[{"id":"输入ID","title_zh":"中文标题","title_en":"英文标题","summary_zh":"中文概述","tags":["标签"],"grounded":true}]}，每篇恰好一次。'
+FORMAT = '返回 {"articles":[{"id":"输入ID","title_zh":"中文标题","title_en":"英文标题","summary_zh":"中文概述","tags":["标签"],"country_mentions":[{"code":"US","evidence":"材料中的原文短语"}],"grounded":true}]}，每篇恰好一次。country_mentions 独立于 tags：仅根据原始标题和 feed_excerpt 判断新闻的主要相关国家，按重要性排序，最多8个，code 使用 ISO 两位大写国家代码，evidence 引用输入原文中2到100字的最短依据。可识别明确城市或机构所属国家，但不可根据媒体来源、作者国籍或泛泛背景推断，不确定则不填该国。无明确国家时返回空数组；不把全球性研究或产品强行归属于某国。'
 
 def edit_batch(client, rows, review=False):
     raw = [evidence(r) for r in rows]

@@ -51,8 +51,8 @@ html{scroll-behavior:smooth;scroll-padding-top:28px}.reading-controls{display:fl
 .geo-mark{position:relative;isolation:isolate;align-self:start;min-height:210px;padding:44px 18px 20px;color:var(--accent);overflow:hidden;background:linear-gradient(135deg,transparent 20%,var(--wash) 20%,var(--wash) 80%,transparent 80%)}
 .geo-composition{position:absolute;inset:0;z-index:-1;pointer-events:none}.geo-orbit{position:absolute;width:150px;height:150px;border:1px solid currentColor;border-radius:50%;right:-37px;top:12px;opacity:.45}.geo-bar{position:absolute;width:84px;height:10px;left:12px;top:21px;background:currentColor;transform:skewX(-28deg)}.geo-axis{position:absolute;left:20px;bottom:16px;width:28px;border-top:2px solid currentColor}
 .geo-code{display:block;position:relative;font:700 88px/.95 Georgia,'Times New Roman',serif;letter-spacing:-7px}.geo-code span{display:block}.geo-label{position:relative;font:500 15px/1.65 'Microsoft YaHei',sans-serif;letter-spacing:2px;margin:17px 0 12px;overflow-wrap:anywhere}
-.geo-pair{padding-top:36px}.geo-pair .geo-code{font-size:62px;line-height:.9;letter-spacing:-4px}.geo-pair .geo-code span+span{margin-left:45px}.geo-pair .geo-orbit{border-radius:0;transform:rotate(35deg);right:-70px}
-.geo-wide .geo-code{font-size:38px;letter-spacing:-2px;line-height:1.2}.geo-multi .geo-orbit{box-shadow:-18px 18px 0 -1px var(--wash),-18px 18px 0 0 currentColor}.geo-unknown{background:transparent;color:var(--muted)}.geo-unknown .geo-orbit{border-style:dashed}.geo-unknown .geo-bar{width:36px;opacity:.5}
+.geo-pair{padding-top:36px}.geo-pair .geo-code{font-size:62px;line-height:.9;letter-spacing:-4px}.geo-pair .geo-code span+span{margin-left:45px}
+.geo-wide .geo-code{font-size:38px;letter-spacing:-2px;line-height:1.2}.geo-unknown{background:transparent;color:var(--muted)}.geo-unknown .geo-orbit{border-style:dashed}.geo-unknown .geo-bar{width:36px;opacity:.5}
 .tags{gap:9px 12px;margin-top:22px}.tags button,.tags .type-tag{position:relative;display:inline-block;border:0;border-left:3px solid var(--accent);background:var(--wash);color:var(--accent);padding:7px 12px;font:500 12px/1.5 'Microsoft YaHei',sans-serif;letter-spacing:.5px;text-align:left;overflow-wrap:anywhere;max-width:100%}.tags button:hover{background:var(--accent);color:var(--paper);border-color:var(--accent)}.tags .type-tag{background:transparent;border:1px solid var(--accent)}.tags button:focus-visible,.row-story h3 a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
 @media(max-width:1100px){.news-row{grid-template-columns:110px minmax(0,1fr) 160px;gap:22px}.geo-mark{min-height:180px;padding:40px 12px 16px}.geo-code{font-size:72px;letter-spacing:-5px}.geo-wide .geo-code{font-size:29px}.geo-pair .geo-code{font-size:52px}.geo-pair .geo-code span+span{margin-left:28px}.geo-label{font-size:14px;letter-spacing:1px}.geo-orbit{width:125px;height:125px}}
 @media(max-width:760px){.news-row{grid-template-columns:minmax(0,1fr) 125px;gap:20px}.row-index{grid-column:1;display:block;margin:0}.row-index>span{font-size:34px;margin-bottom:12px}.row-index .kicker{font-size:11px}.row-source{margin-top:12px;font-size:12px}.row-index time{margin-top:4px;font-size:11px}.row-story{grid-column:1/-1;grid-row:2}.geo-mark{grid-column:2;grid-row:1;min-height:146px;padding:31px 10px 12px}.geo-code{font-size:58px;letter-spacing:-4px}.geo-wide .geo-code{font-size:24px;letter-spacing:-1px}.geo-pair .geo-code{font-size:39px}.geo-pair .geo-code span+span{margin-left:30px}.geo-label{font-size:12px;margin-top:10px;margin-bottom:8px}.geo-bar{top:13px;width:55px;height:7px}.geo-orbit{width:100px;height:100px}.geo-axis{left:12px;bottom:10px;width:18px}.tags button,.tags .type-tag{font-size:12px;padding:6px 10px}}
@@ -63,3 +63,19 @@ html{scroll-behavior:smooth;scroll-padding-top:28px}.reading-controls{display:fl
 .geo-long .geo-code{font-size:29px;letter-spacing:-1.5px}
 @media(max-width:1100px){.geo-long .geo-code{font-size:23px;letter-spacing:-1px}}
 @media(max-width:760px){.geo-long .geo-code{font-size:19px;letter-spacing:-1px}}
+
+/* Geographic visual grammar: count / region / topic, never economic rank. */
+.geo-label{font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong","SimSun",serif;font-size:17px;font-weight:600;line-height:1.7;letter-spacing:2px}
+.geo-word .geo-code{font-style:italic;font-weight:600;letter-spacing:-1.5px}
+.geo-pair .geo-orbit,.geo-multi .geo-orbit{width:120px;height:120px;right:-15px;top:22px}
+.geo-pair .geo-orbit:before,.geo-multi .geo-orbit:before,.geo-multi .geo-orbit:after{content:"";position:absolute;inset:-1px;border:1px solid currentColor;border-radius:50%;transform:translate(-42px,28px)}
+.geo-multi .geo-orbit:after{transform:translate(-4px,57px)}
+.geo-scope .geo-orbit{border-radius:0;border:0;opacity:.25;background:repeating-linear-gradient(0deg,transparent 0 23px,currentColor 23px 24px),repeating-linear-gradient(90deg,transparent 0 23px,currentColor 23px 24px);transform:rotate(-12deg)}
+.geo-topic .geo-orbit{width:115px;height:115px;border-radius:0;transform:rotate(45deg);right:-25px;top:25px}
+@media(max-width:1100px){.geo-label{font-size:16px;letter-spacing:1.5px}.geo-pair .geo-orbit,.geo-multi .geo-orbit{width:100px;height:100px}.geo-topic .geo-orbit{width:95px;height:95px}}
+@media(max-width:760px){.geo-label{font-size:14px;letter-spacing:1px}.geo-pair .geo-orbit,.geo-multi .geo-orbit{width:80px;height:80px;top:15px}.geo-pair .geo-orbit:before,.geo-multi .geo-orbit:before{transform:translate(-27px,18px)}.geo-multi .geo-orbit:after{transform:translate(-3px,36px)}.geo-topic .geo-orbit{width:75px;height:75px;top:20px}}
+
+.geo-label>span{display:inline-block;max-width:100%;vertical-align:top}.geo-label>i{font-style:normal;font-weight:400;opacity:.65}
+.geo-word .geo-code{font-size:44px}.geo-word.geo-long .geo-code{font-size:36px}
+@media(max-width:1100px){.geo-word .geo-code{font-size:32px}.geo-word.geo-long .geo-code{font-size:28px}}
+@media(max-width:760px){.geo-word .geo-code{font-size:28px}.geo-word.geo-long .geo-code{font-size:24px}}

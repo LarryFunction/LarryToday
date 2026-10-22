@@ -127,17 +127,61 @@ COUNTRIES.update({
 
 PATTERNS=[(code,label,re.compile(pattern,re.I)) for code,(label,pattern) in COUNTRIES.items()]
 
+TOPICS = {
+    '国际政治': ('AFFAIRS', '国际事务'),
+    '科技与 AI': ('TECH', '科技与智能'),
+    '经济与投资': ('MARKETS', '经济与市场'),
+    '科学与探索': ('RESEARCH', '科学研究'),
+    '环境与气候': ('CLIMATE', '环境与气候'),
+    '社会与文化': ('CULTURE', '社会与文化'),
+}
+
+
+def clean_country_mentions(value, row):
+    """Optional AI field: only supported codes with literal input evidence survive.
+
+    Invalid or absent fields fall back to local rules, without rejecting the article
+    or causing another paid request. Evidence is provenance, not fact verification.
+    """
+    if not isinstance(value, list) or len(value) > 8:
+        return None
+    material = ' '.join(str(row.get(k) or '') for k in ('title', 'feed_excerpt'))
+    result = []
+    for item in value:
+        if not isinstance(item, dict): return None
+        code, quote = item.get('code'), item.get('evidence')
+        if not isinstance(code, str) or code not in COUNTRIES: return None
+        if not isinstance(quote, str) or not 2 <= len(quote.strip()) <= 100: return None
+        if quote.strip().casefold() not in material.casefold(): return None
+        if code not in [r['code'] for r in result]:
+            result.append({'code': code, 'evidence': quote.strip()})
+    return result
+
+
+def country_mark(codes, basis):
+    return {'kind': 'single' if len(codes) == 1 else 'pair' if len(codes) == 2 else 'multi',
+            'code': ' / '.join(codes) if len(codes) <= 2 else 'MULTI',
+            'label': ' / '.join(COUNTRIES[c][0] for c in codes),
+            'countries': codes, 'basis': basis}
+
+
 def geography(row):
-    # Prefer title evidence to incidental countries in the body.
-    title=' '.join(str(row.get(k) or '') for k in ('title','title_zh','title_en'))
-    text=title+' '+str(row.get('feed_excerpt') or '')
-    for material in (title,text):
-        hits=[(match.start(),code,label) for code,label,pattern in PATTERNS if (match:=pattern.search(material))]
-        if hits:
-            hits.sort()
-            return {'kind':'single' if len(hits)==1 else 'pair' if len(hits)==2 else 'multi','code':' / '.join(h[1] for h in hits[:2]) if len(hits)<=2 else 'MULTI','label':' / '.join(h[2] for h in hits[:3]),'countries':[h[1] for h in hits], 'basis':'标题或摘要明确提及；不代表国家立场'}
-    for code,label,pattern in [('SPACE','太空',r'太空|宇宙|天文|\b(spacecraft|astronomy|cosmic|galaxy)\b'),('WORLD','全球',r'全球|全世界|\b(global|worldwide)\b'),('EUROPE','欧洲',r'欧洲|欧盟|\b(Europe|European)\b'),('ASIA','亚洲',r'亚洲|\bAsia\b')]:
-        if re.search(pattern,title,re.I): return {'kind':'scope','code':code,'label':label,'countries':[],'basis':'标题明确范围'}
-    if row.get('source_kind')=='research' or row.get('research_status')=='preprint':
-        return {'kind':'scope','code':'RESEARCH','label':'研究 · 未明确地域','countries':[],'basis':'研究类型，不推断国家'}
-    return {'kind':'unknown','code':'—','label':'未明确地域','countries':[],'basis':'材料不足，不推断国家'}
+    mentions = clean_country_mentions(row.get('country_mentions'), row)
+    if mentions:
+        return country_mark([m['code'] for m in mentions], 'AI 根据标题与摘要识别，附原始材料依据')
+    title = ' '.join(str(row.get(k) or '') for k in ('title', 'title_zh', 'title_en'))
+    text = title + ' ' + str(row.get('feed_excerpt') or row.get('summary_zh') or row.get('summary') or '')
+    # A validated empty AI result explicitly selects thematic/regional fallback.
+    if mentions is None:
+        for material in (title, text):
+            hits = [(match.start(), code) for code, label, pattern in PATTERNS if (match := pattern.search(material))]
+            if hits:
+                hits.sort()
+                return country_mark([h[1] for h in hits], '标题或摘要明确提及；不代表国家立场')
+    for code, label, pattern in [('SPACE','太空探索',r'太空|宇宙|天文|\b(spacecraft|astronomy|cosmic|galaxy)\b'),('WORLD','全球议题',r'全球|全世界|\b(global|worldwide)\b'),('EUROPE','欧洲',r'欧洲|欧盟|\b(Europe|European)\b'),('ASIA','亚洲',r'亚洲|\bAsia\b'),('AFRICA','非洲',r'非洲|\bAfrica\b'),('AMERICAS','美洲',r'美洲|\bAmericas\b'),('OCEANIA','大洋洲',r'大洋洲|\bOceania\b')]:
+        if re.search(pattern, title, re.I):
+            return {'kind':'scope', 'code':code, 'label':label, 'countries':[], 'basis':'标题明确范围'}
+    code, label = TOPICS.get(row.get('category'), ('TOPICS', '专题观察'))
+    if row.get('source_kind') == 'research' or row.get('research_status') == 'preprint':
+        code, label = 'RESEARCH', '科学研究'
+    return {'kind':'topic', 'code':code, 'label':label, 'countries':[], 'basis':'主题归属，不推断国家'}

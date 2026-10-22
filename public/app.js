@@ -37,9 +37,19 @@ function comparisonPanel(a){
   return groups.map(g=>`<details class="comparison"><summary>${esc(g.comparison_type||'多源视角')} <span>${esc(g.title_zh)} ↗</span></summary><div class="comparison-body"><p class="comparison-common">${esc(g.common_ground)}</p>${g.differences.map(d=>{const source=edition.articles.find(r=>r.id===d.article_id);return source?`<div class="source-perspective"><a href="${safe(source.url)}" target="_blank" rel="noopener noreferrer">${esc(name(source.source_id))} ↗</a><p>${esc(d.focus)}</p></div>`:'';}).join('')}</div></details>`).join('');
 }
 function geoMark(a){
-  const g=a.geography||{code:'—',label:'未明确地域',kind:'unknown'};
-  const codes=String(g.code).split(/\s*\/\s*/);
-  return `<aside class="geo-mark geo-${esc(g.kind)} ${codes.join('').length>4?'geo-wide':''} ${codes.join('').length>6?'geo-long':''}" aria-label="报道地域：${esc(g.label)}"><div class="geo-composition" aria-hidden="true"><i class="geo-orbit"></i><i class="geo-bar"></i><i class="geo-axis"></i></div><b class="geo-code">${codes.map(c=>`<span>${esc(c)}</span>`).join('')}</b><div class="geo-label">${esc(g.label)}</div></aside>`;
+  const topic={ '国际政治':['Affairs','国际事务'], '科技与 AI':['Tech','科技与智能'], '经济与投资':['Markets','经济与市场'], '科学与探索':['Research','科学研究'], '环境与气候':['Climate','环境与气候'], '社会与文化':['Culture','社会与文化'] };
+  let g=a.geography;
+  if(!g||g.kind==='unknown'){
+    const [code,label]=topic[a.category]||['Topics','专题观察'];
+    g={code,label,kind:'topic'};
+  }
+  if(g.code==='RESEARCH')g={...g,kind:'topic',label:'科学研究'};
+  const isCountry=['single','pair'].includes(g.kind);
+  const display=isCountry?g.code:String(g.code).toLowerCase().replace(/^[a-z]/,c=>c.toUpperCase());
+  const codes=String(display).split(/\s*\/\s*/);
+  const labelMarkup=String(g.label).split(' / ').map(label=>`<span>${esc(label)}</span>`).join('<i aria-hidden="true"> / </i>');
+  const meaning={single:'单国 · 单圆',pair:'双国 · 双圆交叠',multi:'多国 · 多圆交叠',scope:'区域范围 · 经纬网格',topic:'主题归属 · 菱形'}[g.kind]||'主题归属';
+  return `<aside class="geo-mark geo-${esc(g.kind)} ${!isCountry?'geo-word geo-wide':''} ${codes.join('').length>6?'geo-long':''}" aria-label="${g.kind==='topic'?'主题':'报道地域'}：${esc(g.label)}" title="${esc(meaning)}"><div class="geo-composition" aria-hidden="true"><i class="geo-orbit"></i><i class="geo-bar"></i><i class="geo-axis"></i></div><b class="geo-code">${codes.map(c=>`<span>${esc(c)}</span>`).join('')}</b><div class="geo-label">${labelMarkup}</div></aside>`;
 }
 function articleRow(a,i){
   const bilingual=a.title_zh?`<div class="english-title" lang="en">${esc(a.title_en||a.title)}</div>`:'';
