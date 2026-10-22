@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-10-20T01:10:20.413452+00:00",
+  "attempted_at": "2026-10-22T01:33:18.594679+00:00",
   "sources": [
     {
       "id": "guardian-0",
@@ -9,15 +9,15 @@
       "category": "国际政治",
       "url": "https://www.theguardian.com/world/rss",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:10.894342+00:00",
-      "last_success": "2026-10-20T01:10:10.894342+00:00",
+      "checked_at": "2026-10-22T01:33:09.536580+00:00",
+      "last_success": "2026-10-22T01:33:09.536580+00:00",
       "ok": true,
       "state": "available",
       "count": 24,
-      "latest_article": "2026-10-20T01:03:51+00:00",
+      "latest_article": "2026-10-22T01:13:01+00:00",
       "item_limit": 24,
       "limit_reached": true,
-      "latest_day": "2026-10-20"
+      "latest_day": "2026-10-22"
     },
     {
       "id": "bbc-1",
@@ -27,15 +27,15 @@
       "category": "国际政治",
       "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:10.896194+00:00",
-      "last_success": "2026-10-20T01:10:10.896194+00:00",
+      "checked_at": "2026-10-22T01:33:09.537303+00:00",
+      "last_success": "2026-10-22T01:33:09.537303+00:00",
       "ok": true,
       "state": "available",
       "count": 24,
-      "latest_article": "2026-10-19T23:30:03+00:00",
+      "latest_article": "2026-10-21T22:59:18+00:00",
       "item_limit": 24,
       "limit_reached": true,
-      "latest_day": "2026-10-19"
+      "latest_day": "2026-10-21"
     },
     {
       "id": "france24-2",
@@ -45,15 +45,15 @@
       "category": "国际政治",
       "url": "https://www.france24.com/en/rss",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:10.897413+00:00",
-      "last_success": "2026-10-20T01:10:10.897413+00:00",
+      "checked_at": "2026-10-22T01:33:09.537790+00:00",
+      "last_success": "2026-10-22T01:33:09.537790+00:00",
       "ok": true,
       "state": "available",
       "count": 24,
-      "latest_article": "2026-10-19T21:39:49+00:00",
+      "latest_article": "2026-10-22T00:35:35+00:00",
       "item_limit": 24,
       "limit_reached": true,
-      "latest_day": "2026-10-19"
+      "latest_day": "2026-10-22"
     },
     {
       "id": "fed-3",
@@ -63,8 +63,8 @@
       "category": "经济与投资",
       "url": "https://www.federalreserve.gov/feeds/press_all.xml",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:10.898293+00:00",
-      "last_success": "2026-10-20T01:10:10.898293+00:00",
+      "checked_at": "2026-10-22T01:33:09.538342+00:00",
+      "last_success": "2026-10-22T01:33:09.538342+00:00",
       "ok": true,
       "state": "available",
       "count": 20,
@@ -81,15 +81,15 @@
       "category": "科学与探索",
       "url": "https://www.nasa.gov/feed/",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:10.899213+00:00",
-      "last_success": "2026-10-20T01:10:10.899213+00:00",
+      "checked_at": "2026-10-22T01:33:09.539194+00:00",
+      "last_success": "2026-10-22T01:33:09.539194+00:00",
       "ok": true,
       "state": "available",
       "count": 10,
-      "latest_article": "2026-10-19T19:28:32+00:00",
+      "latest_article": "2026-10-22T00:00:16+00:00",
       "item_limit": 24,
       "limit_reached": false,
-      "latest_day": "2026-10-19"
+      "latest_day": "2026-10-22"
     },
     {
       "id": "guardian-5",
@@ -99,15 +99,15 @@
       "category": "科技与 AI",
       "url": "https://www.theguardian.com/technology/rss",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:11.455826+00:00",
-      "last_success": "2026-10-20T01:10:11.455826+00:00",
+      "checked_at": "2026-10-22T01:33:09.654286+00:00",
+      "last_success": "2026-10-22T01:33:09.654286+00:00",
       "ok": true,
       "state": "available",
       "count": 24,
-      "latest_article": "2026-10-19T22:30:08+00:00",
+      "latest_article": "2026-10-22T01:13:01+00:00",
       "item_limit": 24,
       "limit_reached": true,
-      "latest_day": "2026-10-19"
+      "latest_day": "2026-10-22"
     },
     {
       "id": "guardian-6",
@@ -117,15 +117,15 @@
       "category": "经济与投资",
       "url": "https://www.theguardian.com/business/rss",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:11.494844+00:00",
-      "last_success": "2026-10-20T01:10:11.494844+00:00",
+      "checked_at": "2026-10-22T01:33:09.679701+00:00",
+      "last_success": "2026-10-22T01:33:09.679701+00:00",
       "ok": true,
       "state": "available",
       "count": 24,
-      "latest_article": "2026-10-19T18:37:14+00:00",
+      "latest_article": "2026-10-22T00:39:15+00:00",
       "item_limit": 24,
       "limit_reached": true,
-      "latest_day": "2026-10-19"
+      "latest_day": "2026-10-22"
     },
     {
       "id": "guardian-7",
@@ -135,15 +135,15 @@
       "category": "环境与气候",
       "url": "https://www.theguardian.com/environment/rss",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:11.545943+00:00",
-      "last_success": "2026-10-20T01:10:11.545943+00:00",
+      "checked_at": "2026-10-22T01:33:09.754873+00:00",
+      "last_success": "2026-10-22T01:33:09.754873+00:00",
       "ok": true,
       "state": "available",
       "count": 24,
-      "latest_article": "2026-10-19T12:20:08+00:00",
+      "latest_article": "2026-10-21T18:51:39+00:00",
       "item_limit": 24,
       "limit_reached": true,
-      "latest_day": "2026-10-19"
+      "latest_day": "2026-10-21"
     },
     {
       "id": "guardian-8",
@@ -153,15 +153,15 @@
       "category": "社会与文化",
       "url": "https://www.theguardian.com/culture/rss",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:11.585216+00:00",
-      "last_success": "2026-10-20T01:10:11.585216+00:00",
+      "checked_at": "2026-10-22T01:33:09.901382+00:00",
+      "last_success": "2026-10-22T01:33:09.901382+00:00",
       "ok": true,
       "state": "available",
       "count": 24,
-      "latest_article": "2026-10-19T21:00:06+00:00",
+      "latest_article": "2026-10-21T16:06:54+00:00",
       "item_limit": 24,
       "limit_reached": true,
-      "latest_day": "2026-10-19"
+      "latest_day": "2026-10-21"
     },
     {
       "id": "nyt-9",
@@ -171,15 +171,15 @@
       "category": "国际政治",
       "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:11.880714+00:00",
-      "last_success": "2026-10-20T01:10:11.880714+00:00",
+      "checked_at": "2026-10-22T01:33:10.032940+00:00",
+      "last_success": "2026-10-22T01:33:10.032940+00:00",
       "ok": true,
       "state": "available",
       "count": 24,
-      "latest_article": "2026-10-20T01:00:18+00:00",
+      "latest_article": "2026-10-22T01:32:00+00:00",
       "item_limit": 24,
       "limit_reached": true,
-      "latest_day": "2026-10-20"
+      "latest_day": "2026-10-22"
     },
     {
       "id": "nyt-10",
@@ -189,15 +189,15 @@
       "category": "科技与 AI",
       "url": "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:12.215867+00:00",
-      "last_success": "2026-10-20T01:10:12.215867+00:00",
+      "checked_at": "2026-10-22T01:33:10.047795+00:00",
+      "last_success": "2026-10-22T01:33:10.047795+00:00",
       "ok": true,
       "state": "available",
-      "count": 20,
-      "latest_article": "2026-10-19T22:12:02+00:00",
+      "count": 22,
+      "latest_article": "2026-10-22T01:21:13+00:00",
       "item_limit": 24,
       "limit_reached": false,
-      "latest_day": "2026-10-19"
+      "latest_day": "2026-10-22"
     },
     {
       "id": "npr-11",
@@ -207,15 +207,15 @@
       "category": "国际政治",
       "url": "https://feeds.npr.org/1004/rss.xml",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:12.340835+00:00",
-      "last_success": "2026-10-20T01:10:12.340835+00:00",
+      "checked_at": "2026-10-22T01:33:10.090806+00:00",
+      "last_success": "2026-10-22T01:33:10.090806+00:00",
       "ok": true,
       "state": "available",
       "count": 10,
-      "latest_article": "2026-10-19T22:29:57+00:00",
+      "latest_article": "2026-10-22T00:22:48+00:00",
       "item_limit": 24,
       "limit_reached": false,
-      "latest_day": "2026-10-19"
+      "latest_day": "2026-10-22"
     },
     {
       "id": "pbs-12",
@@ -225,15 +225,15 @@
       "category": "国际政治",
       "url": "https://www.pbs.org/newshour/feeds/rss/world",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:12.349310+00:00",
-      "last_success": "2026-10-20T01:10:12.349310+00:00",
+      "checked_at": "2026-10-22T01:33:10.094952+00:00",
+      "last_success": "2026-10-22T01:33:10.094952+00:00",
       "ok": true,
       "state": "available",
       "count": 20,
-      "latest_article": "2026-10-19T22:55:00+00:00",
+      "latest_article": "2026-10-21T22:55:40+00:00",
       "item_limit": 24,
       "limit_reached": false,
-      "latest_day": "2026-10-19"
+      "latest_day": "2026-10-21"
     },
     {
       "id": "dw-13",
@@ -243,15 +243,15 @@
       "category": "国际政治",
       "url": "https://rss.dw.com/rdf/rss-en-all",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:12.435945+00:00",
-      "last_success": "2026-10-20T01:10:12.435945+00:00",
+      "checked_at": "2026-10-22T01:33:10.326676+00:00",
+      "last_success": "2026-10-22T01:33:10.326676+00:00",
       "ok": true,
       "state": "available",
       "count": 24,
-      "latest_article": "2026-10-20T00:32:00+00:00",
+      "latest_article": "2026-10-21T23:47:00+00:00",
       "item_limit": 24,
       "limit_reached": true,
-      "latest_day": "2026-10-20"
+      "latest_day": "2026-10-21"
     },
     {
       "id": "rfi-14",
@@ -261,15 +261,15 @@
       "category": "国际政治",
       "url": "https://www.rfi.fr/en/rss",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:12.500094+00:00",
-      "last_success": "2026-10-20T01:10:12.500094+00:00",
+      "checked_at": "2026-10-22T01:33:10.446048+00:00",
+      "last_success": "2026-10-22T01:33:10.446048+00:00",
       "ok": true,
       "state": "available",
-      "count": 21,
-      "latest_article": "2026-10-19T16:21:17+00:00",
+      "count": 22,
+      "latest_article": "2026-10-21T16:30:35+00:00",
       "item_limit": 24,
       "limit_reached": false,
-      "latest_day": "2026-10-19"
+      "latest_day": "2026-10-21"
     },
     {
       "id": "lemonde-15",
@@ -279,15 +279,15 @@
       "category": "国际政治",
       "url": "https://www.lemonde.fr/international/rss_full.xml",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:12.625015+00:00",
-      "last_success": "2026-10-20T01:10:12.625015+00:00",
+      "checked_at": "2026-10-22T01:33:10.493074+00:00",
+      "last_success": "2026-10-22T01:33:10.493074+00:00",
       "ok": true,
       "state": "available",
       "count": 20,
-      "latest_article": "2026-10-20T00:24:12+00:00",
+      "latest_article": "2026-10-21T23:40:52+00:00",
       "item_limit": 24,
       "limit_reached": false,
-      "latest_day": "2026-10-20"
+      "latest_day": "2026-10-21"
     },
     {
       "id": "elpais-16",
@@ -297,15 +297,15 @@
       "category": "国际政治",
       "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:12.742274+00:00",
-      "last_success": "2026-10-20T01:10:12.742274+00:00",
+      "checked_at": "2026-10-22T01:33:10.599777+00:00",
+      "last_success": "2026-10-22T01:33:10.599777+00:00",
       "ok": true,
       "state": "available",
       "count": 24,
-      "latest_article": "2026-10-19T22:30:00+00:00",
+      "latest_article": "2026-10-21T21:19:40+00:00",
       "item_limit": 24,
       "limit_reached": true,
-      "latest_day": "2026-10-19"
+      "latest_day": "2026-10-21"
     },
     {
       "id": "rthk-17",
@@ -315,15 +315,15 @@
       "category": "国际政治",
       "url": "https://rthk.hk/rthk/news/rss/c_expressnews_greaterchina.xml",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:12.884989+00:00",
-      "last_success": "2026-10-20T01:10:12.884989+00:00",
+      "checked_at": "2026-10-22T01:33:10.734630+00:00",
+      "last_success": "2026-10-22T01:33:10.734630+00:00",
       "ok": true,
       "state": "available",
       "count": 20,
-      "latest_article": "2026-10-19T23:00:06+00:00",
+      "latest_article": "2026-10-22T00:49:02+00:00",
       "item_limit": 24,
       "limit_reached": false,
-      "latest_day": "2026-10-19"
+      "latest_day": "2026-10-22"
     },
     {
       "id": "scmp-18",
@@ -333,15 +333,15 @@
       "category": "国际政治",
       "url": "https://www.scmp.com/rss/91/feed",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:13.087472+00:00",
-      "last_success": "2026-10-20T01:10:13.087472+00:00",
+      "checked_at": "2026-10-22T01:33:10.942900+00:00",
+      "last_success": "2026-10-22T01:33:10.942900+00:00",
       "ok": true,
       "state": "available",
       "count": 24,
-      "latest_article": "2026-10-20T01:00:11+00:00",
+      "latest_article": "2026-10-22T01:30:38+00:00",
       "item_limit": 24,
       "limit_reached": true,
-      "latest_day": "2026-10-20"
+      "latest_day": "2026-10-22"
     },
     {
       "id": "cna-19",
@@ -351,15 +351,15 @@
       "category": "国际政治",
       "url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=6311",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:13.276995+00:00",
-      "last_success": "2026-10-20T01:10:13.276995+00:00",
+      "checked_at": "2026-10-22T01:33:10.996927+00:00",
+      "last_success": "2026-10-22T01:33:10.996927+00:00",
       "ok": true,
       "state": "available",
       "count": 20,
-      "latest_article": "2026-10-20T00:48:00+00:00",
+      "latest_article": "2026-10-22T00:02:00+00:00",
       "item_limit": 24,
       "limit_reached": false,
-      "latest_day": "2026-10-20"
+      "latest_day": "2026-10-22"
     },
     {
       "id": "people-20",
@@ -369,8 +369,8 @@
       "category": "国际政治",
       "url": "https://www.people.com.cn/rss/politics.xml",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:13.395933+00:00",
-      "last_success": "2026-10-20T01:10:13.395933+00:00",
+      "checked_at": "2026-10-22T01:33:11.064767+00:00",
+      "last_success": "2026-10-22T01:33:11.064767+00:00",
       "ok": true,
       "state": "stale",
       "count": 24,
@@ -387,7 +387,7 @@
       "category": "国际政治",
       "url": "https://www.chinadaily.com.cn/rss/china_rss.xml",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:13.695391+00:00",
+      "checked_at": "2026-10-22T01:33:11.111341+00:00",
       "last_success": null,
       "ok": false,
       "state": "unavailable",
@@ -403,23 +403,16 @@
       "category": "国际政治",
       "url": "https://www.news.cn/politics/",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:14.000816+00:00",
-      "last_success": "2026-10-20T01:10:14.000816+00:00",
-      "article_errors": [
-        {
-          "url": "https://www.news.cn/politics/20261020/6fd026115a8d4d41970d236d0f10315f/c.html",
-          "error": "URLError",
-          "error_kind": "tls",
-          "http_status": null
-        }
-      ],
+      "checked_at": "2026-10-22T01:33:11.328120+00:00",
+      "last_success": "2026-10-22T01:33:11.328120+00:00",
+      "article_errors": [],
       "ok": true,
-      "state": "partial",
-      "count": 7,
-      "latest_article": "2026-10-19T23:59:44+00:00",
+      "state": "available",
+      "count": 8,
+      "latest_article": "2026-10-22T01:16:30+00:00",
       "item_limit": 8,
-      "limit_reached": false,
-      "latest_day": "2026-10-19"
+      "limit_reached": true,
+      "latest_day": "2026-10-22"
     },
     {
       "id": "openai-news-23",
@@ -429,15 +422,15 @@
       "category": "科技与 AI",
       "url": "https://openai.com/news/rss.xml",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:14.019523+00:00",
-      "last_success": "2026-10-20T01:10:14.019523+00:00",
+      "checked_at": "2026-10-22T01:33:11.670264+00:00",
+      "last_success": "2026-10-22T01:33:11.670264+00:00",
       "ok": true,
       "state": "available",
       "count": 24,
-      "latest_article": "2026-10-19T12:00:00+00:00",
+      "latest_article": "2026-10-21T21:00:00+00:00",
       "item_limit": 24,
       "limit_reached": true,
-      "latest_day": "2026-10-19"
+      "latest_day": "2026-10-21"
     },
     {
       "id": "arxiv-24",
@@ -447,11 +440,15 @@
       "category": "科技与 AI",
       "url": "https://rss.arxiv.org/rss/cs.AI",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:14.020347+00:00",
-      "last_success": "2026-10-20T01:10:14.020347+00:00",
+      "checked_at": "2026-10-22T01:33:11.853086+00:00",
+      "last_success": "2026-10-22T01:33:11.853086+00:00",
       "ok": true,
-      "state": "empty",
-      "count": 0
+      "state": "available",
+      "count": 200,
+      "latest_article": "2026-10-21T04:00:00+00:00",
+      "item_limit": 200,
+      "limit_reached": true,
+      "latest_day": "2026-10-21"
     },
     {
       "id": "nature-25",
@@ -461,15 +458,15 @@
       "category": "科学与探索",
       "url": "https://www.nature.com/nature.rss",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:14.362509+00:00",
-      "last_success": "2026-10-20T01:10:14.362509+00:00",
+      "checked_at": "2026-10-22T01:33:11.990803+00:00",
+      "last_success": "2026-10-22T01:33:11.990803+00:00",
       "ok": true,
       "state": "date_only",
       "count": 24,
       "latest_article": null,
       "item_limit": 24,
       "limit_reached": true,
-      "latest_day": "2026-10-19"
+      "latest_day": "2026-10-21"
     },
     {
       "id": "un-news-26",
@@ -479,15 +476,15 @@
       "category": "国际政治",
       "url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:14.658902+00:00",
-      "last_success": "2026-10-20T01:10:14.658902+00:00",
+      "checked_at": "2026-10-22T01:33:12.163214+00:00",
+      "last_success": "2026-10-22T01:33:12.163214+00:00",
       "ok": true,
       "state": "available",
       "count": 24,
-      "latest_article": "2026-10-19T12:00:00+00:00",
+      "latest_article": "2026-10-21T12:00:00+00:00",
       "item_limit": 24,
       "limit_reached": true,
-      "latest_day": "2026-10-19"
+      "latest_day": "2026-10-21"
     },
     {
       "id": "aljazeera-27",
@@ -497,15 +494,15 @@
       "category": "国际政治",
       "url": "https://www.aljazeera.com/xml/rss/all.xml",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:14.776633+00:00",
-      "last_success": "2026-10-20T01:10:14.776633+00:00",
+      "checked_at": "2026-10-22T01:33:12.241489+00:00",
+      "last_success": "2026-10-22T01:33:12.241489+00:00",
       "ok": true,
       "state": "available",
       "count": 24,
-      "latest_article": "2026-10-20T00:18:48+00:00",
+      "latest_article": "2026-10-22T01:09:40+00:00",
       "item_limit": 24,
       "limit_reached": true,
-      "latest_day": "2026-10-20"
+      "latest_day": "2026-10-22"
     },
     {
       "id": "chinanews-china",
@@ -515,15 +512,15 @@
       "category": "国际政治",
       "url": "https://www.chinanews.com.cn/rss/china.xml",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:14.827203+00:00",
-      "last_success": "2026-10-20T01:10:14.827203+00:00",
+      "checked_at": "2026-10-22T01:33:12.479144+00:00",
+      "last_success": "2026-10-22T01:33:12.479144+00:00",
       "ok": true,
       "state": "available",
       "count": 24,
-      "latest_article": "2026-10-19T23:50:50+00:00",
+      "latest_article": "2026-10-22T01:29:25+00:00",
       "item_limit": 24,
       "limit_reached": true,
-      "latest_day": "2026-10-19"
+      "latest_day": "2026-10-22"
     },
     {
       "id": "chinanews-finance",
@@ -533,15 +530,15 @@
       "category": "经济与投资",
       "url": "https://www.chinanews.com.cn/rss/finance.xml",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:15.023594+00:00",
-      "last_success": "2026-10-20T01:10:15.023594+00:00",
+      "checked_at": "2026-10-22T01:33:12.545819+00:00",
+      "last_success": "2026-10-22T01:33:12.545819+00:00",
       "ok": true,
       "state": "available",
       "count": 24,
-      "latest_article": "2026-10-20T00:55:38+00:00",
+      "latest_article": "2026-10-22T01:19:54+00:00",
       "item_limit": 24,
       "limit_reached": true,
-      "latest_day": "2026-10-20"
+      "latest_day": "2026-10-22"
     },
     {
       "id": "chinanews-world",
@@ -551,15 +548,15 @@
       "category": "国际政治",
       "url": "https://www.chinanews.com.cn/rss/world.xml",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:15.231299+00:00",
-      "last_success": "2026-10-20T01:10:15.231299+00:00",
+      "checked_at": "2026-10-22T01:33:13.263728+00:00",
+      "last_success": "2026-10-22T01:33:13.263728+00:00",
       "ok": true,
       "state": "available",
       "count": 24,
-      "latest_article": "2026-10-20T00:19:26+00:00",
+      "latest_article": "2026-10-22T00:42:38+00:00",
       "item_limit": 24,
       "limit_reached": true,
-      "latest_day": "2026-10-20"
+      "latest_day": "2026-10-22"
     },
     {
       "id": "chinanews-culture",
@@ -569,15 +566,15 @@
       "category": "社会与文化",
       "url": "https://www.chinanews.com.cn/rss/culture.xml",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:15.245423+00:00",
-      "last_success": "2026-10-20T01:10:15.245423+00:00",
+      "checked_at": "2026-10-22T01:33:13.569946+00:00",
+      "last_success": "2026-10-22T01:33:13.569946+00:00",
       "ok": true,
       "state": "available",
       "count": 24,
-      "latest_article": "2026-10-19T13:53:35+00:00",
+      "latest_article": "2026-10-21T15:21:37+00:00",
       "item_limit": 24,
       "limit_reached": true,
-      "latest_day": "2026-10-19"
+      "latest_day": "2026-10-21"
     },
     {
       "id": "arxiv-lg",
@@ -587,15 +584,15 @@
       "category": "科技与 AI",
       "url": "https://rss.arxiv.org/rss/cs.LG",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:15.483276+00:00",
-      "last_success": "2026-10-20T01:10:15.483276+00:00",
+      "checked_at": "2026-10-22T01:33:13.582005+00:00",
+      "last_success": "2026-10-22T01:33:13.582005+00:00",
       "ok": true,
       "state": "available",
       "count": 200,
-      "latest_article": "2026-10-19T04:00:00+00:00",
+      "latest_article": "2026-10-21T04:00:00+00:00",
       "item_limit": 200,
       "limit_reached": true,
-      "latest_day": "2026-10-19"
+      "latest_day": "2026-10-21"
     },
     {
       "id": "arxiv-cv",
@@ -605,15 +602,15 @@
       "category": "科技与 AI",
       "url": "https://rss.arxiv.org/rss/cs.CV",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:15.496385+00:00",
-      "last_success": "2026-10-20T01:10:15.496385+00:00",
+      "checked_at": "2026-10-22T01:33:13.583725+00:00",
+      "last_success": "2026-10-22T01:33:13.583725+00:00",
       "ok": true,
       "state": "available",
       "count": 200,
-      "latest_article": "2026-10-19T04:00:00+00:00",
+      "latest_article": "2026-10-21T04:00:00+00:00",
       "item_limit": 200,
       "limit_reached": true,
-      "latest_day": "2026-10-19"
+      "latest_day": "2026-10-21"
     },
     {
       "id": "arxiv-cl",
@@ -623,15 +620,15 @@
       "category": "科技与 AI",
       "url": "https://rss.arxiv.org/rss/cs.CL",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:15.684385+00:00",
-      "last_success": "2026-10-20T01:10:15.684385+00:00",
+      "checked_at": "2026-10-22T01:33:13.769771+00:00",
+      "last_success": "2026-10-22T01:33:13.769771+00:00",
       "ok": true,
       "state": "available",
       "count": 200,
-      "latest_article": "2026-10-19T04:00:00+00:00",
+      "latest_article": "2026-10-21T04:00:00+00:00",
       "item_limit": 200,
       "limit_reached": true,
-      "latest_day": "2026-10-19"
+      "latest_day": "2026-10-21"
     },
     {
       "id": "lenny-newsletter",
@@ -641,16 +638,16 @@
       "category": "科技与 AI",
       "url": "https://www.lennysnewsletter.com/feed",
       "enabled": true,
-      "checked_at": "2026-10-20T01:10:16.064321+00:00",
-      "last_success": "2026-10-20T01:10:16.064321+00:00",
+      "checked_at": "2026-10-22T01:33:13.800834+00:00",
+      "last_success": "2026-10-22T01:33:13.800834+00:00",
       "ok": true,
       "state": "available",
       "count": 20,
-      "latest_article": "2026-10-19T15:03:35+00:00",
+      "latest_article": "2026-10-21T20:25:18+00:00",
       "item_limit": 24,
       "limit_reached": false,
-      "latest_day": "2026-10-19"
+      "latest_day": "2026-10-21"
     }
   ],
-  "count": 1749
+  "count": 1418
 }

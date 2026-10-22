@@ -208,5 +208,26 @@
     "source_kind": "opinion",
     "content_type": "观点",
     "section": "业界声音"
+  },
+  {
+    "id": "ce20b0d6454246c4",
+    "title": "Claude Duet is beautiful. I still forgot to use it",
+    "url": "https://www.lennysnewsletter.com/p/claude-duet-is-beautiful-i-still",
+    "source_id": "lenny-newsletter",
+    "category": "科技与 AI",
+    "published_at": "2026-10-21T20:25:18+00:00",
+    "feed_excerpt": "Watch now (16 mins) | 🎙️ I tested Claude Duet, Anthropic's beautifully designed new personal agent, on real work to see if it can beat my personal agent fatigue and make the cut",
+    "summary": "",
+    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
+    "date_precision": "timestamp",
+    "authors": [
+      "Claire Vo"
+    ],
+    "source_name": "Lenny's Newsletter",
+    "publisher_family": "lenny",
+    "source_region": "美国",
+    "source_kind": "opinion",
+    "content_type": "观点",
+    "section": "业界声音"
   }
 ]
