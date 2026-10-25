@@ -189,27 +189,6 @@
     "section": "业界声音"
   },
   {
-    "id": "2812e23de3468673",
-    "title": "🧠 Community Wisdom: Community Wisdom Top Contributors Summer Class 2026 + ML recommendation systems, getting back into product after being fired, deciding when to quit a side project, and more",
-    "url": "https://www.lennysnewsletter.com/p/community-wisdom-community-wisdom",
-    "source_id": "lenny-newsletter",
-    "category": "科技与 AI",
-    "published_at": "2026-10-10T13:01:38+00:00",
-    "feed_excerpt": "Community Wisdom 301",
-    "summary": "",
-    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
-    "date_precision": "timestamp",
-    "authors": [
-      "Kiyani"
-    ],
-    "source_name": "Lenny's Newsletter",
-    "publisher_family": "lenny",
-    "source_region": "美国",
-    "source_kind": "opinion",
-    "content_type": "观点",
-    "section": "业界声音"
-  },
-  {
     "id": "ce20b0d6454246c4",
     "title": "Claude Duet is beautiful. I still forgot to use it",
     "url": "https://www.lennysnewsletter.com/p/claude-duet-is-beautiful-i-still",
@@ -222,6 +201,27 @@
     "date_precision": "timestamp",
     "authors": [
       "Claire Vo"
+    ],
+    "source_name": "Lenny's Newsletter",
+    "publisher_family": "lenny",
+    "source_region": "美国",
+    "source_kind": "opinion",
+    "content_type": "观点",
+    "section": "业界声音"
+  },
+  {
+    "id": "7f08b3ee43a0859e",
+    "title": "🧠 Community Wisdom: Negotiating a lowball offer, designers earning a seat in product decisions, resources for building an MCP server, and more",
+    "url": "https://www.lennysnewsletter.com/p/community-wisdom-negotiating-a-lowball",
+    "source_id": "lenny-newsletter",
+    "category": "科技与 AI",
+    "published_at": "2026-10-24T15:11:42+00:00",
+    "feed_excerpt": "Community Wisdom 303",
+    "summary": "",
+    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
+    "date_precision": "timestamp",
+    "authors": [
+      "Kiyani"
     ],
     "source_name": "Lenny's Newsletter",
     "publisher_family": "lenny",

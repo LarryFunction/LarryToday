@@ -1,5 +1,26 @@
 [
   {
+    "id": "7f08b3ee43a0859e",
+    "title": "🧠 Community Wisdom: Negotiating a lowball offer, designers earning a seat in product decisions, resources for building an MCP server, and more",
+    "url": "https://www.lennysnewsletter.com/p/community-wisdom-negotiating-a-lowball",
+    "source_id": "lenny-newsletter",
+    "category": "科技与 AI",
+    "published_at": "2026-10-24T15:11:42+00:00",
+    "feed_excerpt": "Community Wisdom 303",
+    "summary": "",
+    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
+    "date_precision": "timestamp",
+    "authors": [
+      "Kiyani"
+    ],
+    "source_name": "Lenny's Newsletter",
+    "publisher_family": "lenny",
+    "source_region": "美国",
+    "source_kind": "opinion",
+    "content_type": "观点",
+    "section": "业界声音"
+  },
+  {
     "id": "ce20b0d6454246c4",
     "title": "Claude Duet is beautiful. I still forgot to use it",
     "url": "https://www.lennysnewsletter.com/p/claude-duet-is-beautiful-i-still",
@@ -390,27 +411,6 @@
     "date_precision": "timestamp",
     "authors": [
       "Lenny Rachitsky"
-    ],
-    "source_name": "Lenny's Newsletter",
-    "publisher_family": "lenny",
-    "source_region": "美国",
-    "source_kind": "opinion",
-    "content_type": "观点",
-    "section": "业界声音"
-  },
-  {
-    "id": "3f2125298aae8f17",
-    "title": "Jev for beginners: how to use it and what to build",
-    "url": "https://www.lennysnewsletter.com/p/jev-for-beginners-how-to-use-it-and",
-    "source_id": "lenny-newsletter",
-    "category": "科技与 AI",
-    "published_at": "2026-09-28T12:03:04+00:00",
-    "feed_excerpt": "Watch now (26 mins) | 🎙️ Jev returns type-safe structured values instead of text, which makes it the fastest, cheapest classification layer I’ve ever put in a pipeline—and this week I shipped three real projects with it",
-    "summary": "",
-    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
-    "date_precision": "timestamp",
-    "authors": [
-      "Claire Vo"
     ],
     "source_name": "Lenny's Newsletter",
     "publisher_family": "lenny",
