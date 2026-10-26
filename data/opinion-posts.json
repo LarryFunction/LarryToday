@@ -1,5 +1,26 @@
 [
   {
+    "id": "584594248487e319",
+    "title": "An 86-minute guide to finding PMF | Rob Snyder (Author, The Power of Pull)",
+    "url": "https://www.lennysnewsletter.com/p/an-86-minute-guide-to-finding-pmf",
+    "source_id": "lenny-newsletter",
+    "category": "科技与 AI",
+    "published_at": "2026-10-25T12:31:34+00:00",
+    "feed_excerpt": "Listen now (86 mins) | The founder who helped over 50 startups hit $1M ARR shares his PULL framework for finding real product-market fit",
+    "summary": "",
+    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
+    "date_precision": "timestamp",
+    "authors": [
+      "Lenny Rachitsky"
+    ],
+    "source_name": "Lenny's Newsletter",
+    "publisher_family": "lenny",
+    "source_region": "美国",
+    "source_kind": "opinion",
+    "content_type": "观点",
+    "section": "业界声音"
+  },
+  {
     "id": "7f08b3ee43a0859e",
     "title": "🧠 Community Wisdom: Negotiating a lowball offer, designers earning a seat in product decisions, resources for building an MCP server, and more",
     "url": "https://www.lennysnewsletter.com/p/community-wisdom-negotiating-a-lowball",
@@ -385,27 +406,6 @@
     "category": "科技与 AI",
     "published_at": "2026-09-29T13:15:57+00:00",
     "feed_excerpt": "Plus, some reflections and takeaways from the day",
-    "summary": "",
-    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
-    "date_precision": "timestamp",
-    "authors": [
-      "Lenny Rachitsky"
-    ],
-    "source_name": "Lenny's Newsletter",
-    "publisher_family": "lenny",
-    "source_region": "美国",
-    "source_kind": "opinion",
-    "content_type": "观点",
-    "section": "业界声音"
-  },
-  {
-    "id": "8dd3347fa965f9fe",
-    "title": "🎙️ How I AI: Jev for beginners + I left Claude for months, Opus 5.5 brought me back + Opus 5.5 vs. GPT-6 Sol bench",
-    "url": "https://www.lennysnewsletter.com/p/how-i-ai-jev-for-beginners-i-left",
-    "source_id": "lenny-newsletter",
-    "category": "科技与 AI",
-    "published_at": "2026-09-28T15:03:13+00:00",
-    "feed_excerpt": "Your weekly listens from How I AI, part of the Lenny's Podcast Network",
     "summary": "",
     "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
     "date_precision": "timestamp",
