@@ -126,48 +126,6 @@
     "section": "业界声音"
   },
   {
-    "id": "1382fb41f4443858",
-    "title": "🎙️ How I AI: How Meta designed Muse with Alex Cornell",
-    "url": "https://www.lennysnewsletter.com/p/how-i-ai-how-meta-designed-muse-with",
-    "source_id": "lenny-newsletter",
-    "category": "科技与 AI",
-    "published_at": "2026-10-12T15:00:38+00:00",
-    "feed_excerpt": "Your weekly listens from How I AI, part of the Lenny's Podcast Network",
-    "summary": "",
-    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
-    "date_precision": "timestamp",
-    "authors": [
-      "Lenny Rachitsky"
-    ],
-    "source_name": "Lenny's Newsletter",
-    "publisher_family": "lenny",
-    "source_region": "美国",
-    "source_kind": "opinion",
-    "content_type": "观点",
-    "section": "业界声音"
-  },
-  {
-    "id": "3b02ca9d4e41b0af",
-    "title": "How Meta designed Muse: an AI agent people actually want to talk to | Alex Cornell (Design Director)",
-    "url": "https://www.lennysnewsletter.com/p/how-meta-designed-muse-an-ai-agent",
-    "source_id": "lenny-newsletter",
-    "category": "科技与 AI",
-    "published_at": "2026-10-12T12:03:55+00:00",
-    "feed_excerpt": "Listen now | 🎙️Alex Cornell explains how Muse serves your mom and an engineer with the same interface, and demos a SkyMall-style catalog, golf recaps, and a blog turned podcast",
-    "summary": "",
-    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
-    "date_precision": "timestamp",
-    "authors": [
-      "Claire Vo"
-    ],
-    "source_name": "Lenny's Newsletter",
-    "publisher_family": "lenny",
-    "source_region": "美国",
-    "source_kind": "opinion",
-    "content_type": "观点",
-    "section": "业界声音"
-  },
-  {
     "id": "ce20b0d6454246c4",
     "title": "Claude Duet is beautiful. I still forgot to use it",
     "url": "https://www.lennysnewsletter.com/p/claude-duet-is-beautiful-i-still",
@@ -222,6 +180,45 @@
     "date_precision": "timestamp",
     "authors": [
       "Lenny Rachitsky"
+    ],
+    "source_name": "Lenny's Newsletter",
+    "publisher_family": "lenny",
+    "source_region": "美国",
+    "source_kind": "opinion",
+    "content_type": "观点",
+    "section": "业界声音"
+  },
+  {
+    "id": "7788b12763a8e01b",
+    "title": "🎙️ How I AI: Claude Duet honest review + Why Reddit built its own AI prototyping tool",
+    "url": "https://www.lennysnewsletter.com/p/how-i-ai-claude-duet-honest-review",
+    "source_id": "lenny-newsletter",
+    "category": "科技与 AI",
+    "published_at": "2026-10-26T15:00:53+00:00",
+    "feed_excerpt": "Your weekly listens from How I AI, part of the Lenny’s Podcast Network",
+    "summary": "",
+    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
+    "date_precision": "timestamp",
+    "source_name": "Lenny's Newsletter",
+    "publisher_family": "lenny",
+    "source_region": "美国",
+    "source_kind": "opinion",
+    "content_type": "观点",
+    "section": "业界声音"
+  },
+  {
+    "id": "87ef1c93fab573cb",
+    "title": "Why Reddit built its own AI prototyping tool | Blair Metcalf",
+    "url": "https://www.lennysnewsletter.com/p/why-reddit-built-its-own-ai-prototyping",
+    "source_id": "lenny-newsletter",
+    "category": "科技与 AI",
+    "published_at": "2026-10-26T12:04:20+00:00",
+    "feed_excerpt": "Watch now (30 mins) | 🎙️ Reddit’s principal UX engineer shows how a custom Figma MCP and Cursor pipeline takes any designer from blank slate to shareable, production-shaped prototype in minutes—no Git required",
+    "summary": "",
+    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
+    "date_precision": "timestamp",
+    "authors": [
+      "Claire Vo"
     ],
     "source_name": "Lenny's Newsletter",
     "publisher_family": "lenny",

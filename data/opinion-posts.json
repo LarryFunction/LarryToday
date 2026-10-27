@@ -1,5 +1,44 @@
 [
   {
+    "id": "7788b12763a8e01b",
+    "title": "🎙️ How I AI: Claude Duet honest review + Why Reddit built its own AI prototyping tool",
+    "url": "https://www.lennysnewsletter.com/p/how-i-ai-claude-duet-honest-review",
+    "source_id": "lenny-newsletter",
+    "category": "科技与 AI",
+    "published_at": "2026-10-26T15:00:53+00:00",
+    "feed_excerpt": "Your weekly listens from How I AI, part of the Lenny’s Podcast Network",
+    "summary": "",
+    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
+    "date_precision": "timestamp",
+    "source_name": "Lenny's Newsletter",
+    "publisher_family": "lenny",
+    "source_region": "美国",
+    "source_kind": "opinion",
+    "content_type": "观点",
+    "section": "业界声音"
+  },
+  {
+    "id": "87ef1c93fab573cb",
+    "title": "Why Reddit built its own AI prototyping tool | Blair Metcalf",
+    "url": "https://www.lennysnewsletter.com/p/why-reddit-built-its-own-ai-prototyping",
+    "source_id": "lenny-newsletter",
+    "category": "科技与 AI",
+    "published_at": "2026-10-26T12:04:20+00:00",
+    "feed_excerpt": "Watch now (30 mins) | 🎙️ Reddit’s principal UX engineer shows how a custom Figma MCP and Cursor pipeline takes any designer from blank slate to shareable, production-shaped prototype in minutes—no Git required",
+    "summary": "",
+    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
+    "date_precision": "timestamp",
+    "authors": [
+      "Claire Vo"
+    ],
+    "source_name": "Lenny's Newsletter",
+    "publisher_family": "lenny",
+    "source_region": "美国",
+    "source_kind": "opinion",
+    "content_type": "观点",
+    "section": "业界声音"
+  },
+  {
     "id": "584594248487e319",
     "title": "An 86-minute guide to finding PMF | Rob Snyder (Author, The Power of Pull)",
     "url": "https://www.lennysnewsletter.com/p/an-86-minute-guide-to-finding-pmf",
@@ -369,48 +408,6 @@
     "date_precision": "timestamp",
     "authors": [
       "Claire Vo"
-    ],
-    "source_name": "Lenny's Newsletter",
-    "publisher_family": "lenny",
-    "source_region": "美国",
-    "source_kind": "opinion",
-    "content_type": "观点",
-    "section": "业界声音"
-  },
-  {
-    "id": "3c962617a61954dc",
-    "title": "Jev: 8 real use cases for the fastest, cheapest model I’ve ever used | John Lindquist",
-    "url": "https://www.lennysnewsletter.com/p/jev-8-real-use-cases-for-the-fastest",
-    "source_id": "lenny-newsletter",
-    "category": "科技与 AI",
-    "published_at": "2026-09-30T12:04:27+00:00",
-    "feed_excerpt": "Watch now (46 mins) | 🎙️ Educator and developer John Lindquist shares eight Jev demos, from live voice classification and deduplication to agent routing, showing how low costs make once-impractical ideas worth trying",
-    "summary": "",
-    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
-    "date_precision": "timestamp",
-    "authors": [
-      "Claire Vo"
-    ],
-    "source_name": "Lenny's Newsletter",
-    "publisher_family": "lenny",
-    "source_region": "美国",
-    "source_kind": "opinion",
-    "content_type": "观点",
-    "section": "业界声音"
-  },
-  {
-    "id": "6d4df4090a7ad29e",
-    "title": "All of the Lenny & Friends Summit talks are now online!",
-    "url": "https://www.lennysnewsletter.com/p/all-of-the-lenny-and-friends-summit",
-    "source_id": "lenny-newsletter",
-    "category": "科技与 AI",
-    "published_at": "2026-09-29T13:15:57+00:00",
-    "feed_excerpt": "Plus, some reflections and takeaways from the day",
-    "summary": "",
-    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
-    "date_precision": "timestamp",
-    "authors": [
-      "Lenny Rachitsky"
     ],
     "source_name": "Lenny's Newsletter",
     "publisher_family": "lenny",
