@@ -76,8 +76,22 @@ def diverse(rows,limit):
         families[best.get('publisher_family',best['source_id'])]+=1;categories[best['category']]+=1;regions[best.get('source_region','未知')]+=1
     return selected
 
+def headline_keys(row):
+    # Only identical substantive headlines; no fuzzy topic-based merging.
+    keys=set()
+    for field in ('title','title_en','title_zh'):
+        title=str(row.get(field) or '').casefold()
+        normalized=re.sub(r'[^\w\u4e00-\u9fff]+','',title)
+        if len(normalized)>=24: keys.add(normalized)
+    return keys
+
+
 def events(rows,comparisons):
     by_id={r['id']:r for r in rows}; groups=[]; used=set()
+    keys_by_id={r['id']:headline_keys(r) for r in rows}
+    index={}
+    for r in rows:
+        for key in keys_by_id[r['id']]: index.setdefault(key,[]).append(r)
     for comparison in comparisons:
         ids=comparison['article_ids']
         # Avoid transitive merging of loosely related events; evidence stays in its own section.
@@ -88,6 +102,25 @@ def events(rows,comparisons):
         lead=diverse([by_id[i] for i in ids],1)[0]
         groups.append({'id':'event-'+hashlib.sha256('|'.join(sorted(ids)).encode()).hexdigest()[:12],'lead_id':lead['id'],'article_ids':ids,'category':lead['category'],'title':comparison['title_zh'],'comparison':comparison})
         used.update(ids)
+    for row in rows:
+        if row['id'] in used: continue
+        keys=keys_by_id[row['id']]; when=timestamp(row.get('published_at'))
+        if not keys or not when: continue
+        peers=[row]
+        candidates={r['id']:r for key in sorted(keys) for r in index[key]}
+        for other in candidates.values():
+            if other['id']==row['id'] or other['id'] in used: continue
+            at=timestamp(other.get('published_at'))
+            if not at or abs(at-when)>timedelta(hours=12): continue
+            if other['source_id']==row['source_id'] or other['category']!=row['category']: continue
+            if other.get('content_type')!=row.get('content_type'): continue
+            if set(other.get('geography',{}).get('countries',[]))!=set(row.get('geography',{}).get('countries',[])): continue
+            if not all(keys_by_id[p['id']]&keys_by_id[other['id']] for p in peers): continue
+            peers.append(other)
+        if len(peers)>1:
+            lead=diverse(peers,1)[0]; ids=[r['id'] for r in peers]
+            groups.append({'id':'event-'+hashlib.sha256('|'.join(sorted(ids)).encode()).hexdigest()[:12], 'lead_id':lead['id'],'article_ids':ids,'category':lead['category'],'title':lead.get('title_zh',lead['title']),'grouping_basis':'identical_headline'})
+            used.update(ids)
     for row in rows:
         if row['id'] not in used: groups.append({'id':'event-'+row['id'],'lead_id':row['id'],'article_ids':[row['id']],'category':row['category'],'title':row.get('title_zh',row['title'])})
     groups.sort(key=lambda e:by_id[e['lead_id']].get('published_at') or '',reverse=True)

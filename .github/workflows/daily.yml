@@ -4,6 +4,8 @@ on:
   schedule:
     # 07:17 Asia/Shanghai; avoid the busy top of the hour.
     - cron: '17 23 * * *'
+    # Retry once at 08:47 Shanghai; existing editions skip without AI calls.
+    - cron: '47 0 * * *'
   workflow_dispatch:
 
 permissions:
@@ -46,6 +48,16 @@ jobs:
           BASE_KEY_3: ${{ secrets.BASE_KEY_3 }}
           AI_MODEL: ${{ vars.AI_MODEL }}
         run: python scripts/daily_update.py
+      - name: Preserve operator report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: publication-report-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            data/update-report.json
+            data/update-report.md
+          retention-days: 30
+          if-no-files-found: warn
       - uses: actions/cache/save@v4
         if: always()
         with:
@@ -59,7 +71,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/latest.json data/archive.json data/editions data/revisions data/last-update.json data/source-health.json
-          for file in data/social-posts.json data/social-status.json data/opinion-posts.json data/ai-usage.json; do
+          for file in data/social-posts.json data/social-status.json data/opinion-posts.json data/ai-usage.json data/update-report.json data/update-report.md; do
             if [ -f "$file" ]; then git add "$file"; fi
           done
           if ! git diff --cached --quiet; then

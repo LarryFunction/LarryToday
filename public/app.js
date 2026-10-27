@@ -66,7 +66,7 @@ function matches(a,q){
 function eventSources(a){
   const ids=a._event?.article_ids||[];
   if(ids.length<2)return '';
-  return `<details class="event-sources"><summary>同一事件 · ${ids.length} 篇报道 · ${new Set(ids.map(id=>edition.articles.find(r=>r.id===id)?.source_id)).size} 家来源　展开 ↗</summary>${ids.map(id=>{const r=edition.articles.find(a=>a.id===id);return r?`<div class="event-source"><b>${esc(name(r.source_id))}</b><time>${date(r.published_at)}</time><p>${link(r)}</p></div>`:'';}).join('')}</details>`;
+  return `<details class="event-sources"><summary>${a._event?.grouping_basis==='identical_headline'?'同题报道':'同一事件'} · ${ids.length} 篇报道 · ${new Set(ids.map(id=>edition.articles.find(r=>r.id===id)?.source_id)).size} 家来源　展开 ↗</summary>${ids.map(id=>{const r=edition.articles.find(a=>a.id===id);return r?`<div class="event-source"><b>${esc(name(r.source_id))}</b><time>${date(r.published_at)}</time><p>${link(r)}</p></div>`:'';}).join('')}</details>`;
 }
 function morning(){
   const items=(edition.briefing||[]).filter(b=>category==='全部'||b.category===category);
@@ -154,7 +154,9 @@ async function render(){
   $('#hero').innerHTML=showHero?editionArt():'';
   $('#morning').innerHTML=showHero?morning():'';
   $('#focus-button').setAttribute('aria-pressed',focusOnly);
-  $('#window-note').textContent=edition.window?`收录 ${date(edition.window.start)} — ${date(edition.window.end)}（北京时间） · 约 ${edition.reading_minutes||1} 分钟`:'历史版本 · 尚未采用固定截稿窗口';
+  const expected=new Date(Date.now()+3600000).toISOString().slice(0,10);
+  const ageNote=edition.date&&edition.date<expected?`正在阅读 ${edition.date} 往期日报 · `:'';
+  $('#window-note').textContent=ageNote+(edition.window?`收录 ${date(edition.window.start)} — ${date(edition.window.end)}（北京时间） · 约 ${edition.reading_minutes||1} 分钟`:'历史版本 · 尚未采用固定截稿窗口');
   const pages=Math.max(1,Math.ceil(filtered.length/PAGE_SIZE));
   currentPage=Math.max(1,Math.min(currentPage,pages));
   $('#result-count').textContent+=` · 第 ${currentPage} / ${pages} 页`;
@@ -178,7 +180,7 @@ async function render(){
 }
 async function get(url){const r=await fetch(url,{cache:'no-store'});if(!r.ok)throw Error('读取失败');return r.json();}
 function showDialog(html){$('#dialog-content').innerHTML=html;$('#dialog').showModal();}
-function updateEditionLabel(){ $('#edition').textContent=edition.date?`${edition.date.replaceAll('-',' / ')} · 晨报${edition.revision>1?' · 修订 '+edition.revision:''}`:'每日版 / DAILY EDITION'; }
+function updateEditionLabel(){ $('#edition').textContent=edition.date?`${edition.date.replaceAll('-',' / ')} · 刊期${edition.revision>1?' · 修订 '+edition.revision:''}`:'每日版 / DAILY EDITION'; }
 $('#categories').addEventListener('click',e=>{const b=e.target.closest('[data-category]');if(b){category=b.dataset.category;render();}});
 $('#search').addEventListener('input',render);
 document.addEventListener('click',e=>{const b=e.target.closest('[data-tag]');if(b){$('#search').value=b.dataset.tag;render();}});

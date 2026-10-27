@@ -34,6 +34,13 @@ def paged_payload(edition):
     chunks=[]
     articles=edition.get('articles',[])
     manifest={k:v for k,v in edition.items() if k!='articles'}
+    # Reader grouping is a presentation view; archived editions stay unchanged.
+    if edition.get('events') is not None:
+        from scripts.editorial import events
+        main=[r for r in articles if r.get('section')!='背景阅读']
+        manifest['events']=events(main,edition.get('comparisons',[]))
+        event_for={id:e['id'] for e in manifest['events'] for id in e['article_ids']}
+        manifest['briefing']=[dict(b,event_id=event_for.get(b.get('article_id'),b.get('event_id'))) for b in edition.get('briefing',[])]
     manifest['paged']=True
     manifest['articles']=[]
     for offset in range(0,len(articles),30):

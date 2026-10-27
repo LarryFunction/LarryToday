@@ -142,6 +142,9 @@ def publish(manual=None, ai=True, ai_limit=None, existing=False, edition_date=No
     try: fd = os.open(lock, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
     except FileExistsError: raise RuntimeError('已有更新任务运行；异常退出后请确认无任务再删除 data/.update.lock')
     os.close(fd)
+    collected=0
+    target_date=edition_date
+    stage='collect'
     try:
         rows, statuses = [], []
         previous=None
@@ -156,35 +159,54 @@ def publish(manual=None, ai=True, ai_limit=None, existing=False, edition_date=No
         else:
             from scripts.collect import collect,collect_social
             rows,statuses=collect(DATA)
-            collect_social(DATA)
+            try: collect_social(DATA)
+            except Exception:
+                print('Optional social collection failed; continuing news publication',flush=True)
             if not any(s.get('ok') for s in statuses): raise RuntimeError('本次全部订阅失败，保留已有日报')
+        collected=len(rows)
         now = datetime.now(timezone.utc)
         atomic_json(DATA/'last-update.json', {'attempted_at':now.isoformat(),'sources':statuses,'count':len(rows)})
         if not rows: raise RuntimeError('全部来源不可用，保留上一版。详见 data/last-update.json')
         rows = list({r['url']:r for r in rows}.values())
         rows.sort(key=lambda r:r.get('published_at') or '', reverse=True)
+        stage='validate_window'
         from scripts.editorial import window,partition,diverse,assemble
         bounds=window(now,edition_date or (previous['date'] if previous else None))
         day=bounds['date']
+        target_date=day
         if (DATA/'editions'/f'{day}.json').exists() and not revision_note:
             raise ValueError('该期已发布；请提供 --revision-note 说明修订原因。初版不会覆盖')
         main,background,excluded=partition(rows,bounds)
+        if not main: raise RuntimeError('本期窗口没有新闻，保留上一期；背景阅读不能单独出版')
         rows=main+diverse(background,12)
         if not rows: raise RuntimeError('窗口内无可用内容，保留上一期')
+        stage='edit'
         comparisons=[]
         ai_status={'state':'disabled'}
         if ai:
             from scripts.ai_news import enrich
             try: rows,comparisons,ai_status=enrich(rows,DATA,ai_limit)
             except Exception as error:
-                ai_status={'state':'unavailable','error_type':type(error).__name__}
+                ai_status={'state':'unavailable','error_type':type(error).__name__,'stage':stage}
                 print('AI unavailable; publishing original source metadata',flush=True)
         edition = {'date':day,'updated_at':datetime.now(timezone.utc).isoformat(),'mode':'live','sources_status':statuses,'comparisons':comparisons,'ai_status':ai_status}
         edition.update(assemble(rows,comparisons,bounds))
         edition['excluded']=excluded
         from scripts.editions import save
+        stage='save'
         revision=save(DATA,edition,revision_note)
+        from scripts.publication_report import write_report, publication_report
+        write_report(DATA,publication_report(edition,collected))
         return {'count':len(rows),'date':day,'sources':statuses,'ai':ai_status,'revision':revision}
+    except Exception as error:
+        from scripts.publication_report import write_report
+        from scripts.editorial import window
+        try:
+            current=json.loads((DATA/'latest.json').read_text(encoding='utf-8')) if (DATA/'latest.json').exists() else {}
+            write_report(DATA,{'state':'failed','target_date':target_date or window()['date'],'published_date':current.get('date'),'collected':collected,'error_type':type(error).__name__,'stage':stage})
+        except Exception:
+            print('Publication report could not be saved',flush=True)
+        raise
     finally:
         lock.unlink(missing_ok=True)
 
