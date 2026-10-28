@@ -82,7 +82,9 @@ def headline_keys(row):
     for field in ('title','title_en','title_zh'):
         title=str(row.get(field) or '').casefold()
         normalized=re.sub(r'[^\w\u4e00-\u9fff]+','',title)
-        if len(normalized)>=24: keys.add(normalized)
+        if len(normalized)>=24:
+            numbers=re.findall(r'[-+]?\d+(?:[.,:/-]\d+)*%?',title)
+            keys.add(normalized+'#'+'|'.join(numbers))
     return keys
 
 

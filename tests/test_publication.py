@@ -26,6 +26,10 @@ class PublicationTests(unittest.TestCase):
         for other in [self.row('b',title=base['title']+' rejected'),self.row('b',title=base['title']+' 2027'),self.row('b',published_at=(timestamp(base['published_at'])+timedelta(hours=13)).isoformat()),self.row('b',source_id='a')]:
             self.assertEqual(len(events([base,other],[])),2)
 
+    def test_decimal_values_do_not_collapse(self):
+        rows=[self.row(title='Company announces revenue growth of 1.5 percent'),self.row('b',title='Company announces revenue growth of 15 percent')]
+        self.assertEqual(len(events(rows,[])),2)
+
     def test_reader_relinks_briefing_without_dropping_articles(self):
         edition={'articles':[self.row(),self.row('b')],'events':[], 'briefing':[{'article_id':'a','event_id':'old'}]}
         manifest,chunks=paged_payload(edition)
