@@ -38,7 +38,7 @@
 
 1. 把此次代码推送到 `main`。
 2. 在 Settings → Secrets and variables → Actions → Secrets 添加 `BASE_URL`、`BASE_KEY_1`、`BASE_KEY_2`、`BASE_KEY_3`。不要上传 `.env`。
-3. 在 Variables 设置 `AI_ENABLED=true` 才启用云端 AI；未设置时每日照常采集出版原始报道。
+3. 云端 AI 凭证齐全时默认启用；`AI_ENABLED=false` 可明确关闭。凭证不全时继续出版原始报道。翻译优先使用现有预算，全部编辑完成后才进行多源比较；额度不足仍保留所有原文，不保证每篇都完成翻译。
 4. 按上表设置预算，可选设置 `AI_MODEL`。
 5. 确认仓库允许该工作流以 `contents: write` 提交已发布数据；如果分支保护禁止机器人直接推送，需要调整发布流程后才能自动保存，不要强推绕过保护。
 6. 手动运行一次，检查 AI 用量、日期和 Pages 部署结果。

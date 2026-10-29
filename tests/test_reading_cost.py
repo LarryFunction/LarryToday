@@ -58,6 +58,15 @@ class ReadingCostTests(unittest.TestCase):
         self.assertTrue(stats['budget_exhausted'])
         self.assertEqual(stats['usage']['calls'],0)
 
+    def test_daily_ai_defaults_to_credentials_but_respects_off(self):
+        from scripts.daily_update import ai_enabled
+        credentials=dict.fromkeys(('BASE_URL','BASE_KEY_1','BASE_KEY_2','BASE_KEY_3'),'configured')
+        self.assertTrue(ai_enabled(credentials))
+        self.assertTrue(ai_enabled(dict(credentials,AI_ENABLED='')))
+        self.assertFalse(ai_enabled(dict(credentials,AI_ENABLED='false')))
+        self.assertFalse(ai_enabled({}))
+        self.assertFalse(ai_enabled({'BASE_URL':'configured'}))
+
     def test_daily_skips_existing_edition_without_ai(self):
         from scripts import daily_update
         with tempfile.TemporaryDirectory() as directory:

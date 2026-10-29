@@ -53,7 +53,7 @@ function geoMark(a){
 }
 function articleRow(a,i){
   const bilingual=a.title_zh?`<div class="english-title" lang="en">${esc(a.title_en||a.title)}</div>`:'';
-  const summary=a.summary_zh||a.summary||a.feed_excerpt;
+  const summary=a.summary_zh||a.summary||a.feed_excerpt||a._search;
   const kind=a.research_status==='preprint'?'预印本':a.content_type;
   const typeTag=kind&&kind!=='新闻'?`<span class="type-tag">${esc(kind)}</span>`:'';
   return `<article class="news-row theme-${themes[a.category]?.[0]||'world'}" id="${esc(a._event?.id||'event-'+a.id)}"><div class="row-index"><span>${String(i+1).padStart(2,'0')}</span>${kicker(a)}<div class="row-source">${esc(name(a.source_id))}</div><time>${date(a.published_at)}</time></div><div class="row-story"><h3>${link(a)}</h3>${bilingual}${summary?`<p class="news-summary">${esc(summary)}</p>`:''}<div class="tags">${typeTag}${(a.tags||[]).map(t=>`<button data-tag="${esc(t)}">${esc(t)}</button>`).join('')}</div>${eventSources(a)}${comparisonPanel(a)}</div>${geoMark(a)}</article>`;
@@ -114,10 +114,14 @@ async function revisionDialog(day){const history=await get('api/revisions/'+day+
 $('#focus-button').onclick=()=>{focusOnly=!focusOnly;render();};
 $('#latest-button').onclick=async()=>{try{edition=await latestEdition();resetEdition();}catch{notify('无法读取最新一期');}};
 $('#revision-button').onclick=async()=>{try{await revisionDialog(edition.date);}catch{notify('版本记录暂不可用');}};
+const chunkRequests=new WeakMap();
 async function loadRows(ids, snapshot=edition){
+  if(!chunkRequests.has(snapshot))chunkRequests.set(snapshot,new Map());
+  const requests=chunkRequests.get(snapshot);
   const paths=[...new Set(snapshot.articles.filter(a=>ids.has(a.id)&&a._chunk&&!a._loaded).map(a=>a._chunk))];
   await Promise.all(paths.map(async path=>{
-    const rows=await get(path);
+    if(!requests.has(path))requests.set(path,get(path).catch(error=>{requests.delete(path);throw error;}));
+    const rows=await requests.get(path);
     if(!Array.isArray(rows))throw Error('正文块格式错误');
     const byId=new Map(rows.map(a=>[a.id,a]));
     if(snapshot.articles.some(a=>a._chunk===path&&!byId.has(a.id)))throw Error('日报版本已变化，请刷新');
@@ -125,7 +129,7 @@ async function loadRows(ids, snapshot=edition){
   }));
 }
 async function latestEdition(){try{return await get('api/reader.json');}catch{return get('api/news.json');}}
-async function render(){
+async function render(jumpId=null){
   const version=++renderVersion;
   const signature=JSON.stringify([edition.date,edition.revision,category,savedOnly,focusOnly,directory,$('#search').value]);
   if(signature!==pageSignature){currentPage=1;pageSignature=signature;}
@@ -163,10 +167,11 @@ async function render(){
   const start=(currentPage-1)*PAGE_SIZE;
   const visible=filtered.slice(start,start+PAGE_SIZE);
   const ids=new Set(visible.flatMap(a=>a._event?.article_ids||[a.id]));
-  for(const event of edition.background_events||[])for(const id of event.article_ids)ids.add(id);
+
   $('#articles').setAttribute('aria-busy','true');
-  $('#articles').innerHTML='<p class="page-loading" role="status">正在读取本页报道…</p>';
-  try{await loadRows(ids);}catch{if(version===renderVersion){$('#articles').innerHTML='<p role="alert">本页加载失败，请重试；若日报刚更新，请刷新页面。</p><button data-retry>重新加载</button>';$('#articles').setAttribute('aria-busy','false');}return;}
+  $('#articles').innerHTML=visible.map((a,i)=>articleRow(a,start+i)).join('');
+  if(typeof jumpId==='string')document.getElementById(jumpId)?.scrollIntoView({block:'start',behavior:'instant'});
+  try{await loadRows(ids);}catch{if(version===renderVersion){$('#articles').insertAdjacentHTML('beforeend','<p role="alert">部分正文暂未加载，仍可阅读标题和摘要。</p><button data-retry>重新加载</button>');$('#articles').setAttribute('aria-busy','false');}return;}
   if(version!==renderVersion)return;
   $('#articles').setAttribute('aria-busy','false');
   $('#articles').innerHTML=visible.map((a,i)=>articleRow({...a,...(!savedOnly?edition.articles.find(r=>r.id===a.id):{})},start+i)).join('');
@@ -174,6 +179,10 @@ async function render(){
   if(!pagination){pagination=document.createElement('nav');pagination.id='pagination';pagination.setAttribute('aria-label','新闻分页');$('#articles').after(pagination);}
   pagination.innerHTML=`<span>共 ${filtered.length} 条 · 第 ${currentPage} / ${pages} 页</span><div><button data-page="${currentPage-1}" ${currentPage===1?'disabled':''}>← 上一页</button><label>跳至 <input id="page-number" type="number" min="1" max="${pages}" value="${currentPage}" aria-label="页码"></label><button data-jump="${pages}">前往</button><button data-page="${currentPage+1}" ${currentPage===pages?'disabled':''}>下一页 →</button></div>`;
   $('#supplements').innerHTML=!savedOnly&&!focusOnly?supplements(q):'';
+  if(!savedOnly&&!focusOnly){
+    const backgroundIds=new Set((edition.background_events||[]).filter(e=>category==='全部'||e.category===category).flatMap(e=>e.article_ids));
+    loadRows(backgroundIds).then(()=>{if(version===renderVersion)$('#supplements').innerHTML=supplements(q);}).catch(()=>{});
+  }
   $('#empty').hidden=filtered.length>0;
   $('#empty').textContent=savedOnly?'此分类下暂无收藏。收藏会在此浏览器保留原刊快照，可跨日期阅读。':'本期没有符合条件的事件。可查看下方背景阅读，或切换分类和关键词。';
 
@@ -201,5 +210,5 @@ document.addEventListener('click',async e=>{
   const page=e.target.closest('[data-page]'),jump=e.target.closest('[data-jump]');
   if(page||jump){currentPage=page?Number(page.dataset.page):Math.max(1,Math.min(Number(jump.dataset.jump),Math.trunc(Number($('#page-number').value))||1));await render();$('#articles').scrollIntoView({block:'start'});return;}
   const morningLink=e.target.closest('#morning a[href^="#"]');
-  if(morningLink){e.preventDefault();const id=morningLink.getAttribute('href').slice(1);const events=(edition.events||[]).filter(a=>category==='全部'||a.category===category);const at=events.findIndex(a=>a.id===id);if(at<0)return;focusOnly=false;currentPage=Math.floor(at/PAGE_SIZE)+1;pageSignature=JSON.stringify([edition.date,edition.revision,category,savedOnly,focusOnly,directory,$('#search').value]);await render();document.getElementById(id)?.scrollIntoView({block:'center'});}
+  if(morningLink){e.preventDefault();const id=morningLink.getAttribute('href').slice(1);const existing=document.getElementById(id);if(existing){existing.scrollIntoView({block:'start',behavior:'instant'});return;}const events=(edition.events||[]).filter(a=>category==='全部'||a.category===category);const at=events.findIndex(a=>a.id===id);if(at<0)return;focusOnly=false;currentPage=Math.floor(at/PAGE_SIZE)+1;pageSignature=JSON.stringify([edition.date,edition.revision,category,savedOnly,focusOnly,directory,$('#search').value]);await render(id);}
 });

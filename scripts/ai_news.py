@@ -208,7 +208,7 @@ def enrich(rows, data_dir, limit=None):
         except (OSError,ValueError,KeyError,TypeError): pending.append((row,path))
     eligible=[r for r in rows if r.get('published_at')]
     candidates=candidate_groups(eligible,max(0,int(config.get('AI_COMPARISON_LIMIT','12'))))
-    if candidates: client.editorial_budget=int(client.budget*.8)
+    # Translation coverage takes priority over optional source comparisons.
     # Balance source/category representation rather than spending the budget on one large feed.
     selected_rows=diverse([r for r,p in pending],len(pending) if limit is None else limit)
     paths={r['id']:p for r,p in pending}
@@ -236,7 +236,7 @@ def enrich(rows, data_dir, limit=None):
     comparisons=[]
     stats['comparison_candidates']=len(candidates)
     stats['comparison_cached']=0
-    for group in candidates:
+    for group in candidates if stats['cached']+stats['enriched']==len(rows) else []:
         signature=hashlib.sha256(json.dumps(['comparison-candidates-v1',client.model,sorted([evidence(r) for r in group],key=lambda r:r['id'])],sort_keys=True,ensure_ascii=False).encode()).hexdigest()
         cp=cache_dir/('comparison-'+signature+'.json')
         try:
@@ -251,7 +251,7 @@ def enrich(rows, data_dir, limit=None):
             stats['budget_exhausted']=True;break
         except Exception as error:
             stats['comparison_error']=type(error).__name__
-    stats['comparison_state']='partial' if stats['budget_exhausted'] or stats.get('comparison_error') else 'complete' if comparisons else 'no_matches'
+    stats['comparison_state']='partial' if stats['cached']+stats['enriched']<len(rows) or stats['budget_exhausted'] or stats.get('comparison_error') else 'complete' if comparisons else 'no_matches'
     stats['remaining']=len(rows)-stats['cached']-stats['enriched']
     if stats['remaining']: stats['state']='partial'
     stats['usage']=client.usage
