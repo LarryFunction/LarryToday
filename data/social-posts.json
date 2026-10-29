@@ -84,27 +84,6 @@
     "section": "业界声音"
   },
   {
-    "id": "388004979cb49712",
-    "title": "Meta’s new ‘Muse Wonder’ model: good for AI agents, bad for design",
-    "url": "https://www.lennysnewsletter.com/p/metas-new-muse-wonder-model-good",
-    "source_id": "lenny-newsletter",
-    "category": "科技与 AI",
-    "published_at": "2026-10-14T12:04:05+00:00",
-    "feed_excerpt": "Watch now (24 mins) | 🎙️Meta launched Muse Wonder with claims of frontier agentic performance, so I ran it headlessly through Claude Code against nearly 20 tasks to find out if any of it is true",
-    "summary": "",
-    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
-    "date_precision": "timestamp",
-    "authors": [
-      "Claire Vo"
-    ],
-    "source_name": "Lenny's Newsletter",
-    "publisher_family": "lenny",
-    "source_region": "美国",
-    "source_kind": "opinion",
-    "content_type": "观点",
-    "section": "业界声音"
-  },
-  {
     "id": "ce20b0d6454246c4",
     "title": "Claude Duet is beautiful. I still forgot to use it",
     "url": "https://www.lennysnewsletter.com/p/claude-duet-is-beautiful-i-still",
@@ -193,6 +172,27 @@
     "category": "科技与 AI",
     "published_at": "2026-10-26T12:04:20+00:00",
     "feed_excerpt": "Watch now (30 mins) | 🎙️ Reddit’s principal UX engineer shows how a custom Figma MCP and Cursor pipeline takes any designer from blank slate to shareable, production-shaped prototype in minutes—no Git required",
+    "summary": "",
+    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
+    "date_precision": "timestamp",
+    "authors": [
+      "Claire Vo"
+    ],
+    "source_name": "Lenny's Newsletter",
+    "publisher_family": "lenny",
+    "source_region": "美国",
+    "source_kind": "opinion",
+    "content_type": "观点",
+    "section": "业界声音"
+  },
+  {
+    "id": "8e4bdae32dcecd43",
+    "title": "Grok vs. Dot vs. Muse vs. Claude Duet: which one crushes the competition?",
+    "url": "https://www.lennysnewsletter.com/p/grok-vs-dot-vs-muse-vs-claude-duet",
+    "source_id": "lenny-newsletter",
+    "category": "科技与 AI",
+    "published_at": "2026-10-28T12:04:22+00:00",
+    "feed_excerpt": "Listen now | 🎙️ I ranked Grok Bot, Dot, Muse, and Claude Duet across 9 real tasks—and the scores told me which agent runs my work and which runs my life",
     "summary": "",
     "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
     "date_precision": "timestamp",

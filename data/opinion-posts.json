@@ -1,5 +1,26 @@
 [
   {
+    "id": "8e4bdae32dcecd43",
+    "title": "Grok vs. Dot vs. Muse vs. Claude Duet: which one crushes the competition?",
+    "url": "https://www.lennysnewsletter.com/p/grok-vs-dot-vs-muse-vs-claude-duet",
+    "source_id": "lenny-newsletter",
+    "category": "科技与 AI",
+    "published_at": "2026-10-28T12:04:22+00:00",
+    "feed_excerpt": "Listen now | 🎙️ I ranked Grok Bot, Dot, Muse, and Claude Duet across 9 real tasks—and the scores told me which agent runs my work and which runs my life",
+    "summary": "",
+    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
+    "date_precision": "timestamp",
+    "authors": [
+      "Claire Vo"
+    ],
+    "source_name": "Lenny's Newsletter",
+    "publisher_family": "lenny",
+    "source_region": "美国",
+    "source_kind": "opinion",
+    "content_type": "观点",
+    "section": "业界声音"
+  },
+  {
     "id": "7788b12763a8e01b",
     "title": "🎙️ How I AI: Claude Duet honest review + Why Reddit built its own AI prototyping tool",
     "url": "https://www.lennysnewsletter.com/p/how-i-ai-claude-duet-honest-review",
@@ -387,27 +408,6 @@
     "date_precision": "timestamp",
     "authors": [
       "Kiyani"
-    ],
-    "source_name": "Lenny's Newsletter",
-    "publisher_family": "lenny",
-    "source_region": "美国",
-    "source_kind": "opinion",
-    "content_type": "观点",
-    "section": "业界声音"
-  },
-  {
-    "id": "88b828c402d5339a",
-    "title": "OpenAI Dev Day 2026: The releases that actually matter",
-    "url": "https://www.lennysnewsletter.com/p/openai-dev-day-2026-the-releases",
-    "source_id": "lenny-newsletter",
-    "category": "科技与 AI",
-    "published_at": "2026-09-30T14:45:15+00:00",
-    "feed_excerpt": "Watch now (24 mins) | 🎙️ Claire tests OpenAI’s DevDay releases, from Dots, Spaces, and Sites to AI-picked thumbnails and a $97 game, and shares what’s worth trying first",
-    "summary": "",
-    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
-    "date_precision": "timestamp",
-    "authors": [
-      "Claire Vo"
     ],
     "source_name": "Lenny's Newsletter",
     "publisher_family": "lenny",
