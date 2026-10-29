@@ -1,25 +1,6 @@
 {
-  "failed_sources": 2,
-  "ai_stages": {},
-  "budget_exhausted": false,
-  "state": "degraded",
+  "state": "skipped",
   "target_date": "2026-10-29",
   "published_date": "2026-10-29",
-  "collected": 6938,
-  "published": 1041,
-  "events": 1026,
-  "merged": 3,
-  "sources": 20,
-  "country_identified": 290,
-  "ai_country_decisions": 0,
-  "cached": null,
-  "enriched": null,
-  "failed": null,
-  "remaining": null,
-  "accounted_tokens": null,
-  "token_budget": null,
-  "prompt_tokens": null,
-  "completion_tokens": null,
-  "missing_usage": null,
-  "finished_at": "2026-10-29T02:29:03.547345+00:00"
+  "finished_at": "2026-10-29T06:29:37.138095+00:00"
 }
