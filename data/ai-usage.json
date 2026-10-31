@@ -1,0 +1,36 @@
+{
+  "state": "partial",
+  "model": "deepseek-flash",
+  "enriched": 348,
+  "cached": 0,
+  "failed": 12,
+  "reviewed": 6,
+  "budget_exhausted": true,
+  "processed_at": "2026-10-31T02:26:52.530669+00:00",
+  "comparison_candidates": 12,
+  "comparison_cached": 0,
+  "comparison_state": "partial",
+  "remaining": 802,
+  "usage": {
+    "calls": 62,
+    "retries": 0,
+    "prompt_tokens": 113613,
+    "completion_tokens": 175691,
+    "missing_usage": 0,
+    "stages": {
+      "edit": {
+        "calls": 60,
+        "prompt_tokens": 108676,
+        "completion_tokens": 165893
+      },
+      "review": {
+        "calls": 2,
+        "prompt_tokens": 4937,
+        "completion_tokens": 9798
+      }
+    }
+  },
+  "token_budget": 300000,
+  "accounted_tokens": 289304,
+  "budget_basis": "UTF-8 bytes + framing + max output reserved before every attempt; settled from provider usage when available; unknown attempts retain reservation. Not a billing guarantee."
+}
