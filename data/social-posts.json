@@ -63,27 +63,6 @@
     "section": "业界声音"
   },
   {
-    "id": "8018cd28aecd136f",
-    "title": "🧠 Community Wisdom: PRDs for agents, tracking competitor messaging, whether software moats still exist, exercising startup options when you leave, and more",
-    "url": "https://www.lennysnewsletter.com/p/community-wisdom-prds-for-agents",
-    "source_id": "lenny-newsletter",
-    "category": "科技与 AI",
-    "published_at": "2026-10-17T13:53:57+00:00",
-    "feed_excerpt": "Community Wisdom 302",
-    "summary": "",
-    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
-    "date_precision": "timestamp",
-    "authors": [
-      "Kiyani"
-    ],
-    "source_name": "Lenny's Newsletter",
-    "publisher_family": "lenny",
-    "source_region": "美国",
-    "source_kind": "opinion",
-    "content_type": "观点",
-    "section": "业界声音"
-  },
-  {
     "id": "ce20b0d6454246c4",
     "title": "Claude Duet is beautiful. I still forgot to use it",
     "url": "https://www.lennysnewsletter.com/p/claude-duet-is-beautiful-i-still",
@@ -198,6 +177,27 @@
     "date_precision": "timestamp",
     "authors": [
       "Claire Vo"
+    ],
+    "source_name": "Lenny's Newsletter",
+    "publisher_family": "lenny",
+    "source_region": "美国",
+    "source_kind": "opinion",
+    "content_type": "观点",
+    "section": "业界声音"
+  },
+  {
+    "id": "0c4b959782efa551",
+    "title": "🧠 Community Wisdom: The biggest sources of interruptions for PMs, hiring junior PMs with case studies vs. behavioral interviews, building a product harness for AI-driven development, and more",
+    "url": "https://www.lennysnewsletter.com/p/community-wisdom-the-biggest-sources",
+    "source_id": "lenny-newsletter",
+    "category": "科技与 AI",
+    "published_at": "2026-10-31T16:14:41+00:00",
+    "feed_excerpt": "Community Wisdom 304",
+    "summary": "",
+    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
+    "date_precision": "timestamp",
+    "authors": [
+      "Kiyani"
     ],
     "source_name": "Lenny's Newsletter",
     "publisher_family": "lenny",

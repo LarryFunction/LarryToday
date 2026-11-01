@@ -1,6 +1,36 @@
 {
-  "state": "skipped",
-  "target_date": "2026-10-31",
-  "published_date": "2026-10-31",
-  "finished_at": "2026-10-31T06:18:50.969559+00:00"
+  "failed_sources": 2,
+  "ai_stages": {
+    "edit": {
+      "calls": 57,
+      "prompt_tokens": 101513,
+      "completion_tokens": 167090
+    },
+    "review": {
+      "calls": 2,
+      "prompt_tokens": 5179,
+      "completion_tokens": 13000
+    }
+  },
+  "budget_exhausted": true,
+  "state": "degraded",
+  "target_date": "2026-11-01",
+  "published_date": "2026-11-01",
+  "collected": 8769,
+  "published": 550,
+  "events": 538,
+  "merged": 0,
+  "sources": 17,
+  "country_identified": 319,
+  "ai_country_decisions": 319,
+  "cached": 5,
+  "enriched": 324,
+  "failed": 18,
+  "remaining": 221,
+  "accounted_tokens": 286782,
+  "token_budget": 300000,
+  "prompt_tokens": 106692,
+  "completion_tokens": 180090,
+  "missing_usage": 0,
+  "finished_at": "2026-11-01T02:33:09.870295+00:00"
 }
