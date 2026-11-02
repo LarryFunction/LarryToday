@@ -60,6 +60,13 @@ class PublicationTests(unittest.TestCase):
             self.assertNotIn('secret',report)
             self.assertEqual(json.loads(report)['state'],'degraded')
 
+    def test_disabled_ai_report_exposes_translation_gap(self):
+        report=publication_report({'date':'2026-10-30','articles':[{'title':'English title'},{'title':'中文原题'},{'title':'English','title_zh':'中文译题'}],'ai_status':{'state':'disabled'}},3)
+        self.assertEqual(report['chinese_titles'],2)
+        self.assertEqual(report['untranslated_titles'],1)
+        self.assertEqual(report['ai_state'],'disabled')
+        self.assertEqual(report['state'],'degraded')
+
     def test_unknown_usage_not_zero(self):
         report=publication_report({'date':'2020-01-01','articles':[],'events':[],'ai_status':{'state':'disabled'}},0)
         self.assertIsNone(report['prompt_tokens'])

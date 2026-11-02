@@ -27,6 +27,8 @@ def run():
     if enabled and not all(os.environ.get(k) for k in ('BASE_URL', 'BASE_KEY_1', 'BASE_KEY_2', 'BASE_KEY_3')):
         enabled=False
         print('::warning::AI secrets incomplete; publishing original news without paid calls')
+    if not enabled:
+        print('::warning::AI translation disabled: check AI_ENABLED and all four repository Secrets. Foreign-language originals will remain untranslated.')
     result = publish(ai=enabled, edition_date=day)
     print(json.dumps({'date': result['date'], 'count': result['count'], 'ai': result['ai']}, ensure_ascii=False))
 

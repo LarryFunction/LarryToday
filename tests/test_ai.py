@@ -20,6 +20,18 @@ class EditorialTests(unittest.TestCase):
         self.assertEqual(clean_comparisons({'comparisons':[dict(group,article_ids=['a','invented'])]},self.rows),[])
         self.assertEqual(clean_comparisons({'comparisons':[dict(group,same_event=False)]},self.rows),[])
 
+    def test_partial_batch_keeps_valid_items_without_accepting_rejected_claims(self):
+        from scripts.ai_news import clean_editorial_partial
+        value={'articles':[self.item,dict(self.item,id='b',grounded=False)]}
+        self.assertEqual(set(clean_editorial_partial(value,self.rows)),{'a'})
+        self.assertEqual(clean_editorial_partial({'articles':[self.item,self.item]},self.rows),{})
+
+    def test_basic_translation_requires_chinese_and_unique_ids(self):
+        from scripts.ai_news import clean_translation
+        self.assertEqual(set(clean_translation({'articles':[self.item]},self.rows)),{'a'})
+        self.assertEqual(clean_translation({'articles':[dict(self.item,title_zh='English only')]},self.rows),{})
+        self.assertEqual(clean_translation({'articles':[self.item,self.item]},self.rows),{})
+
     def test_excerpt_removes_markup_and_script(self):
         self.assertEqual(excerpt('<p>Actual &amp; text</p><script>fake()</script>'),'Actual & text')
 

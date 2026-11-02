@@ -1,6 +1,6 @@
 {
   "date": "2026-11-02",
-  "updated_at": "2026-11-02T02:47:28.211174+00:00",
+  "updated_at": "2026-11-02T08:31:54.687992+00:00",
   "mode": "live",
   "sources_status": [
     {
@@ -635,39 +635,37 @@
   ],
   "comparisons": [],
   "ai_status": {
-    "state": "partial",
+    "state": "complete",
     "model": "deepseek-flash",
-    "enriched": 276,
-    "cached": 0,
-    "failed": 6,
-    "reviewed": 12,
-    "budget_exhausted": false,
-    "processed_at": "2026-11-02T02:34:10.193412+00:00",
+    "enriched": 0,
+    "cached": 276,
+    "failed": 0,
+    "reviewed": 0,
+    "budget_exhausted": true,
+    "processed_at": "2026-11-02T08:31:15.854923+00:00",
+    "basic_translated": 5,
+    "basic_cached": 0,
     "comparison_candidates": 12,
     "comparison_cached": 0,
     "comparison_state": "partial",
-    "remaining": 6,
+    "remaining": 0,
+    "detailed_remaining": 6,
     "usage": {
-      "calls": 49,
+      "calls": 2,
       "retries": 0,
-      "prompt_tokens": 77876,
-      "completion_tokens": 139860,
+      "prompt_tokens": 2060,
+      "completion_tokens": 6713,
       "missing_usage": 0,
       "stages": {
         "edit": {
-          "calls": 47,
-          "prompt_tokens": 72845,
-          "completion_tokens": 129514
-        },
-        "review": {
           "calls": 2,
-          "prompt_tokens": 5031,
-          "completion_tokens": 10346
+          "prompt_tokens": 2060,
+          "completion_tokens": 6713
         }
       }
     },
-    "token_budget": 300000,
-    "accounted_tokens": 217736,
+    "token_budget": 20000,
+    "accounted_tokens": 8773,
     "budget_basis": "UTF-8 bytes + framing + max output reserved before every attempt; settled from provider usage when available; unknown attempts retain reservation. Not a billing guarantee."
   },
   "articles": [
@@ -2417,7 +2415,10 @@
         ],
         "basis": "标题或摘要明确提及；不代表国家立场"
       },
-      "section": "本期新闻"
+      "section": "本期新闻",
+      "title_zh": "视频记录厄瓜多尔洪水致房屋倒塌",
+      "summary_zh": "居民拍摄到厄瓜多尔一栋房屋倒塌坠入暴涨的河流，当地暴雨和洪水与厄尔尼诺有关。",
+      "ai_level": "basic_translation"
     },
     {
       "id": "89058959660551ab",
@@ -5209,7 +5210,10 @@
         ],
         "basis": "标题或摘要明确提及；不代表国家立场"
       },
-      "section": "本期新闻"
+      "section": "本期新闻",
+      "title_zh": "奥列什基居民经罕见停火返回乌克兰控制区",
+      "summary_zh": "居民经罕见局部停火从俄占奥列什基撤至乌克兰控制区，称多年孤立、缺粮并遭炮击，有人被迫吃草和狗求生；该市2022年被俄军夺取。",
+      "ai_level": "basic_translation"
     },
     {
       "id": "aaf00cc47564d5a9",
@@ -10235,7 +10239,10 @@
         ],
         "basis": "标题或摘要明确提及；不代表国家立场"
       },
-      "section": "本期新闻"
+      "section": "本期新闻",
+      "title_zh": "第七届鲁班文化节在山东滕州开幕 聚焦发掘中华传统技艺时代价值",
+      "summary_zh": "中新网山东滕州11月1日电 (周艺伟)以“传承鲁班文化，赋能创新发展”为主题的第七届鲁班文化节暨墨子鲁班学术研讨会11月1日在山东枣庄滕州市开幕。来自中国各地的卓越工程师、大国工匠、建筑专家、文化学者等130余名嘉宾齐聚现场，共探中华传统技艺的当代转化路径与时代价值。",
+      "ai_level": "original_chinese"
     },
     {
       "id": "dee8666c86012a0c",
@@ -10634,7 +10641,10 @@
         "countries": [],
         "basis": "主题归属，不推断国家"
       },
-      "section": "本期新闻"
+      "section": "本期新闻",
+      "title_zh": "火车上被中断的人生：“感谢你爱我、理解我、做世界上最好的父亲”",
+      "summary_zh": "乌尔达事故中死者和失踪者身份陆续确认，揭开69名遇难者背后的故事与家属的痛苦。",
+      "ai_level": "basic_translation"
     },
     {
       "id": "f9f7bbc910b3bd27",
@@ -11195,7 +11205,10 @@
         ],
         "basis": "标题或摘要明确提及；不代表国家立场"
       },
-      "section": "本期新闻"
+      "section": "本期新闻",
+      "title_zh": "玻利维亚因厄尔尼诺宣布进入紧急状态",
+      "summary_zh": "政府本周发布的报告称，干旱正影响该国9个省中的6个省、共7.8万个家庭。",
+      "ai_level": "basic_translation"
     },
     {
       "id": "909b4a42f4bca711",
@@ -11268,7 +11281,10 @@
         ],
         "basis": "标题或摘要明确提及；不代表国家立场"
       },
-      "section": "本期新闻"
+      "section": "本期新闻",
+      "title_zh": "特朗普向纽约被杀加纳裔男孩母亲发放签证——曼达尼",
+      "summary_zh": "曼达尼称，特朗普向在纽约布朗克斯区上学途中遭枪杀的15岁加纳裔男孩贾维茨·弗里姆蓬的母亲发放签证。",
+      "ai_level": "basic_translation"
     },
     {
       "id": "7c18bbf8371a5a87",
@@ -14171,7 +14187,7 @@
         "85d1d15fc4ac8a6a"
       ],
       "category": "国际政治",
-      "title": "Video captures house collapsing due to Ecuador floods"
+      "title": "视频记录厄瓜多尔洪水致房屋倒塌"
     },
     {
       "id": "event-89058959660551ab",
@@ -14693,7 +14709,7 @@
         "8dfeafcbec19fa7e"
       ],
       "category": "国际政治",
-      "title": "Oleshky residents return to Ukraine"
+      "title": "奥列什基居民经罕见停火返回乌克兰控制区"
     },
     {
       "id": "event-aaf00cc47564d5a9",
@@ -15746,7 +15762,7 @@
         "8c4be38796fbe89a"
       ],
       "category": "国际政治",
-      "title": "Las vidas truncadas en el tren: “Gracias por quererme, por entenderme, por ser el mejor padre del mundo”"
+      "title": "火车上被中断的人生：“感谢你爱我、理解我、做世界上最好的父亲”"
     },
     {
       "id": "event-f9f7bbc910b3bd27",
@@ -15863,7 +15879,7 @@
         "3f1bda120af29515"
       ],
       "category": "国际政治",
-      "title": "Bolivia declares state of emergency over El Nino"
+      "title": "玻利维亚因厄尔尼诺宣布进入紧急状态"
     },
     {
       "id": "event-909b4a42f4bca711",
@@ -15881,7 +15897,7 @@
         "7d6361ef276ddb7a"
       ],
       "category": "国际政治",
-      "title": "Trump grants visa to mother of Ghanaian boy killed in NYC — Mamdani"
+      "title": "特朗普向纽约被杀加纳裔男孩母亲发放签证——曼达尼"
     },
     {
       "id": "event-7c18bbf8371a5a87",
@@ -16436,11 +16452,7 @@
     "timezone": "Asia/Shanghai",
     "date": "2026-11-02"
   },
-  "excluded": {
-    "outside_window": 3750,
-    "shopping": 3,
-    "unknown_date": 126
-  },
+  "excluded": {},
   "coverage": {
     "sources": {
       "chinanews": 68,
@@ -16496,8 +16508,8 @@
       "section": "业界声音"
     }
   ],
-  "revision": 1,
-  "revision_note": "首次出版",
-  "published_at": "2026-11-02T02:47:28.291745+00:00",
-  "content_hash": "eb6f78cf50868a03b4971cd7a1d04607ca45ade84d48472a76c48e15f995e4c2"
+  "revision": 2,
+  "revision_note": "复用已发布译文，仅补齐缺失的中文标题和导读",
+  "published_at": "2026-11-02T08:31:54.793977+00:00",
+  "content_hash": "8adbda456f77b5bdbdae2b458f8858cb5a81b9ebe93fd94f4b7cf0e840755f07"
 }

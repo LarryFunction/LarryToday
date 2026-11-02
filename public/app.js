@@ -52,7 +52,7 @@ function geoMark(a){
   return `<aside class="geo-mark geo-${esc(g.kind)} ${!isCountry?'geo-word geo-wide':''} ${codes.join('').length>6?'geo-long':''}" aria-label="${g.kind==='topic'?'主题':'报道地域'}：${esc(g.label)}" title="${esc(meaning)}"><div class="geo-composition" aria-hidden="true"><i class="geo-orbit"></i><i class="geo-bar"></i><i class="geo-axis"></i></div><b class="geo-code">${codes.map(c=>`<span>${esc(c)}</span>`).join('')}</b><div class="geo-label">${labelMarkup}</div></aside>`;
 }
 function articleRow(a,i){
-  const bilingual=a.title_zh?`<div class="english-title" lang="en">${esc(a.title_en||a.title)}</div>`:'';
+  const bilingual=a.title_zh&&(a.title_en||a.title)!==a.title_zh?`<div class="english-title" lang="en">${esc(a.title_en||a.title)}</div>`:'';
   const summary=a.summary_zh||a.summary||a.feed_excerpt||a._search;
   const kind=a.research_status==='preprint'?'预印本':a.content_type;
   const typeTag=kind&&kind!=='新闻'?`<span class="type-tag">${esc(kind)}</span>`:'';

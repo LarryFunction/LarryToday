@@ -4,5 +4,17 @@
     "published_at": "2026-10-30T02:38:53.693108+00:00",
     "note": "首次出版",
     "content_hash": "82dd1c9693321a635beefc78057c13741862db76dc9010a4c180054d68af6563"
+  },
+  {
+    "revision": 2,
+    "published_at": "2026-10-30T13:01:54.967845+00:00",
+    "note": "补充中文标题、摘要和标签；恢复 AI 编辑，原始来源报道保持收录",
+    "content_hash": "0dfc6bf391a5e39d8b7ae4f2ca7779816eb4d1105f388d7c9c4afa82344c0ff2"
+  },
+  {
+    "revision": 3,
+    "published_at": "2026-10-30T13:06:56.483751+00:00",
+    "note": "优先补齐简短中文标题和导读，复用已完成的编辑缓存；保留全部来源报道",
+    "content_hash": "d92010a327e0c9b905bea347ca002ca7ec6be914a0c7fa0b6a0ffcbf159d2e57"
   }
 ]

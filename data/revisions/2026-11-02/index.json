@@ -4,5 +4,11 @@
     "published_at": "2026-11-02T02:47:28.291745+00:00",
     "note": "首次出版",
     "content_hash": "eb6f78cf50868a03b4971cd7a1d04607ca45ade84d48472a76c48e15f995e4c2"
+  },
+  {
+    "revision": 2,
+    "published_at": "2026-11-02T08:31:54.793977+00:00",
+    "note": "复用已发布译文，仅补齐缺失的中文标题和导读",
+    "content_hash": "8adbda456f77b5bdbdae2b458f8858cb5a81b9ebe93fd94f4b7cf0e840755f07"
   }
 ]
