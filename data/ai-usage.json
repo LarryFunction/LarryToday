@@ -1,36 +1,36 @@
 {
   "state": "partial",
   "model": "deepseek-flash",
-  "enriched": 324,
-  "cached": 5,
-  "failed": 18,
-  "reviewed": 0,
-  "budget_exhausted": true,
-  "processed_at": "2026-11-01T02:16:10.397845+00:00",
+  "enriched": 276,
+  "cached": 0,
+  "failed": 6,
+  "reviewed": 12,
+  "budget_exhausted": false,
+  "processed_at": "2026-11-02T02:34:10.193412+00:00",
   "comparison_candidates": 12,
   "comparison_cached": 0,
   "comparison_state": "partial",
-  "remaining": 221,
+  "remaining": 6,
   "usage": {
-    "calls": 59,
+    "calls": 49,
     "retries": 0,
-    "prompt_tokens": 106692,
-    "completion_tokens": 180090,
+    "prompt_tokens": 77876,
+    "completion_tokens": 139860,
     "missing_usage": 0,
     "stages": {
       "edit": {
-        "calls": 57,
-        "prompt_tokens": 101513,
-        "completion_tokens": 167090
+        "calls": 47,
+        "prompt_tokens": 72845,
+        "completion_tokens": 129514
       },
       "review": {
         "calls": 2,
-        "prompt_tokens": 5179,
-        "completion_tokens": 13000
+        "prompt_tokens": 5031,
+        "completion_tokens": 10346
       }
     }
   },
   "token_budget": 300000,
-  "accounted_tokens": 286782,
+  "accounted_tokens": 217736,
   "budget_basis": "UTF-8 bytes + framing + max output reserved before every attempt; settled from provider usage when available; unknown attempts retain reservation. Not a billing guarantee."
 }

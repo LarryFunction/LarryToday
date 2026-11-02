@@ -42,27 +42,6 @@
     "section": "业界声音"
   },
   {
-    "id": "1bd4b6f11f5d0573",
-    "title": "Inside the black box of AI: How AI models actually think | Emmanuel Ameisen (Anthropic)",
-    "url": "https://www.lennysnewsletter.com/p/a-mind-expanding-conversation-on",
-    "source_id": "lenny-newsletter",
-    "category": "科技与 AI",
-    "published_at": "2026-10-18T12:31:36+00:00",
-    "feed_excerpt": "Listen now (72 mins) | Emmanuel Ameisen of Anthropic explains what looking inside language models reveals about planning, consciousness, and AI safety",
-    "summary": "",
-    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
-    "date_precision": "timestamp",
-    "authors": [
-      "Lenny Rachitsky"
-    ],
-    "source_name": "Lenny's Newsletter",
-    "publisher_family": "lenny",
-    "source_region": "美国",
-    "source_kind": "opinion",
-    "content_type": "观点",
-    "section": "业界声音"
-  },
-  {
     "id": "ce20b0d6454246c4",
     "title": "Claude Duet is beautiful. I still forgot to use it",
     "url": "https://www.lennysnewsletter.com/p/claude-duet-is-beautiful-i-still",
@@ -198,6 +177,27 @@
     "date_precision": "timestamp",
     "authors": [
       "Kiyani"
+    ],
+    "source_name": "Lenny's Newsletter",
+    "publisher_family": "lenny",
+    "source_region": "美国",
+    "source_kind": "opinion",
+    "content_type": "观点",
+    "section": "业界声音"
+  },
+  {
+    "id": "f1ef4aa9c94960d8",
+    "title": "How a 19-year-old intern built the growth engine behind this $2B AI company | Hector Serrano",
+    "url": "https://www.lennysnewsletter.com/p/how-a-19-year-old-intern-built-the",
+    "source_id": "lenny-newsletter",
+    "category": "科技与 AI",
+    "published_at": "2026-11-01T13:31:36+00:00",
+    "feed_excerpt": "Listen now (88 mins) | Hector Serrano on building Wispr Flow’s paid-UGC machine, hiring young talent over polished resumes, and why the best marketers are “allergic to AI”",
+    "summary": "",
+    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
+    "date_precision": "timestamp",
+    "authors": [
+      "Lenny Rachitsky"
     ],
     "source_name": "Lenny's Newsletter",
     "publisher_family": "lenny",

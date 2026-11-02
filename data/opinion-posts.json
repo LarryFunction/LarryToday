@@ -1,5 +1,26 @@
 [
   {
+    "id": "f1ef4aa9c94960d8",
+    "title": "How a 19-year-old intern built the growth engine behind this $2B AI company | Hector Serrano",
+    "url": "https://www.lennysnewsletter.com/p/how-a-19-year-old-intern-built-the",
+    "source_id": "lenny-newsletter",
+    "category": "科技与 AI",
+    "published_at": "2026-11-01T13:31:36+00:00",
+    "feed_excerpt": "Listen now (88 mins) | Hector Serrano on building Wispr Flow’s paid-UGC machine, hiring young talent over polished resumes, and why the best marketers are “allergic to AI”",
+    "summary": "",
+    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
+    "date_precision": "timestamp",
+    "authors": [
+      "Lenny Rachitsky"
+    ],
+    "source_name": "Lenny's Newsletter",
+    "publisher_family": "lenny",
+    "source_region": "美国",
+    "source_kind": "opinion",
+    "content_type": "观点",
+    "section": "业界声音"
+  },
+  {
     "id": "0c4b959782efa551",
     "title": "🧠 Community Wisdom: The biggest sources of interruptions for PMs, hiring junior PMs with case studies vs. behavioral interviews, building a product harness for AI-driven development, and more",
     "url": "https://www.lennysnewsletter.com/p/community-wisdom-the-biggest-sources",
@@ -387,27 +408,6 @@
     "date_precision": "timestamp",
     "authors": [
       "Claire Vo"
-    ],
-    "source_name": "Lenny's Newsletter",
-    "publisher_family": "lenny",
-    "source_region": "美国",
-    "source_kind": "opinion",
-    "content_type": "观点",
-    "section": "业界声音"
-  },
-  {
-    "id": "135dc46f55b3b28c",
-    "title": "OpenAI’s Head of ChatGPT: We’re entering a new era of AI (again) | Tibo Sottiaux",
-    "url": "https://www.lennysnewsletter.com/p/openais-head-of-chatgpt-were-entering",
-    "source_id": "lenny-newsletter",
-    "category": "科技与 AI",
-    "published_at": "2026-10-04T12:32:47+00:00",
-    "feed_excerpt": "Listen now (37 mins) | Tibo Sottiaux on why Dots is OpenAI’s biggest bet, why agents will dominate internet traffic, and what builders are still getting wrong",
-    "summary": "",
-    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
-    "date_precision": "timestamp",
-    "authors": [
-      "Lenny Rachitsky"
     ],
     "source_name": "Lenny's Newsletter",
     "publisher_family": "lenny",
