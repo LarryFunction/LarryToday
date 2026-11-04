@@ -181,7 +181,8 @@ def geography(row):
     for code, label, pattern in [('SPACE','太空探索',r'太空|宇宙|天文|\b(spacecraft|astronomy|cosmic|galaxy)\b'),('WORLD','全球议题',r'全球|全世界|\b(global|worldwide)\b'),('EUROPE','欧洲',r'欧洲|欧盟|\b(Europe|European)\b'),('ASIA','亚洲',r'亚洲|\bAsia\b'),('AFRICA','非洲',r'非洲|\bAfrica\b'),('AMERICAS','美洲',r'美洲|\bAmericas\b'),('OCEANIA','大洋洲',r'大洋洲|\bOceania\b')]:
         if re.search(pattern, title, re.I):
             return {'kind':'scope', 'code':code, 'label':label, 'countries':[], 'basis':'标题明确范围'}
-    code, label = TOPICS.get(row.get('category'), ('TOPICS', '专题观察'))
+    from scripts.newsroom import infer_category
+    code, label = TOPICS.get(infer_category(row), ('TOPICS', '专题观察'))
     if row.get('source_kind') == 'research' or row.get('research_status') == 'preprint':
         code, label = 'RESEARCH', '科学研究'
     return {'kind':'topic', 'code':code, 'label':label, 'countries':[], 'basis':'主题归属，不推断国家'}

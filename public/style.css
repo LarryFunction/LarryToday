@@ -79,3 +79,12 @@ html{scroll-behavior:smooth;scroll-padding-top:28px}.reading-controls{display:fl
 .geo-word .geo-code{font-size:44px}.geo-word.geo-long .geo-code{font-size:36px}
 @media(max-width:1100px){.geo-word .geo-code{font-size:32px}.geo-word.geo-long .geo-code{font-size:28px}}
 @media(max-width:760px){.geo-word .geo-code{font-size:28px}.geo-word.geo-long .geo-code{font-size:24px}}
+
+/* Topic index: ink, fine rules and a small diagonal accent. */
+.tags{gap:10px 18px;align-items:center;margin-top:24px}
+.tags button,.tags .type-tag{display:inline-flex;align-items:center;gap:9px;min-height:34px;padding:4px 2px 5px;border:0;border-bottom:1px solid color-mix(in srgb,var(--accent) 38%,transparent);background:transparent;color:var(--accent);font:600 14px/1.6 Georgia,"Noto Serif SC","Songti SC","SimSun",serif;letter-spacing:1px;transition:color .15s,border-color .15s}
+.tags button .tag-glyph{font:italic 23px/1 Georgia,serif;opacity:.55;transform:rotate(12deg)}
+.tags button:hover{background:transparent;color:var(--ink);border-color:var(--accent)}
+.tags .type-tag{font-size:12px;font-weight:400;color:var(--muted);border-bottom-style:dotted}
+@media(max-width:760px){.tags{gap:8px 15px}.tags button,.tags .type-tag{font-size:13px;padding:5px 1px}}
+@media(prefers-reduced-motion:reduce){.tags button{transition:none}}

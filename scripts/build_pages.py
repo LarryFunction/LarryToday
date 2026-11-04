@@ -21,18 +21,29 @@ def write_json(path, value):
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 
 
+def reader_rows(rows):
+    from scripts.editorial import classify
+    return [classify(dict(r)) if all(k in r for k in ('title','url','category')) else dict(r,geography=geography(r)) for r in rows]
+
+
 def copy_json(source, target):
     target.parent.mkdir(parents=True, exist_ok=True)
     value=read_json(source)
     if isinstance(value,dict) and 'articles' in value:
-        value['articles']=[dict(r,geography=geography(r)) for r in value['articles']]
+        value['articles']=reader_rows(value['articles'])
+        by_id={r['id']:r for r in value['articles']}
+        for key in ('events','background_events'):
+            for event in value.get(key,[]):
+                if event.get('lead_id') in by_id:event['category']=by_id[event['lead_id']]['category']
+        for item in value.get('briefing',[]):
+            if item.get('article_id') in by_id:item['category']=by_id[item['article_id']]['category']
     write_json(target,value)
 
 
 def paged_payload(edition):
     """Keep full archives; latest reader downloads index and needed chunks."""
     chunks=[]
-    articles=edition.get('articles',[])
+    articles=reader_rows(edition.get('articles',[]))
     manifest={k:v for k,v in edition.items() if k!='articles'}
     # Reader grouping is a presentation view; archived editions stay unchanged.
     if edition.get('events') is not None:

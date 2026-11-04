@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-03",
+  "model": "deepseek-flash",
+  "thinking": "disabled",
+  "sample_size": 11,
+  "batches": [
+    {
+      "articles": 6,
+      "valid": 6,
+      "categories": [
+        "国际政治",
+        "社会与文化"
+      ],
+      "prompt_tokens": 941,
+      "completion_tokens": 325,
+      "reasoning_tokens": 0,
+      "calls": 1
+    },
+    {
+      "articles": 5,
+      "valid": 5,
+      "categories": [
+        "科学与探索",
+        "科技与 AI",
+        "经济与投资"
+      ],
+      "prompt_tokens": 697,
+      "completion_tokens": 312,
+      "reasoning_tokens": 0,
+      "calls": 1
+    }
+  ],
+  "usage": {
+    "calls": 2,
+    "retries": 0,
+    "prompt_tokens": 1638,
+    "completion_tokens": 637,
+    "missing_usage": 0,
+    "reasoning_tokens": 0,
+    "stages": {
+      "edit": {
+        "calls": 2,
+        "prompt_tokens": 1638,
+        "completion_tokens": 637
+      }
+    }
+  },
+  "accounted_tokens": 2275,
+  "sample_ids": [
+    "9b03c5f551b45207",
+    "6854cdcb0442190f",
+    "719562720cae8e54",
+    "3c216b1bd0355a45",
+    "e001c5f5336b4e78",
+    "ce5feac7c3bc52e6",
+    "3d84f32da8094cfc",
+    "5aabf5dd56718426",
+    "0e376717b7a69e51",
+    "5a7696a03a678e73",
+    "19d59d199abab923"
+  ]
+}

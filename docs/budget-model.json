@@ -1,0 +1,89 @@
+{
+  "sample_size": 11,
+  "sample_tokens": 2275,
+  "conservative_unit_tokens": 300,
+  "retry_margin": 0.2,
+  "fixed_reserve": 52000,
+  "history": [
+    {
+      "date": "2026-10-23",
+      "articles": 1064,
+      "new_foreign_no_cache": 950,
+      "planned_tokens": 400000
+    },
+    {
+      "date": "2026-10-24",
+      "articles": 1053,
+      "new_foreign_no_cache": 928,
+      "planned_tokens": 390000
+    },
+    {
+      "date": "2026-10-25",
+      "articles": 523,
+      "new_foreign_no_cache": 419,
+      "planned_tokens": 210000
+    },
+    {
+      "date": "2026-10-26",
+      "articles": 298,
+      "new_foreign_no_cache": 209,
+      "planned_tokens": 130000
+    },
+    {
+      "date": "2026-10-27",
+      "articles": 1004,
+      "new_foreign_no_cache": 902,
+      "planned_tokens": 380000
+    },
+    {
+      "date": "2026-10-28",
+      "articles": 1129,
+      "new_foreign_no_cache": 1031,
+      "planned_tokens": 430000
+    },
+    {
+      "date": "2026-10-29",
+      "articles": 1041,
+      "new_foreign_no_cache": 932,
+      "planned_tokens": 390000
+    },
+    {
+      "date": "2026-10-30",
+      "articles": 584,
+      "new_foreign_no_cache": 481,
+      "planned_tokens": 230000
+    },
+    {
+      "date": "2026-10-31",
+      "articles": 1150,
+      "new_foreign_no_cache": 1036,
+      "planned_tokens": 430000
+    },
+    {
+      "date": "2026-11-01",
+      "articles": 550,
+      "new_foreign_no_cache": 428,
+      "planned_tokens": 210000
+    },
+    {
+      "date": "2026-11-02",
+      "articles": 282,
+      "new_foreign_no_cache": 205,
+      "planned_tokens": 130000
+    },
+    {
+      "date": "2026-11-03",
+      "articles": 939,
+      "new_foreign_no_cache": 830,
+      "planned_tokens": 360000
+    }
+  ],
+  "recommended_daily_cap": 500000,
+  "production_cap_changed": false,
+  "assumptions": [
+    "Small stratified pilot; no statistical coverage guarantee",
+    "Assumes zero reusable cache and existing Chinese material needs no translation",
+    "Planning bound is not a currency bill",
+    "Detail editing and morning selection are capped; all original news retained"
+  ]
+}

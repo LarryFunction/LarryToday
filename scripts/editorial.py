@@ -28,6 +28,8 @@ def classify(row):
     rules=[('科技与 AI',r'\b(ai|artificial intelligence|openai|anthropic|semiconductor|cybersecurity|llm)\b|人工智能|大模型|芯片'),('环境与气候',r'\b(climate|emissions|renewable|biodiversity)\b|气候|碳排放'),('科学与探索',r'\b(nasa|astronomy|spacecraft|clinical trial)\b|航天|天文学'),('经济与投资',r'\b(inflation|interest rates|stock market|central bank|gdp)\b|通胀|央行|经济增长')]
     for category,pattern in rules:
         if re.search(pattern,text): row['category']=category;break
+    from scripts.newsroom import infer_category, article_tags
+    row['category']=infer_category(row)
     # Explicit publisher section paths override broad cross-topic keyword matches.
     path=row['url'].lower()
     if re.search(r'/(deportes|sports?|culture|cultura|television|arts)/',path): row['category']='社会与文化'
@@ -40,6 +42,7 @@ def classify(row):
     elif re.search(r'\b(best .{0,35}(gifts|deals|toys)|shopping|discount)\b|购物推荐|优惠券',title): row['content_type']='消费推荐'
     if row.get('research_status')=='preprint': row['content_type']='预印本修订' if row.get('announcement_type') in ('replace','replace-cross') else '预印本'
     elif row.get('source_kind')=='opinion': row['content_type']='观点'
+    row['tags']=article_tags(row)
     row['geography']=geography(row)
     return row
 
@@ -133,6 +136,9 @@ def assemble(rows,comparisons,bounds):
     background=diverse(background,12)
     current_events=events(main,comparisons)
     by_lead={e['lead_id']:e for e in current_events}
-    selected=diverse([r for r in main if r['id'] in by_lead],8)
-    briefing=[{'event_id':by_lead[r['id']]['id'],'article_id':r['id'],'title':r.get('title_zh',r['title']),'summary':r.get('summary_zh') or r.get('summary') or '阅读来源原文了解详情。','category':r['category']} for r in selected]
+    from scripts.newsroom import select_briefing
+    choices=select_briefing(main,current_events,8)
+    selected=[r for r,reason in choices]
+    reasons={r['id']:reason for r,reason in choices}
+    briefing=[{'event_id':by_lead[r['id']]['id'],'article_id':r['id'],'title':r.get('title_zh',r['title']),'summary':r.get('summary_zh') or r.get('summary') or '阅读来源原文了解详情。','category':r['category'],'selection':reasons[r['id']]} for r in selected]
     return {'articles':main+background,'events':current_events,'background_events':events(background,comparisons),'briefing':briefing,'window':bounds,'excluded':excluded,'coverage':{'sources':dict(Counter(r['source_id'] for r in main)),'regions':dict(Counter(r.get('source_region','未知') for r in main))},'reading_minutes':max(1,round(sum(len(r.get('summary_zh',''))+len(r.get('title_zh',r['title'])) for r in main)/450))}
