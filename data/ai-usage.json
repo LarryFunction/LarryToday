@@ -6,37 +6,37 @@
   "failed": 0,
   "reviewed": 0,
   "budget_exhausted": true,
-  "processed_at": "2026-11-07T02:51:44.889646+00:00",
-  "basic_translated": 961,
-  "basic_cached": 9,
-  "planned_tokens": 400000,
+  "processed_at": "2026-11-08T02:32:57.853207+00:00",
+  "basic_translated": 240,
+  "basic_cached": 11,
+  "planned_tokens": 140000,
   "morning_selected": 8,
   "comparison_candidates": 12,
   "comparison_cached": 0,
   "comparison_state": "partial",
   "remaining": 0,
-  "detailed_remaining": 1120,
+  "detailed_remaining": 351,
   "usage": {
-    "calls": 166,
+    "calls": 42,
     "retries": 0,
-    "prompt_tokens": 152296,
-    "completion_tokens": 64430,
+    "prompt_tokens": 34265,
+    "completion_tokens": 16714,
     "missing_usage": 0,
     "reasoning_tokens": 0,
     "stages": {
       "edit": {
-        "calls": 165,
-        "prompt_tokens": 149301,
-        "completion_tokens": 63997
+        "calls": 41,
+        "prompt_tokens": 31313,
+        "completion_tokens": 16321
       },
       "compare": {
         "calls": 1,
-        "prompt_tokens": 2995,
-        "completion_tokens": 433
+        "prompt_tokens": 2952,
+        "completion_tokens": 393
       }
     }
   },
   "token_budget": 500000,
-  "accounted_tokens": 216726,
+  "accounted_tokens": 50979,
   "budget_basis": "UTF-8 bytes + framing + max output reserved before every attempt; settled from provider usage when available; unknown attempts retain reservation. Not a billing guarantee."
 }
