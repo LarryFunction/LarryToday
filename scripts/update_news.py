@@ -136,7 +136,11 @@ def validate_articles(rows):
         clean.append({**row, 'id':hashlib.sha256(row['url'].encode()).hexdigest()[:16], 'verification':'来源报道 · 尚未交叉核验'})
     return clean
 
-def publish(manual=None, ai=True, ai_limit=None, existing=False, edition_date=None, revision_note=None):
+def translation_gap(rows):
+    return sum(not all(re.search(r'[\u4e00-\u9fff]',str(text or '')) for text in (r.get('title_zh') or r.get('title'),r.get('summary_zh') or r.get('feed_excerpt'))) for r in rows)
+
+
+def publish(manual=None, ai=True, ai_limit=None, existing=False, edition_date=None, revision_note=None, require_complete=True):
     DATA.mkdir(exist_ok=True)
     lock = DATA / '.update.lock'
     try: fd = os.open(lock, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
@@ -148,7 +152,12 @@ def publish(manual=None, ai=True, ai_limit=None, existing=False, edition_date=No
     try:
         rows, statuses = [], []
         previous=None
-        if existing:
+        pending=DATA/'pending'/f'{edition_date}.json' if edition_date else None
+        if pending and pending.exists() and not existing:
+            previous=json.loads(pending.read_text(encoding='utf-8'))
+            rows=previous['articles']
+            statuses=previous.get('sources_status',[])
+        elif existing:
             previous=json.loads((DATA/'latest.json').read_text(encoding='utf-8'))
             rows=previous['articles']
             statuses=previous.get('sources_status',[])
@@ -181,6 +190,10 @@ def publish(manual=None, ai=True, ai_limit=None, existing=False, edition_date=No
         rows=main+diverse(background,12)
         if not rows: raise RuntimeError('窗口内无可用内容，保留上一期')
         stage='edit'
+        pending=DATA/'pending'/f'{day}.json'
+        if require_complete:
+            # Persist the complete captured edition before any paid request.
+            atomic_json(pending,{'date':day,'articles':rows,'sources_status':statuses})
         comparisons=[]
         ai_status={'state':'disabled'}
         if ai:
@@ -188,15 +201,28 @@ def publish(manual=None, ai=True, ai_limit=None, existing=False, edition_date=No
             try: rows,comparisons,ai_status=enrich(rows,DATA,ai_limit)
             except Exception as error:
                 ai_status={'state':'unavailable','error_type':type(error).__name__,'stage':stage}
-                print('AI unavailable; publishing original source metadata',flush=True)
+                print('AI unavailable; retaining source data for publication checks',flush=True)
         edition = {'date':day,'updated_at':datetime.now(timezone.utc).isoformat(),'mode':'live','sources_status':statuses,'comparisons':comparisons,'ai_status':ai_status}
         edition.update(assemble(rows,comparisons,bounds))
         edition['excluded']=excluded
+        from scripts.publication_report import write_report, publication_report
+        missing=translation_gap(rows)
+        if require_complete and missing:
+            atomic_json(pending,edition)
+            current=json.loads((DATA/'latest.json').read_text(encoding='utf-8')) if (DATA/'latest.json').exists() else {}
+            report=publication_report(edition,collected)
+            report.update(state='pending_translation',published_date=current.get('date'),published=0,remaining=missing)
+            write_report(DATA,report)
+            print(f'::warning::{day}: {missing} articles pending translation; complete draft retained, published edition unchanged.')
+            return {'count':len(rows),'date':day,'ai':ai_status,'state':'pending_translation','remaining':missing}
         from scripts.editions import save
         stage='save'
         revision=save(DATA,edition,revision_note)
+        pending.unlink(missing_ok=True)
         from scripts.publication_report import write_report, publication_report
-        write_report(DATA,publication_report(edition,collected))
+        report=publication_report(edition,collected)
+        report['published_date']=json.loads((DATA/'latest.json').read_text(encoding='utf-8'))['date']
+        write_report(DATA,report)
         return {'count':len(rows),'date':day,'sources':statuses,'ai':ai_status,'revision':revision}
     except Exception as error:
         from scripts.publication_report import write_report

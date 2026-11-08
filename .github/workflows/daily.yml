@@ -39,7 +39,7 @@ jobs:
       - name: Publish once per edition
         env:
           AI_ENABLED: ${{ vars.AI_ENABLED }}
-          AI_TOKEN_BUDGET: ${{ vars.AI_TOKEN_BUDGET || '300000' }}
+          AI_TOKEN_BUDGET: ${{ vars.AI_TOKEN_BUDGET || '500000' }}
           AI_REVIEW_LIMIT: ${{ vars.AI_REVIEW_LIMIT || '12' }}
           AI_COMPARISON_LIMIT: ${{ vars.AI_COMPARISON_LIMIT || '12' }}
           BASE_URL: ${{ secrets.BASE_URL }}
@@ -56,6 +56,8 @@ jobs:
           path: |
             data/update-report.json
             data/update-report.md
+            data/pending
+            data/ai-budget-ledger.json
           retention-days: 30
           if-no-files-found: warn
       - uses: actions/cache/save@v4
@@ -67,6 +69,7 @@ jobs:
             data/background-candidates.json
           key: newspaper-${{ github.run_id }}-${{ github.run_attempt }}
       - name: Save published data
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -74,6 +77,8 @@ jobs:
           for file in data/social-posts.json data/social-status.json data/opinion-posts.json data/ai-usage.json data/update-report.json data/update-report.md; do
             if [ -f "$file" ]; then git add "$file"; fi
           done
+          if [ -d data/pending ]; then git add -A data/pending; fi
+          if [ -f data/ai-budget-ledger.json ]; then git add data/ai-budget-ledger.json; fi
           if ! git diff --cached --quiet; then
             git commit -m "Publish daily newspaper"
             git push origin HEAD:main

@@ -39,7 +39,7 @@ class NewsTests(unittest.TestCase):
     def test_manual_publish_archives_and_deduplicates(self):
         with tempfile.TemporaryDirectory(dir=Path(__file__).parent) as temp:
             data=Path(temp)
-            row={'title':'News','url':'https://example.com/news','source_id':'bbc','category':'国际政治','published_at':'2026-10-17T20:00:00+00:00'}
+            row={'title':'中文新闻','summary_zh':'中文摘要。','url':'https://example.com/news','source_id':'bbc','category':'国际政治','published_at':'2026-10-17T20:00:00+00:00'}
             source=data/'manual.json'
             source.write_text(json.dumps([row,row]))
             with patch.object(update_news,'DATA',data): result=update_news.publish(source,ai=False,edition_date='2026-10-18')

@@ -26,6 +26,7 @@ def settings():
             if sep and not key.startswith('#'):
                 values[key.strip()] = value.strip().strip('\"\'')
     values.update(os.environ)
+    values.setdefault('AI_DAILY_LEDGER',str(ROOT/'data'/'ai-budget-ledger.json'))
     return values
 
 class NoRedirect(urllib.request.HTTPRedirectHandler):
@@ -44,12 +45,24 @@ class Client:
         if not all(self.keys): raise ValueError('Three AI keys are required')
         self.model = self.config.get('AI_MODEL','')
         self.opener = urllib.request.build_opener(NoRedirect)
-        self.budget = int(self.config.get('AI_TOKEN_BUDGET','300000'))
+        self.budget = int(self.config.get('AI_TOKEN_BUDGET','500000'))
         if self.budget < 0: raise ValueError('AI_TOKEN_BUDGET must be nonnegative')
         self.editorial_budget=self.budget
         self.used_bound=0
+        self.ledger=Path(self.config['AI_DAILY_LEDGER']) if self.config.get('AI_DAILY_LEDGER') else None
+        from scripts.editorial import SHANGHAI
+        self.budget_day=datetime.now(SHANGHAI).date().isoformat()
+        if self.ledger and self.ledger.exists():
+            ledger=json.loads(self.ledger.read_text(encoding='utf-8'))
+            if ledger.get('date')==self.budget_day:self.used_bound=int(ledger['used'])
+        self.opening_usage=self.used_bound
         self.usage={'calls':0,'retries':0,'prompt_tokens':0,'completion_tokens':0,'missing_usage':0,'reasoning_tokens':0,'stages':{}}
         self.lock=threading.Lock()
+
+    def persist_budget(self):
+        if self.ledger:
+            from scripts.update_news import atomic_json
+            atomic_json(self.ledger,{'date':self.budget_day,'used':self.used_bound,'limit':self.budget})
 
     def request(self, route, slot, payload=None):
         data = json.dumps(payload,ensure_ascii=False).encode() if payload else None
@@ -64,6 +77,7 @@ class Client:
                     ceiling=self.budget if slot==2 else self.editorial_budget
                     if self.used_bound+reservation>ceiling: raise BudgetExceeded('AI token reservation budget reached')
                     self.used_bound+=reservation
+                    self.persist_budget()
                     self.usage['calls']+=1
                     self.usage['retries']+=int(attempt>0)
                     self.usage['stages'].setdefault(stage,{'calls':0,'prompt_tokens':0,'completion_tokens':0})['calls']+=1
@@ -79,6 +93,7 @@ class Client:
                         if isinstance(prompt,int) and isinstance(completion,int) and prompt>=0 and completion>=0:
                             self.usage['reasoning_tokens']+=(usage.get('completion_tokens_details') or {}).get('reasoning_tokens',0) or 0
                             self.used_bound+=prompt+completion-reservation
+                            self.persist_budget()
                             for key,value in [('prompt_tokens',prompt),('completion_tokens',completion)]:
                                 self.usage[key]+=value
                                 self.usage['stages'][stage][key]+=value
@@ -255,7 +270,7 @@ def enrich(rows, data_dir, limit=None):
     client=Client(config)
     client.discover()
     morning_enabled=config.get('AI_BRIEFING_ENABLED','true').lower()!='false' and client.budget>=100000 and len(rows)>=20
-    if morning_enabled:client.editorial_budget=max(0,client.budget-40000)
+    # Translation may use the full remaining budget; morning selection has a local fallback.
     cache_dir=data_dir/'ai-cache'
     stats={'state':'complete','model':client.model,'enriched':0,'cached':0,'failed':0,'reviewed':0,'budget_exhausted':False,'processed_at':datetime.now(timezone.utc).isoformat()}
     pending=[]
@@ -287,6 +302,7 @@ def enrich(rows, data_dir, limit=None):
     for row in selected_rows:
         existing=clean_translation({'articles':[row]},[row])
         if row['id'] in existing:
+            row.update(existing[row['id']])
             stats['basic_cached']+=1
             continue
         tp=cache_dir/('translation-v1-'+paths[row['id']].name)
@@ -323,7 +339,7 @@ def enrich(rows, data_dir, limit=None):
                 row.update(translated[row['id']],ai_level='basic_translation')
                 atomic_json(translation_paths[row['id']],translated[row['id']])
                 stats['basic_translated']+=1
-            print(f"Basic translation: {stats['basic_cached']+stats['basic_translated']}/{len(untranslated)}",flush=True)
+            print(f"Basic translation: {stats['basic_translated']}/{len(untranslated)}; reused {stats['basic_cached']}",flush=True)
         if stats['budget_exhausted']: break
     if morning_enabled:
         try: stats['morning_selected']=choose_morning(client,rows)
@@ -386,6 +402,7 @@ def enrich(rows, data_dir, limit=None):
     stats['usage']=client.usage
     stats['token_budget']=client.budget
     stats['accounted_tokens']=client.used_bound
+    stats['opening_daily_usage']=client.opening_usage
     stats['budget_basis']='UTF-8 bytes + framing + max output reserved before every attempt; settled from provider usage when available; unknown attempts retain reservation. Not a billing guarantee.'
     atomic_json(data_dir/'ai-usage.json',stats)
     return rows,comparisons,stats

@@ -54,7 +54,7 @@ class PublicationTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             data=Path(tmp)
             with patch.object(update_news,'DATA',data),patch('scripts.collect.collect',return_value=([self.row()],[{'ok':True}])),patch('scripts.collect.collect_social'),patch('scripts.ai_news.enrich',side_effect=RuntimeError('secret must not appear')):
-                update_news.publish()
+                update_news.publish(require_complete=False)
             self.assertEqual(len(json.loads((data/'latest.json').read_text(encoding='utf-8'))['articles']),1)
             report=(data/'update-report.json').read_text(encoding='utf-8')
             self.assertNotIn('secret',report)
