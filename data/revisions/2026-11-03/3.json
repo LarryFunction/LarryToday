@@ -651,7 +651,7 @@
   ],
   "comparisons": [],
   "ai_status": {
-    "state": "partial",
+    "state": "complete",
     "model": "deepseek-flash",
     "enriched": 0,
     "cached": 11,
@@ -666,7 +666,7 @@
     "comparison_candidates": 0,
     "comparison_cached": 0,
     "comparison_state": "partial",
-    "remaining": 2,
+    "remaining": 0,
     "detailed_remaining": 928,
     "usage": {
       "calls": 71,
@@ -691,7 +691,8 @@
     "token_budget": 500000,
     "accounted_tokens": 376929,
     "opening_daily_usage": 232813,
-    "budget_basis": "UTF-8 bytes + framing + max output reserved before every attempt; settled from provider usage when available; unknown attempts retain reservation. Not a billing guarantee."
+    "budget_basis": "UTF-8 bytes + framing + max output reserved before every attempt; settled from provider usage when available; unknown attempts retain reservation. Not a billing guarantee.",
+    "manual_translation_repairs": 2
   },
   "articles": [
     {
@@ -8680,7 +8681,10 @@
       "section": "本期新闻",
       "tags": [
         "人工智能"
-      ]
+      ],
+      "title_zh": "LifeVal：衡量人工智能完成日常任务能力的基准",
+      "summary_zh": "LifeVal 衡量人工智能帮助人们完成日常任务的能力，包括寻找托育服务、管理财务和处理政府文书。",
+      "translation_review": "manual_source_excerpt"
     },
     {
       "id": "61c75489a1bedb55",
@@ -10704,7 +10708,10 @@
       "section": "本期新闻",
       "tags": [
         "科技观察"
-      ]
+      ],
+      "title_zh": "Unlimited OCR Works 2：面向超长文档的识别模型",
+      "summary_zh": "该预印本提出 Unlimited OCR 2，利用稀疏参考滑动窗口注意力控制长文档解析成本；作者报告在百页规模下，相比两种注意力基线，每步速度分别提升 7.0 倍和 5.6 倍。",
+      "translation_review": "manual_source_excerpt"
     },
     {
       "id": "0309e62f35639e13",
@@ -38728,7 +38735,7 @@
         "5a014341bc3fc0f1"
       ],
       "category": "科技与 AI",
-      "title": "LifeVal"
+      "title": "LifeVal：衡量人工智能完成日常任务能力的基准"
     },
     {
       "id": "event-61c75489a1bedb55",
@@ -39214,7 +39221,7 @@
         "236498243b058332"
       ],
       "category": "科技与 AI",
-      "title": "Unlimited OCR Works 2"
+      "title": "Unlimited OCR Works 2：面向超长文档的识别模型"
     },
     {
       "id": "event-0309e62f35639e13",
@@ -45291,5 +45298,53 @@
       "全球": 573
     }
   },
-  "reading_minutes": 171
+  "reading_minutes": 171,
+  "social_posts": [
+    {
+      "id": "2e1f9bd5020d843a",
+      "title": "🎙️ How I AI: Grok vs. Dot vs. Muse vs. Duet + How Figma’s PMs actually use AI every day",
+      "url": "https://www.lennysnewsletter.com/p/how-i-ai-grok-vs-dot-vs-muse-vs-duet",
+      "source_id": "lenny-newsletter",
+      "category": "科技与 AI",
+      "published_at": "2026-11-02T16:02:08+00:00",
+      "feed_excerpt": "Your weekly listens from How I AI, part of the Lenny's Podcast Network",
+      "summary": "",
+      "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
+      "date_precision": "timestamp",
+      "authors": [
+        "Lenny Rachitsky"
+      ],
+      "source_name": "Lenny's Newsletter",
+      "publisher_family": "lenny",
+      "source_region": "美国",
+      "source_kind": "opinion",
+      "content_type": "观点",
+      "section": "业界声音"
+    },
+    {
+      "id": "c4cd7eed2a813f19",
+      "title": "How Figma’s PMs actually use AI every day | Ezra Mechaber (PM, Figma)",
+      "url": "https://www.lennysnewsletter.com/p/how-figmas-pms-actually-use-ai-every",
+      "source_id": "lenny-newsletter",
+      "category": "科技与 AI",
+      "published_at": "2026-11-02T13:04:11+00:00",
+      "feed_excerpt": "Listen now | 🎙️ Figma growth PM Ezra Mechaber demos PM OS, a 31-skill repo used by 60+ PMs, and AutoXP, an agent that runs growth experiments with one human checkpoint",
+      "summary": "",
+      "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
+      "date_precision": "timestamp",
+      "authors": [
+        "Claire Vo"
+      ],
+      "source_name": "Lenny's Newsletter",
+      "publisher_family": "lenny",
+      "source_region": "美国",
+      "source_kind": "opinion",
+      "content_type": "观点",
+      "section": "业界声音"
+    }
+  ],
+  "revision": 3,
+  "revision_note": "补齐全部中文标题与摘要；保留全部 939 篇报道",
+  "published_at": "2026-11-08T14:48:48.413047+00:00",
+  "content_hash": "be046f53fbbefde5cfc88a762ad11efc6dc3c49b3b62862077ae69cf5b5038e4"
 }

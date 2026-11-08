@@ -167,7 +167,7 @@ def clean_translation(value, rows):
 
 def translate_batch(client, rows):
     payload=[{'id':r['id'],'title':r.get('title','')[:600],'excerpt':(r.get('feed_excerpt') or '')[:500]} for r in rows]
-    value=client.chat(0,'逐条忠实翻译为简体中文。标题尽量45字以内，导读只用一句且不超过80字。保留关键数字、名称和观点归属，不补充背景、解释或推断；没有摘要时只译标题并在导读注明“仅据标题”。不要输出分析过程。返回 {"articles":[{"id":"输入ID","title_zh":"中文标题","summary_zh":"中文导读"}]}，每篇一次。',payload,max_tokens=4000)
+    value=client.chat(0,'逐条忠实翻译为简体中文。专名可保留英文，但标题须包含材料支持的中文说明，不能只返回英文专名。标题尽量45字以内，导读只用一句且不超过80字。保留关键数字、名称和观点归属，不补充背景、解释或推断；没有摘要时只译标题并在导读注明“仅据标题”。不要输出分析过程。返回 {"articles":[{"id":"输入ID","title_zh":"中文标题","summary_zh":"中文导读"}]}，每篇一次。',payload,max_tokens=4000)
     return clean_translation(value,rows)
 
 

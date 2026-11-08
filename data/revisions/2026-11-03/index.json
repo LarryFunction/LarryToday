@@ -10,5 +10,11 @@
     "published_at": "2026-11-03T11:59:45.964967+00:00",
     "note": "按新闻内容纠正分类、补全主题标签、调整晨读选题；合入额度评估样本译文",
     "content_hash": "6ce8b2a8f2c89cae9e022e386e969f94b341c1ec17b4dd8726a577343351c6e8"
+  },
+  {
+    "revision": 3,
+    "published_at": "2026-11-08T14:48:48.413047+00:00",
+    "note": "补齐全部中文标题与摘要；保留全部 939 篇报道",
+    "content_hash": "be046f53fbbefde5cfc88a762ad11efc6dc3c49b3b62862077ae69cf5b5038e4"
   }
 ]
