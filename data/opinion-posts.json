@@ -1,5 +1,26 @@
 [
   {
+    "id": "4453ca977df4bdb8",
+    "title": "Why PMs are suddenly valuable again | Tulsee Doshi (Head of Product, Gemini)",
+    "url": "https://www.lennysnewsletter.com/p/what-it-actually-takes-to-build-frontier",
+    "source_id": "lenny-newsletter",
+    "category": "科技与 AI",
+    "published_at": "2026-11-08T13:31:32+00:00",
+    "feed_excerpt": "Listen now (59 mins) | Tulsee Doshi on building Google’s frontier models, why evals and vibes both matter, and her 60-20-20 framework for shipping ahead of the curve",
+    "summary": "",
+    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
+    "date_precision": "timestamp",
+    "authors": [
+      "Lenny Rachitsky"
+    ],
+    "source_name": "Lenny's Newsletter",
+    "publisher_family": "lenny",
+    "source_region": "美国",
+    "source_kind": "opinion",
+    "content_type": "观点",
+    "section": "业界声音"
+  },
+  {
     "id": "dd05751b54a3a1ac",
     "title": "Lenny’s Newsletter holiday gift guide 2026",
     "url": "https://www.lennysnewsletter.com/p/lennys-newsletter-holiday-gift-guide-057",
@@ -387,27 +408,6 @@
     "date_precision": "timestamp",
     "authors": [
       "Claire Vo"
-    ],
-    "source_name": "Lenny's Newsletter",
-    "publisher_family": "lenny",
-    "source_region": "美国",
-    "source_kind": "opinion",
-    "content_type": "观点",
-    "section": "业界声音"
-  },
-  {
-    "id": "0ded9c8bd760f4af",
-    "title": "Why every company now needs to think and operate like a lab team | Josh Woodward (Google Labs, Gemini, AI Studio)",
-    "url": "https://www.lennysnewsletter.com/p/why-every-company-now-needs-to-think",
-    "source_id": "lenny-newsletter",
-    "category": "科技与 AI",
-    "published_at": "2026-10-11T12:31:59+00:00",
-    "feed_excerpt": "Listen now (62 mins) | Josh Woodward of Google Labs on where great ideas come from, knowing when to kill them, and building for a world where what’s possible changes every week",
-    "summary": "",
-    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
-    "date_precision": "timestamp",
-    "authors": [
-      "Lenny Rachitsky"
     ],
     "source_name": "Lenny's Newsletter",
     "publisher_family": "lenny",
