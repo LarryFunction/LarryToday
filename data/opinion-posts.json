@@ -1,5 +1,68 @@
 [
   {
+    "id": "8acc04791c788b90",
+    "title": "Claude Fable 5.2 review: fast, creative, and finally not annoying",
+    "url": "https://www.lennysnewsletter.com/p/claude-fable-52-review-fast-creative",
+    "source_id": "lenny-newsletter",
+    "category": "科技与 AI",
+    "published_at": "2026-11-09T20:37:49+00:00",
+    "feed_excerpt": "Watch now (25 mins) | 🎙️ My first-look at Fable 5.2: what it built for me, where it fell down, and whether it belongs in your daily AI stack",
+    "summary": "",
+    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
+    "date_precision": "timestamp",
+    "authors": [
+      "Claire Vo"
+    ],
+    "source_name": "Lenny's Newsletter",
+    "publisher_family": "lenny",
+    "source_region": "美国",
+    "source_kind": "opinion",
+    "content_type": "观点",
+    "section": "业界声音"
+  },
+  {
+    "id": "a6ae56be29ecaac8",
+    "title": "🎙️ How I AI: How this founder built a better Duolingo with Codex",
+    "url": "https://www.lennysnewsletter.com/p/how-i-ai-how-this-founder-built-a",
+    "source_id": "lenny-newsletter",
+    "category": "科技与 AI",
+    "published_at": "2026-11-09T16:01:20+00:00",
+    "feed_excerpt": "Your weekly listens from How I AI, part of the Lenny's Podcast Network",
+    "summary": "",
+    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
+    "date_precision": "timestamp",
+    "authors": [
+      "Lenny Rachitsky"
+    ],
+    "source_name": "Lenny's Newsletter",
+    "publisher_family": "lenny",
+    "source_region": "美国",
+    "source_kind": "opinion",
+    "content_type": "观点",
+    "section": "业界声音"
+  },
+  {
+    "id": "739f02e0f57396fa",
+    "title": "How this founder built a better Duolingo with Codex | William Imoh",
+    "url": "https://www.lennysnewsletter.com/p/how-this-founder-built-a-better-duolingo",
+    "source_id": "lenny-newsletter",
+    "category": "科技与 AI",
+    "published_at": "2026-11-09T13:04:17+00:00",
+    "feed_excerpt": "Watch now (39 mins) | 🎙️ Hackmamba founder William Imoh shows the native app he built with Codex to learn Norwegian, and the Lord of the Rings Grok bot fellowship that helps run his company",
+    "summary": "",
+    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
+    "date_precision": "timestamp",
+    "authors": [
+      "Claire Vo"
+    ],
+    "source_name": "Lenny's Newsletter",
+    "publisher_family": "lenny",
+    "source_region": "美国",
+    "source_kind": "opinion",
+    "content_type": "观点",
+    "section": "业界声音"
+  },
+  {
     "id": "4453ca977df4bdb8",
     "title": "Why PMs are suddenly valuable again | Tulsee Doshi (Head of Product, Gemini)",
     "url": "https://www.lennysnewsletter.com/p/what-it-actually-takes-to-build-frontier",
@@ -340,69 +403,6 @@
     "category": "科技与 AI",
     "published_at": "2026-10-14T12:04:05+00:00",
     "feed_excerpt": "Watch now (24 mins) | 🎙️Meta launched Muse Wonder with claims of frontier agentic performance, so I ran it headlessly through Claude Code against nearly 20 tasks to find out if any of it is true",
-    "summary": "",
-    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
-    "date_precision": "timestamp",
-    "authors": [
-      "Claire Vo"
-    ],
-    "source_name": "Lenny's Newsletter",
-    "publisher_family": "lenny",
-    "source_region": "美国",
-    "source_kind": "opinion",
-    "content_type": "观点",
-    "section": "业界声音"
-  },
-  {
-    "id": "72a577bde70c641d",
-    "title": "How to tell if a startup has a moat",
-    "url": "https://www.lennysnewsletter.com/p/how-to-tell-if-a-startup-has-a-moat",
-    "source_id": "lenny-newsletter",
-    "category": "科技与 AI",
-    "published_at": "2026-10-13T12:45:41+00:00",
-    "feed_excerpt": "A framework for assessing whether the company you’re considering joining is built to last",
-    "summary": "",
-    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
-    "date_precision": "timestamp",
-    "authors": [
-      "Dan Hockenmaier"
-    ],
-    "source_name": "Lenny's Newsletter",
-    "publisher_family": "lenny",
-    "source_region": "美国",
-    "source_kind": "opinion",
-    "content_type": "观点",
-    "section": "业界声音"
-  },
-  {
-    "id": "1382fb41f4443858",
-    "title": "🎙️ How I AI: How Meta designed Muse with Alex Cornell",
-    "url": "https://www.lennysnewsletter.com/p/how-i-ai-how-meta-designed-muse-with",
-    "source_id": "lenny-newsletter",
-    "category": "科技与 AI",
-    "published_at": "2026-10-12T15:00:38+00:00",
-    "feed_excerpt": "Your weekly listens from How I AI, part of the Lenny's Podcast Network",
-    "summary": "",
-    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
-    "date_precision": "timestamp",
-    "authors": [
-      "Lenny Rachitsky"
-    ],
-    "source_name": "Lenny's Newsletter",
-    "publisher_family": "lenny",
-    "source_region": "美国",
-    "source_kind": "opinion",
-    "content_type": "观点",
-    "section": "业界声音"
-  },
-  {
-    "id": "3b02ca9d4e41b0af",
-    "title": "How Meta designed Muse: an AI agent people actually want to talk to | Alex Cornell (Design Director)",
-    "url": "https://www.lennysnewsletter.com/p/how-meta-designed-muse-an-ai-agent",
-    "source_id": "lenny-newsletter",
-    "category": "科技与 AI",
-    "published_at": "2026-10-12T12:03:55+00:00",
-    "feed_excerpt": "Listen now | 🎙️Alex Cornell explains how Muse serves your mom and an engineer with the same interface, and demos a SkyMall-style catalog, golf recaps, and a blog turned podcast",
     "summary": "",
     "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
     "date_precision": "timestamp",
