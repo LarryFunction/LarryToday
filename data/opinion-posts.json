@@ -1,5 +1,26 @@
 [
   {
+    "id": "c82fa432effadc04",
+    "title": "State of the tech job market: late 2026",
+    "url": "https://www.lennysnewsletter.com/p/state-of-the-tech-job-market-late",
+    "source_id": "lenny-newsletter",
+    "category": "科技与 AI",
+    "published_at": "2026-11-10T15:04:03+00:00",
+    "feed_excerpt": "PMs are winning, engineers are plateauing, designers are hurting, and the biggest AI hiring boom isn’t in software",
+    "summary": "",
+    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
+    "date_precision": "timestamp",
+    "authors": [
+      "Lenny Rachitsky"
+    ],
+    "source_name": "Lenny's Newsletter",
+    "publisher_family": "lenny",
+    "source_region": "美国",
+    "source_kind": "opinion",
+    "content_type": "观点",
+    "section": "业界声音"
+  },
+  {
     "id": "8acc04791c788b90",
     "title": "Claude Fable 5.2 review: fast, creative, and finally not annoying",
     "url": "https://www.lennysnewsletter.com/p/claude-fable-52-review-fast-creative",
@@ -387,27 +408,6 @@
     "date_precision": "timestamp",
     "authors": [
       "Kiyani"
-    ],
-    "source_name": "Lenny's Newsletter",
-    "publisher_family": "lenny",
-    "source_region": "美国",
-    "source_kind": "opinion",
-    "content_type": "观点",
-    "section": "业界声音"
-  },
-  {
-    "id": "388004979cb49712",
-    "title": "Meta’s new ‘Muse Wonder’ model: good for AI agents, bad for design",
-    "url": "https://www.lennysnewsletter.com/p/metas-new-muse-wonder-model-good",
-    "source_id": "lenny-newsletter",
-    "category": "科技与 AI",
-    "published_at": "2026-10-14T12:04:05+00:00",
-    "feed_excerpt": "Watch now (24 mins) | 🎙️Meta launched Muse Wonder with claims of frontier agentic performance, so I ran it headlessly through Claude Code against nearly 20 tasks to find out if any of it is true",
-    "summary": "",
-    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
-    "date_precision": "timestamp",
-    "authors": [
-      "Claire Vo"
     ],
     "source_name": "Lenny's Newsletter",
     "publisher_family": "lenny",

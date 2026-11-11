@@ -208,5 +208,26 @@
     "source_kind": "opinion",
     "content_type": "观点",
     "section": "业界声音"
+  },
+  {
+    "id": "c82fa432effadc04",
+    "title": "State of the tech job market: late 2026",
+    "url": "https://www.lennysnewsletter.com/p/state-of-the-tech-job-market-late",
+    "source_id": "lenny-newsletter",
+    "category": "科技与 AI",
+    "published_at": "2026-11-10T15:04:03+00:00",
+    "feed_excerpt": "PMs are winning, engineers are plateauing, designers are hurting, and the biggest AI hiring boom isn’t in software",
+    "summary": "",
+    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
+    "date_precision": "timestamp",
+    "authors": [
+      "Lenny Rachitsky"
+    ],
+    "source_name": "Lenny's Newsletter",
+    "publisher_family": "lenny",
+    "source_region": "美国",
+    "source_kind": "opinion",
+    "content_type": "观点",
+    "section": "业界声音"
   }
 ]
