@@ -1,6 +1,6 @@
 {
   "date": "2026-11-11",
-  "updated_at": "2026-11-11T02:59:21.654660+00:00",
+  "updated_at": "2026-11-11T07:11:03.432040+00:00",
   "mode": "live",
   "sources_status": [
     {
@@ -651,46 +651,46 @@
   ],
   "comparisons": [],
   "ai_status": {
-    "state": "partial",
+    "state": "complete",
     "model": "deepseek-flash",
     "enriched": 0,
     "cached": 0,
     "failed": 0,
     "reviewed": 0,
-    "budget_exhausted": false,
-    "processed_at": "2026-11-11T02:51:21.306825+00:00",
-    "basic_translated": 887,
-    "basic_cached": 9,
-    "planned_tokens": 380000,
+    "budget_exhausted": true,
+    "processed_at": "2026-11-11T07:10:42.977618+00:00",
+    "basic_translated": 4,
+    "basic_cached": 1034,
+    "planned_tokens": 60000,
     "morning_selected": 8,
     "comparison_candidates": 12,
     "comparison_cached": 0,
     "comparison_state": "partial",
-    "remaining": 4,
+    "remaining": 0,
     "detailed_remaining": 1044,
     "usage": {
-      "calls": 153,
+      "calls": 3,
       "retries": 0,
-      "prompt_tokens": 141613,
-      "completion_tokens": 57994,
+      "prompt_tokens": 5320,
+      "completion_tokens": 1501,
       "missing_usage": 0,
       "reasoning_tokens": 0,
       "stages": {
         "edit": {
-          "calls": 152,
-          "prompt_tokens": 138721,
-          "completion_tokens": 57663
+          "calls": 2,
+          "prompt_tokens": 2428,
+          "completion_tokens": 1043
         },
         "compare": {
           "calls": 1,
           "prompt_tokens": 2892,
-          "completion_tokens": 331
+          "completion_tokens": 458
         }
       }
     },
     "token_budget": 500000,
-    "accounted_tokens": 199607,
-    "opening_daily_usage": 0,
+    "accounted_tokens": 206428,
+    "opening_daily_usage": 199607,
     "budget_basis": "UTF-8 bytes + framing + max output reserved before every attempt; settled from provider usage when available; unknown attempts retain reservation. Not a billing guarantee."
   },
   "articles": [
@@ -1112,16 +1112,22 @@
       "original_category": "国际政治",
       "content_type": "新闻",
       "tags": [
-        "经济观察"
+        "经济观察",
+        "社会生活"
       ],
       "geography": {
-        "kind": "topic",
-        "code": "MARKETS",
-        "label": "经济与市场",
-        "countries": [],
-        "basis": "主题归属，不推断国家"
+        "kind": "single",
+        "code": "ES",
+        "label": "西班牙",
+        "countries": [
+          "ES"
+        ],
+        "basis": "标题或摘要明确提及；不代表国家立场"
       },
-      "section": "本期新闻"
+      "section": "本期新闻",
+      "title_zh": "西班牙工会14年来首次号召全国大罢工",
+      "summary_zh": "CC OO与UGT因住房危机呼吁“大规模”参与大罢工，但预计各地影响不一，并盼下午大规模动员以抗议工资购买力下降。",
+      "ai_level": "basic_translation"
     },
     {
       "id": "99ae429bae3a5b51",
@@ -1627,8 +1633,8 @@
       "summary_zh": "中新社伦敦11月10日电 (记者 欧阳开宇)英国央行负责货币政策的副行长克莱尔·隆巴代利10日在一场央行会议上表示，英国通胀持续风险正在显现，若无通胀降温的明确证据，短期内大概率需要再度加息。",
       "ai_level": "original_chinese",
       "editorial_pick": {
-        "order": 1,
-        "reason": "英国央行释放进一步加息信号，影响利率与民生",
+        "order": 2,
+        "reason": "央行副行长明确加息信号，影响英国通胀与利率前景。",
         "evidence": "短期内大概率需要再度加息",
         "basis": "ai_shortlist"
       }
@@ -4609,8 +4615,8 @@
       "summary_zh": "11月前十天约6000人抵达该群岛，主要涌向1.2万人口的耶罗岛，部分因其他移民路线关闭。",
       "ai_level": "basic_translation",
       "editorial_pick": {
-        "order": 3,
-        "reason": "短期数千移民抵达，一岛宣布紧急状态",
+        "order": 1,
+        "reason": "短期大规模移民抵达引发岛屿紧急状态，人道压力紧迫。",
         "evidence": "11月前十天约6000人抵达该群岛",
         "basis": "ai_shortlist"
       }
@@ -4900,13 +4906,7 @@
       "section": "本期新闻",
       "title_zh": "Anthropic拟以最高1.4万亿美元估值启动重磅IPO",
       "summary_zh": "该AI公司定价将使其成为史上最大公开上市之一，正值市场对AI热潮可持续性存疑之际。",
-      "ai_level": "basic_translation",
-      "editorial_pick": {
-        "order": 7,
-        "reason": "AI巨头拟以超高估值IPO，牵动市场",
-        "evidence": "Anthropic拟以最高1.4万亿美元估值启动重磅IPO",
-        "basis": "ai_shortlist"
-      }
+      "ai_level": "basic_translation"
     },
     {
       "id": "eb62120a50b1195d",
@@ -5483,7 +5483,10 @@
         ],
         "basis": "标题或摘要明确提及；不代表国家立场"
       },
-      "section": "本期新闻"
+      "section": "本期新闻",
+      "title_zh": "通贝里称联合国气候大会为“漂绿马戏团”",
+      "summary_zh": "气候活动人士通贝里抵达土耳其COP31峰会时称，COP大会已沦为“漂绿马戏团”，并称这就是现实。",
+      "ai_level": "basic_translation"
     },
     {
       "id": "5699f80f52010869",
@@ -9052,9 +9055,9 @@
       "summary_zh": "众议院可能投票弹劾赫格塞斯，但免职难度大；最高法院裁定联邦法官无权叫停边境墙建设。",
       "ai_level": "basic_translation",
       "editorial_pick": {
-        "order": 5,
-        "reason": "弹劾投票与最高法院边境墙裁决同日报出",
-        "evidence": "最高法院裁定联邦法官无权叫停边境墙建设",
+        "order": 3,
+        "reason": "弹劾投票与最高法院边境墙裁决涉及制度权力制衡。",
+        "evidence": "众议院可能投票弹劾赫格塞斯",
         "basis": "ai_shortlist"
       }
     },
@@ -9372,8 +9375,8 @@
       "ai_level": "basic_translation",
       "editorial_pick": {
         "order": 6,
-        "reason": "南苏丹首次选举前暴力升级，安理会开会",
-        "evidence": "独立后首次全国选举仅剩六周",
+        "reason": "南苏丹首次选举前暴力升级，平民面临紧迫人道危机。",
+        "evidence": "南苏丹独立后首次全国选举仅剩六周",
         "basis": "ai_shortlist"
       }
     },
@@ -10290,7 +10293,7 @@
       "ai_level": "basic_translation",
       "editorial_pick": {
         "order": 0,
-        "reason": "战争态势与油价联动，影响全球能源和市场",
+        "reason": "战争收尾信号直接影响油价与股市，经济冲击范围广。",
         "evidence": "布伦特原油跌破90美元、股市上涨",
         "basis": "ai_shortlist"
       }
@@ -14771,7 +14774,10 @@
         "countries": [],
         "basis": "主题归属，不推断国家"
       },
-      "section": "本期新闻"
+      "section": "本期新闻",
+      "title_zh": "没有基准真值的人机互补性？",
+      "summary_zh": "论文探讨人机互补性在缺乏基准真值标签的预测任务中如何评估，并提及医疗AI提供治疗建议等情境。",
+      "ai_level": "basic_translation"
     },
     {
       "id": "d4bde88689063f8c",
@@ -20127,7 +20133,10 @@
         ],
         "basis": "标题或摘要明确提及；不代表国家立场"
       },
-      "section": "本期新闻"
+      "section": "本期新闻",
+      "title_zh": "临床知情色彩编码提升深度学习心电模型解释的定位与稳定性：英国生物样本库癫痫队列外部验证",
+      "summary_zh": "研究评估填充QT间期下区域的伪色彩编码，其颜色序列设计用于改善深度学习心电模型解释质量，并在英国生物样本库癫痫队列做外部验证。",
+      "ai_level": "basic_translation"
     },
     {
       "id": "97ad38b4df297924",
@@ -35698,8 +35707,8 @@
       "summary_zh": "澳将设立新监管机构以更好规范该行业，此前OpenAI自主智能体于6月侵入澳政府网站。",
       "ai_level": "basic_translation",
       "editorial_pick": {
-        "order": 4,
-        "reason": "AI智能体侵入政府平台后设新监管机构",
+        "order": 5,
+        "reason": "AI智能体入侵政府平台后设新监管机构，科技治理变化。",
         "evidence": "澳将设立新监管机构以更好规范该行业",
         "basis": "ai_shortlist"
       }
@@ -38830,8 +38839,8 @@
       "summary_zh": "中新网11月10日电 据英国广播公司(BBC)报道，土耳其西部伊兹密尔省一家钢铁厂当地时间9日发生爆炸，事件已致17人死亡，12人受伤。",
       "ai_level": "original_chinese",
       "editorial_pick": {
-        "order": 2,
-        "reason": "钢铁厂爆炸致17死，重大伤亡事故",
+        "order": 4,
+        "reason": "钢铁厂爆炸致17死，属重大工业安全事故。",
         "evidence": "事件已致17人死亡，12人受伤",
         "basis": "ai_shortlist"
       }
@@ -39337,7 +39346,13 @@
       "section": "本期新闻",
       "title_zh": "乌克兰战争直播：乌俄周二在阿布扎比恢复谈判，基辅将强调换俘",
       "summary_zh": "泽连斯基办公室主任布达诺夫称将重点关注人道层面；一名美国官员称俄乌私下显露些许灵活性。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "editorial_pick": {
+        "order": 7,
+        "reason": "俄乌恢复谈判并聚焦换俘，外交进展具时间敏感性。",
+        "evidence": "乌俄周二在阿布扎比恢复谈判",
+        "basis": "ai_shortlist"
+      }
     },
     {
       "id": "2ecf841fedbcee54",
@@ -40375,7 +40390,7 @@
         "83518ec20336c6be"
       ],
       "category": "经济与投资",
-      "title": "Los sindicatos llaman a España a una huelga general por primera vez en 14 años"
+      "title": "西班牙工会14年来首次号召全国大罢工"
     },
     {
       "id": "event-99ae429bae3a5b51",
@@ -41466,7 +41481,7 @@
         "52795e9c08ef0075"
       ],
       "category": "环境与气候",
-      "title": "Greta Thunberg slams UN climate COPs as 'greenwashed circuses'"
+      "title": "通贝里称联合国气候大会为“漂绿马戏团”"
     },
     {
       "id": "event-5699f80f52010869",
@@ -43743,7 +43758,7 @@
         "84a332596ed84421"
       ],
       "category": "社会与文化",
-      "title": "Complementarity without ground truth?"
+      "title": "没有基准真值的人机互补性？"
     },
     {
       "id": "event-d4bde88689063f8c",
@@ -44940,7 +44955,7 @@
         "5261403963636203"
       ],
       "category": "科学与探索",
-      "title": "Clinically Informed Colour Encoding Improves the Localisation and Stability of Explanations in Deep Learning ECG Models: External Validation in a UK Biobank Epilepsy Cohort"
+      "title": "临床知情色彩编码提升深度学习心电模型解释的定位与稳定性：英国生物样本库癫痫队列外部验证"
     },
     {
       "id": "event-97ad38b4df297924",
@@ -49669,20 +49684,8 @@
       "summary": "布伦特原油跌破90美元、股市上涨，此前特朗普淡化进一步打击伊朗的前景。",
       "category": "经济与投资",
       "selection": {
-        "impact": "战争态势与油价联动，影响全球能源和市场",
+        "impact": "战争收尾信号直接影响油价与股市，经济冲击范围广。",
         "independent_sources": 2,
-        "social_heat": "unavailable"
-      }
-    },
-    {
-      "event_id": "event-f4105bcb44e8dffa",
-      "article_id": "f4105bcb44e8dffa",
-      "title": "土耳其一钢铁厂爆炸已致17死 亲历者：一度以为发生地震",
-      "summary": "中新网11月10日电 据英国广播公司(BBC)报道，土耳其西部伊兹密尔省一家钢铁厂当地时间9日发生爆炸，事件已致17人死亡，12人受伤。",
-      "category": "国际政治",
-      "selection": {
-        "impact": "钢铁厂爆炸致17死，重大伤亡事故",
-        "independent_sources": 1,
         "social_heat": "unavailable"
       }
     },
@@ -49693,7 +49696,7 @@
       "summary": "11月前十天约6000人抵达该群岛，主要涌向1.2万人口的耶罗岛，部分因其他移民路线关闭。",
       "category": "国际政治",
       "selection": {
-        "impact": "短期数千移民抵达，一岛宣布紧急状态",
+        "impact": "短期大规模移民抵达引发岛屿紧急状态，人道压力紧迫。",
         "independent_sources": 1,
         "social_heat": "unavailable"
       }
@@ -49705,19 +49708,19 @@
       "summary": "中新社伦敦11月10日电 (记者 欧阳开宇)英国央行负责货币政策的副行长克莱尔·隆巴代利10日在一场央行会议上表示，英国通胀持续风险正在显现，若无通胀降温的明确证据，短期内大概率需要再度加息。",
       "category": "经济与投资",
       "selection": {
-        "impact": "英国央行释放进一步加息信号，影响利率与民生",
+        "impact": "央行副行长明确加息信号，影响英国通胀与利率前景。",
         "independent_sources": 1,
         "social_heat": "unavailable"
       }
     },
     {
-      "event_id": "event-8cfa4c321c1451d9",
-      "article_id": "8cfa4c321c1451d9",
-      "title": "OpenAI模型入侵澳政府平台后，澳大利亚将加强人工智能监管",
-      "summary": "澳将设立新监管机构以更好规范该行业，此前OpenAI自主智能体于6月侵入澳政府网站。",
-      "category": "科技与 AI",
+      "event_id": "event-f4105bcb44e8dffa",
+      "article_id": "f4105bcb44e8dffa",
+      "title": "土耳其一钢铁厂爆炸已致17死 亲历者：一度以为发生地震",
+      "summary": "中新网11月10日电 据英国广播公司(BBC)报道，土耳其西部伊兹密尔省一家钢铁厂当地时间9日发生爆炸，事件已致17人死亡，12人受伤。",
+      "category": "国际政治",
       "selection": {
-        "impact": "AI智能体侵入政府平台后设新监管机构",
+        "impact": "钢铁厂爆炸致17死，属重大工业安全事故。",
         "independent_sources": 1,
         "social_heat": "unavailable"
       }
@@ -49729,7 +49732,19 @@
       "summary": "众议院可能投票弹劾赫格塞斯，但免职难度大；最高法院裁定联邦法官无权叫停边境墙建设。",
       "category": "国际政治",
       "selection": {
-        "impact": "弹劾投票与最高法院边境墙裁决同日报出",
+        "impact": "弹劾投票与最高法院边境墙裁决涉及制度权力制衡。",
+        "independent_sources": 1,
+        "social_heat": "unavailable"
+      }
+    },
+    {
+      "event_id": "event-8cfa4c321c1451d9",
+      "article_id": "8cfa4c321c1451d9",
+      "title": "OpenAI模型入侵澳政府平台后，澳大利亚将加强人工智能监管",
+      "summary": "澳将设立新监管机构以更好规范该行业，此前OpenAI自主智能体于6月侵入澳政府网站。",
+      "category": "科技与 AI",
+      "selection": {
+        "impact": "AI智能体入侵政府平台后设新监管机构，科技治理变化。",
         "independent_sources": 1,
         "social_heat": "unavailable"
       }
@@ -49741,20 +49756,20 @@
       "summary": "南苏丹独立后首次全国选举仅剩六周，安理会周二在纽约开会，暴力加剧，平民承受战乱、饥饿与流离失所。",
       "category": "国际政治",
       "selection": {
-        "impact": "南苏丹首次选举前暴力升级，安理会开会",
+        "impact": "南苏丹首次选举前暴力升级，平民面临紧迫人道危机。",
         "independent_sources": 1,
         "social_heat": "unavailable"
       }
     },
     {
-      "event_id": "event-1213d262f2357554",
-      "article_id": "1213d262f2357554",
-      "title": "Anthropic拟以最高1.4万亿美元估值启动重磅IPO",
-      "summary": "该AI公司定价将使其成为史上最大公开上市之一，正值市场对AI热潮可持续性存疑之际。",
-      "category": "科技与 AI",
+      "event_id": "event-0e23ab738559d9a2",
+      "article_id": "0e23ab738559d9a2",
+      "title": "乌克兰战争直播：乌俄周二在阿布扎比恢复谈判，基辅将强调换俘",
+      "summary": "泽连斯基办公室主任布达诺夫称将重点关注人道层面；一名美国官员称俄乌私下显露些许灵活性。",
+      "category": "国际政治",
       "selection": {
-        "impact": "AI巨头拟以超高估值IPO，牵动市场",
-        "independent_sources": 3,
+        "impact": "俄乌恢复谈判并聚焦换俘，外交进展具时间敏感性。",
+        "independent_sources": 2,
         "social_heat": "unavailable"
       }
     }
@@ -49803,5 +49818,32 @@
       "全球": 563
     }
   },
-  "reading_minutes": 185
+  "reading_minutes": 185,
+  "social_posts": [
+    {
+      "id": "c82fa432effadc04",
+      "title": "State of the tech job market: late 2026",
+      "url": "https://www.lennysnewsletter.com/p/state-of-the-tech-job-market-late",
+      "source_id": "lenny-newsletter",
+      "category": "科技与 AI",
+      "published_at": "2026-11-10T15:04:03+00:00",
+      "feed_excerpt": "PMs are winning, engineers are plateauing, designers are hurting, and the biggest AI hiring boom isn’t in software",
+      "summary": "",
+      "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
+      "date_precision": "timestamp",
+      "authors": [
+        "Lenny Rachitsky"
+      ],
+      "source_name": "Lenny's Newsletter",
+      "publisher_family": "lenny",
+      "source_region": "美国",
+      "source_kind": "opinion",
+      "content_type": "观点",
+      "section": "业界声音"
+    }
+  ],
+  "revision": 1,
+  "revision_note": "首次出版",
+  "published_at": "2026-11-11T07:11:10.674875+00:00",
+  "content_hash": "74fb8ca58bdff9c4155ceb3f621b99629eb18d16e9cf29b38f72cff1b18df04d"
 }
