@@ -1,0 +1,24 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
+const elements=new Map();
+const el=key=>{if(!elements.has(key))elements.set(key,{value:'',innerHTML:'',style:{},dataset:{},open:false,hidden:false,setAttribute(){},addEventListener(){},after(){},scrollIntoView(){},showModal(){this.open=true;},close(){this.open=false;}});return elements.get(key);};
+const context=vm.createContext({console,URL,Date,setTimeout,localStorage:{getItem(){return null;},setItem(){}},document:{querySelector:el,getElementById:el,addEventListener(){},createElement:el},fetch(){return new Promise(()=>{});}});
+vm.runInContext(fs.readFileSync('public/app.js','utf8'),context);
+vm.runInContext(`edition={date:'2026-11-03',revision:1,event_version:2,articles:[{id:'a',title:'Report one',title_zh:'报道甲',summary_zh:'甲的摘要',category:'国际政治',source_id:'one',url:'https://example.com/a'},{id:'b',title:'Report two',title_zh:'报道乙',summary_zh:'乙的摘要',category:'经济与投资',source_id:'two',url:'https://example.com/b'}],events:[{id:'event-story-1234567890abcdef',story_id:'story-1234567890abcdef',title:'同一具体事件',lead_id:'a',article_ids:['a','b'],category:'国际政治',categories:['国际政治','经济与投资'],source_count:2,reporting_days:2}],briefing:[{article_id:'b',event_id:'event-story-1234567890abcdef',category:'经济与投资',title:'晨读标题',summary:'晨读摘要'}],background_events:[]};`,context);
+(async()=>{
+ await vm.runInContext('render()',context);
+ assert.match(el('#articles').innerHTML,/同一具体事件/);
+ assert.match(el('#articles').innerHTML,/报道乙/,'non-lead sources remain accessible');
+ await vm.runInContext("category='经济与投资';focusOnly=true;render()",context);
+ assert.match(el('#articles').innerHTML,/同一具体事件/,'category and briefing filters include non-lead members');
+ await vm.runInContext("category='全部';focusOnly=false;readingMode='articles';render()",context);
+ assert.match(el('#articles').innerHTML,/报道甲/);assert.match(el('#articles').innerHTML,/报道乙/);
+ assert.doesNotMatch(el('#articles').innerHTML,/class="event-context"/);
+ context.get=async()=>({revision:2,event_version:2,events:[]});
+ const old=await vm.runInContext("decorateEdition({date:'2026-11-03',revision:1,articles:[]})",context);
+ assert.equal(old.event_version,undefined,'immutable old revisions do not acquire later classifications');
+ context.get=async()=>({title:'事件档案',first_seen:'2026-11-03',timeline:[{date:'2026-11-04',reports:[{id:'future',title:'未来才知道',category:'国际政治'}]},{date:'2026-11-03',reports:[{id:'a',title:'当时的报道',category:'国际政治',source_id:'one',url:'https://example.com/a'}]}],relations:[]});
+ await vm.runInContext("openStory('story-1234567890abcdef')",context);
+ assert.match(el('#dialog-content').innerHTML,/当时的报道/);
+ assert.doesNotMatch(el('#dialog-content').innerHTML,/未来才知道/);
+ console.log('Event reader tests passed');
+})().catch(error=>{console.error(error);process.exitCode=1;});

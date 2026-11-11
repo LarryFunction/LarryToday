@@ -97,6 +97,15 @@ def events(rows,comparisons):
     index={}
     for r in rows:
         for key in keys_by_id[r['id']]: index.setdefault(key,[]).append(r)
+    semantic={}
+    for row in rows:
+        assigned=row.get('event_assignment') or {}
+        if assigned.get('key'):semantic.setdefault(assigned['key'],[]).append(row)
+    for key,members in semantic.items():
+        if len(members)<2:continue
+        lead=diverse(members,1)[0];ids=[r['id'] for r in members]
+        groups.append({'id':'event-'+key,'lead_id':lead['id'],'article_ids':ids,'category':lead['category'],'title':lead['event_assignment']['title'],'grouping_basis':'ai_event'})
+        used.update(ids)
     for comparison in comparisons:
         ids=comparison['article_ids']
         # Avoid transitive merging of loosely related events; evidence stays in its own section.

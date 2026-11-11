@@ -46,7 +46,7 @@ def paged_payload(edition):
     articles=reader_rows(edition.get('articles',[]))
     manifest={k:v for k,v in edition.items() if k!='articles'}
     # Reader grouping is a presentation view; archived editions stay unchanged.
-    if edition.get('events') is not None:
+    if edition.get('events') is not None and edition.get('event_version')!=2:
         from scripts.editorial import events
         main=[r for r in articles if r.get('section')!='背景阅读']
         manifest['events']=events(main,edition.get('comparisons',[]))
@@ -104,6 +104,12 @@ def build_site(root=ROOT, out=None):
     latest_path = root / 'data' / 'latest.json'
     latest = read_json(latest_path) if latest_path.exists() else {}
     latest_date = latest.get('date')
+    from scripts.event_graph import build_event_views
+    event_days,event_dossiers=build_event_views(root)
+    if latest_date in event_days:latest=dict(latest,**{k:v for k,v in event_days[latest_date].items() if k not in ('date','revision')})
+    for day,value in event_days.items():write_json(api/'event-days'/f'{day}.json',value)
+    for id,value in event_dossiers.items():
+        if value['report_count']>1 or value['relations']:write_json(api/'events'/f'{id}.json',value)
     write_paged(api, latest)
 
     edition_days = []

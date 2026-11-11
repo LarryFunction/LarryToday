@@ -2,8 +2,8 @@ name: Daily newspaper
 
 on:
   schedule:
-    # 07:17 Asia/Shanghai; avoid the busy top of the hour.
-    - cron: '17 23 * * *'
+    # 07:00 Asia/Shanghai (23:00 UTC on the preceding day).
+    - cron: '0 23 * * *'
     # Retry once at 08:47 Shanghai; existing editions skip without AI calls.
     - cron: '47 0 * * *'
   workflow_dispatch:

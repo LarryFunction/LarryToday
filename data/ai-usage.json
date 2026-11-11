@@ -17,10 +17,10 @@
   "remaining": 0,
   "detailed_remaining": 930,
   "usage": {
-    "calls": 145,
+    "calls": 154,
     "retries": 0,
-    "prompt_tokens": 137452,
-    "completion_tokens": 56132,
+    "prompt_tokens": 162067,
+    "completion_tokens": 64714,
     "missing_usage": 0,
     "reasoning_tokens": 0,
     "stages": {
@@ -33,11 +33,18 @@
         "calls": 1,
         "prompt_tokens": 2883,
         "completion_tokens": 392
+      },
+      "event_editing": {
+        "calls": 9,
+        "prompt_tokens": 24615,
+        "completion_tokens": 8582
       }
     }
   },
   "token_budget": 500000,
-  "accounted_tokens": 193584,
+  "accounted_tokens": 226781,
   "opening_daily_usage": 0,
-  "budget_basis": "UTF-8 bytes + framing + max output reserved before every attempt; settled from provider usage when available; unknown attempts retain reservation. Not a billing guarantee."
+  "budget_basis": "UTF-8 bytes + framing + max output reserved before every attempt; settled from provider usage when available; unknown attempts retain reservation. Not a billing guarantee.",
+  "semantic_event_groups": 35,
+  "event_groups_after_review": 30
 }

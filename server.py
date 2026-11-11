@@ -10,16 +10,33 @@ from scripts.site_payloads import merged_sources
 
 ROOT = Path(__file__).parent.resolve()
 
+@lru_cache(maxsize=1)
+def event_payload(signature):
+    from scripts.event_graph import build_event_views
+    return build_event_views(ROOT)
+
+def event_signature():
+    return tuple((str(p),p.stat().st_mtime_ns) for folder in ('editions','revisions') for p in sorted((ROOT/'data'/folder).rglob('*.json')))+(('latest',(ROOT/'data/latest.json').stat().st_mtime_ns),)
+
 @lru_cache(maxsize=2)
 def reader_payload(path, modified, size):
     from scripts.build_pages import paged_payload
-    return paged_payload(json.loads(Path(path).read_text(encoding='utf-8')))
+    edition=json.loads(Path(path).read_text(encoding='utf-8'))
+    days,_=event_payload(event_signature())
+    edition.update({k:v for k,v in days.get(edition.get('date'),{}).items() if k not in ('date','revision')})
+    return paged_payload(edition)
 
 class Handler(BaseHTTPRequestHandler):
     def do_GET(self):
         path = urlsplit(self.path).path
         if path.startswith('/api/') and path.endswith('.json'):
             path = path[:-5]
+        event_match=re.fullmatch(r'/api/(events|event-days)/(story-[a-f0-9]{16}|\d{4}-\d{2}-\d{2})',path)
+        if event_match:
+            days,dossiers=event_payload(event_signature())
+            payload=(dossiers if event_match[1]=='events' else days).get(event_match[2])
+            if payload is None:return self.send_error(404)
+            return self.send_body(json.dumps(payload,ensure_ascii=False).encode(),'application/json')
         if path == '/api/reader' or re.fullmatch(r'/api/chunks/\d+',path):
             from scripts.build_pages import paged_payload
             file=ROOT/'data/latest.json'

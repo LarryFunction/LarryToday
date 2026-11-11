@@ -28,7 +28,10 @@ jobs:
       - name: Run tests
         run: python -m unittest discover -s tests
       - name: Check frontend JavaScript
-        run: node --check public/app.js
+        run: |
+          node --check public/app.js
+          node tests/reader_navigation.cjs
+          node tests/event_reader.cjs
       - name: Build static site
         run: python scripts/build_pages.py
       - uses: actions/configure-pages@v5

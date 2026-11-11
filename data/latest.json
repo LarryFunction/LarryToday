@@ -669,10 +669,10 @@
     "remaining": 0,
     "detailed_remaining": 930,
     "usage": {
-      "calls": 145,
+      "calls": 154,
       "retries": 0,
-      "prompt_tokens": 137452,
-      "completion_tokens": 56132,
+      "prompt_tokens": 162067,
+      "completion_tokens": 64714,
       "missing_usage": 0,
       "reasoning_tokens": 0,
       "stages": {
@@ -685,13 +685,20 @@
           "calls": 1,
           "prompt_tokens": 2883,
           "completion_tokens": 392
+        },
+        "event_editing": {
+          "calls": 9,
+          "prompt_tokens": 24615,
+          "completion_tokens": 8582
         }
       }
     },
     "token_budget": 500000,
-    "accounted_tokens": 193584,
+    "accounted_tokens": 226781,
     "opening_daily_usage": 0,
-    "budget_basis": "UTF-8 bytes + framing + max output reserved before every attempt; settled from provider usage when available; unknown attempts retain reservation. Not a billing guarantee."
+    "budget_basis": "UTF-8 bytes + framing + max output reserved before every attempt; settled from provider usage when available; unknown attempts retain reservation. Not a billing guarantee.",
+    "semantic_event_groups": 35,
+    "event_groups_after_review": 30
   },
   "articles": [
     {
@@ -726,7 +733,12 @@
       "section": "本期新闻",
       "title_zh": "美众议员要求弹劾防长赫格塞思 特朗普发声",
       "summary_zh": "中新网11月10日电 综合美媒报道，当地时间9日，美国肯塔基州共和党籍联邦众议员托马斯·梅西向众议院提交决议，试图推动全院就弹劾国防部长皮特·赫格塞思进行表决。",
-      "ai_level": "original_chinese"
+      "ai_level": "original_chinese",
+      "event_assignment": {
+        "key": "semantic-84ce09cc83dec94f",
+        "title": "美国众议院针对防长赫格塞思的弹劾动议",
+        "evidence": "当地时间9日，美国肯塔基州共和党籍联邦众议员托马斯·梅西向众议院提交决议，试图推动全院就弹劾国防部长皮特·赫格塞思进行表决。"
+      }
     },
     {
       "id": "f8706db363777f82",
@@ -763,7 +775,12 @@
       "section": "本期新闻",
       "title_zh": "美国防部长赫格塞斯预计本周面临弹劾投票",
       "summary_zh": "肯塔基州议员马西提出八项弹劾条款，指赫格塞斯未经国会授权对伊朗开战并滥用权力。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-84ce09cc83dec94f",
+        "title": "美国众议院针对防长赫格塞思的弹劾动议",
+        "evidence": "肯塔基州议员马西提出八项弹劾条款，指赫格塞斯未经国会授权对伊朗开战并滥用权力。"
+      }
     },
     {
       "id": "4b857884546f78b6",
@@ -795,7 +812,12 @@
       "section": "本期新闻",
       "title_zh": "达纳·怀特拒绝特朗普的白宫新闻秘书任职邀请",
       "summary_zh": "特朗普周末在社交媒体上请UFC总裁达纳·怀特出任该职，随后称自己\"只是开了个玩笑\"。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-09c5f2433697ed78",
+        "title": "特朗普称提名达纳·怀特任白宫新闻秘书是开玩笑",
+        "evidence": "特朗普周末在社交媒体上请UFC总裁达纳·怀特出任该职，随后称自己\"只是开了个玩笑\""
+      }
     },
     {
       "id": "037c254b28c32f77",
@@ -902,7 +924,12 @@
       "section": "本期新闻",
       "title_zh": "法国指责伊朗对超市冰柜发动网络攻击",
       "summary_zh": "法国外长让-诺埃尔·巴罗周一指责伊朗革命卫队是近期法国超市冰柜网络攻击的幕后黑手，称将产生后果。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-1d3988f565b3e32a",
+        "title": "法国指伊朗对超市冷柜网络攻击负责",
+        "evidence": "法国外长让-诺埃尔·巴罗周一指责伊朗革命卫队是近期法国超市冰柜网络攻击的幕后黑手"
+      }
     },
     {
       "id": "28076c7666c8a185",
@@ -935,7 +962,12 @@
       "section": "本期新闻",
       "title_zh": "五角大楼负责人赫格塞思预计本周面临众议院弹劾投票",
       "summary_zh": "国会消息人士称弹劾决议或获足够票数通过，但定罪可能性不大。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-84ce09cc83dec94f",
+        "title": "美国众议院针对防长赫格塞思的弹劾动议",
+        "evidence": "国会消息人士称弹劾决议或获足够票数通过，但定罪可能性不大。"
+      }
     },
     {
       "id": "9218afbf4e62c717",
@@ -1008,7 +1040,12 @@
       "section": "本期新闻",
       "title_zh": "法国指伊朗在冰箱攻击中进行网络“破坏”",
       "summary_zh": "法国称伊朗军方黑客上月接管约700个零售场所的制冷控制器，深夜调高温度，损坏价值数百万美元的食品。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-1d3988f565b3e32a",
+        "title": "法国指伊朗对超市冷柜网络攻击负责",
+        "evidence": "法国称伊朗军方黑客上月接管约700个零售场所的制冷控制器，深夜调高温度，损坏价值数百万美元的食品。"
+      }
     },
     {
       "id": "f7999079bff1ea0d",
@@ -1223,7 +1260,12 @@
       "section": "本期新闻",
       "title_zh": "美国国会就英伟达黄仁勋涉华间谍关联加大施压",
       "summary_zh": "美国国会两党议员就黄仁勋与一名被美情报官员怀疑为中国情报部门工作的女商人的关系加大施压，要求查明国家安全是否受损；中方否认相关间谍指控。英伟达董事会宣布进行独立调查。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-5f2157cce2a9c739",
+        "title": "英伟达CEO黄仁勋涉疑似中国间谍关系调查",
+        "evidence": "美国国会就英伟达黄仁勋涉华间谍关联加大施压"
+      }
     },
     {
       "id": "caf6f248bb43ca14",
@@ -1261,7 +1303,12 @@
       "section": "本期新闻",
       "title_zh": "英伟达称蜜罐或意在游说黄仁勋游说美国政府",
       "summary_zh": "黄仁勋及英伟达被诉隐瞒其与疑似中国间谍的关系，受访者称此事也可能意在游说黄仁勋去游说美国政府。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-5f2157cce2a9c739",
+        "title": "英伟达CEO黄仁勋涉疑似中国间谍关系调查",
+        "evidence": "英伟达称蜜罐或意在游说黄仁勋游说美国政府"
+      }
     },
     {
       "id": "d17b2ab85bcbe51f",
@@ -1295,7 +1342,12 @@
       "section": "本期新闻",
       "title_zh": "教皇在阿根廷会见神职人员性侵幸存者",
       "summary_zh": "教皇利奥十四世在私下会见幸存者时承诺加强保护措施并倾听受害者。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-8537034771eb55e1",
+        "title": "教皇在阿根廷的访问活动",
+        "evidence": "教皇在阿根廷会见神职人员性侵幸存者"
+      }
     },
     {
       "id": "9a338a706ae2af78",
@@ -1333,7 +1385,12 @@
       "section": "本期新闻",
       "title_zh": "专家称英伟达“蜜罐”或意在促使黄仁勋游说美国政府",
       "summary_zh": "英伟达与CEO黄仁勋被诉隐瞒其与疑似中国间谍的关系；SOAS中国研究所所长曾锐生称此事或涉及促使黄仁勋游说美国政府。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-5f2157cce2a9c739",
+        "title": "英伟达CEO黄仁勋涉疑似中国间谍关系调查",
+        "evidence": "专家称英伟达“蜜罐”或意在促使黄仁勋游说美国政府"
+      }
     },
     {
       "id": "0fece7537152d909",
@@ -1475,7 +1532,12 @@
       "section": "本期新闻",
       "title_zh": "共和党议员迈出启动防长赫格塞思弹劾程序第一步",
       "summary_zh": "一名共和党议员迈出弹劾防长赫格塞思的第一步，称这是针对特朗普政府官员的首个此类程序。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-84ce09cc83dec94f",
+        "title": "美国众议院针对防长赫格塞思的弹劾动议",
+        "evidence": "一名共和党议员迈出弹劾防长赫格塞思的第一步，称这是针对特朗普政府官员的首个此类程序。"
+      }
     },
     {
       "id": "eb0bbf2e83436370",
@@ -1547,7 +1609,12 @@
       "section": "本期新闻",
       "title_zh": "英伟达事件：CEO与疑似中国间谍关系引关注",
       "summary_zh": "材料称英伟达CEO与一名疑似中国间谍有不当关系，使向中国走私AI芯片的公司生态受到关注。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-5f2157cce2a9c739",
+        "title": "英伟达CEO黄仁勋涉疑似中国间谍关系调查",
+        "evidence": "英伟达事件：CEO与疑似中国间谍关系引关注"
+      }
     },
     {
       "id": "26df5e94b8076757",
@@ -1620,7 +1687,12 @@
       "section": "本期新闻",
       "title_zh": "土耳其西部一钢铁厂发生爆炸 死亡人数升至16人",
       "summary_zh": "土耳其总统埃尔多安9日晚表示，当天伊兹密尔省阿利亚阿区一家钢铁厂发生的爆炸事故已造成16人死亡，13人受伤，其中2人伤势严重。",
-      "ai_level": "original_chinese"
+      "ai_level": "original_chinese",
+      "event_assignment": {
+        "key": "semantic-470591456615ed97",
+        "title": "土耳其伊兹密尔钢铁厂爆炸事故",
+        "evidence": "土耳其总统埃尔多安9日晚表示，当天伊兹密尔省阿利亚阿区一家钢铁厂发生的爆炸事故已造成16人死亡，13人受伤，其中2人伤势严重。"
+      }
     },
     {
       "id": "c86d39fb3f07ee73",
@@ -1759,7 +1831,12 @@
       "section": "本期新闻",
       "title_zh": "美众议员向众议院提交决议 要求弹劾国防部长赫格塞思",
       "summary_zh": "当地时间11月9日，美国肯塔基州共和党籍联邦众议员托马斯·梅西向众议院提交决议，试图推动全院就弹劾国防部长皮特·赫格塞思进行表决。此举意在向共和党同僚施压，要求他们就是否罢免特朗普政府中最引人注目的人物之一作出抉择。此前，共和党在选举中遭遇全面失利。",
-      "ai_level": "original_chinese"
+      "ai_level": "original_chinese",
+      "event_assignment": {
+        "key": "semantic-84ce09cc83dec94f",
+        "title": "美国众议院针对防长赫格塞思的弹劾动议",
+        "evidence": "当地时间11月9日，美国肯塔基州共和党籍联邦众议员托马斯·梅西向众议院提交决议，试图推动全院就弹劾国防部长皮特·赫格塞思进行表决。"
+      }
     },
     {
       "id": "3da15ef6ee92adc5",
@@ -1802,6 +1879,11 @@
         "reason": "南非执政党地方选举仅获30%创最差，联合谈判启动影响政局",
         "evidence": "仅获30%选票，创最差地方选举成绩",
         "basis": "ai_shortlist"
+      },
+      "event_assignment": {
+        "key": "semantic-da40c282ff7eaa54",
+        "title": "南非2026年地方政府选举结果与非国大得票下滑",
+        "evidence": "南非非洲人国民大会地方选举遇历史性挫败，联合谈判启动"
       }
     },
     {
@@ -1836,7 +1918,12 @@
       "section": "本期新闻",
       "title_zh": "中期选举惨败后，特朗普重提选举舞弊说法",
       "summary_zh": "特朗普推翻此前接受选举结果的态度，称投票机和提前计票影响了结果。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-9fa55ba203eddfae",
+        "title": "美国中期选举相关报道",
+        "evidence": "特朗普推翻此前接受选举结果的态度，称投票机和提前计票影响了结果。"
+      }
     },
     {
       "id": "e3cf27814ff8f8e6",
@@ -1908,7 +1995,12 @@
       "section": "本期新闻",
       "title_zh": "俄乌美将在阿布扎比举行三方会谈，预计聚焦安全保障",
       "summary_zh": "乌克兰、俄罗斯与美国谈判代表周二将在阿联酋首都阿布扎比举行新一轮会谈，旨在结束莫斯科入侵引发的近五年全面战争，安全保障议题居首，美方称任何和平协议都须包含更广泛的欧洲安全架构。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-530b6b592aa08847",
+        "title": "俄乌美在阿布扎比举行三方会谈",
+        "evidence": "乌克兰、俄罗斯与美国谈判代表周二将在阿联酋首都阿布扎比举行新一轮会谈"
+      }
     },
     {
       "id": "668f8983df4a517d",
@@ -2190,7 +2282,12 @@
       "section": "本期新闻",
       "title_zh": "COP31在能源危机中开幕，活动人士要求气候行动",
       "summary_zh": "COP31在土耳其开幕，背景是战争导致的能源中断和对化石燃料的重新依赖。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-c19b40306689d9bf",
+        "title": "COP31气候峰会开幕",
+        "evidence": "COP31在能源危机中开幕，活动人士要求气候行动"
+      }
     },
     {
       "id": "c5c79c47472ef0c5",
@@ -2225,7 +2322,12 @@
       "section": "本期新闻",
       "title_zh": "英伟达因CEO与疑似间谍关系调查股价受挫",
       "summary_zh": "因市场对黄仁勋未来存疑，股价一度跌超8%，黄仁勋是当前科技业核心人物及公司近年成功关键。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-5f2157cce2a9c739",
+        "title": "英伟达CEO黄仁勋涉疑似中国间谍关系调查",
+        "evidence": "英伟达因CEO与疑似间谍关系调查股价受挫"
+      }
     },
     {
       "id": "d4db1cfabea9b7e1",
@@ -2264,7 +2366,12 @@
       "section": "本期新闻",
       "title_zh": "法国指伊朗为上月超市冰箱网络攻击负责",
       "summary_zh": "法国指责伊朗并对伊大使交涉，称将寻求欧洲制裁。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-1d3988f565b3e32a",
+        "title": "法国指伊朗对超市冷柜网络攻击负责",
+        "evidence": "法国指伊朗为上月超市冰箱网络攻击负责"
+      }
     },
     {
       "id": "7f172ae75897c035",
@@ -2302,7 +2409,12 @@
       "section": "本期新闻",
       "title_zh": "法国柔道名将里内称将竞选总统",
       "summary_zh": "法国多届奥运柔道冠军里内在社交媒体宣布将参加明年总统选举，称担忧极右翼崛起。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-04f5e952d38bbd59",
+        "title": "法国柔道名将里内宣布竞选总统",
+        "evidence": "法国柔道名将里内称将竞选总统"
+      }
     },
     {
       "id": "c86888682b1f108c",
@@ -2370,7 +2482,12 @@
       "section": "本期新闻",
       "title_zh": "共和党议员推动弹劾美国国防部长赫格塞思",
       "summary_zh": "仅据标题：共和党众议员托马斯·马西已对国防部长皮特·赫格塞思提出弹劾条款。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-84ce09cc83dec94f",
+        "title": "美国众议院针对防长赫格塞思的弹劾动议",
+        "evidence": "仅据标题：共和党众议员托马斯·马西已对国防部长皮特·赫格塞思提出弹劾条款。"
+      }
     },
     {
       "id": "2bae0dc9f043ef95",
@@ -2437,7 +2554,12 @@
       "section": "本期新闻",
       "title_zh": "法国称伊朗应对针对冰箱的“前所未有”网络攻击负责",
       "summary_zh": "法国外长巴罗称将在欧洲层面制裁所有责任人，并指控伊朗革命卫队对法国超市冰箱发动网络攻击。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-1d3988f565b3e32a",
+        "title": "法国指伊朗对超市冷柜网络攻击负责",
+        "evidence": "法国外长巴罗称将在欧洲层面制裁所有责任人，并指控伊朗革命卫队对法国超市冰箱发动网络攻击。"
+      }
     },
     {
       "id": "6373b90e4085e033",
@@ -2472,7 +2594,12 @@
       "section": "本期新闻",
       "title_zh": "特朗普称让达纳·怀特任新闻秘书是\"开玩笑\"，网络传混淆说法",
       "summary_zh": "特朗普称宣布邀请UFC总裁达纳·怀特任白宫新闻秘书\"只是开玩笑\"，并发布AI生成视频；网上猜测他可能把此人与同名前五角大楼发言人混淆，但无证据。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-09c5f2433697ed78",
+        "title": "特朗普称提名达纳·怀特任白宫新闻秘书是开玩笑",
+        "evidence": "特朗普称宣布邀请UFC总裁达纳·怀特任白宫新闻秘书\"只是开玩笑\""
+      }
     },
     {
       "id": "558208fe0934c6d2",
@@ -2621,7 +2748,12 @@
       "section": "本期新闻",
       "title_zh": "视频：排灯节庆祝后烟雾笼罩新德里",
       "summary_zh": "仅据标题：新德里在周末排灯节庆祝后于周一被雾霾笼罩。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-acb2fc603842d8a6",
+        "title": "德里排灯节烟花限制与空气污染",
+        "evidence": "仅据标题：新德里在周末排灯节庆祝后于周一被雾霾笼罩。"
+      }
     },
     {
       "id": "dbedcaa7a86dba96",
@@ -2655,7 +2787,12 @@
       "section": "本期新闻",
       "title_zh": "土耳其钢铁厂爆炸至少17人死亡",
       "summary_zh": "目击者称爆炸震动地面，有人以为阿里亚加Habas Demir Celik工厂附近发生了地震。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-470591456615ed97",
+        "title": "土耳其伊兹密尔钢铁厂爆炸事故",
+        "evidence": "目击者称爆炸震动地面，有人以为阿里亚加Habas Demir Celik工厂附近发生了地震。"
+      }
     },
     {
       "id": "f4592906027e8e46",
@@ -2689,7 +2826,12 @@
       "section": "本期新闻",
       "title_zh": "共和党议员对特朗普国防部长赫格塞思启动弹劾程序",
       "summary_zh": "弹劾由托马斯·马西发起，他批评伊朗战争及赫格塞思的处置方式。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-84ce09cc83dec94f",
+        "title": "美国众议院针对防长赫格塞思的弹劾动议",
+        "evidence": "弹劾由托马斯·马西发起，他批评伊朗战争及赫格塞思的处置方式。"
+      }
     },
     {
       "id": "9e7f25cb1a5f7afd",
@@ -2724,7 +2866,12 @@
       "section": "本期新闻",
       "title_zh": "英伟达间谍与引诱丑闻牵涉唐纳德·特朗普",
       "summary_zh": "总统与全球最大芯片制造商创始人保持友谊，情报部门一年前已向其通报相关怀疑。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-5f2157cce2a9c739",
+        "title": "英伟达CEO黄仁勋涉疑似中国间谍关系调查",
+        "evidence": "英伟达间谍与引诱丑闻牵涉唐纳德·特朗普"
+      }
     },
     {
       "id": "a03f51e0c78eaadd",
@@ -2762,7 +2909,12 @@
       "section": "本期新闻",
       "title_zh": "黄仁勋形象受损，是否可能被迫离开英伟达？",
       "summary_zh": "报道称黄仁勋与据称中国间谍有婚外情后，英伟达董事会面临艰难决定。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-5f2157cce2a9c739",
+        "title": "英伟达CEO黄仁勋涉疑似中国间谍关系调查",
+        "evidence": "黄仁勋形象受损，是否可能被迫离开英伟达？"
+      }
     },
     {
       "id": "078ccefdb4ab98a3",
@@ -2829,7 +2981,12 @@
       "section": "本期新闻",
       "title_zh": "法国指伊朗黑客攻击超市冷柜致食品变质",
       "summary_zh": "上月数百家超市的冷藏和冷冻柜升温，导致数吨冷藏和冷冻食品变质；法国指控伊朗实施相关黑客攻击。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-1d3988f565b3e32a",
+        "title": "法国指伊朗对超市冷柜网络攻击负责",
+        "evidence": "上月数百家超市的冷藏和冷冻柜升温，导致数吨冷藏和冷冻食品变质；法国指控伊朗实施相关黑客攻击。"
+      }
     },
     {
       "id": "ed80898cc10f63a9",
@@ -2903,6 +3060,11 @@
         "reason": "美国防部长因未经国会批准发动战争面临弹劾，制度冲突重大",
         "evidence": "指其未经国会批准发动战争",
         "basis": "ai_shortlist"
+      },
+      "event_assignment": {
+        "key": "semantic-02f55c838707f146",
+        "title": "美国防部长赫格塞斯因伊朗战争面临弹劾推动",
+        "evidence": "特朗普批评者托马斯·马西呼吁投票弹劾五角大楼负责人皮特·赫格塞斯，指其未经国会批准发动战争。"
       }
     },
     {
@@ -2979,7 +3141,12 @@
       "section": "本期新闻",
       "title_zh": "英伟达黄仁勋间谍丑闻震动以其为核心的AI行业",
       "summary_zh": "英伟达CEO黄仁勋处于AI热潮中心，周末爆发的间谍丑闻或在该公司AI投资狂热信心本已脆弱之际动摇公司。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-5f2157cce2a9c739",
+        "title": "英伟达CEO黄仁勋涉疑似中国间谍关系调查",
+        "evidence": "英伟达黄仁勋间谍丑闻震动以其为核心的AI行业"
+      }
     },
     {
       "id": "f78cb38b635a2992",
@@ -3091,7 +3258,12 @@
       "section": "本期新闻",
       "title_zh": "英国喜剧演员拉塞尔·布兰德因强奸等性犯罪被判入狱10年",
       "summary_zh": "英国喜剧演员兼电视明星拉塞尔·布兰德因包括强奸在内的一系列性犯罪被判入狱超过10年，法官称他是受名气庇护的“性侵犯者”。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-c9f9f9ec54237616",
+        "title": "拉塞尔·布兰德因强奸和性侵被判入狱",
+        "evidence": "英国喜剧演员兼电视明星拉塞尔·布兰德因包括强奸在内的一系列性犯罪被判入狱超过10年"
+      }
     },
     {
       "id": "ea02cbc16553e3c0",
@@ -3128,7 +3300,12 @@
       "section": "本期新闻",
       "title_zh": "艾森科特能否在“以色列政治雷区”成功，此前“众多将领”均告失败？",
       "summary_zh": "以色列总统赫尔佐格授权甘迪·艾森科特组阁后，他展开45天组阁竞逐，节目探讨以色列能否在联盟僵局中走出内塔尼亚胡时代。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-1d79cb0ca9fa918a",
+        "title": "以色列总统授权艾森科特组阁",
+        "evidence": "以色列总统赫尔佐格授权甘迪·艾森科特组阁后，他展开45天组阁竞逐"
+      }
     },
     {
       "id": "c4bc507025bdc22c",
@@ -3162,7 +3339,12 @@
       "section": "本期新闻",
       "title_zh": "英伟达股价因调查黄仁勋与疑似中国间谍关系而大跌",
       "summary_zh": "股价下跌使英伟达市值蒸发数千亿美元。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-5f2157cce2a9c739",
+        "title": "英伟达CEO黄仁勋涉疑似中国间谍关系调查",
+        "evidence": "英伟达股价因调查黄仁勋与疑似中国间谍关系而大跌"
+      }
     },
     {
       "id": "bf0c6e798a9f306f",
@@ -3200,7 +3382,12 @@
       "section": "本期新闻",
       "title_zh": "即便特朗普主义在中期选举中惨败，世界仍难信任美国",
       "summary_zh": "报道称，美国中期选举对特朗普执政的挫败并不意味着世界重新信任美国。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-9fa55ba203eddfae",
+        "title": "美国中期选举相关报道",
+        "evidence": "美国中期选举对特朗普执政的挫败并不意味着世界重新信任美国。"
+      }
     },
     {
       "id": "88fd9e5b6be26d24",
@@ -3237,7 +3424,12 @@
       "section": "本期新闻",
       "title_zh": "法国超市冷柜网络攻击被指具有地缘政治背景",
       "summary_zh": "报道称这起“并不特别复杂”的解冻黑客攻击被归咎于伊朗，推测与欧洲其他事件相关。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-b620a224aeae43b1",
+        "title": "法国指控伊朗对超市制冷系统发动网络攻击",
+        "evidence": "报道称这起“并不特别复杂”的解冻黑客攻击被归咎于伊朗"
+      }
     },
     {
       "id": "b751268f69baea4c",
@@ -3274,7 +3466,12 @@
       "section": "本期新闻",
       "title_zh": "五角大楼负责人赫格塞斯因伊朗战争面临弹劾考验",
       "summary_zh": "共和党众议员马西提出八项弹劾条款，寻求最早周三就赫格塞斯处理伊朗战争等军事行动的方式推动众议院表决。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-02f55c838707f146",
+        "title": "美国防部长赫格塞斯因伊朗战争面临弹劾推动",
+        "evidence": "共和党众议员马西提出八项弹劾条款，寻求最早周三就赫格塞斯处理伊朗战争等军事行动的方式推动众议院表决。"
+      }
     },
     {
       "id": "505cf51d6d47f769",
@@ -3309,7 +3506,12 @@
       "section": "本期新闻",
       "title_zh": "共和党议员对五角大楼负责人赫格塞思发起弹劾动议",
       "summary_zh": "肯塔基州议员托马斯·马西推动众议院就弹劾国防部长皮特·赫格塞思进行表决。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-84ce09cc83dec94f",
+        "title": "美国众议院针对防长赫格塞思的弹劾动议",
+        "evidence": "肯塔基州议员托马斯·马西推动众议院就弹劾国防部长皮特·赫格塞思进行表决。"
+      }
     },
     {
       "id": "3e2f1e24b9a282de",
@@ -3386,7 +3588,12 @@
       "section": "本期新闻",
       "title_zh": "法国指责伊朗攻击制冷系统网络",
       "summary_zh": "法国外长称已召见伊朗驻法大使，指伊朗上月对数百家超市发动网络攻击；伊朗未立即回应。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-1d3988f565b3e32a",
+        "title": "法国指伊朗对超市冷柜网络攻击负责",
+        "evidence": "法国外长称已召见伊朗驻法大使，指伊朗上月对数百家超市发动网络攻击"
+      }
     },
     {
       "id": "49e50de3c508947d",
@@ -3459,7 +3666,12 @@
       "section": "本期新闻",
       "title_zh": "法国就冰箱攻击事件调查伊朗网络单位",
       "summary_zh": "法国称伊朗革命卫队是上月超市冰箱“前所未有”网络攻击的幕后黑手，并誓言在欧洲层面制裁德黑兰。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-b620a224aeae43b1",
+        "title": "法国指控伊朗对超市制冷系统发动网络攻击",
+        "evidence": "法国称伊朗革命卫队是上月超市冰箱“前所未有”网络攻击的幕后黑手"
+      }
     },
     {
       "id": "5b3db2568aed6a27",
@@ -3497,7 +3709,12 @@
       "section": "本期新闻",
       "title_zh": "法国抗议者怒斥紧缩政策，质疑体制失灵",
       "summary_zh": "法国作为全球第七大经济体，其外长本周在左岸外交部主持七国集团外长会议，抗议者仍就生活负担问题怒斥紧缩政策。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-a6b0def45a5a0a6f",
+        "title": "法國最低工资上调与抗议",
+        "evidence": "法国作为全球第七大经济体，其外长本周在左岸外交部主持七国集团外长会议，抗议者仍就生活负担问题怒斥紧缩政策。"
+      }
     },
     {
       "id": "f5735a4561025f7b",
@@ -3603,7 +3820,12 @@
       "section": "本期新闻",
       "title_zh": "数百万人涌上布宜诺斯艾利斯街头迎接教宗良十四世",
       "summary_zh": "教宗在阿根廷首都主持户外弥撒，此为拉美12天行程第二站，三周前他刚接受肺癌手术。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-4b44ae8d65af482d",
+        "title": "教皇利奥十四世访问阿根廷并谈经济与社会政策",
+        "evidence": "教宗在阿根廷首都主持户外弥撒，此为拉美12天行程第二站"
+      }
     },
     {
       "id": "ab18c16cab774799",
@@ -3776,7 +3998,12 @@
       "section": "本期新闻",
       "title_zh": "英伟达丑闻中的关键人物是谁",
       "summary_zh": "报道称该公司首席执行官承认与一名疑似中国间谍的女子存在关系，并梳理案件各环节及其关联。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-5f2157cce2a9c739",
+        "title": "英伟达CEO黄仁勋涉疑似中国间谍关系调查",
+        "evidence": "英伟达丑闻中的关键人物是谁"
+      }
     },
     {
       "id": "3dbb3deb7d3adc3e",
@@ -3810,7 +4037,12 @@
       "section": "本期新闻",
       "title_zh": "泽连斯基称乌克兰与欧盟在阿布扎比会谈前协调立场",
       "summary_zh": "泽连斯基表示，乌方将尽力确保三方形式取得成果。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-530b6b592aa08847",
+        "title": "俄乌美在阿布扎比举行三方会谈",
+        "evidence": "泽连斯基表示，乌方将尽力确保三方形式取得成果。"
+      }
     },
     {
       "id": "a7e56601c62c5b02",
@@ -3842,7 +4074,12 @@
       "section": "本期新闻",
       "title_zh": "教皇利奥布宜诺斯艾利斯弥撒吸引250万人，再警告米莱紧缩政策",
       "summary_zh": "约250万人参加教皇利奥在布宜诺斯艾利斯的弥撒；他再次呼吁保护弱势群体，米莱正削减残障照护和社会服务。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-4b44ae8d65af482d",
+        "title": "教皇利奥十四世访问阿根廷并谈经济与社会政策",
+        "evidence": "约250万人参加教皇利奥在布宜诺斯艾利斯的弥撒；他再次呼吁保护弱势群体，米莱正削减残障照护和社会服务。"
+      }
     },
     {
       "id": "c61129d4eb8975b2",
@@ -3879,7 +4116,12 @@
       "section": "本期新闻",
       "title_zh": "英伟达就黄仁勋与疑似中国间谍的关系展开调查",
       "summary_zh": "英伟达首席执行官黄仁勋周日承认，他与一名被美国官员认定为中国情报部门工作的企业高管关系亲密。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-5f2157cce2a9c739",
+        "title": "英伟达CEO黄仁勋涉疑似中国间谍关系调查",
+        "evidence": "英伟达就黄仁勋与疑似中国间谍的关系展开调查"
+      }
     },
     {
       "id": "086be5392eb3a73c",
@@ -3914,7 +4156,12 @@
       "section": "本期新闻",
       "title_zh": "法国官员指伊朗应对超市冰箱遭黑客攻击负责",
       "summary_zh": "法国外长巴罗称，伊朗革命卫队策划了此次对超市冰箱和冰柜的网络攻击，并称其“前所未有”。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-1d3988f565b3e32a",
+        "title": "法国指伊朗对超市冷柜网络攻击负责",
+        "evidence": "法国外长巴罗称，伊朗革命卫队策划了此次对超市冰箱和冰柜的网络攻击"
+      }
     },
     {
       "id": "3f587d34d2cdf30d",
@@ -3948,7 +4195,12 @@
       "section": "本期新闻",
       "title_zh": "加迪·艾森科特：可能接替内塔尼亚胡的以色列人选是谁？",
       "summary_zh": "以色列总统赫尔佐格已委托这位以色列国防军前总参谋长组建新政府。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-1d79cb0ca9fa918a",
+        "title": "以色列总统授权艾森科特组阁",
+        "evidence": "以色列总统赫尔佐格已委托这位以色列国防军前总参谋长组建新政府。"
+      }
     },
     {
       "id": "fb6414aaa3ff374c",
@@ -4017,7 +4269,12 @@
       "section": "本期新闻",
       "title_zh": "土耳其钢厂爆炸致10人死亡",
       "summary_zh": "爆炸造成10名工人死亡、15人受伤，救援队继续搜寻被困废墟下的人员。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-470591456615ed97",
+        "title": "土耳其伊兹密尔钢铁厂爆炸事故",
+        "evidence": "爆炸造成10名工人死亡、15人受伤，救援队继续搜寻被困废墟下的人员。"
+      }
     },
     {
       "id": "d8960b88ea7b2675",
@@ -4060,6 +4317,11 @@
         "reason": "波兰大规模枪击致至少九死，嫌犯医院身亡，公共安全重大事件",
         "evidence": "至少九人死亡，嫌疑人死于医院，动机不明",
         "basis": "ai_shortlist"
+      },
+      "event_assignment": {
+        "key": "semantic-fa12f3b39f3a3f2c",
+        "title": "波兰克拉科夫大规模枪击案",
+        "evidence": "克拉科夫及另一城镇发生枪击，至少九人死亡，嫌疑人死于医院，动机不明。"
       }
     },
     {
@@ -4094,7 +4356,12 @@
       "section": "本期新闻",
       "title_zh": "俄罗斯主要独立报纸遭驱逐后停刊",
       "summary_zh": "该报被逐出使用了三十年的办公室，并表示被阻止接受捐款。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-44197aa58f1dec60",
+        "title": "俄罗斯独立报纸《新报》关闭莫斯科新闻编辑室并停刊",
+        "evidence": "该报被逐出使用了三十年的办公室，并表示被阻止接受捐款"
+      }
     },
     {
       "id": "e7af1618e6b7a9c1",
@@ -4129,7 +4396,12 @@
       "section": "本期新闻",
       "title_zh": "AI推高英伟达CEO黄仁勋精英地位，丑闻随之而来",
       "summary_zh": "随着芯片成为AI关键组件，黄仁勋等高管个人财富与知名度以前所未有的方式飙升。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-5f2157cce2a9c739",
+        "title": "英伟达CEO黄仁勋涉疑似中国间谍关系调查",
+        "evidence": "AI推高英伟达CEO黄仁勋精英地位，丑闻随之而来"
+      }
     },
     {
       "id": "6e711ee81d8445b2",
@@ -4200,7 +4472,12 @@
       "section": "本期新闻",
       "title_zh": "英国喜剧演员拉塞尔·布兰德因强奸和性侵被判入狱10年",
       "summary_zh": "英国法院判处喜剧演员拉塞尔·布兰德10年6个月监禁，其因强奸和性侵罪名成立。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-c9f9f9ec54237616",
+        "title": "拉塞尔·布兰德因强奸和性侵被判入狱",
+        "evidence": "英国法院判处喜剧演员拉塞尔·布兰德10年6个月监禁，其因强奸和性侵罪名成立。"
+      }
     },
     {
       "id": "29039739eb4fd04c",
@@ -4238,7 +4515,12 @@
       "section": "本期新闻",
       "title_zh": "巴黎称伊朗应对法国超市冷柜网络攻击负责",
       "summary_zh": "法国外长巴罗称伊朗应对上月大规模网络攻击负责，并称将推动欧洲范围制裁。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-1d3988f565b3e32a",
+        "title": "法国指伊朗对超市冷柜网络攻击负责",
+        "evidence": "法国外长巴罗称伊朗应对上月大规模网络攻击负责"
+      }
     },
     {
       "id": "d8031170bec6021b",
@@ -4275,7 +4557,12 @@
       "section": "本期新闻",
       "title_zh": "神秘过往的中国间谍爱丽丝·黄被指接触到英伟达CEO",
       "summary_zh": "北京称有关该女商人从事间谍活动的报道是“诽谤”，否认她为情报机构工作。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-5f2157cce2a9c739",
+        "title": "英伟达CEO黄仁勋涉疑似中国间谍关系调查",
+        "evidence": "神秘过往的中国间谍爱丽丝·黄被指接触到英伟达CEO"
+      }
     },
     {
       "id": "83c4db33ef9ea16f",
@@ -4380,7 +4667,12 @@
       "section": "本期新闻",
       "title_zh": "特朗普在曾接受结果后质疑中期选举公正性",
       "summary_zh": "特朗普周一在Truth Social上无证据提出上述主张。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-9fa55ba203eddfae",
+        "title": "美国中期选举相关报道",
+        "evidence": "特朗普周一在Truth Social上无证据提出上述主张。"
+      }
     },
     {
       "id": "7f190d703516e291",
@@ -4496,7 +4788,12 @@
       "section": "本期新闻",
       "title_zh": "法国最受欢迎运动员称将竞选总统：我知道如何战斗",
       "summary_zh": "五届奥运柔道冠军泰迪·里内称自己既非左翼也非右翼，将寻求“把人们团结起来”。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-04f5e952d38bbd59",
+        "title": "法国柔道名将里内宣布竞选总统",
+        "evidence": "法国最受欢迎运动员称将竞选总统：我知道如何战斗"
+      }
     },
     {
       "id": "317077845281ce2d",
@@ -4645,7 +4942,12 @@
       "section": "本期新闻",
       "title_zh": "法国总理提高最低工资未能说服工会",
       "summary_zh": "法国政府宣布最低工资上调1.6%并出台系列措施应对生活成本压力，但工会认为未达要求，呼吁近日再抗议。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-a6b0def45a5a0a6f",
+        "title": "法國最低工资上调与抗议",
+        "evidence": "法国政府宣布最低工资上调1.6%并出台系列措施应对生活成本压力，但工会认为未达要求，呼吁近日再抗议。"
+      }
     },
     {
       "id": "264a21cc49ac9cfc",
@@ -4757,7 +5059,12 @@
       "section": "本期新闻",
       "title_zh": "俄乌在美斡旋会谈开始前一天互相发动袭击",
       "summary_zh": "特朗普在《60分钟》采访中称双方“非常接近”达成协议；报道称俄乌在美斡旋会谈开始前一天互相发动袭击。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-530b6b592aa08847",
+        "title": "俄乌美在阿布扎比举行三方会谈",
+        "evidence": "俄乌在美斡旋会谈开始前一天互相发动袭击"
+      }
     },
     {
       "id": "37baa83fe1c247a0",
@@ -4861,7 +5168,12 @@
       "section": "本期新闻",
       "title_zh": "「愛達·花城號」開啟交付後首個試營運航次",
       "summary_zh": "第二艘國產大型郵輪「愛達·花城號」，昨日從上海的國際郵輪港出發，開啟交付後的首個試營運航次，並計劃於本月12日抵達廣州南沙國際郵輪母港，將全面檢驗郵輪營運能力，標誌著「愛達·花城號」向著正式商業營運，邁出關鍵一步。 新華社報道，在航次期間，「愛達·花城號」將圍繞海事營運、航行安全、產品服務、船岸協同及全船信息系統等多個環節，開展系統性測試與調整。在模擬真實營運的狀態下，郵輪將針對客房服務、餐飲娛樂、購物休閒等核心體驗，進行壓力測試，進一步檢驗各部門之間的協同配合和響應能力。 編輯：羅宇光",
-      "ai_level": "original_chinese"
+      "ai_level": "original_chinese",
+      "event_assignment": {
+        "key": "semantic-4ace8af84b0c07fe",
+        "title": "第二艘国产大型邮轮“爱达·花城号”开启首个试运营航次",
+        "evidence": "「愛達·花城號」開啟交付後首個試營運航次"
+      }
     },
     {
       "id": "56bec4a0fd79c2e6",
@@ -4972,7 +5284,12 @@
       "section": "本期新闻",
       "title_zh": "约翰·奥利弗评赫格塞思军事计划：“给脑震荡偏执狂的苏斯博士”",
       "summary_zh": "奥利弗在HBO节目中谈论国防部长赫格塞思对DEI的抨击、其福克斯新闻主持经历及与民族主义团体的关系。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-84ce09cc83dec94f",
+        "title": "美国众议院针对防长赫格塞思的弹劾动议",
+        "evidence": "奥利弗在HBO节目中谈论国防部长赫格塞思对DEI的抨击、其福克斯新闻主持经历及与民族主义团体的关系。"
+      }
     },
     {
       "id": "14b24a18faf526e1",
@@ -5154,7 +5471,12 @@
       "section": "本期新闻",
       "title_zh": "法国指控伊朗对数百家超市制冷系统发动网络攻击",
       "summary_zh": "法国情报部门和检方指伊朗革命卫队发动攻击，致部分主要零售连锁损失数百万欧元。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-b620a224aeae43b1",
+        "title": "法国指控伊朗对超市制冷系统发动网络攻击",
+        "evidence": "法国情报部门和检方指伊朗革命卫队发动攻击"
+      }
     },
     {
       "id": "1f3e775b158586cf",
@@ -5191,7 +5513,12 @@
       "section": "本期新闻",
       "title_zh": "法国总理提前上调最低工资以安抚抗议者",
       "summary_zh": "勒科尔尼称将最低工资上调从明年1月提前至12月，工会斥之为“残羹剩饭”。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-a6b0def45a5a0a6f",
+        "title": "法國最低工资上调与抗议",
+        "evidence": "勒科尔尼称将最低工资上调从明年1月提前至12月，工会斥之为“残羹剩饭”。"
+      }
     },
     {
       "id": "721b09a0de84f78c",
@@ -5227,7 +5554,12 @@
       "section": "本期新闻",
       "title_zh": "拉塞尔·布兰德因强奸和性侵被判逾10年监禁",
       "summary_zh": "材料称陪审团认定他袭击了六名指控者中的四人，相关指控可追溯至2004年。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-c9f9f9ec54237616",
+        "title": "拉塞尔·布兰德因强奸和性侵被判入狱",
+        "evidence": "材料称陪审团认定他袭击了六名指控者中的四人，相关指控可追溯至2004年。"
+      }
     },
     {
       "id": "b82780c21853b78c",
@@ -5265,7 +5597,12 @@
       "section": "本期新闻",
       "title_zh": "英伟达遭间谍调查消息后股价大跌",
       "summary_zh": "英伟达称在有关CEO黄仁勋被中国情报机构针对的报道后启动调查，股价开盘跌超8%。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-5f2157cce2a9c739",
+        "title": "英伟达CEO黄仁勋涉疑似中国间谍关系调查",
+        "evidence": "英伟达遭间谍调查消息后股价大跌"
+      }
     },
     {
       "id": "e573ed3951e8163c",
@@ -5333,7 +5670,12 @@
       "section": "本期新闻",
       "title_zh": "俄罗斯：独立媒体《新报》关闭莫斯科新闻编辑室",
       "summary_zh": "该调查报纸被俄当局列为“外国代理人”并被勒令腾退莫斯科办公场所后关门。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-44197aa58f1dec60",
+        "title": "俄罗斯独立报纸《新报》关闭莫斯科新闻编辑室并停刊",
+        "evidence": "该调查报纸被俄当局列为“外国代理人”并被勒令腾退莫斯科办公场所后关门"
+      }
     },
     {
       "id": "6d9af59fe77645a9",
@@ -5404,7 +5746,12 @@
       "section": "本期新闻",
       "title_zh": "视频：赫格塞斯在海军战争学院讲话，弹劾投票或将临近",
       "summary_zh": "对国防部长皮特·赫格塞斯的弹劾投票成为国会跛脚鸭议程的首要事项。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-84ce09cc83dec94f",
+        "title": "美国众议院针对防长赫格塞思的弹劾动议",
+        "evidence": "对国防部长皮特·赫格塞斯的弹劾投票成为国会跛脚鸭议程的首要事项。"
+      }
     },
     {
       "id": "a7fbc1af55fcfab1",
@@ -5579,7 +5926,12 @@
       "section": "本期新闻",
       "title_zh": "土耳其伊兹密尔钢厂爆炸致工人死亡",
       "summary_zh": "伊兹密尔一家钢厂发生爆炸，至少16名工人丧生；埃尔多安在内阁会议后公布更新伤亡数字。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-470591456615ed97",
+        "title": "土耳其伊兹密尔钢铁厂爆炸事故",
+        "evidence": "伊兹密尔一家钢厂发生爆炸，至少16名工人丧生；埃尔多安在内阁会议后公布更新伤亡数字。"
+      }
     },
     {
       "id": "db7d8089721e667e",
@@ -5687,7 +6039,12 @@
       "section": "本期新闻",
       "title_zh": "五中全会精神在基层｜特写：一叶红船映初心，百年薪火启新程",
       "summary_zh": "五中全会精神在基层｜特写：一叶红船映初心，百年薪火启新程-",
-      "ai_level": "original_chinese"
+      "ai_level": "original_chinese",
+      "event_assignment": {
+        "key": "semantic-8dc04bb0fa1078e5",
+        "title": "中共二十届五中全会及全面从严治党决定",
+        "evidence": "五中全会精神在基层｜特写：一叶红船映初心，百年薪火启新程"
+      }
     },
     {
       "id": "67087043b1370731",
@@ -5729,6 +6086,11 @@
         "reason": "排灯节烟花加剧新德里雾霾，超3000万人口城市公共健康议题",
         "evidence": "新德里人口超3000万，冬季常居全球污染最重地区之列",
         "basis": "ai_shortlist"
+      },
+      "event_assignment": {
+        "key": "semantic-acb2fc603842d8a6",
+        "title": "德里排灯节烟花限制与空气污染",
+        "evidence": "材料称新德里人口超3000万，冬季常居全球污染最重地区之列，10月底和11月污染加剧。"
       }
     },
     {
@@ -5802,7 +6164,12 @@
       "section": "本期新闻",
       "title_zh": "英伟达调查案中心的疑似中国间谍是谁？",
       "summary_zh": "报道称，中国女商人Alice Huang与英伟达老板黄仁勋关系密切。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-5f2157cce2a9c739",
+        "title": "英伟达CEO黄仁勋涉疑似中国间谍关系调查",
+        "evidence": "英伟达调查案中心的疑似中国间谍是谁？"
+      }
     },
     {
       "id": "013a73fdddd54ca9",
@@ -5911,7 +6278,12 @@
       "section": "本期新闻",
       "title_zh": "教皇探访阿根廷残障人士护理院，再次呼吁保护弱势群体",
       "summary_zh": "该“慈善之城”受总统米莱紧缩措施严重冲击，医疗和社会服务深受影响。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-8537034771eb55e1",
+        "title": "教皇在阿根廷的访问活动",
+        "evidence": "教皇探访阿根廷残障人士护理院，再次呼吁保护弱势群体"
+      }
     },
     {
       "id": "f33ff1d51f2032cc",
@@ -5948,7 +6320,12 @@
       "section": "本期新闻",
       "title_zh": "英国喜剧演员拉塞尔·布兰德因强奸和性侵被判逾10年",
       "summary_zh": "布兰德在六名女性提起的案件中被判一项强奸罪和三项性侵罪成立。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-c9f9f9ec54237616",
+        "title": "拉塞尔·布兰德因强奸和性侵被判入狱",
+        "evidence": "布兰德在六名女性提起的案件中被判一项强奸罪和三项性侵罪成立。"
+      }
     },
     {
       "id": "f01b9bd14ccfde9e",
@@ -5980,7 +6357,12 @@
       "section": "本期新闻",
       "title_zh": "拉塞尔·布兰德因强奸和性侵定罪被判逾10年监禁",
       "summary_zh": "这位前喜剧演员上周被判强奸一名女性并性侵另外三人，法官称其为“掠夺者”。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-c9f9f9ec54237616",
+        "title": "拉塞尔·布兰德因强奸和性侵被判入狱",
+        "evidence": "这位前喜剧演员上周被判强奸一名女性并性侵另外三人"
+      }
     },
     {
       "id": "ca6a373086d881ce",
@@ -6163,7 +6545,12 @@
       "section": "本期新闻",
       "title_zh": "黄仁勋权力过大，英伟达无法对其追责？",
       "summary_zh": "报道称这位CEO牢牢掌控公司，董事会正调查其与一名被认为是中国间谍的女性有染，追责面临挑战。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-5f2157cce2a9c739",
+        "title": "英伟达CEO黄仁勋涉疑似中国间谍关系调查",
+        "evidence": "黄仁勋权力过大，英伟达无法对其追责？"
+      }
     },
     {
       "id": "a884ac28001b1a83",
@@ -6306,7 +6693,12 @@
       "section": "本期新闻",
       "title_zh": "关于英伟达调查CEO黄仁勋需了解的情况",
       "summary_zh": "英伟达CEO黄仁勋承认与一名女性有恋爱关系，美方情报称该女性被中国最高间谍机构招募。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-5f2157cce2a9c739",
+        "title": "英伟达CEO黄仁勋涉疑似中国间谍关系调查",
+        "evidence": "关于英伟达调查CEO黄仁勋需了解的情况"
+      }
     },
     {
       "id": "ebba56bf2bbb1ec7",
@@ -6415,7 +6807,12 @@
       "section": "本期新闻",
       "title_zh": "中国否认英伟达CEO黄仁勋涉间谍阴谋指控，称是抹黑",
       "summary_zh": "中方发言人在例行记者会上否认利用该女子从事间谍活动的说法。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-5f2157cce2a9c739",
+        "title": "英伟达CEO黄仁勋涉疑似中国间谍关系调查",
+        "evidence": "中国否认英伟达CEO黄仁勋涉间谍阴谋指控，称是抹黑"
+      }
     },
     {
       "id": "ed34dfc45be7efe4",
@@ -6521,7 +6918,12 @@
       "section": "本期新闻",
       "title_zh": "英伟达调查CEO黄仁勋婚外情时是否遭中国间谍针对",
       "summary_zh": "黄仁勋向董事会承认与一名女高管有私情，美情报部门认定该女子为北京收集信息。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-5f2157cce2a9c739",
+        "title": "英伟达CEO黄仁勋涉疑似中国间谍关系调查",
+        "evidence": "英伟达调查CEO黄仁勋婚外情时是否遭中国间谍针对"
+      }
     },
     {
       "id": "0d576790a8adff17",
@@ -6725,7 +7127,12 @@
       "section": "本期新闻",
       "title_zh": "第二艘国产大型邮轮开启首个试运营航次",
       "summary_zh": "第二艘国产大型邮轮开启首个试运营航次-",
-      "ai_level": "original_chinese"
+      "ai_level": "original_chinese",
+      "event_assignment": {
+        "key": "semantic-4ace8af84b0c07fe",
+        "title": "第二艘国产大型邮轮“爱达·花城号”开启首个试运营航次",
+        "evidence": "第二艘国产大型邮轮开启首个试运营航次"
+      }
     },
     {
       "id": "a24fed81ad63716c",
@@ -6824,7 +7231,12 @@
       "section": "本期新闻",
       "title_zh": "共和党中期选举失利后国会复会，特朗普任命新幕僚长",
       "summary_zh": "共和党对国会的控制仅剩数周；特朗普任命斯蒂芬·米勒为新任幕僚长，显示其准备对抗反对派。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-9fa55ba203eddfae",
+        "title": "美国中期选举相关报道",
+        "evidence": "特朗普任命斯蒂芬·米勒为新任幕僚长，显示其准备对抗反对派。"
+      }
     },
     {
       "id": "fd40e2dcdee77aa8",
@@ -6957,7 +7369,12 @@
       "section": "本期新闻",
       "title_zh": "德国基民盟提名伊尔泽·艾格纳为总统候选人",
       "summary_zh": "基民盟指导委员会宣布巴伐利亚政治家伊尔泽·艾格纳为总统候选人，她有望成为首位担任该职位的女性。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-58d5e314cc6e0f7a",
+        "title": "德国总统候选人伊尔泽·艾格纳提名",
+        "evidence": "德国基民盟提名伊尔泽·艾格纳为总统候选人"
+      }
     },
     {
       "id": "dfc2d2e68041eda2",
@@ -7093,7 +7510,12 @@
       "section": "本期新闻",
       "title_zh": "警方称克拉科夫枪击案嫌疑人已在医院死亡",
       "summary_zh": "枪击案致六人死亡，嫌疑人家中另发现三名家庭成员遗体。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-fa12f3b39f3a3f2c",
+        "title": "波兰克拉科夫大规模枪击案",
+        "evidence": "枪击案致六人死亡，嫌疑人家中另发现三名家庭成员遗体。"
+      }
     },
     {
       "id": "6910e4b7ac81d3cc",
@@ -7127,7 +7549,12 @@
       "section": "本期新闻",
       "title_zh": "中国国家博物馆为“顶流”凤冠单独开展",
       "summary_zh": "中新社北京11月9日电 (记者 应妮)此前在中国国家博物馆地下一层“古代中国”展厅的“顶流”文物——明万历孝端皇后九龙九凤冠，近日有了专门展厅。",
-      "ai_level": "original_chinese"
+      "ai_level": "original_chinese",
+      "event_assignment": {
+        "key": "semantic-e7099967abaababe",
+        "title": "中国国家博物馆为明万历孝端皇后九龙九凤冠设专门展厅",
+        "evidence": "明万历孝端皇后九龙九凤冠，近日有了专门展厅"
+      }
     },
     {
       "id": "e727ea77010fe34a",
@@ -7197,7 +7624,12 @@
       "section": "本期新闻",
       "title_zh": "長春舉辦多項活動慶祝解放軍空軍成立77周年",
       "summary_zh": "今年是解放軍空軍成立77周年，吉林長春舉辦多項表演活動慶祝。其中空軍航空大學的「紅鷹」飛行表演隊，飛越當地首個航空主題城市公園「藍天公園」，長春國際航空博覽城亦舉行無人機編隊燈光表演秀。 編輯：詹可揚",
-      "ai_level": "original_chinese"
+      "ai_level": "original_chinese",
+      "event_assignment": {
+        "key": "semantic-ae9ac1a268ffc6a6",
+        "title": "长春庆祝解放军空军成立77周年活动",
+        "evidence": "今年是解放軍空軍成立77周年，吉林長春舉辦多項表演活動慶祝。其中空軍航空大學的「紅鷹」飛行表演隊，飛越當地首個航空主題城市公園「藍天公園」，長春國際航空博覽城亦舉行無人機編隊燈光表演秀。"
+      }
     },
     {
       "id": "9bce6599a362e4af",
@@ -7300,7 +7732,12 @@
       "section": "本期新闻",
       "title_zh": "为何英伟达CEO与疑似中国间谍的婚外情关系重大",
       "summary_zh": "黄仁勋为与美方认为为中国从事间谍活动的女子的婚外情道歉。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-5f2157cce2a9c739",
+        "title": "英伟达CEO黄仁勋涉疑似中国间谍关系调查",
+        "evidence": "为何英伟达CEO与疑似中国间谍的婚外情关系重大"
+      }
     },
     {
       "id": "04649f92e7ad8ff6",
@@ -7335,7 +7772,12 @@
       "section": "本期新闻",
       "title_zh": "德国下任总统热门候选人伊尔泽·艾格纳是谁？",
       "summary_zh": "艾格纳有望成为德国首位女总统及首位基社盟出身的总统，是1月30日联邦大会投票的热门人选。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-58d5e314cc6e0f7a",
+        "title": "德国总统候选人伊尔泽·艾格纳提名",
+        "evidence": "德国下任总统热门候选人伊尔泽·艾格纳是谁？"
+      }
     },
     {
       "id": "ad962b0eae3f0f4e",
@@ -7547,7 +7989,12 @@
       "section": "本期新闻",
       "title_zh": "COP31开幕，领导人面临应对气候危机的压力",
       "summary_zh": "材料称峰会在欧洲热浪、印尼大火和尼泊尔洪灾之后召开，强厄尔尼诺加剧气候混乱。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-c19b40306689d9bf",
+        "title": "COP31气候峰会开幕",
+        "evidence": "COP31开幕，领导人面临应对气候危机的压力"
+      }
     },
     {
       "id": "323a05ab7de5a706",
@@ -7625,7 +8072,12 @@
       "section": "本期新闻",
       "title_zh": "巴黎G7会谈评估美国中期选举对特朗普外交政策的影响",
       "summary_zh": "G7外长周一在巴黎开会，首次评估美国中期选举可能如何影响特朗普对乌克兰、中东及盟友的政策。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-ffe012e2c9746543",
+        "title": "G7外长巴黎会议评估美国中期选举影响",
+        "evidence": "G7外长周一在巴黎开会，首次评估美国中期选举可能如何影响特朗普对乌克兰、中东及盟友的政策。"
+      }
     },
     {
       "id": "0cbe26d879091ff7",
@@ -7691,7 +8143,12 @@
       "section": "本期新闻",
       "title_zh": "国博顶流文物“单飞”，把凤冠“拆”给你看",
       "summary_zh": "过去长期在中国国家博物馆地下一层“古代中国”展厅的万历孝端皇后九龙九凤冠，近日“单飞”有了专门展厅，而且更重要的是，现场观众可以“360度”无死角欣赏到凤冠的美，特别是位于凤冠背面的那只“金凤”。",
-      "ai_level": "original_chinese"
+      "ai_level": "original_chinese",
+      "event_assignment": {
+        "key": "semantic-e7099967abaababe",
+        "title": "中国国家博物馆为明万历孝端皇后九龙九凤冠设专门展厅",
+        "evidence": "万历孝端皇后九龙九凤冠，近日“单飞”有了专门展厅"
+      }
     },
     {
       "id": "36aef3c09a3be1ed",
@@ -7867,7 +8324,12 @@
       "section": "本期新闻",
       "title_zh": "以无畏报道闻名的俄罗斯独立报纸《新报》将熄灯",
       "summary_zh": "该报上月宣布在被列为“外国代理人”后不得不关闭。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-44197aa58f1dec60",
+        "title": "俄罗斯独立报纸《新报》关闭莫斯科新闻编辑室并停刊",
+        "evidence": "该报上月宣布在被列为“外国代理人”后不得不关闭"
+      }
     },
     {
       "id": "0020bcc681bb3273",
@@ -8075,7 +8537,12 @@
       "section": "本期新闻",
       "title_zh": "土耳其一边烧煤一边推动COP31转型",
       "summary_zh": "今年联合国气候峰会主办国仍严重依赖化石燃料，同时试图推动全球转向清洁能源。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-9507082396807a1c",
+        "title": "土耳其主办COP31气候峰会",
+        "evidence": "今年联合国气候峰会主办国仍严重依赖化石燃料，同时试图推动全球转向清洁能源。"
+      }
     },
     {
       "id": "8e561c71d76daa0b",
@@ -8146,7 +8613,12 @@
       "section": "本期新闻",
       "title_zh": "为何大胜至关重要：美中期选举与欧洲投票显示压倒性胜利难被否认",
       "summary_zh": "美国中期选举和欧洲近期投票表明，压倒性胜利可使结果难以被否认。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-9fa55ba203eddfae",
+        "title": "美国中期选举相关报道",
+        "evidence": "美国中期选举和欧洲近期投票表明，压倒性胜利可使结果难以被否认。"
+      }
     },
     {
       "id": "1e49972852177d71",
@@ -8280,7 +8752,12 @@
       "section": "本期新闻",
       "title_zh": "Nvidia查黃仁勳 中方指中國間諜論調是捕風捉影和污蔑抹黑",
       "summary_zh": "美國晶片製造商Nvidia行政總裁黃仁勳承認有婚外情，董事會正調查他是否曾經成為外國情報活動的目標，目前相信沒有涉及美國國家安全或公司的機密信息外洩。 美國總統特朗普形容，黃仁勳是好人，為人正直。 《紐約時報》上月報道，黃仁勳與一名中國籍女商人關係密切，美國情報官員認為，這名女子可能是中國間諜，特朗普亦曾接獲相關情報。 在北京，外交部發言人郭嘉昆強調，所謂中國間諜的論調，純粹捕風捉影，污蔑抹黑。 對於特朗普預計，下星期出席亞太經合組織會議期間，會與中國國家主席習近平及俄羅斯總統普京會面，郭嘉昆說，中方就中俄美元首會晤，與相關方保持溝通。 編輯：許敬軒",
-      "ai_level": "original_chinese"
+      "ai_level": "original_chinese",
+      "event_assignment": {
+        "key": "semantic-5f2157cce2a9c739",
+        "title": "英伟达CEO黄仁勋涉疑似中国间谍关系调查",
+        "evidence": "Nvidia查黃仁勳 中方指中國間諜論調是捕風捉影和污蔑抹黑"
+      }
     },
     {
       "id": "d4d798b97549c970",
@@ -8380,7 +8857,12 @@
       "section": "本期新闻",
       "title_zh": "被指间谍英伟达CEO的黄爱丽丝（Alice Huang）是谁？",
       "summary_zh": "据报道，黄爱丽丝曾是新加坡数据中心公司Megaspeed International的高层，公开细节稀少。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-5f2157cce2a9c739",
+        "title": "英伟达CEO黄仁勋涉疑似中国间谍关系调查",
+        "evidence": "被指间谍英伟达CEO的黄爱丽丝（Alice Huang）是谁？"
+      }
     },
     {
       "id": "402fb20082edeaf0",
@@ -8449,7 +8931,12 @@
       "section": "本期新闻",
       "title_zh": "关于英伟达CEO与疑似中国间谍关系的已知信息",
       "summary_zh": "材料称英伟达CEO黄仁勋受封“Jensanity”式追捧，其声誉能否经受此次关系新闻尚待观察。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-5f2157cce2a9c739",
+        "title": "英伟达CEO黄仁勋涉疑似中国间谍关系调查",
+        "evidence": "关于英伟达CEO与疑似中国间谍关系的已知信息"
+      }
     },
     {
       "id": "e379bdc26eaa2b51",
@@ -8550,7 +9037,12 @@
       "section": "本期新闻",
       "title_zh": "波兰警方称克拉科夫大规模枪击案嫌疑人已在医院死亡",
       "summary_zh": "被指在波兰克拉科夫枪击事件中杀害六人的枪手在与警方交火受伤后死亡，当局称。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-fa12f3b39f3a3f2c",
+        "title": "波兰克拉科夫大规模枪击案",
+        "evidence": "被指在波兰克拉科夫枪击事件中杀害六人的枪手在与警方交火受伤后死亡"
+      }
     },
     {
       "id": "0ec54e8e90c95376",
@@ -8773,7 +9265,12 @@
       "section": "本期新闻",
       "title_zh": "COP31在土耳其开幕，气候资金与化石燃料议题致各国分歧",
       "summary_zh": "联合国气候谈判在土耳其启动，全球升温将越过1.5摄氏度，贫困国家寻求资金应对洪旱，各国在化石燃料上仍存分歧；美国代表与会但不参加谈判。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-9507082396807a1c",
+        "title": "土耳其主办COP31气候峰会",
+        "evidence": "联合国气候谈判在土耳其启动，全球升温将越过1.5摄氏度，贫困国家寻求资金应对洪旱，各国在化石燃料上仍存分歧；美国代表与会但不参加谈判。"
+      }
     },
     {
       "id": "b0990505e899fb62",
@@ -33510,7 +34007,12 @@
       "section": "本期新闻",
       "title_zh": "G7盟友将在巴黎会谈评估特朗普中期选举失利影响",
       "summary_zh": "11月9日周一的巴黎会议也将是美国国务卿Marco Rubio在选举后首次与盟友会面。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-ffe012e2c9746543",
+        "title": "G7外长巴黎会议评估美国中期选举影响",
+        "evidence": "11月9日周一的巴黎会议也将是美国国务卿Marco Rubio在选举后首次与盟友会面。"
+      }
     },
     {
       "id": "1ef12813f68545e5",
@@ -33542,7 +34044,12 @@
       "section": "本期新闻",
       "title_zh": "慶祝人民空軍成立77周年 紅鷹飛行表演隊飛越長春「藍天公園」",
       "summary_zh": "為慶祝人民空軍成立77周年，吉林長春連日舉辦多項主題慶祝活動。其中空軍航空大學「紅鷹」飛行表演隊，今早飛越吉林長春首個航空主題城市公園「藍天公園」，吸引不少軍事迷及民眾到場觀賞。 早上10時許，「紅鷹」飛行表演隊8機編隊，依次以「紅鷹隊」、「戰鷹隊」及「利劍隊」3種隊形低空通場飛行，並劃出紅黃藍三色彩煙，表演歷時大約20分鐘結束。 「紅鷹」飛行表演隊隊員魏強接受央視訪問時表示，本月11日是人民空軍成立77周年紀念日，亦適逢東北老航校建校80周年，通過這次在長春藍天公園上空飛行，代表對老航校先輩的一種致敬。 隨後現場亦舉行動力傘編隊展演，15架動力傘在空中形成「77」數字圖案，動力傘上印有「人民空軍生日快樂」等字句。 另外，3000架無人機編隊燈光表演秀，下午5時將於長春國際航空博覽城的上空上演。 編輯：黃佩珊",
-      "ai_level": "original_chinese"
+      "ai_level": "original_chinese",
+      "event_assignment": {
+        "key": "semantic-ae9ac1a268ffc6a6",
+        "title": "长春庆祝解放军空军成立77周年活动",
+        "evidence": "為慶祝人民空軍成立77周年，吉林長春連日舉辦多項主題慶祝活動。其中空軍航空大學「紅鷹」飛行表演隊，今早飛越吉林長春首個航空主題城市公園「藍天公園」，吸引不少軍事迷及民眾到場觀賞。"
+      }
     },
     {
       "id": "e9a1b5b07980321c",
@@ -33722,7 +34229,12 @@
       "section": "本期新闻",
       "title_zh": "英伟达就CEO与疑似中国间谍的关系展开调查",
       "summary_zh": "美国媒体报道称，英伟达CEO黄仁勋与一名中国间谍存在关系。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-5f2157cce2a9c739",
+        "title": "英伟达CEO黄仁勋涉疑似中国间谍关系调查",
+        "evidence": "英伟达就CEO与疑似中国间谍的关系展开调查"
+      }
     },
     {
       "id": "f1369fde17a891da",
@@ -33794,7 +34306,12 @@
       "section": "本期新闻",
       "title_zh": "伊拉克库尔德斯坦气田遭无人机袭击引发大面积停电",
       "summary_zh": "伊拉克北部Khor Mor气田因无人机袭击停产，导致大范围停电。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-e8df1191046cccc9",
+        "title": "伊拉克库尔德自治区气田遭无人机袭击停产",
+        "evidence": "伊拉克北部Khor Mor气田因无人机袭击停产，导致大范围停电。"
+      }
     },
     {
       "id": "203f4ea2775a6e74",
@@ -33860,7 +34377,12 @@
       "section": "本期新闻",
       "title_zh": "英伟达CEO黄仁勋承认与一名被视为北京间谍者发生婚外情",
       "summary_zh": "材料称涉事企业估值4.5万亿美元、生产AI关键微处理器，公司已启动内部调查。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-5f2157cce2a9c739",
+        "title": "英伟达CEO黄仁勋涉疑似中国间谍关系调查",
+        "evidence": "英伟达CEO黄仁勋承认与一名被视为北京间谍者发生婚外情"
+      }
     },
     {
       "id": "83fd3d8fced40049",
@@ -33928,7 +34450,12 @@
       "section": "本期新闻",
       "title_zh": "波士顿科学Rezūm EVO国产设备亮相进博会 加速创新疗法本土化落地",
       "summary_zh": "第九届中国国际进口博览会期间，波士顿科学举办“汽势向新，梦起东方——Rezūm EVO国产设备预上市活动”。波士顿科学中国外科事业部高级总监潘晓抒、波士顿科学中国研发部总监徐峰及上海交通大学医学院附属新华医院泌尿外科主任崔心刚等嘉宾共同参与，见证新一代Rezūm EVO热蒸汽治疗设备本土化落地的重要进展。",
-      "ai_level": "original_chinese"
+      "ai_level": "original_chinese",
+      "event_assignment": {
+        "key": "semantic-aa2bef5a3d782e59",
+        "title": "第九届中国国际进口博览会",
+        "evidence": "第九届中国国际进口博览会期间，波士顿科学举办“汽势向新，梦起东方——Rezūm EVO国产设备预上市活动”"
+      }
     },
     {
       "id": "f4add94d33e696c0",
@@ -34031,7 +34558,12 @@
       "section": "本期新闻",
       "title_zh": "教皇利奥访问阿根廷期间严厉批评米莱紧缩措施",
       "summary_zh": "教皇在布宜诺斯艾利斯演讲称经济必须服务人民而非相反，现场掌声热烈。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-4b44ae8d65af482d",
+        "title": "教皇利奥十四世访问阿根廷并谈经济与社会政策",
+        "evidence": "教皇在布宜诺斯艾利斯演讲称经济必须服务人民而非相反，现场掌声热烈。"
+      }
     },
     {
       "id": "b6ce972e26bc9d89",
@@ -34068,7 +34600,12 @@
       "section": "本期新闻",
       "title_zh": "教皇利奥十四世访问阿根廷首日动态汇总",
       "summary_zh": "教皇与阿根廷总统举行私人会晤，随后在布宜诺斯艾利斯发表首次演讲。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-4b44ae8d65af482d",
+        "title": "教皇利奥十四世访问阿根廷并谈经济与社会政策",
+        "evidence": "教皇与阿根廷总统举行私人会晤，随后在布宜诺斯艾利斯发表首次演讲。"
+      }
     },
     {
       "id": "0f7c439132bc6ca5",
@@ -34100,7 +34637,12 @@
       "section": "本期新闻",
       "title_zh": "进博会让海外中小微企业“被看见”",
       "summary_zh": "新华社上海11月8日电 题：进博会让海外中小微企业“被看见”",
-      "ai_level": "original_chinese"
+      "ai_level": "original_chinese",
+      "event_assignment": {
+        "key": "semantic-aa2bef5a3d782e59",
+        "title": "第九届中国国际进口博览会",
+        "evidence": "进博会让海外中小微企业“被看见”"
+      }
     },
     {
       "id": "8ff560a7cd3fa3fa",
@@ -34135,7 +34677,12 @@
       "section": "本期新闻",
       "title_zh": "巴西携56家企业亮相进博会 释放深耕中国市场的积极信号",
       "summary_zh": "人民网上海11月8日电 (记者张荣、张文捷)第九届中国国际进口博览会于11月5日在上海开幕。巴西此次组织56家企业参展，带来种类丰富的产品，旨在进一步拓展中国市场，挖掘新的合作机遇。",
-      "ai_level": "original_chinese"
+      "ai_level": "original_chinese",
+      "event_assignment": {
+        "key": "semantic-aa2bef5a3d782e59",
+        "title": "第九届中国国际进口博览会",
+        "evidence": "巴西此次组织56家企业参展，带来种类丰富的产品，旨在进一步拓展中国市场"
+      }
     },
     {
       "id": "6871088666063370",
@@ -34167,7 +34714,12 @@
       "section": "本期新闻",
       "title_zh": "學者分析五中全會《決定》 對黨及人事選用均非常重要",
       "summary_zh": "中共二十屆五中全會審議通過有關持之以恆推進全面從嚴治黨的決定。城大公共及國際事務學系系主任曾敬涵接受本台節目《看神州》訪問說，黨組織在中國政治體制中扮演非常重要角色，直接影響到國家長遠發展，有關《決定》對整個黨的運作和人事選用等非常重要。 曾敬涵表示，目前是世界百年未有之大變局，內地的經濟形勢、科技發展都面臨很多情況，只有從嚴治黨才能夠更好應對國內外挑戰。對於要深入學習貫徹習近平黨建思想，他說，這是習近平新時代中國特色社會主義思想的重要組成部分，只有把黨建設好、管理好，建立有效率的黨組織體系，才有助完成政治任務、經濟發展等。 《決定》提出堅持正確的用人導向，確保貫徹黨的路線方針政策，以及中央的決策部署。曾敬涵說，各個地方情況不同，加強更好的約束和管理，對於中央地方協調、中央政策執行和權威等均有很大幫助。 至於全會增選軍委副主席張升民為政治局委員，同時紀律處分多名軍方人員，曾敬涵認為，國家需要能打仗、敢打仗、打勝仗的軍隊，才能最好維護國家利益，反映中央從嚴治黨、從嚴治軍的決心，同時希望張升民在中央的職務和頭銜上，與軍隊的職務有呼應和銜接，讓黨和軍隊能更好協同。 他指出，全會紀律處分合共34名高級官員，發出非常重要的信號，表示在黨章黨規、國家法律面前，要「老虎蒼蠅一起打」。 編輯：黃佩珊",
-      "ai_level": "original_chinese"
+      "ai_level": "original_chinese",
+      "event_assignment": {
+        "key": "semantic-8dc04bb0fa1078e5",
+        "title": "中共二十届五中全会及全面从严治党决定",
+        "evidence": "中共二十屆五中全會審議通過有關持之以恆推進全面從嚴治黨的決定"
+      }
     },
     {
       "id": "8f915de9a0e8ba5c",
@@ -34275,7 +34827,12 @@
       "section": "本期新闻",
       "title_zh": "10月份工业生产者出厂价格同比上涨5.7%，环比上涨0.7%",
       "summary_zh": "中新网11月9日电 据国家统计局网站消息，2026年10月份，全国工业生产者出厂价格同比上涨5.7%，环比上涨0.7%。工业生产者购进价格同比上涨7.9%，环比上涨1.1%。1—10月平均，工业生产者出厂价格比上年同期上涨2.7%，工业生产者购进价格上涨4.0%。",
-      "ai_level": "original_chinese"
+      "ai_level": "original_chinese",
+      "event_assignment": {
+        "key": "semantic-6632a7c3cdb20bd5",
+        "title": "中国2026年10月CPI与PPI数据发布",
+        "evidence": "10月份工业生产者出厂价格同比上涨5.7%，环比上涨0.7%"
+      }
     },
     {
       "id": "285076d63c6c1520",
@@ -34484,7 +35041,12 @@
       "section": "本期新闻",
       "title_zh": "全球媒体聚焦 |“进博会展现中国开放合作的强劲吸引力”",
       "summary_zh": "11月5日至10日，第九届中国国际进口博览会(进博会)在上海举行。步入第九个年头的进博会在展览规模、展品质量、展商参与度等多项指标中创出历史新高。",
-      "ai_level": "original_chinese"
+      "ai_level": "original_chinese",
+      "event_assignment": {
+        "key": "semantic-aa2bef5a3d782e59",
+        "title": "第九届中国国际进口博览会",
+        "evidence": "11月5日至10日，第九届中国国际进口博览会(进博会)在上海举行。"
+      }
     },
     {
       "id": "5c26a004c165339e",
@@ -34516,7 +35078,12 @@
       "section": "本期新闻",
       "title_zh": "国家统计局：10月份CPI同比继续上涨 PPI环比涨幅回落",
       "summary_zh": "中新网11月9日电 据国家统计局网站消息，11月9日，国家统计局城市司首席统计师董莉娟解读2026年10月份CPI和PPI数据。10月份，居民消费价格指数(CPI)环比持平；同比上涨0.7%，涨幅比上月回落0.2个百分点；扣除食品和能源价格的核心CPI同比上涨0.8%，涨幅比上月回落0.2个百分点。工业生产者出厂价格指数(PPI)环比上涨0.7%，涨幅比上月回落0.5个百分点；同比上涨5.7%，涨幅比上月扩大0.7个百分点。",
-      "ai_level": "original_chinese"
+      "ai_level": "original_chinese",
+      "event_assignment": {
+        "key": "semantic-6632a7c3cdb20bd5",
+        "title": "中国2026年10月CPI与PPI数据发布",
+        "evidence": "10月份CPI同比继续上涨 PPI环比涨幅回落"
+      }
     },
     {
       "id": "5de2a56f01dc073f",
@@ -34623,7 +35190,12 @@
       "section": "本期新闻",
       "title_zh": "污染严重的德里尝试以“绿色”烟花改善排灯节空气",
       "summary_zh": "印度最高法院裁定本周末仅可燃放更环保烟花，环保人士称此为“绿色洗白”。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-acb2fc603842d8a6",
+        "title": "德里排灯节烟花限制与空气污染",
+        "evidence": "印度最高法院裁定本周末仅可燃放更环保烟花，环保人士称此为“绿色洗白”。"
+      }
     },
     {
       "id": "6dd64ab208cbd32f",
@@ -34725,7 +35297,12 @@
       "section": "本期新闻",
       "title_zh": "教宗良敦促阿根廷米莱将人民置于经济之上",
       "summary_zh": "教宗良十四世就紧缩、社会福利和政治分歧向总统米莱传话，敦促阿根廷保护民主并确保经济增长惠及穷人。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-4b44ae8d65af482d",
+        "title": "教皇利奥十四世访问阿根廷并谈经济与社会政策",
+        "evidence": "教宗良十四世就紧缩、社会福利和政治分歧向总统米莱传话，敦促阿根廷保护民主并确保经济增长惠及穷人。"
+      }
     },
     {
       "id": "400d1ab6fcd69e9d",
@@ -34757,7 +35334,12 @@
       "section": "本期新闻",
       "title_zh": "国家统计局：10月份居民消费价格同比上涨0.7%",
       "summary_zh": "中新网11月9日电 据国家统计局网站消息，2026年10月份，全国居民消费价格同比上涨0.7%。其中，城市上涨0.7%，农村上涨0.7%；食品价格下降2.9%，非食品价格上涨1.5%；消费品价格上涨0.8%，服务价格上涨0.7%。1—10月平均，全国居民消费价格比上年同期上涨0.9%。",
-      "ai_level": "original_chinese"
+      "ai_level": "original_chinese",
+      "event_assignment": {
+        "key": "semantic-6632a7c3cdb20bd5",
+        "title": "中国2026年10月CPI与PPI数据发布",
+        "evidence": "10月份居民消费价格同比上涨0.7%"
+      }
     },
     {
       "id": "4a1d31b12f75b519",
@@ -34895,7 +35477,12 @@
       "section": "本期新闻",
       "title_zh": "强化地方党委功能（学习贯彻党的二十届五中全会精神）",
       "summary_zh": "尹力",
-      "ai_level": "original_chinese"
+      "ai_level": "original_chinese",
+      "event_assignment": {
+        "key": "semantic-8dc04bb0fa1078e5",
+        "title": "中共二十届五中全会及全面从严治党决定",
+        "evidence": "强化地方党委功能（学习贯彻党的二十届五中全会精神）"
+      }
     },
     {
       "id": "e2419bfe1cbe53de",
@@ -34929,7 +35516,12 @@
       "section": "本期新闻",
       "title_zh": "无人机袭击致伊拉克霍尔莫尔气田停产",
       "summary_zh": "袭击导致伊拉克北部库尔德地区逾70%区域断电。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-e8df1191046cccc9",
+        "title": "伊拉克库尔德自治区气田遭无人机袭击停产",
+        "evidence": "袭击导致伊拉克北部库尔德地区逾70%区域断电。"
+      }
     },
     {
       "id": "f194cfe1b4f438c4",
@@ -35286,7 +35878,12 @@
       "section": "本期新闻",
       "title_zh": "特朗普称提名UFC的达纳·怀特任新闻秘书“只是开玩笑”",
       "summary_zh": "特朗普称此前建议UFC首席执行官达纳·怀特出任白宫新闻秘书“只是开玩笑”，并称怀特“喜欢这个想法”。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-09c5f2433697ed78",
+        "title": "特朗普称提名达纳·怀特任白宫新闻秘书是开玩笑",
+        "evidence": "特朗普称此前建议UFC首席执行官达纳·怀特出任白宫新闻秘书“只是开玩笑”"
+      }
     },
     {
       "id": "382be8cab0f95acf",
@@ -35320,7 +35917,12 @@
       "section": "本期新闻",
       "title_zh": "特朗普称提议任命达纳·怀特为白宫新闻秘书“只是开玩笑”",
       "summary_zh": "当地时间11月8日，美总统特朗普表示，此前提出任命美国终极格斗冠军赛(UFC)总裁达纳·怀特担任白宫新闻秘书“只是开玩笑”。",
-      "ai_level": "original_chinese"
+      "ai_level": "original_chinese",
+      "event_assignment": {
+        "key": "semantic-09c5f2433697ed78",
+        "title": "特朗普称提名达纳·怀特任白宫新闻秘书是开玩笑",
+        "evidence": "特朗普表示，此前提出任命美国终极格斗冠军赛(UFC)总裁达纳·怀特担任白宫新闻秘书“只是开玩笑”"
+      }
     },
     {
       "id": "9410fa1dbb511cc7",
@@ -35395,7 +35997,12 @@
       "section": "本期新闻",
       "title_zh": "鲁比奥就英伟达CEO与中国间谍关联警告官员",
       "summary_zh": "鲁比奥参与起草秘密备忘录，凸显官员对黄仁勋与涉华情报女子关系的担忧。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-5f2157cce2a9c739",
+        "title": "英伟达CEO黄仁勋涉疑似中国间谍关系调查",
+        "evidence": "鲁比奥就英伟达CEO与中国间谍关联警告官员"
+      }
     },
     {
       "id": "75eee0dcbc87b091",
@@ -35432,7 +36039,12 @@
       "section": "本期新闻",
       "title_zh": "英伟达对CEO黄仁勋被指为外国情报目标一事展开调查",
       "summary_zh": "英伟达称正就有关创始人兼CEO黄仁勋成为外国情报活动目标的报道启动独立调查；《纽约时报》此前报道称黄与一名向北京传递信息的中国女商人关系密切。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-5f2157cce2a9c739",
+        "title": "英伟达CEO黄仁勋涉疑似中国间谍关系调查",
+        "evidence": "英伟达对CEO黄仁勋被指为外国情报目标一事展开调查"
+      }
     },
     {
       "id": "79b1dea7b3b01211",
@@ -35466,7 +36078,12 @@
       "section": "本期新闻",
       "title_zh": "印度点亮灯火庆祝排灯节",
       "summary_zh": "印度以祈祷、灯火和烟花庆祝排灯节，这是该国最大的印度教节日之一。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-acb2fc603842d8a6",
+        "title": "德里排灯节烟花限制与空气污染",
+        "evidence": "印度以祈祷、灯火和烟花庆祝排灯节，这是该国最大的印度教节日之一。"
+      }
     },
     {
       "id": "93768e5ece709ad3",
@@ -35504,7 +36121,12 @@
       "section": "本期新闻",
       "title_zh": "关于英伟达对其首席执行官的调查需要了解什么",
       "summary_zh": "英伟达CEO黄仁勋承认与一名女子有恋爱关系，美情报称该女子被中国顶级间谍机构招募。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-5f2157cce2a9c739",
+        "title": "英伟达CEO黄仁勋涉疑似中国间谍关系调查",
+        "evidence": "关于英伟达对其首席执行官的调查需要了解什么"
+      }
     },
     {
       "id": "4c593efcf48854d7",
@@ -35538,7 +36160,12 @@
       "section": "本期新闻",
       "title_zh": "南非公布地方选举结果 过半数市镇现“悬峙议会”",
       "summary_zh": "中新社约翰内斯堡11月8日电 (记者 孙翔)南非独立选举委员会8日晚公布2026年地方政府选举结果，执政党非洲人国民大会(简称非国大)得票率由2021年的45.59%降至30.76%，但仍位居首位。南非全国超过半数市镇议会出现“悬峙议会”，即没有任何政党获得绝对多数席位，地方政府组建面临多党谈判。",
-      "ai_level": "original_chinese"
+      "ai_level": "original_chinese",
+      "event_assignment": {
+        "key": "semantic-da40c282ff7eaa54",
+        "title": "南非2026年地方政府选举结果与非国大得票下滑",
+        "evidence": "南非公布地方选举结果 过半数市镇现“悬峙议会”"
+      }
     },
     {
       "id": "3ab4733d7cb58607",
@@ -35570,7 +36197,12 @@
       "section": "本期新闻",
       "title_zh": "Jeffries支持弹劾Hegseth，民主党人誓言调查特朗普盟友",
       "summary_zh": "民主党议员正规划中期选举后的议程，承诺牵头委员会对特朗普进行调查。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-02f55c838707f146",
+        "title": "美国防部长赫格塞斯因伊朗战争面临弹劾推动",
+        "evidence": "Jeffries支持弹劾Hegseth，民主党人誓言调查特朗普盟友"
+      }
     },
     {
       "id": "60f436410e835908",
@@ -35604,7 +36236,12 @@
       "section": "本期新闻",
       "title_zh": "外媒：伊拉克库区天然气田遭不明来源无人机袭击",
       "summary_zh": "中新网11月9日电 据卡塔尔半岛电视台等外媒报道，伊拉克库尔德自治区(库区)安全部门消息人士称，位于伊库区苏莱曼尼亚省的豪尔穆尔天然气田遭不明来源的无人机袭击，受袭击影响，气田8日已停止生产。",
-      "ai_level": "original_chinese"
+      "ai_level": "original_chinese",
+      "event_assignment": {
+        "key": "semantic-e8df1191046cccc9",
+        "title": "伊拉克库尔德自治区气田遭无人机袭击停产",
+        "evidence": "位于伊库区苏莱曼尼亚省的豪尔穆尔天然气田遭不明来源的无人机袭击，受袭击影响，气田8日已停止生产。"
+      }
     },
     {
       "id": "17eac6effc0d85ac",
@@ -35710,7 +36347,12 @@
       "section": "本期新闻",
       "title_zh": "英伟达CEO承认婚外情，涉中国间谍调查",
       "summary_zh": "英伟达CEO黄仁勋承认与一名被疑为中国从事间谍活动的女子有婚外情。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-5f2157cce2a9c739",
+        "title": "英伟达CEO黄仁勋涉疑似中国间谍关系调查",
+        "evidence": "英伟达CEO承认婚外情，涉中国间谍调查"
+      }
     },
     {
       "id": "7c5ebfc879edc7a9",
@@ -35847,7 +36489,12 @@
       "section": "本期新闻",
       "title_zh": "德国总理默茨拟提名艾格纳为德国首位女性总统",
       "summary_zh": "巴伐利亚州议会议长伊尔泽·艾格纳隶属基社盟（CSU）。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-58d5e314cc6e0f7a",
+        "title": "德国总统候选人伊尔泽·艾格纳提名",
+        "evidence": "德国总理默茨拟提名艾格纳为德国首位女性总统"
+      }
     },
     {
       "id": "a84c88144289197d",
@@ -35884,7 +36531,12 @@
       "section": "本期新闻",
       "title_zh": "教皇利奥在阿根廷告知总统米莱经济须服务贫困者",
       "summary_zh": "教皇此访正值阿根廷自由派领导人与其深植社会正义的天主教会关系紧张之际。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-4b44ae8d65af482d",
+        "title": "教皇利奥十四世访问阿根廷并谈经济与社会政策",
+        "evidence": "教皇此访正值阿根廷自由派领导人与其深植社会正义的天主教会关系紧张之际。"
+      }
     },
     {
       "id": "1cd49a04e29f0df3",
@@ -36055,7 +36707,12 @@
       "section": "本期新闻",
       "title_zh": "英伟达CEO黄仁勋承认婚外情， amid中国间谍关联传闻",
       "summary_zh": "报道称黄仁勋涉中国间谍后，其为出轨妻子道歉，英伟达承诺调查间谍指控。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-5f2157cce2a9c739",
+        "title": "英伟达CEO黄仁勋涉疑似中国间谍关系调查",
+        "evidence": "英伟达CEO黄仁勋承认婚外情， amid中国间谍关联传闻"
+      }
     },
     {
       "id": "c6d9d308a11f7e01",
@@ -36130,7 +36787,12 @@
       "section": "本期新闻",
       "title_zh": "英伟达将调查有关中国情报机构针对CEO黄仁勋的报道",
       "summary_zh": "英伟达董事会称将调查CEO黄仁勋被外国情报行动针对的报道；《纽约时报》称其与一名美方情报认为为北京收集信息的女性高管有婚外情。",
-      "ai_level": "basic_translation"
+      "ai_level": "basic_translation",
+      "event_assignment": {
+        "key": "semantic-5f2157cce2a9c739",
+        "title": "英伟达CEO黄仁勋涉疑似中国间谍关系调查",
+        "evidence": "英伟达将调查有关中国情报机构针对CEO黄仁勋的报道"
+      }
     },
     {
       "id": "58e620aefd4768a0",
@@ -36598,31 +37260,17 @@
   ],
   "events": [
     {
-      "id": "event-4c28aa0dea427b56",
-      "lead_id": "4c28aa0dea427b56",
-      "article_ids": [
-        "4c28aa0dea427b56"
-      ],
-      "category": "国际政治",
-      "title": "美众议员要求弹劾防长赫格塞思 特朗普发声"
-    },
-    {
-      "id": "event-f8706db363777f82",
-      "lead_id": "f8706db363777f82",
-      "article_ids": [
-        "f8706db363777f82"
-      ],
-      "category": "国际政治",
-      "title": "美国防部长赫格塞斯预计本周面临弹劾投票"
-    },
-    {
-      "id": "event-4b857884546f78b6",
+      "id": "event-semantic-09c5f2433697ed78",
       "lead_id": "4b857884546f78b6",
       "article_ids": [
-        "4b857884546f78b6"
+        "4b857884546f78b6",
+        "6373b90e4085e033",
+        "2eb10b0bf500c00c",
+        "382be8cab0f95acf"
       ],
       "category": "国际政治",
-      "title": "达纳·怀特拒绝特朗普的白宫新闻秘书任职邀请"
+      "title": "特朗普称提名达纳·怀特任白宫新闻秘书是开玩笑",
+      "grouping_basis": "ai_event"
     },
     {
       "id": "event-037c254b28c32f77",
@@ -36643,22 +37291,21 @@
       "title": "人工智能安全：爱丽舍宫邀八国及奥特曼等签署“巴黎呼吁”"
     },
     {
-      "id": "event-a5317c27a190043c",
+      "id": "event-semantic-1d3988f565b3e32a",
       "lead_id": "a5317c27a190043c",
       "article_ids": [
-        "a5317c27a190043c"
+        "a5317c27a190043c",
+        "f07dca7c625bb864",
+        "d4db1cfabea9b7e1",
+        "54e7bda0b8fe673f",
+        "afdc6ec15c3be9fd",
+        "49725f760556b5ac",
+        "086be5392eb3a73c",
+        "29039739eb4fd04c"
       ],
       "category": "国际政治",
-      "title": "法国指责伊朗对超市冰柜发动网络攻击"
-    },
-    {
-      "id": "event-28076c7666c8a185",
-      "lead_id": "28076c7666c8a185",
-      "article_ids": [
-        "28076c7666c8a185"
-      ],
-      "category": "国际政治",
-      "title": "五角大楼负责人赫格塞思预计本周面临众议院弹劾投票"
+      "title": "法国指伊朗对超市冷柜网络攻击负责",
+      "grouping_basis": "ai_event"
     },
     {
       "id": "event-9218afbf4e62c717",
@@ -36668,15 +37315,6 @@
       ],
       "category": "国际政治",
       "title": "会见卡塔尔总理后，特朗普称对伊朗战争在军事上“基本结束”"
-    },
-    {
-      "id": "event-f07dca7c625bb864",
-      "lead_id": "f07dca7c625bb864",
-      "article_ids": [
-        "f07dca7c625bb864"
-      ],
-      "category": "国际政治",
-      "title": "法国指伊朗在冰箱攻击中进行网络“破坏”"
     },
     {
       "id": "event-f7999079bff1ea0d",
@@ -36724,40 +37362,55 @@
       "title": "法国柔道名将里内宣布参加2027年总统选举"
     },
     {
-      "id": "event-98529ad8e338c2f9",
+      "id": "event-semantic-5f2157cce2a9c739",
       "lead_id": "98529ad8e338c2f9",
       "article_ids": [
-        "98529ad8e338c2f9"
+        "98529ad8e338c2f9",
+        "caf6f248bb43ca14",
+        "9a338a706ae2af78",
+        "7b07c1f1de8dea6e",
+        "c5c79c47472ef0c5",
+        "9e7f25cb1a5f7afd",
+        "a03f51e0c78eaadd",
+        "b18348a1ba1e40a1",
+        "c4bc507025bdc22c",
+        "c8e30af80b9af37f",
+        "c61129d4eb8975b2",
+        "e7af1618e6b7a9c1",
+        "d8031170bec6021b",
+        "b82780c21853b78c",
+        "73882470a9b31a7c",
+        "186cbf7dab2220a1",
+        "ef1e5d5b9d9051ff",
+        "040d7ce2a329dd40",
+        "d69b609c1f7e2134",
+        "ad095a47390ca8de",
+        "5fa7f1f05fcfa2b2",
+        "32172b9a1d1c8661",
+        "7e2c736f396f80e8",
+        "304b410eee881858",
+        "96f7c2caed02ac0f",
+        "f67e5fdc5a075fef",
+        "75eee0dcbc87b091",
+        "93768e5ece709ad3",
+        "3e825656f3638af6",
+        "9d1403199b080fda",
+        "cbcae134d3b94d1f"
       ],
       "category": "科技与 AI",
-      "title": "美国国会就英伟达黄仁勋涉华间谍关联加大施压"
+      "title": "英伟达CEO黄仁勋涉疑似中国间谍关系调查",
+      "grouping_basis": "ai_event"
     },
     {
-      "id": "event-caf6f248bb43ca14",
-      "lead_id": "caf6f248bb43ca14",
-      "article_ids": [
-        "caf6f248bb43ca14"
-      ],
-      "category": "科技与 AI",
-      "title": "英伟达称蜜罐或意在游说黄仁勋游说美国政府"
-    },
-    {
-      "id": "event-d17b2ab85bcbe51f",
+      "id": "event-semantic-8537034771eb55e1",
       "lead_id": "d17b2ab85bcbe51f",
       "article_ids": [
-        "d17b2ab85bcbe51f"
+        "d17b2ab85bcbe51f",
+        "b3a0b55111257666"
       ],
       "category": "国际政治",
-      "title": "教皇在阿根廷会见神职人员性侵幸存者"
-    },
-    {
-      "id": "event-9a338a706ae2af78",
-      "lead_id": "9a338a706ae2af78",
-      "article_ids": [
-        "9a338a706ae2af78"
-      ],
-      "category": "科技与 AI",
-      "title": "专家称英伟达“蜜罐”或意在促使黄仁勋游说美国政府"
+      "title": "教皇在阿根廷的访问活动",
+      "grouping_basis": "ai_event"
     },
     {
       "id": "event-0fece7537152d909",
@@ -36787,15 +37440,6 @@
       "title": "英国作家M·约翰·哈里森凭AI题材末日小说获布克奖"
     },
     {
-      "id": "event-823893bcf22a9c7b",
-      "lead_id": "823893bcf22a9c7b",
-      "article_ids": [
-        "823893bcf22a9c7b"
-      ],
-      "category": "国际政治",
-      "title": "共和党议员迈出启动防长赫格塞思弹劾程序第一步"
-    },
-    {
       "id": "event-eb0bbf2e83436370",
       "lead_id": "eb0bbf2e83436370",
       "article_ids": [
@@ -36803,15 +37447,6 @@
       ],
       "category": "国际政治",
       "title": "喀麦隆：多次推迟后，总统保罗·比亚召集2月7日立法和市政选举"
-    },
-    {
-      "id": "event-7b07c1f1de8dea6e",
-      "lead_id": "7b07c1f1de8dea6e",
-      "article_ids": [
-        "7b07c1f1de8dea6e"
-      ],
-      "category": "科技与 AI",
-      "title": "英伟达事件：CEO与疑似中国间谍关系引关注"
     },
     {
       "id": "event-26df5e94b8076757",
@@ -36823,13 +37458,17 @@
       "title": "摆脱俄罗斯网络：中亚夹在中国网络与美国技术限制之间"
     },
     {
-      "id": "event-58dc8f216ea68cdc",
+      "id": "event-semantic-470591456615ed97",
       "lead_id": "58dc8f216ea68cdc",
       "article_ids": [
-        "58dc8f216ea68cdc"
+        "58dc8f216ea68cdc",
+        "dbedcaa7a86dba96",
+        "24946ec2ed0715c5",
+        "4e1cc1bd77f85a66"
       ],
       "category": "国际政治",
-      "title": "土耳其西部一钢铁厂发生爆炸 死亡人数升至16人"
+      "title": "土耳其伊兹密尔钢铁厂爆炸事故",
+      "grouping_basis": "ai_event"
     },
     {
       "id": "event-c86d39fb3f07ee73",
@@ -36859,31 +37498,29 @@
       "title": "移民遭系统性遣返，尽管有法院命令"
     },
     {
-      "id": "event-902ab296b4ac35d0",
-      "lead_id": "902ab296b4ac35d0",
-      "article_ids": [
-        "902ab296b4ac35d0"
-      ],
-      "category": "国际政治",
-      "title": "美众议员向众议院提交决议 要求弹劾国防部长赫格塞思"
-    },
-    {
-      "id": "event-3da15ef6ee92adc5",
+      "id": "event-semantic-da40c282ff7eaa54",
       "lead_id": "3da15ef6ee92adc5",
       "article_ids": [
-        "3da15ef6ee92adc5"
+        "3da15ef6ee92adc5",
+        "4c593efcf48854d7"
       ],
       "category": "国际政治",
-      "title": "南非非洲人国民大会地方选举遇历史性挫败，联合谈判启动"
+      "title": "南非2026年地方政府选举结果与非国大得票下滑",
+      "grouping_basis": "ai_event"
     },
     {
-      "id": "event-d1cc2aff2781b6bf",
+      "id": "event-semantic-9fa55ba203eddfae",
       "lead_id": "d1cc2aff2781b6bf",
       "article_ids": [
-        "d1cc2aff2781b6bf"
+        "d1cc2aff2781b6bf",
+        "bf0c6e798a9f306f",
+        "563627d5634d0b21",
+        "9955c53e53d9bccf",
+        "15f31833bc5c09e1"
       ],
       "category": "国际政治",
-      "title": "中期选举惨败后，特朗普重提选举舞弊说法"
+      "title": "美国中期选举相关报道",
+      "grouping_basis": "ai_event"
     },
     {
       "id": "event-e3cf27814ff8f8e6",
@@ -36895,13 +37532,16 @@
       "title": "被控杀害查理·柯克的嫌疑人审判定于2028年6月"
     },
     {
-      "id": "event-07b759c50f933d5a",
+      "id": "event-semantic-530b6b592aa08847",
       "lead_id": "07b759c50f933d5a",
       "article_ids": [
-        "07b759c50f933d5a"
+        "07b759c50f933d5a",
+        "3dbb3deb7d3adc3e",
+        "378c3ca86b257017"
       ],
       "category": "国际政治",
-      "title": "俄乌美将在阿布扎比举行三方会谈，预计聚焦安全保障"
+      "title": "俄乌美在阿布扎比举行三方会谈",
+      "grouping_basis": "ai_event"
     },
     {
       "id": "event-668f8983df4a517d",
@@ -36967,40 +37607,26 @@
       "title": "保罗·麦卡特尼成为亿万富翁，位列全球音乐人第三富"
     },
     {
-      "id": "event-43bb44b556078a64",
+      "id": "event-semantic-c19b40306689d9bf",
       "lead_id": "43bb44b556078a64",
       "article_ids": [
-        "43bb44b556078a64"
+        "43bb44b556078a64",
+        "3aa5305a3021b994"
       ],
       "category": "环境与气候",
-      "title": "COP31在能源危机中开幕，活动人士要求气候行动"
+      "title": "COP31气候峰会开幕",
+      "grouping_basis": "ai_event"
     },
     {
-      "id": "event-c5c79c47472ef0c5",
-      "lead_id": "c5c79c47472ef0c5",
-      "article_ids": [
-        "c5c79c47472ef0c5"
-      ],
-      "category": "经济与投资",
-      "title": "英伟达因CEO与疑似间谍关系调查股价受挫"
-    },
-    {
-      "id": "event-d4db1cfabea9b7e1",
-      "lead_id": "d4db1cfabea9b7e1",
-      "article_ids": [
-        "d4db1cfabea9b7e1"
-      ],
-      "category": "国际政治",
-      "title": "法国指伊朗为上月超市冰箱网络攻击负责"
-    },
-    {
-      "id": "event-7f172ae75897c035",
+      "id": "event-semantic-04f5e952d38bbd59",
       "lead_id": "7f172ae75897c035",
       "article_ids": [
-        "7f172ae75897c035"
+        "7f172ae75897c035",
+        "877f7c091ecca094"
       ],
       "category": "社会与文化",
-      "title": "法国柔道名将里内称将竞选总统"
+      "title": "法国柔道名将里内宣布竞选总统",
+      "grouping_basis": "ai_event"
     },
     {
       "id": "event-c86888682b1f108c",
@@ -37012,15 +37638,6 @@
       "title": "纳吉布·拉扎克会被转为居家监禁吗？"
     },
     {
-      "id": "event-2f529ab63ee0bb47",
-      "lead_id": "2f529ab63ee0bb47",
-      "article_ids": [
-        "2f529ab63ee0bb47"
-      ],
-      "category": "国际政治",
-      "title": "共和党议员推动弹劾美国国防部长赫格塞思"
-    },
-    {
       "id": "event-2bae0dc9f043ef95",
       "lead_id": "2bae0dc9f043ef95",
       "article_ids": [
@@ -37028,24 +37645,6 @@
       ],
       "category": "经济与投资",
       "title": "美联储理事会宣布批准Mutual Federal Bancorp与MFB Bancorp的两项申请"
-    },
-    {
-      "id": "event-54e7bda0b8fe673f",
-      "lead_id": "54e7bda0b8fe673f",
-      "article_ids": [
-        "54e7bda0b8fe673f"
-      ],
-      "category": "国际政治",
-      "title": "法国称伊朗应对针对冰箱的“前所未有”网络攻击负责"
-    },
-    {
-      "id": "event-6373b90e4085e033",
-      "lead_id": "6373b90e4085e033",
-      "article_ids": [
-        "6373b90e4085e033"
-      ],
-      "category": "科技与 AI",
-      "title": "特朗普称让达纳·怀特任新闻秘书是\"开玩笑\"，网络传混淆说法"
     },
     {
       "id": "event-558208fe0934c6d2",
@@ -37075,49 +37674,17 @@
       "title": "胡塞武装称也门首都附近空袭致至少44人死亡"
     },
     {
-      "id": "event-7e03ba46fec02423",
+      "id": "event-semantic-acb2fc603842d8a6",
       "lead_id": "7e03ba46fec02423",
       "article_ids": [
-        "7e03ba46fec02423"
+        "7e03ba46fec02423",
+        "67087043b1370731",
+        "1a27bc7d3dd200a8",
+        "79b1dea7b3b01211"
       ],
       "category": "国际政治",
-      "title": "视频：排灯节庆祝后烟雾笼罩新德里"
-    },
-    {
-      "id": "event-dbedcaa7a86dba96",
-      "lead_id": "dbedcaa7a86dba96",
-      "article_ids": [
-        "dbedcaa7a86dba96"
-      ],
-      "category": "国际政治",
-      "title": "土耳其钢铁厂爆炸至少17人死亡"
-    },
-    {
-      "id": "event-f4592906027e8e46",
-      "lead_id": "f4592906027e8e46",
-      "article_ids": [
-        "f4592906027e8e46"
-      ],
-      "category": "国际政治",
-      "title": "共和党议员对特朗普国防部长赫格塞思启动弹劾程序"
-    },
-    {
-      "id": "event-9e7f25cb1a5f7afd",
-      "lead_id": "9e7f25cb1a5f7afd",
-      "article_ids": [
-        "9e7f25cb1a5f7afd"
-      ],
-      "category": "科技与 AI",
-      "title": "英伟达间谍与引诱丑闻牵涉唐纳德·特朗普"
-    },
-    {
-      "id": "event-a03f51e0c78eaadd",
-      "lead_id": "a03f51e0c78eaadd",
-      "article_ids": [
-        "a03f51e0c78eaadd"
-      ],
-      "category": "科技与 AI",
-      "title": "黄仁勋形象受损，是否可能被迫离开英伟达？"
+      "title": "德里排灯节烟花限制与空气污染",
+      "grouping_basis": "ai_event"
     },
     {
       "id": "event-078ccefdb4ab98a3",
@@ -37129,15 +37696,6 @@
       "title": "食品行业反对世卫组织关于添加色素和甜味剂产品的指导"
     },
     {
-      "id": "event-afdc6ec15c3be9fd",
-      "lead_id": "afdc6ec15c3be9fd",
-      "article_ids": [
-        "afdc6ec15c3be9fd"
-      ],
-      "category": "国际政治",
-      "title": "法国指伊朗黑客攻击超市冷柜致食品变质"
-    },
-    {
       "id": "event-ed80898cc10f63a9",
       "lead_id": "ed80898cc10f63a9",
       "article_ids": [
@@ -37147,13 +37705,16 @@
       "title": "华纳兄弟收购后，Skydance取代詹姆斯·古恩和彼得·萨弗兰执掌DC影业"
     },
     {
-      "id": "event-e682349332748341",
+      "id": "event-semantic-02f55c838707f146",
       "lead_id": "e682349332748341",
       "article_ids": [
-        "e682349332748341"
+        "e682349332748341",
+        "b751268f69baea4c",
+        "3ab4733d7cb58607"
       ],
       "category": "国际政治",
-      "title": "美国防部长赫格塞斯因伊朗战争面临弹劾推动"
+      "title": "美国防部长赫格塞斯因伊朗战争面临弹劾推动",
+      "grouping_basis": "ai_event"
     },
     {
       "id": "event-09832fd1dbe2ee94",
@@ -37163,15 +37724,6 @@
       ],
       "category": "国际政治",
       "title": "遭美国针对的武装组织在哥伦比亚反击"
-    },
-    {
-      "id": "event-b18348a1ba1e40a1",
-      "lead_id": "b18348a1ba1e40a1",
-      "article_ids": [
-        "b18348a1ba1e40a1"
-      ],
-      "category": "科技与 AI",
-      "title": "英伟达黄仁勋间谍丑闻震动以其为核心的AI行业"
     },
     {
       "id": "event-f78cb38b635a2992",
@@ -37192,67 +37744,41 @@
       "title": "1994年卢旺达大屠杀嫌疑人被美国驱逐出境"
     },
     {
-      "id": "event-03265434b707e12c",
+      "id": "event-semantic-c9f9f9ec54237616",
       "lead_id": "03265434b707e12c",
       "article_ids": [
-        "03265434b707e12c"
+        "03265434b707e12c",
+        "7d725fbbbbce24bc",
+        "721b09a0de84f78c",
+        "f33ff1d51f2032cc",
+        "f01b9bd14ccfde9e"
       ],
       "category": "国际政治",
-      "title": "英国喜剧演员拉塞尔·布兰德因强奸等性犯罪被判入狱10年"
+      "title": "拉塞尔·布兰德因强奸和性侵被判入狱",
+      "grouping_basis": "ai_event"
     },
     {
-      "id": "event-ea02cbc16553e3c0",
+      "id": "event-semantic-1d79cb0ca9fa918a",
       "lead_id": "ea02cbc16553e3c0",
       "article_ids": [
-        "ea02cbc16553e3c0"
+        "ea02cbc16553e3c0",
+        "3f587d34d2cdf30d"
       ],
       "category": "国际政治",
-      "title": "艾森科特能否在“以色列政治雷区”成功，此前“众多将领”均告失败？"
+      "title": "以色列总统授权艾森科特组阁",
+      "grouping_basis": "ai_event"
     },
     {
-      "id": "event-c4bc507025bdc22c",
-      "lead_id": "c4bc507025bdc22c",
-      "article_ids": [
-        "c4bc507025bdc22c"
-      ],
-      "category": "科技与 AI",
-      "title": "英伟达股价因调查黄仁勋与疑似中国间谍关系而大跌"
-    },
-    {
-      "id": "event-bf0c6e798a9f306f",
-      "lead_id": "bf0c6e798a9f306f",
-      "article_ids": [
-        "bf0c6e798a9f306f"
-      ],
-      "category": "国际政治",
-      "title": "即便特朗普主义在中期选举中惨败，世界仍难信任美国"
-    },
-    {
-      "id": "event-88fd9e5b6be26d24",
+      "id": "event-semantic-b620a224aeae43b1",
       "lead_id": "88fd9e5b6be26d24",
       "article_ids": [
-        "88fd9e5b6be26d24"
+        "88fd9e5b6be26d24",
+        "af6707e4e59349f3",
+        "e01aaad2865cb89a"
       ],
       "category": "科技与 AI",
-      "title": "法国超市冷柜网络攻击被指具有地缘政治背景"
-    },
-    {
-      "id": "event-b751268f69baea4c",
-      "lead_id": "b751268f69baea4c",
-      "article_ids": [
-        "b751268f69baea4c"
-      ],
-      "category": "国际政治",
-      "title": "五角大楼负责人赫格塞斯因伊朗战争面临弹劾考验"
-    },
-    {
-      "id": "event-505cf51d6d47f769",
-      "lead_id": "505cf51d6d47f769",
-      "article_ids": [
-        "505cf51d6d47f769"
-      ],
-      "category": "国际政治",
-      "title": "共和党议员对五角大楼负责人赫格塞思发起弹劾动议"
+      "title": "法国指控伊朗对超市制冷系统发动网络攻击",
+      "grouping_basis": "ai_event"
     },
     {
       "id": "event-3e2f1e24b9a282de",
@@ -37264,15 +37790,6 @@
       "title": "埃及外长称“我们认为”伊朗和美国希望谈判"
     },
     {
-      "id": "event-49725f760556b5ac",
-      "lead_id": "49725f760556b5ac",
-      "article_ids": [
-        "49725f760556b5ac"
-      ],
-      "category": "国际政治",
-      "title": "法国指责伊朗攻击制冷系统网络"
-    },
-    {
       "id": "event-49e50de3c508947d",
       "lead_id": "49e50de3c508947d",
       "article_ids": [
@@ -37282,22 +37799,16 @@
       "title": "NASA招募下一代宇航员"
     },
     {
-      "id": "event-af6707e4e59349f3",
-      "lead_id": "af6707e4e59349f3",
-      "article_ids": [
-        "af6707e4e59349f3"
-      ],
-      "category": "国际政治",
-      "title": "法国就冰箱攻击事件调查伊朗网络单位"
-    },
-    {
-      "id": "event-5b3db2568aed6a27",
+      "id": "event-semantic-a6b0def45a5a0a6f",
       "lead_id": "5b3db2568aed6a27",
       "article_ids": [
-        "5b3db2568aed6a27"
+        "5b3db2568aed6a27",
+        "24eef05801b38e17",
+        "1f3e775b158586cf"
       ],
       "category": "国际政治",
-      "title": "法国抗议者怒斥紧缩政策，质疑体制失灵"
+      "title": "法國最低工资上调与抗议",
+      "grouping_basis": "ai_event"
     },
     {
       "id": "event-f5735a4561025f7b",
@@ -37318,13 +37829,19 @@
       "title": "波音将裁减约5%商用飞机员工"
     },
     {
-      "id": "event-024f760437add5ad",
+      "id": "event-semantic-4b44ae8d65af482d",
       "lead_id": "024f760437add5ad",
       "article_ids": [
-        "024f760437add5ad"
+        "024f760437add5ad",
+        "a7e56601c62c5b02",
+        "afda19fa17aea4d9",
+        "b6ce972e26bc9d89",
+        "b479abd478f69e50",
+        "a84c88144289197d"
       ],
       "category": "国际政治",
-      "title": "数百万人涌上布宜诺斯艾利斯街头迎接教宗良十四世"
+      "title": "教皇利奥十四世访问阿根廷并谈经济与社会政策",
+      "grouping_basis": "ai_event"
     },
     {
       "id": "event-ab18c16cab774799",
@@ -37363,60 +37880,6 @@
       "title": "北欧国家放缓数据中心部署"
     },
     {
-      "id": "event-c8e30af80b9af37f",
-      "lead_id": "c8e30af80b9af37f",
-      "article_ids": [
-        "c8e30af80b9af37f"
-      ],
-      "category": "科技与 AI",
-      "title": "英伟达丑闻中的关键人物是谁"
-    },
-    {
-      "id": "event-3dbb3deb7d3adc3e",
-      "lead_id": "3dbb3deb7d3adc3e",
-      "article_ids": [
-        "3dbb3deb7d3adc3e"
-      ],
-      "category": "国际政治",
-      "title": "泽连斯基称乌克兰与欧盟在阿布扎比会谈前协调立场"
-    },
-    {
-      "id": "event-a7e56601c62c5b02",
-      "lead_id": "a7e56601c62c5b02",
-      "article_ids": [
-        "a7e56601c62c5b02"
-      ],
-      "category": "国际政治",
-      "title": "教皇利奥布宜诺斯艾利斯弥撒吸引250万人，再警告米莱紧缩政策"
-    },
-    {
-      "id": "event-c61129d4eb8975b2",
-      "lead_id": "c61129d4eb8975b2",
-      "article_ids": [
-        "c61129d4eb8975b2"
-      ],
-      "category": "科技与 AI",
-      "title": "英伟达就黄仁勋与疑似中国间谍的关系展开调查"
-    },
-    {
-      "id": "event-086be5392eb3a73c",
-      "lead_id": "086be5392eb3a73c",
-      "article_ids": [
-        "086be5392eb3a73c"
-      ],
-      "category": "国际政治",
-      "title": "法国官员指伊朗应对超市冰箱遭黑客攻击负责"
-    },
-    {
-      "id": "event-3f587d34d2cdf30d",
-      "lead_id": "3f587d34d2cdf30d",
-      "article_ids": [
-        "3f587d34d2cdf30d"
-      ],
-      "category": "国际政治",
-      "title": "加迪·艾森科特：可能接替内塔尼亚胡的以色列人选是谁？"
-    },
-    {
       "id": "event-fb6414aaa3ff374c",
       "lead_id": "fb6414aaa3ff374c",
       "article_ids": [
@@ -37426,40 +37889,28 @@
       "title": "希腊：从利比亚前往克里特的移民渡海人数增多且更危险"
     },
     {
-      "id": "event-24946ec2ed0715c5",
-      "lead_id": "24946ec2ed0715c5",
-      "article_ids": [
-        "24946ec2ed0715c5"
-      ],
-      "category": "社会与文化",
-      "title": "土耳其钢厂爆炸致10人死亡"
-    },
-    {
-      "id": "event-d8960b88ea7b2675",
+      "id": "event-semantic-fa12f3b39f3a3f2c",
       "lead_id": "d8960b88ea7b2675",
       "article_ids": [
-        "d8960b88ea7b2675"
+        "d8960b88ea7b2675",
+        "33f8c47084864e07",
+        "9160eba5391f0313"
       ],
       "category": "国际政治",
-      "title": "波兰克拉科夫大规模枪击案嫌疑人医院身亡，已知情况"
+      "title": "波兰克拉科夫大规模枪击案",
+      "grouping_basis": "ai_event"
     },
     {
-      "id": "event-e5d0742cfbaa9454",
+      "id": "event-semantic-44197aa58f1dec60",
       "lead_id": "e5d0742cfbaa9454",
       "article_ids": [
-        "e5d0742cfbaa9454"
+        "e5d0742cfbaa9454",
+        "66d39719bc85daa1",
+        "78963e6b3b610a8c"
       ],
       "category": "国际政治",
-      "title": "俄罗斯主要独立报纸遭驱逐后停刊"
-    },
-    {
-      "id": "event-e7af1618e6b7a9c1",
-      "lead_id": "e7af1618e6b7a9c1",
-      "article_ids": [
-        "e7af1618e6b7a9c1"
-      ],
-      "category": "科技与 AI",
-      "title": "AI推高英伟达CEO黄仁勋精英地位，丑闻随之而来"
+      "title": "俄罗斯独立报纸《新报》关闭莫斯科新闻编辑室并停刊",
+      "grouping_basis": "ai_event"
     },
     {
       "id": "event-6e711ee81d8445b2",
@@ -37469,33 +37920,6 @@
       ],
       "category": "科技与 AI",
       "title": "Palantir被曝游说英国部长将AI工具扩展至NHS全科医生记录"
-    },
-    {
-      "id": "event-7d725fbbbbce24bc",
-      "lead_id": "7d725fbbbbce24bc",
-      "article_ids": [
-        "7d725fbbbbce24bc"
-      ],
-      "category": "国际政治",
-      "title": "英国喜剧演员拉塞尔·布兰德因强奸和性侵被判入狱10年"
-    },
-    {
-      "id": "event-29039739eb4fd04c",
-      "lead_id": "29039739eb4fd04c",
-      "article_ids": [
-        "29039739eb4fd04c"
-      ],
-      "category": "国际政治",
-      "title": "巴黎称伊朗应对法国超市冷柜网络攻击负责"
-    },
-    {
-      "id": "event-d8031170bec6021b",
-      "lead_id": "d8031170bec6021b",
-      "article_ids": [
-        "d8031170bec6021b"
-      ],
-      "category": "科技与 AI",
-      "title": "神秘过往的中国间谍爱丽丝·黄被指接触到英伟达CEO"
     },
     {
       "id": "event-83c4db33ef9ea16f",
@@ -37516,15 +37940,6 @@
       "title": "西班牙最高法院拒绝在“孙辈法”相关诉讼中暂停入籍者子女投票权"
     },
     {
-      "id": "event-563627d5634d0b21",
-      "lead_id": "563627d5634d0b21",
-      "article_ids": [
-        "563627d5634d0b21"
-      ],
-      "category": "国际政治",
-      "title": "特朗普在曾接受结果后质疑中期选举公正性"
-    },
-    {
       "id": "event-7f190d703516e291",
       "lead_id": "7f190d703516e291",
       "article_ids": [
@@ -37541,15 +37956,6 @@
       ],
       "category": "社会与文化",
       "title": "奥运柔道冠军里内宣布参加法国总统竞选"
-    },
-    {
-      "id": "event-877f7c091ecca094",
-      "lead_id": "877f7c091ecca094",
-      "article_ids": [
-        "877f7c091ecca094"
-      ],
-      "category": "社会与文化",
-      "title": "法国最受欢迎运动员称将竞选总统：我知道如何战斗"
     },
     {
       "id": "event-317077845281ce2d",
@@ -37579,15 +37985,6 @@
       "title": "NASA为“月球基地”学生挑战赛拨款100万美元"
     },
     {
-      "id": "event-24eef05801b38e17",
-      "lead_id": "24eef05801b38e17",
-      "article_ids": [
-        "24eef05801b38e17"
-      ],
-      "category": "国际政治",
-      "title": "法国总理提高最低工资未能说服工会"
-    },
-    {
       "id": "event-264a21cc49ac9cfc",
       "lead_id": "264a21cc49ac9cfc",
       "article_ids": [
@@ -37604,15 +38001,6 @@
       ],
       "category": "国际政治",
       "title": "挪威难民理事会称加沙洪水缺援，民众生活“悲惨”且条件“恶化”"
-    },
-    {
-      "id": "event-378c3ca86b257017",
-      "lead_id": "378c3ca86b257017",
-      "article_ids": [
-        "378c3ca86b257017"
-      ],
-      "category": "国际政治",
-      "title": "俄乌在美斡旋会谈开始前一天互相发动袭击"
     },
     {
       "id": "event-37baa83fe1c247a0",
@@ -37633,13 +38021,15 @@
       "title": "社工党与人民党同意在电视学院举行选举辩论"
     },
     {
-      "id": "event-ed00b223fb287b3f",
+      "id": "event-semantic-4ace8af84b0c07fe",
       "lead_id": "ed00b223fb287b3f",
       "article_ids": [
-        "ed00b223fb287b3f"
+        "ed00b223fb287b3f",
+        "ba29f959b14c181a"
       ],
       "category": "国际政治",
-      "title": "「愛達·花城號」開啟交付後首個試營運航次"
+      "title": "第二艘国产大型邮轮“爱达·花城号”开启首个试运营航次",
+      "grouping_basis": "ai_event"
     },
     {
       "id": "event-56bec4a0fd79c2e6",
@@ -37658,15 +38048,6 @@
       ],
       "category": "国际政治",
       "title": "九名津巴布韦人涉嫌试图离开南非赴乌克兰参战被捕"
-    },
-    {
-      "id": "event-a45f7005a256de95",
-      "lead_id": "a45f7005a256de95",
-      "article_ids": [
-        "a45f7005a256de95"
-      ],
-      "category": "社会与文化",
-      "title": "约翰·奥利弗评赫格塞思军事计划：“给脑震荡偏执狂的苏斯博士”"
     },
     {
       "id": "event-14b24a18faf526e1",
@@ -37705,42 +38086,6 @@
       "title": "法国选举前社会动荡：抗议者称不相信政治能实现任何事"
     },
     {
-      "id": "event-e01aaad2865cb89a",
-      "lead_id": "e01aaad2865cb89a",
-      "article_ids": [
-        "e01aaad2865cb89a"
-      ],
-      "category": "国际政治",
-      "title": "法国指控伊朗对数百家超市制冷系统发动网络攻击"
-    },
-    {
-      "id": "event-1f3e775b158586cf",
-      "lead_id": "1f3e775b158586cf",
-      "article_ids": [
-        "1f3e775b158586cf"
-      ],
-      "category": "国际政治",
-      "title": "法国总理提前上调最低工资以安抚抗议者"
-    },
-    {
-      "id": "event-721b09a0de84f78c",
-      "lead_id": "721b09a0de84f78c",
-      "article_ids": [
-        "721b09a0de84f78c"
-      ],
-      "category": "社会与文化",
-      "title": "拉塞尔·布兰德因强奸和性侵被判逾10年监禁"
-    },
-    {
-      "id": "event-b82780c21853b78c",
-      "lead_id": "b82780c21853b78c",
-      "article_ids": [
-        "b82780c21853b78c"
-      ],
-      "category": "科技与 AI",
-      "title": "英伟达遭间谍调查消息后股价大跌"
-    },
-    {
       "id": "event-e573ed3951e8163c",
       "lead_id": "e573ed3951e8163c",
       "article_ids": [
@@ -37748,15 +38093,6 @@
       ],
       "category": "国际政治",
       "title": "一艘驶往欧洲的移民船在塞内加尔附近沉没，至少39人死亡"
-    },
-    {
-      "id": "event-66d39719bc85daa1",
-      "lead_id": "66d39719bc85daa1",
-      "article_ids": [
-        "66d39719bc85daa1"
-      ],
-      "category": "国际政治",
-      "title": "俄罗斯：独立媒体《新报》关闭莫斯科新闻编辑室"
     },
     {
       "id": "event-6d9af59fe77645a9",
@@ -37768,13 +38104,23 @@
       "title": "印度废钞十年后：承诺仍未兑现"
     },
     {
-      "id": "event-1fc8be9fd2455522",
+      "id": "event-semantic-84ce09cc83dec94f",
       "lead_id": "1fc8be9fd2455522",
       "article_ids": [
+        "4c28aa0dea427b56",
+        "f8706db363777f82",
+        "28076c7666c8a185",
+        "823893bcf22a9c7b",
+        "902ab296b4ac35d0",
+        "2f529ab63ee0bb47",
+        "f4592906027e8e46",
+        "505cf51d6d47f769",
+        "a45f7005a256de95",
         "1fc8be9fd2455522"
       ],
       "category": "国际政治",
-      "title": "视频：赫格塞斯在海军战争学院讲话，弹劾投票或将临近"
+      "title": "美国众议院针对防长赫格塞思的弹劾动议",
+      "grouping_basis": "ai_event"
     },
     {
       "id": "event-a7fbc1af55fcfab1",
@@ -37813,15 +38159,6 @@
       "title": "非洲虚假新闻：虚假信息时代由谁判定真相？"
     },
     {
-      "id": "event-4e1cc1bd77f85a66",
-      "lead_id": "4e1cc1bd77f85a66",
-      "article_ids": [
-        "4e1cc1bd77f85a66"
-      ],
-      "category": "社会与文化",
-      "title": "土耳其伊兹密尔钢厂爆炸致工人死亡"
-    },
-    {
       "id": "event-db7d8089721e667e",
       "lead_id": "db7d8089721e667e",
       "article_ids": [
@@ -37840,22 +38177,16 @@
       "title": "NextEra与Dominion巨型合并或因电费愤怒而失败"
     },
     {
-      "id": "event-d69fb6d1846eab0a",
+      "id": "event-semantic-8dc04bb0fa1078e5",
       "lead_id": "d69fb6d1846eab0a",
       "article_ids": [
-        "d69fb6d1846eab0a"
+        "d69fb6d1846eab0a",
+        "6871088666063370",
+        "9a48971790743513"
       ],
       "category": "国际政治",
-      "title": "五中全会精神在基层｜特写：一叶红船映初心，百年薪火启新程"
-    },
-    {
-      "id": "event-67087043b1370731",
-      "lead_id": "67087043b1370731",
-      "article_ids": [
-        "67087043b1370731"
-      ],
-      "category": "环境与气候",
-      "title": "排灯节烟花加剧污染，新德里被浓重雾霾笼罩"
+      "title": "中共二十届五中全会及全面从严治党决定",
+      "grouping_basis": "ai_event"
     },
     {
       "id": "event-c07d24f8b261a668",
@@ -37865,15 +38196,6 @@
       ],
       "category": "国际政治",
       "title": "律师称美国遣返伊朗人航班最后一刻取消"
-    },
-    {
-      "id": "event-73882470a9b31a7c",
-      "lead_id": "73882470a9b31a7c",
-      "article_ids": [
-        "73882470a9b31a7c"
-      ],
-      "category": "科技与 AI",
-      "title": "英伟达调查案中心的疑似中国间谍是谁？"
     },
     {
       "id": "event-013a73fdddd54ca9",
@@ -37892,33 +38214,6 @@
       ],
       "category": "国际政治",
       "title": "科技赋能+实景体验 多地启动消防宣传月活动"
-    },
-    {
-      "id": "event-b3a0b55111257666",
-      "lead_id": "b3a0b55111257666",
-      "article_ids": [
-        "b3a0b55111257666"
-      ],
-      "category": "社会与文化",
-      "title": "教皇探访阿根廷残障人士护理院，再次呼吁保护弱势群体"
-    },
-    {
-      "id": "event-f33ff1d51f2032cc",
-      "lead_id": "f33ff1d51f2032cc",
-      "article_ids": [
-        "f33ff1d51f2032cc"
-      ],
-      "category": "国际政治",
-      "title": "英国喜剧演员拉塞尔·布兰德因强奸和性侵被判逾10年"
-    },
-    {
-      "id": "event-f01b9bd14ccfde9e",
-      "lead_id": "f01b9bd14ccfde9e",
-      "article_ids": [
-        "f01b9bd14ccfde9e"
-      ],
-      "category": "国际政治",
-      "title": "拉塞尔·布兰德因强奸和性侵定罪被判逾10年监禁"
     },
     {
       "id": "event-ca6a373086d881ce",
@@ -37957,15 +38252,6 @@
       "title": "柏林墙倒塌37年后：德国人的分裂程度如何？"
     },
     {
-      "id": "event-186cbf7dab2220a1",
-      "lead_id": "186cbf7dab2220a1",
-      "article_ids": [
-        "186cbf7dab2220a1"
-      ],
-      "category": "科技与 AI",
-      "title": "黄仁勋权力过大，英伟达无法对其追责？"
-    },
-    {
       "id": "event-a884ac28001b1a83",
       "lead_id": "a884ac28001b1a83",
       "article_ids": [
@@ -37993,15 +38279,6 @@
       "title": "希腊克里特岛附近船只沉没致十三名移民死亡"
     },
     {
-      "id": "event-ef1e5d5b9d9051ff",
-      "lead_id": "ef1e5d5b9d9051ff",
-      "article_ids": [
-        "ef1e5d5b9d9051ff"
-      ],
-      "category": "科技与 AI",
-      "title": "关于英伟达调查CEO黄仁勋需了解的情况"
-    },
-    {
       "id": "event-ebba56bf2bbb1ec7",
       "lead_id": "ebba56bf2bbb1ec7",
       "article_ids": [
@@ -38020,15 +38297,6 @@
       "title": "中航工业多型装备亮相 “应急使命·2026”重庆重特大森林火灾扑救演习"
     },
     {
-      "id": "event-040d7ce2a329dd40",
-      "lead_id": "040d7ce2a329dd40",
-      "article_ids": [
-        "040d7ce2a329dd40"
-      ],
-      "category": "科技与 AI",
-      "title": "中国否认英伟达CEO黄仁勋涉间谍阴谋指控，称是抹黑"
-    },
-    {
       "id": "event-ed34dfc45be7efe4",
       "lead_id": "ed34dfc45be7efe4",
       "article_ids": [
@@ -38045,15 +38313,6 @@
       ],
       "category": "社会与文化",
       "title": "湖北唐崖土司城遗址考古报告首次公开"
-    },
-    {
-      "id": "event-d69b609c1f7e2134",
-      "lead_id": "d69b609c1f7e2134",
-      "article_ids": [
-        "d69b609c1f7e2134"
-      ],
-      "category": "科技与 AI",
-      "title": "英伟达调查CEO黄仁勋婚外情时是否遭中国间谍针对"
     },
     {
       "id": "event-0d576790a8adff17",
@@ -38101,15 +38360,6 @@
       "title": "画家靳文艺三十余年绘就188米水墨长卷《黄河万里图》"
     },
     {
-      "id": "event-ba29f959b14c181a",
-      "lead_id": "ba29f959b14c181a",
-      "article_ids": [
-        "ba29f959b14c181a"
-      ],
-      "category": "国际政治",
-      "title": "第二艘国产大型邮轮开启首个试运营航次"
-    },
-    {
       "id": "event-a24fed81ad63716c",
       "lead_id": "a24fed81ad63716c",
       "article_ids": [
@@ -38126,15 +38376,6 @@
       ],
       "category": "国际政治",
       "title": "第四届中俄地方投资发展与贸易合作大会在沈阳开幕"
-    },
-    {
-      "id": "event-9955c53e53d9bccf",
-      "lead_id": "9955c53e53d9bccf",
-      "article_ids": [
-        "9955c53e53d9bccf"
-      ],
-      "category": "国际政治",
-      "title": "共和党中期选举失利后国会复会，特朗普任命新幕僚长"
     },
     {
       "id": "event-fd40e2dcdee77aa8",
@@ -38164,13 +38405,16 @@
       "title": "淮北矿业（集团）有限责任公司原副总经理谢道成接受审查调查"
     },
     {
-      "id": "event-576e244e3cf82b0c",
+      "id": "event-semantic-58d5e314cc6e0f7a",
       "lead_id": "576e244e3cf82b0c",
       "article_ids": [
-        "576e244e3cf82b0c"
+        "576e244e3cf82b0c",
+        "04649f92e7ad8ff6",
+        "1ddd14f34af236b3"
       ],
       "category": "国际政治",
-      "title": "德国基民盟提名伊尔泽·艾格纳为总统候选人"
+      "title": "德国总统候选人伊尔泽·艾格纳提名",
+      "grouping_basis": "ai_event"
     },
     {
       "id": "event-dfc2d2e68041eda2",
@@ -38200,22 +38444,15 @@
       "title": "16所音乐院校齐聚南京 共话AI时代音乐教育未来"
     },
     {
-      "id": "event-33f8c47084864e07",
-      "lead_id": "33f8c47084864e07",
-      "article_ids": [
-        "33f8c47084864e07"
-      ],
-      "category": "国际政治",
-      "title": "警方称克拉科夫枪击案嫌疑人已在医院死亡"
-    },
-    {
-      "id": "event-6910e4b7ac81d3cc",
+      "id": "event-semantic-e7099967abaababe",
       "lead_id": "6910e4b7ac81d3cc",
       "article_ids": [
-        "6910e4b7ac81d3cc"
+        "6910e4b7ac81d3cc",
+        "ba2dcb0494664f6b"
       ],
       "category": "社会与文化",
-      "title": "中国国家博物馆为“顶流”凤冠单独开展"
+      "title": "中国国家博物馆为明万历孝端皇后九龙九凤冠设专门展厅",
+      "grouping_basis": "ai_event"
     },
     {
       "id": "event-e727ea77010fe34a",
@@ -38227,13 +38464,15 @@
       "title": "欧盟拟年底前选定欧洲央行新行长"
     },
     {
-      "id": "event-b82a74f60800a385",
+      "id": "event-semantic-ae9ac1a268ffc6a6",
       "lead_id": "b82a74f60800a385",
       "article_ids": [
-        "b82a74f60800a385"
+        "b82a74f60800a385",
+        "1ef12813f68545e5"
       ],
       "category": "国际政治",
-      "title": "長春舉辦多項活動慶祝解放軍空軍成立77周年"
+      "title": "长春庆祝解放军空军成立77周年活动",
+      "grouping_basis": "ai_event"
     },
     {
       "id": "event-9bce6599a362e4af",
@@ -38252,24 +38491,6 @@
       ],
       "category": "国际政治",
       "title": "山西太原公寓火警致14死25傷 相關負責人被控制"
-    },
-    {
-      "id": "event-ad095a47390ca8de",
-      "lead_id": "ad095a47390ca8de",
-      "article_ids": [
-        "ad095a47390ca8de"
-      ],
-      "category": "科技与 AI",
-      "title": "为何英伟达CEO与疑似中国间谍的婚外情关系重大"
-    },
-    {
-      "id": "event-04649f92e7ad8ff6",
-      "lead_id": "04649f92e7ad8ff6",
-      "article_ids": [
-        "04649f92e7ad8ff6"
-      ],
-      "category": "国际政治",
-      "title": "德国下任总统热门候选人伊尔泽·艾格纳是谁？"
     },
     {
       "id": "event-ad962b0eae3f0f4e",
@@ -38317,15 +38538,6 @@
       "title": "伊拉克北部遭严重雷暴引发致命洪水，地区多国受波及"
     },
     {
-      "id": "event-3aa5305a3021b994",
-      "lead_id": "3aa5305a3021b994",
-      "article_ids": [
-        "3aa5305a3021b994"
-      ],
-      "category": "环境与气候",
-      "title": "COP31开幕，领导人面临应对气候危机的压力"
-    },
-    {
       "id": "event-323a05ab7de5a706",
       "lead_id": "323a05ab7de5a706",
       "article_ids": [
@@ -38335,13 +38547,15 @@
       "title": "韩国一城市为何求助美国大学以智胜AI？"
     },
     {
-      "id": "event-e8a1a69a7495b6c0",
+      "id": "event-semantic-ffe012e2c9746543",
       "lead_id": "e8a1a69a7495b6c0",
       "article_ids": [
-        "e8a1a69a7495b6c0"
+        "e8a1a69a7495b6c0",
+        "3dc0d45e240b777a"
       ],
       "category": "国际政治",
-      "title": "巴黎G7会谈评估美国中期选举对特朗普外交政策的影响"
+      "title": "G7外长巴黎会议评估美国中期选举影响",
+      "grouping_basis": "ai_event"
     },
     {
       "id": "event-0cbe26d879091ff7",
@@ -38351,15 +38565,6 @@
       ],
       "category": "社会与文化",
       "title": "“2026北舞展演季”启幕 将推出16台35场演出"
-    },
-    {
-      "id": "event-ba2dcb0494664f6b",
-      "lead_id": "ba2dcb0494664f6b",
-      "article_ids": [
-        "ba2dcb0494664f6b"
-      ],
-      "category": "社会与文化",
-      "title": "国博顶流文物“单飞”，把凤冠“拆”给你看"
     },
     {
       "id": "event-36aef3c09a3be1ed",
@@ -38396,15 +38601,6 @@
       ],
       "category": "社会与文化",
       "title": "犯罪题材走红：侠盗猎车手如何成为文化巨擘"
-    },
-    {
-      "id": "event-78963e6b3b610a8c",
-      "lead_id": "78963e6b3b610a8c",
-      "article_ids": [
-        "78963e6b3b610a8c"
-      ],
-      "category": "国际政治",
-      "title": "以无畏报道闻名的俄罗斯独立报纸《新报》将熄灯"
     },
     {
       "id": "event-0020bcc681bb3273",
@@ -38452,13 +38648,15 @@
       "title": "年轻人开始寻找城市“树洞”"
     },
     {
-      "id": "event-1def39e94edef8fe",
+      "id": "event-semantic-9507082396807a1c",
       "lead_id": "1def39e94edef8fe",
       "article_ids": [
-        "1def39e94edef8fe"
+        "1def39e94edef8fe",
+        "84700b1b903b1e92"
       ],
       "category": "环境与气候",
-      "title": "土耳其一边烧煤一边推动COP31转型"
+      "title": "土耳其主办COP31气候峰会",
+      "grouping_basis": "ai_event"
     },
     {
       "id": "event-8e561c71d76daa0b",
@@ -38468,15 +38666,6 @@
       ],
       "category": "国际政治",
       "title": "習近平就柬埔寨獨立73周年向國王西哈莫尼致賀電"
-    },
-    {
-      "id": "event-15f31833bc5c09e1",
-      "lead_id": "15f31833bc5c09e1",
-      "article_ids": [
-        "15f31833bc5c09e1"
-      ],
-      "category": "国际政治",
-      "title": "为何大胜至关重要：美中期选举与欧洲投票显示压倒性胜利难被否认"
     },
     {
       "id": "event-1e49972852177d71",
@@ -38506,15 +38695,6 @@
       "title": "Kuken Industries借助OpenAI数分钟检索70年图纸"
     },
     {
-      "id": "event-5fa7f1f05fcfa2b2",
-      "lead_id": "5fa7f1f05fcfa2b2",
-      "article_ids": [
-        "5fa7f1f05fcfa2b2"
-      ],
-      "category": "国际政治",
-      "title": "Nvidia查黃仁勳 中方指中國間諜論調是捕風捉影和污蔑抹黑"
-    },
-    {
       "id": "event-d4d798b97549c970",
       "lead_id": "d4d798b97549c970",
       "article_ids": [
@@ -38533,15 +38713,6 @@
       "title": "德国纪念11月9日：纳粹大屠杀88周年与柏林墙倒塌"
     },
     {
-      "id": "event-32172b9a1d1c8661",
-      "lead_id": "32172b9a1d1c8661",
-      "article_ids": [
-        "32172b9a1d1c8661"
-      ],
-      "category": "科技与 AI",
-      "title": "被指间谍英伟达CEO的黄爱丽丝（Alice Huang）是谁？"
-    },
-    {
       "id": "event-402fb20082edeaf0",
       "lead_id": "402fb20082edeaf0",
       "article_ids": [
@@ -38549,15 +38720,6 @@
       ],
       "category": "国际政治",
       "title": "冲绳知事在日籍女性遇害后呼吁审视驻日美军协定"
-    },
-    {
-      "id": "event-7e2c736f396f80e8",
-      "lead_id": "7e2c736f396f80e8",
-      "article_ids": [
-        "7e2c736f396f80e8"
-      ],
-      "category": "科技与 AI",
-      "title": "关于英伟达CEO与疑似中国间谍关系的已知信息"
     },
     {
       "id": "event-e379bdc26eaa2b51",
@@ -38576,15 +38738,6 @@
       ],
       "category": "社会与文化",
       "title": "“欢乐潇湘” 展演点亮张家界大庸古城 赋能文旅融合"
-    },
-    {
-      "id": "event-9160eba5391f0313",
-      "lead_id": "9160eba5391f0313",
-      "article_ids": [
-        "9160eba5391f0313"
-      ],
-      "category": "国际政治",
-      "title": "波兰警方称克拉科夫大规模枪击案嫌疑人已在医院死亡"
     },
     {
       "id": "event-0ec54e8e90c95376",
@@ -38630,15 +38783,6 @@
       ],
       "category": "国际政治",
       "title": "西班牙调查在TikTok发现数千个新恋童视频和账号"
-    },
-    {
-      "id": "event-84700b1b903b1e92",
-      "lead_id": "84700b1b903b1e92",
-      "article_ids": [
-        "84700b1b903b1e92"
-      ],
-      "category": "环境与气候",
-      "title": "COP31在土耳其开幕，气候资金与化石燃料议题致各国分歧"
     },
     {
       "id": "event-b0990505e899fb62",
@@ -44167,24 +44311,6 @@
       "title": "值得穿睡衣下楼去超市买的十二款酸奶"
     },
     {
-      "id": "event-3dc0d45e240b777a",
-      "lead_id": "3dc0d45e240b777a",
-      "article_ids": [
-        "3dc0d45e240b777a"
-      ],
-      "category": "国际政治",
-      "title": "G7盟友将在巴黎会谈评估特朗普中期选举失利影响"
-    },
-    {
-      "id": "event-1ef12813f68545e5",
-      "lead_id": "1ef12813f68545e5",
-      "article_ids": [
-        "1ef12813f68545e5"
-      ],
-      "category": "国际政治",
-      "title": "慶祝人民空軍成立77周年 紅鷹飛行表演隊飛越長春「藍天公園」"
-    },
-    {
       "id": "event-e9a1b5b07980321c",
       "lead_id": "e9a1b5b07980321c",
       "article_ids": [
@@ -44221,15 +44347,6 @@
       "title": "国务院关税税则委员会发布公告调整对原产于美国的进口商品加征关税措施"
     },
     {
-      "id": "event-304b410eee881858",
-      "lead_id": "304b410eee881858",
-      "article_ids": [
-        "304b410eee881858"
-      ],
-      "category": "科技与 AI",
-      "title": "英伟达就CEO与疑似中国间谍的关系展开调查"
-    },
-    {
       "id": "event-f1369fde17a891da",
       "lead_id": "f1369fde17a891da",
       "article_ids": [
@@ -44239,13 +44356,16 @@
       "title": "新加坡部长称Cop31无新目标也有足够工作"
     },
     {
-      "id": "event-036a67905fa027ad",
+      "id": "event-semantic-e8df1191046cccc9",
       "lead_id": "036a67905fa027ad",
       "article_ids": [
-        "036a67905fa027ad"
+        "036a67905fa027ad",
+        "e2419bfe1cbe53de",
+        "60f436410e835908"
       ],
       "category": "国际政治",
-      "title": "伊拉克库尔德斯坦气田遭无人机袭击引发大面积停电"
+      "title": "伊拉克库尔德自治区气田遭无人机袭击停产",
+      "grouping_basis": "ai_event"
     },
     {
       "id": "event-203f4ea2775a6e74",
@@ -44257,15 +44377,6 @@
       "title": "美军重兵压境、伊朗针锋相对，中东大战一触即发？"
     },
     {
-      "id": "event-96f7c2caed02ac0f",
-      "lead_id": "96f7c2caed02ac0f",
-      "article_ids": [
-        "96f7c2caed02ac0f"
-      ],
-      "category": "科技与 AI",
-      "title": "英伟达CEO黄仁勋承认与一名被视为北京间谍者发生婚外情"
-    },
-    {
       "id": "event-83fd3d8fced40049",
       "lead_id": "83fd3d8fced40049",
       "article_ids": [
@@ -44275,13 +44386,17 @@
       "title": "埃及列车相撞事故死亡人数升至7人"
     },
     {
-      "id": "event-5f3da29dc07a0735",
+      "id": "event-semantic-aa2bef5a3d782e59",
       "lead_id": "5f3da29dc07a0735",
       "article_ids": [
-        "5f3da29dc07a0735"
+        "5f3da29dc07a0735",
+        "0f7c439132bc6ca5",
+        "8ff560a7cd3fa3fa",
+        "e011d27ae90a1a2d"
       ],
       "category": "经济与投资",
-      "title": "波士顿科学Rezūm EVO国产设备亮相进博会 加速创新疗法本土化落地"
+      "title": "第九届中国国际进口博览会",
+      "grouping_basis": "ai_event"
     },
     {
       "id": "event-f4add94d33e696c0",
@@ -44302,51 +44417,6 @@
       "title": "新西兰中间派“造王者”称民粹主义正辜负全球选民"
     },
     {
-      "id": "event-afda19fa17aea4d9",
-      "lead_id": "afda19fa17aea4d9",
-      "article_ids": [
-        "afda19fa17aea4d9"
-      ],
-      "category": "国际政治",
-      "title": "教皇利奥访问阿根廷期间严厉批评米莱紧缩措施"
-    },
-    {
-      "id": "event-b6ce972e26bc9d89",
-      "lead_id": "b6ce972e26bc9d89",
-      "article_ids": [
-        "b6ce972e26bc9d89"
-      ],
-      "category": "国际政治",
-      "title": "教皇利奥十四世访问阿根廷首日动态汇总"
-    },
-    {
-      "id": "event-0f7c439132bc6ca5",
-      "lead_id": "0f7c439132bc6ca5",
-      "article_ids": [
-        "0f7c439132bc6ca5"
-      ],
-      "category": "经济与投资",
-      "title": "进博会让海外中小微企业“被看见”"
-    },
-    {
-      "id": "event-8ff560a7cd3fa3fa",
-      "lead_id": "8ff560a7cd3fa3fa",
-      "article_ids": [
-        "8ff560a7cd3fa3fa"
-      ],
-      "category": "经济与投资",
-      "title": "巴西携56家企业亮相进博会 释放深耕中国市场的积极信号"
-    },
-    {
-      "id": "event-6871088666063370",
-      "lead_id": "6871088666063370",
-      "article_ids": [
-        "6871088666063370"
-      ],
-      "category": "国际政治",
-      "title": "學者分析五中全會《決定》 對黨及人事選用均非常重要"
-    },
-    {
       "id": "event-8f915de9a0e8ba5c",
       "lead_id": "8f915de9a0e8ba5c",
       "article_ids": [
@@ -44365,13 +44435,16 @@
       "title": "欧洲将在巴黎G7会谈中就乌克兰和平与伊朗问题向美国施压"
     },
     {
-      "id": "event-943fc7457c8736de",
+      "id": "event-semantic-6632a7c3cdb20bd5",
       "lead_id": "943fc7457c8736de",
       "article_ids": [
-        "943fc7457c8736de"
+        "943fc7457c8736de",
+        "5c26a004c165339e",
+        "400d1ab6fcd69e9d"
       ],
       "category": "经济与投资",
-      "title": "10月份工业生产者出厂价格同比上涨5.7%，环比上涨0.7%"
+      "title": "中国2026年10月CPI与PPI数据发布",
+      "grouping_basis": "ai_event"
     },
     {
       "id": "event-285076d63c6c1520",
@@ -44419,24 +44492,6 @@
       "title": "绿色低碳、医疗健康 外国参展商眼中的“十五五”新机遇"
     },
     {
-      "id": "event-e011d27ae90a1a2d",
-      "lead_id": "e011d27ae90a1a2d",
-      "article_ids": [
-        "e011d27ae90a1a2d"
-      ],
-      "category": "经济与投资",
-      "title": "全球媒体聚焦 |“进博会展现中国开放合作的强劲吸引力”"
-    },
-    {
-      "id": "event-5c26a004c165339e",
-      "lead_id": "5c26a004c165339e",
-      "article_ids": [
-        "5c26a004c165339e"
-      ],
-      "category": "经济与投资",
-      "title": "国家统计局：10月份CPI同比继续上涨 PPI环比涨幅回落"
-    },
-    {
       "id": "event-5de2a56f01dc073f",
       "lead_id": "5de2a56f01dc073f",
       "article_ids": [
@@ -44455,15 +44510,6 @@
       "title": "“我从未处决杰西·贝尔德”：拉马尔-康登在新州庭审作证时重演枪击"
     },
     {
-      "id": "event-1a27bc7d3dd200a8",
-      "lead_id": "1a27bc7d3dd200a8",
-      "article_ids": [
-        "1a27bc7d3dd200a8"
-      ],
-      "category": "环境与气候",
-      "title": "污染严重的德里尝试以“绿色”烟花改善排灯节空气"
-    },
-    {
       "id": "event-6dd64ab208cbd32f",
       "lead_id": "6dd64ab208cbd32f",
       "article_ids": [
@@ -44480,24 +44526,6 @@
       ],
       "category": "科技与 AI",
       "title": "A股周一开盘：超4800只个股飘红，三大指数集体高开"
-    },
-    {
-      "id": "event-b479abd478f69e50",
-      "lead_id": "b479abd478f69e50",
-      "article_ids": [
-        "b479abd478f69e50"
-      ],
-      "category": "经济与投资",
-      "title": "教宗良敦促阿根廷米莱将人民置于经济之上"
-    },
-    {
-      "id": "event-400d1ab6fcd69e9d",
-      "lead_id": "400d1ab6fcd69e9d",
-      "article_ids": [
-        "400d1ab6fcd69e9d"
-      ],
-      "category": "经济与投资",
-      "title": "国家统计局：10月份居民消费价格同比上涨0.7%"
     },
     {
       "id": "event-4a1d31b12f75b519",
@@ -44525,24 +44553,6 @@
       ],
       "category": "国际政治",
       "title": "香港要成为亚洲活动之都须提供可用的票务系统"
-    },
-    {
-      "id": "event-9a48971790743513",
-      "lead_id": "9a48971790743513",
-      "article_ids": [
-        "9a48971790743513"
-      ],
-      "category": "国际政治",
-      "title": "强化地方党委功能（学习贯彻党的二十届五中全会精神）"
-    },
-    {
-      "id": "event-e2419bfe1cbe53de",
-      "lead_id": "e2419bfe1cbe53de",
-      "article_ids": [
-        "e2419bfe1cbe53de"
-      ],
-      "category": "国际政治",
-      "title": "无人机袭击致伊拉克霍尔莫尔气田停产"
     },
     {
       "id": "event-f194cfe1b4f438c4",
@@ -44626,24 +44636,6 @@
       "title": "中國成功發射衛星互聯網低軌29組衛星"
     },
     {
-      "id": "event-2eb10b0bf500c00c",
-      "lead_id": "2eb10b0bf500c00c",
-      "article_ids": [
-        "2eb10b0bf500c00c"
-      ],
-      "category": "国际政治",
-      "title": "特朗普称提名UFC的达纳·怀特任新闻秘书“只是开玩笑”"
-    },
-    {
-      "id": "event-382be8cab0f95acf",
-      "lead_id": "382be8cab0f95acf",
-      "article_ids": [
-        "382be8cab0f95acf"
-      ],
-      "category": "国际政治",
-      "title": "特朗普称提议任命达纳·怀特为白宫新闻秘书“只是开玩笑”"
-    },
-    {
       "id": "event-9410fa1dbb511cc7",
       "lead_id": "9410fa1dbb511cc7",
       "article_ids": [
@@ -44651,69 +44643,6 @@
       ],
       "category": "国际政治",
       "title": "香港职训局课程被宣传为内地妈妈宝宝获取居留的捷径"
-    },
-    {
-      "id": "event-f67e5fdc5a075fef",
-      "lead_id": "f67e5fdc5a075fef",
-      "article_ids": [
-        "f67e5fdc5a075fef"
-      ],
-      "category": "科技与 AI",
-      "title": "鲁比奥就英伟达CEO与中国间谍关联警告官员"
-    },
-    {
-      "id": "event-75eee0dcbc87b091",
-      "lead_id": "75eee0dcbc87b091",
-      "article_ids": [
-        "75eee0dcbc87b091"
-      ],
-      "category": "科技与 AI",
-      "title": "英伟达对CEO黄仁勋被指为外国情报目标一事展开调查"
-    },
-    {
-      "id": "event-79b1dea7b3b01211",
-      "lead_id": "79b1dea7b3b01211",
-      "article_ids": [
-        "79b1dea7b3b01211"
-      ],
-      "category": "国际政治",
-      "title": "印度点亮灯火庆祝排灯节"
-    },
-    {
-      "id": "event-93768e5ece709ad3",
-      "lead_id": "93768e5ece709ad3",
-      "article_ids": [
-        "93768e5ece709ad3"
-      ],
-      "category": "科技与 AI",
-      "title": "关于英伟达对其首席执行官的调查需要了解什么"
-    },
-    {
-      "id": "event-4c593efcf48854d7",
-      "lead_id": "4c593efcf48854d7",
-      "article_ids": [
-        "4c593efcf48854d7"
-      ],
-      "category": "国际政治",
-      "title": "南非公布地方选举结果 过半数市镇现“悬峙议会”"
-    },
-    {
-      "id": "event-3ab4733d7cb58607",
-      "lead_id": "3ab4733d7cb58607",
-      "article_ids": [
-        "3ab4733d7cb58607"
-      ],
-      "category": "国际政治",
-      "title": "Jeffries支持弹劾Hegseth，民主党人誓言调查特朗普盟友"
-    },
-    {
-      "id": "event-60f436410e835908",
-      "lead_id": "60f436410e835908",
-      "article_ids": [
-        "60f436410e835908"
-      ],
-      "category": "国际政治",
-      "title": "外媒：伊拉克库区天然气田遭不明来源无人机袭击"
     },
     {
       "id": "event-17eac6effc0d85ac",
@@ -44732,15 +44661,6 @@
       ],
       "category": "国际政治",
       "title": "伊朗战争直播：特朗普称“铁门”生效；无人机袭击伊拉克气田"
-    },
-    {
-      "id": "event-3e825656f3638af6",
-      "lead_id": "3e825656f3638af6",
-      "article_ids": [
-        "3e825656f3638af6"
-      ],
-      "category": "科技与 AI",
-      "title": "英伟达CEO承认婚外情，涉中国间谍调查"
     },
     {
       "id": "event-7c5ebfc879edc7a9",
@@ -44768,24 +44688,6 @@
       ],
       "category": "社会与文化",
       "title": "AI打开新空间，影视创作如何向新而行"
-    },
-    {
-      "id": "event-1ddd14f34af236b3",
-      "lead_id": "1ddd14f34af236b3",
-      "article_ids": [
-        "1ddd14f34af236b3"
-      ],
-      "category": "国际政治",
-      "title": "德国总理默茨拟提名艾格纳为德国首位女性总统"
-    },
-    {
-      "id": "event-a84c88144289197d",
-      "lead_id": "a84c88144289197d",
-      "article_ids": [
-        "a84c88144289197d"
-      ],
-      "category": "国际政治",
-      "title": "教皇利奥在阿根廷告知总统米莱经济须服务贫困者"
     },
     {
       "id": "event-1cd49a04e29f0df3",
@@ -44824,15 +44726,6 @@
       "title": "打蚊子、陪聊天、认小鸟 中国AI消费品海外走俏"
     },
     {
-      "id": "event-9d1403199b080fda",
-      "lead_id": "9d1403199b080fda",
-      "article_ids": [
-        "9d1403199b080fda"
-      ],
-      "category": "科技与 AI",
-      "title": "英伟达CEO黄仁勋承认婚外情， amid中国间谍关联传闻"
-    },
-    {
       "id": "event-c6d9d308a11f7e01",
       "lead_id": "c6d9d308a11f7e01",
       "article_ids": [
@@ -44840,15 +44733,6 @@
       ],
       "category": "国际政治",
       "title": "开罗附近两列火车相撞致4人死亡"
-    },
-    {
-      "id": "event-cbcae134d3b94d1f",
-      "lead_id": "cbcae134d3b94d1f",
-      "article_ids": [
-        "cbcae134d3b94d1f"
-      ],
-      "category": "科技与 AI",
-      "title": "英伟达将调查有关中国情报机构针对CEO黄仁勋的报道"
     },
     {
       "id": "event-58e620aefd4768a0",
@@ -44972,7 +44856,7 @@
   ],
   "briefing": [
     {
-      "event_id": "event-d8960b88ea7b2675",
+      "event_id": "event-semantic-fa12f3b39f3a3f2c",
       "article_id": "d8960b88ea7b2675",
       "title": "波兰克拉科夫大规模枪击案嫌疑人医院身亡，已知情况",
       "summary": "克拉科夫及另一城镇发生枪击，至少九人死亡，嫌疑人死于医院，动机不明。",
@@ -44984,7 +44868,7 @@
       }
     },
     {
-      "event_id": "event-e682349332748341",
+      "event_id": "event-semantic-02f55c838707f146",
       "article_id": "e682349332748341",
       "title": "美国防部长赫格塞斯因伊朗战争面临弹劾推动",
       "summary": "特朗普批评者托马斯·马西呼吁投票弹劾五角大楼负责人皮特·赫格塞斯，指其未经国会批准发动战争。",
@@ -45008,7 +44892,7 @@
       }
     },
     {
-      "event_id": "event-3da15ef6ee92adc5",
+      "event_id": "event-semantic-da40c282ff7eaa54",
       "article_id": "3da15ef6ee92adc5",
       "title": "南非非洲人国民大会地方选举遇历史性挫败，联合谈判启动",
       "summary": "南非执政党非洲人国民大会仅获30%选票，创最差地方选举成绩，联合谈判在即；报道还涉乌干达拘留酷刑指控与塞内加尔20万张免费赛事门票。",
@@ -45056,14 +44940,14 @@
       }
     },
     {
-      "event_id": "event-67087043b1370731",
-      "article_id": "67087043b1370731",
-      "title": "排灯节烟花加剧污染，新德里被浓重雾霾笼罩",
-      "summary": "材料称新德里人口超3000万，冬季常居全球污染最重地区之列，10月底和11月污染加剧。",
-      "category": "环境与气候",
+      "event_id": "event-efa418859ff96c95",
+      "article_id": "efa418859ff96c95",
+      "title": "法国柔道名将里内宣布参加2027年总统选举",
+      "summary": "五届奥运柔道冠军、37岁的里内在社交媒体宣布将参加2027年法国总统选举，称担忧极右翼崛起。",
+      "category": "国际政治",
       "selection": {
-        "impact": "排灯节烟花加剧新德里雾霾，超3000万人口城市公共健康议题",
-        "independent_sources": 1,
+        "impact": "选举与权力变化",
+        "independent_sources": 3,
         "social_heat": "unavailable"
       }
     }
@@ -45177,8 +45061,8 @@
       "section": "业界声音"
     }
   ],
-  "revision": 1,
-  "revision_note": "首次出版",
-  "published_at": "2026-11-10T04:47:51.632838+00:00",
-  "content_hash": "70140e7f5b713e0a195dd4f9923248e042d87399767ba6eca082a3c313941252"
+  "revision": 3,
+  "revision_note": "事件归并复核：拆分不同地点海难及宽泛主题，保持各具体事件独立",
+  "published_at": "2026-11-10T11:19:11.070243+00:00",
+  "content_hash": "4b3491f10e40f4cc0f5211c95f189ec6327bdb2117057d18d227063ab16385b8"
 }

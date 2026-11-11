@@ -13,6 +13,11 @@
       "calls": 1,
       "prompt_tokens": 2883,
       "completion_tokens": 392
+    },
+    "event_editing": {
+      "calls": 9,
+      "prompt_tokens": 24615,
+      "completion_tokens": 8582
     }
   },
   "budget_exhausted": true,
@@ -21,8 +26,8 @@
   "published_date": "2026-11-10",
   "collected": 930,
   "published": 930,
-  "events": 918,
-  "merged": 0,
+  "events": 817,
+  "merged": 101,
   "sources": 20,
   "country_identified": 246,
   "ai_country_decisions": 0,
@@ -32,13 +37,13 @@
   "basic_cached": 11,
   "failed": 0,
   "remaining": 0,
-  "accounted_tokens": 193584,
+  "accounted_tokens": 226781,
   "token_budget": 500000,
   "planned_tokens": 360000,
   "morning_selected": 8,
-  "prompt_tokens": 137452,
-  "completion_tokens": 56132,
+  "prompt_tokens": 162067,
+  "completion_tokens": 64714,
   "missing_usage": 0,
   "reasoning_tokens": 0,
-  "finished_at": "2026-11-10T04:47:51.822662+00:00"
+  "finished_at": "2026-11-10T11:22:21.962909+00:00"
 }

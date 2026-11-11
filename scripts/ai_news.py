@@ -341,6 +341,9 @@ def enrich(rows, data_dir, limit=None):
                 stats['basic_translated']+=1
             print(f"Basic translation: {stats['basic_translated']}/{len(untranslated)}; reused {stats['basic_cached']}",flush=True)
         if stats['budget_exhausted']: break
+    if morning_enabled and all(r.get('title_zh') and r.get('summary_zh') for r in rows):
+        from scripts.event_editor import assign_events
+        stats['semantic_event_groups']=assign_events(client,rows,data_dir)
     if morning_enabled:
         try: stats['morning_selected']=choose_morning(client,rows)
         except Exception as error: stats['morning_error']=type(error).__name__

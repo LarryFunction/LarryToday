@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-10",
+  "revision": 2,
+  "groups": 35,
+  "articles": 930,
+  "events_before": 918,
+  "events_after": 809,
+  "additional_accounted_tokens": 33197,
+  "daily_accounted_tokens": 226781,
+  "usage": {
+    "calls": 9,
+    "retries": 0,
+    "prompt_tokens": 24615,
+    "completion_tokens": 8582,
+    "missing_usage": 0,
+    "reasoning_tokens": 0,
+    "stages": {
+      "edit": {
+        "calls": 9,
+        "prompt_tokens": 24615,
+        "completion_tokens": 8582
+      }
+    }
+  },
+  "review": {
+    "revision": 3,
+    "split_groups": 5,
+    "removed_assignments": 13,
+    "events_after": 817,
+    "reader_events_after": 814,
+    "preserved_main_reports": 918,
+    "preserved_background_reports": 12
+  }
+}

@@ -32,7 +32,7 @@
 
 ## GitHub Actions 每日出版
 
-`.github/workflows/daily.yml` 每天北京时间 **07:17** 尝试出版，保留 07:00 截稿窗口。也可在 Actions → Daily newspaper → Run workflow 手动执行。已存在当日刊期时直接跳过，不花费 AI 额度，不自动修订。
+`.github/workflows/daily.yml` 每天北京时间 **07:00** 尝试出版，保留 07:00 截稿窗口。也可在 Actions → Daily newspaper → Run workflow 手动执行。已存在当日刊期时直接跳过，不花费 AI 额度，不自动修订。
 
 第一次使用前：
 
