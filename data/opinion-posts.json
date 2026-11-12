@@ -1,5 +1,26 @@
 [
   {
+    "id": "faeeacba26ef949f",
+    "title": "Claude Code + Obsidian: My family’s AI brain | Scott Farrar",
+    "url": "https://www.lennysnewsletter.com/p/claude-code-obsidian-my-familys-ai",
+    "source_id": "lenny-newsletter",
+    "category": "科技与 AI",
+    "published_at": "2026-11-11T13:04:09+00:00",
+    "feed_excerpt": "Watch now (34 mins) | 🎙️ Scott Farrar walks through the Claude Code and Obsidian system he built to track appliances, chase insurance quotes, and keep household projects moving",
+    "summary": "",
+    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
+    "date_precision": "timestamp",
+    "authors": [
+      "Claire Vo"
+    ],
+    "source_name": "Lenny's Newsletter",
+    "publisher_family": "lenny",
+    "source_region": "美国",
+    "source_kind": "opinion",
+    "content_type": "观点",
+    "section": "业界声音"
+  },
+  {
     "id": "c82fa432effadc04",
     "title": "State of the tech job market: late 2026",
     "url": "https://www.lennysnewsletter.com/p/state-of-the-tech-job-market-late",
@@ -387,27 +408,6 @@
     "date_precision": "timestamp",
     "authors": [
       "Lenny Rachitsky"
-    ],
-    "source_name": "Lenny's Newsletter",
-    "publisher_family": "lenny",
-    "source_region": "美国",
-    "source_kind": "opinion",
-    "content_type": "观点",
-    "section": "业界声音"
-  },
-  {
-    "id": "8018cd28aecd136f",
-    "title": "🧠 Community Wisdom: PRDs for agents, tracking competitor messaging, whether software moats still exist, exercising startup options when you leave, and more",
-    "url": "https://www.lennysnewsletter.com/p/community-wisdom-prds-for-agents",
-    "source_id": "lenny-newsletter",
-    "category": "科技与 AI",
-    "published_at": "2026-10-17T13:53:57+00:00",
-    "feed_excerpt": "Community Wisdom 302",
-    "summary": "",
-    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
-    "date_precision": "timestamp",
-    "authors": [
-      "Kiyani"
     ],
     "source_name": "Lenny's Newsletter",
     "publisher_family": "lenny",
