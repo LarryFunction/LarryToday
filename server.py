@@ -37,6 +37,11 @@ class Handler(BaseHTTPRequestHandler):
             payload=(dossiers if event_match[1]=='events' else days).get(event_match[2])
             if payload is None:return self.send_error(404)
             return self.send_body(json.dumps(payload,ensure_ascii=False).encode(),'application/json')
+        evidence_match=re.fullmatch(r'/api/evidence/(\d{4}-\d{2}-\d{2})',path)
+        if evidence_match:
+            target=ROOT/'data'/'evidence'/(evidence_match[1]+'.json')
+            if target.exists():return self.send_body(target.read_bytes(),'application/json')
+            return self.send_error(404)
         if path == '/api/reader' or re.fullmatch(r'/api/chunks/\d+',path):
             from scripts.build_pages import paged_payload
             file=ROOT/'data/latest.json'

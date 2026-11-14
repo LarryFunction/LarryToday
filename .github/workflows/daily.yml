@@ -48,6 +48,10 @@ jobs:
           BASE_KEY_3: ${{ secrets.BASE_KEY_3 }}
           AI_MODEL: ${{ vars.AI_MODEL }}
         run: python scripts/daily_update.py
+      - name: Discover primary materials for leading events
+        continue-on-error: true
+        timeout-minutes: 5
+        run: python scripts/source_evidence.py
       - name: Preserve operator report
         if: always()
         uses: actions/upload-artifact@v4
@@ -77,6 +81,7 @@ jobs:
           for file in data/social-posts.json data/social-status.json data/opinion-posts.json data/ai-usage.json data/update-report.json data/update-report.md; do
             if [ -f "$file" ]; then git add "$file"; fi
           done
+          if [ -d data/evidence ]; then git add data/evidence; fi
           if [ -d data/pending ]; then git add -A data/pending; fi
           if [ -f data/ai-budget-ledger.json ]; then git add data/ai-budget-ledger.json; fi
           if ! git diff --cached --quiet; then

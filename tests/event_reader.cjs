@@ -13,6 +13,16 @@ vm.runInContext(`edition={date:'2026-11-03',revision:1,event_version:2,articles:
  await vm.runInContext("category='全部';focusOnly=false;readingMode='articles';render()",context);
  assert.match(el('#articles').innerHTML,/报道甲/);assert.match(el('#articles').innerHTML,/报道乙/);
  assert.doesNotMatch(el('#articles').innerHTML,/class="event-context"/);
+ await vm.runInContext("enterEvents(true)",context);
+ await vm.runInContext('render()',context);
+ assert.match(el('#articles').innerHTML,/期进展/);
+ assert.equal(el('#report-index-note').hidden,true);
+ assert.match(el('#list-heading').textContent,/持续追踪/);
+ await vm.runInContext("$('#article-mode').onclick();render()",context);
+ assert.equal(el('#report-index-note').hidden,false);
+ assert.match(el('#articles').innerHTML,/报道乙/);
+ await vm.runInContext("$('#return-events').onclick();render()",context);
+ assert.equal(el('#report-index-note').hidden,true);
  context.get=async()=>({revision:2,event_version:2,events:[]});
  const old=await vm.runInContext("decorateEdition({date:'2026-11-03',revision:1,articles:[]})",context);
  assert.equal(old.event_version,undefined,'immutable old revisions do not acquire later classifications');

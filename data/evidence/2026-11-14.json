@@ -1,0 +1,117 @@
+{
+  "date": "2026-11-14",
+  "checked_at": "2026-11-14T04:48:15.247811+00:00",
+  "method": "primary-source-discovery-v1",
+  "events": [
+    {
+      "event_title": "英伟达CEO黄仁勋辞职及公司人事变动",
+      "article_ids": [
+        "8f8267d9de877325",
+        "58fe8961a5c843d4",
+        "afdd33fb841757df",
+        "fd6bbfcbf2ead03b",
+        "27116240ccb06e54",
+        "5628a9e6d06ba5a0",
+        "bae18bea92e3af53",
+        "de0c2eb84537cc75",
+        "fd789b1f183df999",
+        "3a0b8eda8cde0692",
+        "0685a5025e74b20f",
+        "607d4d7557c40807",
+        "7ade3c54d60e53e4",
+        "bcef079c6ee263ce",
+        "53769a62f7dd1222",
+        "4128951e7548d8e3"
+      ],
+      "priority_score": 36,
+      "materials": [],
+      "searches": [
+        {
+          "query": "site:nvidia.com Commentary: Jensen Huang may prove that the ‘irreplaceable CEO’ is a myth",
+          "provider": "Bing RSS",
+          "status": "unavailable"
+        },
+        {
+          "query": "site:apple.com Commentary: Jensen Huang may prove that the ‘irreplaceable CEO’ is a myth",
+          "provider": "Bing RSS",
+          "status": "unavailable"
+        }
+      ],
+      "errors": [
+        {
+          "stage": "citations",
+          "type": "ValueError"
+        },
+        {
+          "stage": "citations",
+          "type": "ValueError"
+        },
+        {
+          "stage": "search",
+          "type": "ValueError"
+        },
+        {
+          "stage": "search",
+          "type": "ValueError"
+        }
+      ],
+      "status": "retrieval_unavailable"
+    },
+    {
+      "event_title": "教宗良十四世访问秘鲁奇克拉约",
+      "article_ids": [
+        "2d0473a4e2026806",
+        "029e4814d7a3997b",
+        "e72f028430d7b6b6",
+        "c72b42c14fb08ea7",
+        "a02ceb231fccd028",
+        "cc77c38ca8f56d4a",
+        "1998622e0e074d43",
+        "ec263bd0e3bcc9e7",
+        "a8e5eb904c4f6078",
+        "621b97b3a73822c3"
+      ],
+      "priority_score": 34,
+      "materials": [],
+      "searches": [],
+      "errors": [
+        {
+          "stage": "citations",
+          "type": "ValueError"
+        },
+        {
+          "stage": "citations",
+          "type": "ValueError"
+        }
+      ],
+      "status": "retrieval_unavailable"
+    },
+    {
+      "event_title": "欧洲参与乌克兰问题谈判的代表安排",
+      "article_ids": [
+        "a8b28d01a06b2c09",
+        "5bec5c5f787cc0ca",
+        "44eded81bb78d1fe",
+        "d59859b3deadfd46",
+        "81b9e7f7bbe442be",
+        "56ca23151244a0ac"
+      ],
+      "priority_score": 24,
+      "materials": [],
+      "searches": [],
+      "errors": [
+        {
+          "stage": "citations",
+          "type": "ValueError"
+        },
+        {
+          "stage": "citations",
+          "type": "ValueError"
+        }
+      ],
+      "status": "retrieval_unavailable"
+    }
+  ],
+  "requests": 8,
+  "attempts": 1
+}

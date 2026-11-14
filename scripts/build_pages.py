@@ -98,6 +98,10 @@ def build_site(root=ROOT, out=None):
         if path.exists():
             shutil.copy2(path, api / target)
 
+    evidence=root/'data'/'evidence'
+    if evidence.exists():
+        for path in evidence.glob('????-??-??.json'):copy_json(path,api/'evidence'/path.name)
+
     catalog = merged_sources(root)
     write_json(api / 'sources.json', catalog)
 
