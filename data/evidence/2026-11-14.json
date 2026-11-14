@@ -1,6 +1,6 @@
 {
   "date": "2026-11-14",
-  "checked_at": "2026-11-14T04:48:15.247811+00:00",
+  "checked_at": "2026-11-14T11:53:15.165447+00:00",
   "method": "primary-source-discovery-v1",
   "events": [
     {
@@ -29,33 +29,18 @@
         {
           "query": "site:nvidia.com Commentary: Jensen Huang may prove that the ‘irreplaceable CEO’ is a myth",
           "provider": "Bing RSS",
-          "status": "unavailable"
+          "status": "completed",
+          "results": 10
         },
         {
-          "query": "site:apple.com Commentary: Jensen Huang may prove that the ‘irreplaceable CEO’ is a myth",
+          "query": "Commentary: Jensen Huang may prove that the ‘irreplaceable CEO’ is a myth official statement",
           "provider": "Bing RSS",
-          "status": "unavailable"
+          "status": "completed",
+          "results": 10
         }
       ],
-      "errors": [
-        {
-          "stage": "citations",
-          "type": "ValueError"
-        },
-        {
-          "stage": "citations",
-          "type": "ValueError"
-        },
-        {
-          "stage": "search",
-          "type": "ValueError"
-        },
-        {
-          "stage": "search",
-          "type": "ValueError"
-        }
-      ],
-      "status": "retrieval_unavailable"
+      "errors": [],
+      "status": "no_relevant_material"
     },
     {
       "event_title": "教宗良十四世访问秘鲁奇克拉约",
@@ -73,18 +58,16 @@
       ],
       "priority_score": 34,
       "materials": [],
-      "searches": [],
-      "errors": [
+      "searches": [
         {
-          "stage": "citations",
-          "type": "ValueError"
-        },
-        {
-          "stage": "citations",
-          "type": "ValueError"
+          "query": "Chiclayo, Pope Leo’s Other Home, Comes Out In Force to Welcome Father Robert official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
         }
       ],
-      "status": "retrieval_unavailable"
+      "errors": [],
+      "status": "no_relevant_material"
     },
     {
       "event_title": "欧洲参与乌克兰问题谈判的代表安排",
@@ -98,20 +81,18 @@
       ],
       "priority_score": 24,
       "materials": [],
-      "searches": [],
-      "errors": [
+      "searches": [
         {
-          "stage": "citations",
-          "type": "ValueError"
-        },
-        {
-          "stage": "citations",
-          "type": "ValueError"
+          "query": "Europe Agrees on a Team to Represent It in Talks With Russia official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
         }
       ],
-      "status": "retrieval_unavailable"
+      "errors": [],
+      "status": "no_relevant_material"
     }
   ],
-  "requests": 8,
-  "attempts": 1
+  "requests": 11,
+  "attempts": 2
 }
