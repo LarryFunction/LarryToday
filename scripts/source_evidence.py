@@ -59,6 +59,20 @@ def relevant(row,title):
     shared=tokens(row)&tokens({'title':title})
     return len(shared)>=4 and any(len(t)>3 or re.search('[\u4e00-\u9fff]',t) for t in shared)
 
+def search_headline(members,fallback):
+    def usable(row):
+        title=row.get('title_en') or row.get('title') or ''
+        return not re.search(r'^(commentary|opinion|analysis|editorial)\s*:|[?？]',title,re.I)
+    row=next((r for r in members if usable(r) and re.search('[a-zA-Z]',r.get('title_en') or r.get('title',''))),next((r for r in members if usable(r)),fallback))
+    return row
+
+def query_terms(row):
+    title=row.get('title_en') or row.get('title') or row.get('title_zh','')
+    words=re.findall(r"[A-Za-z][A-Za-z'-]*",title)
+    if len(words)<4:return title[:80]
+    stop=set('the a an to in of for on and with as from it its his her at by that this says said after about'.split())
+    return ' '.join(w for w in words if w.lower() not in stop)[:110]
+
 def shortlist(edition,limit=3):
     by_id={r['id']:r for r in edition.get('articles',[])}
     featured={b.get('article_id') for b in edition.get('briefing',[])}
@@ -77,7 +91,7 @@ def discover(edition,publishers,fetcher=fetch,limit=3):
     result={'date':edition['date'],'checked_at':datetime.now(timezone.utc).isoformat(),'method':'primary-source-discovery-v1','events':[],'requests':0}
     rows=edition.get('articles',[])
     for score,event,members in shortlist(edition,limit):
-        lead=next((r for r in members if r.get('content_type')=='新闻' and r.get('title_en')),next((r for r in members if r['id']==event.get('lead_id')),members[0]))
+        lead=search_headline(members,next((r for r in members if r['id']==event.get('lead_id')),members[0]))
         bundle={'event_title':event.get('title') or lead.get('title_zh') or lead['title'],'article_ids':event['article_ids'],'priority_score':score,'materials':[],'searches':[],'errors':[]}
         group_text=' '.join(str(r.get(k) or '') for r in members for k in ('title','title_zh'))
         relevant_publishers=[p for p in publishers if any(a.casefold() in group_text.casefold() for a in p.get('aliases',[]))]
@@ -94,7 +108,7 @@ def discover(edition,publishers,fetcher=fetch,limit=3):
                 candidates.extend(urllib.parse.urljoin(base,u) for u in page.links if publisher(urllib.parse.urljoin(base,u),publishers))
             except Exception as error:bundle['errors'].append({'stage':'citations','type':type(error).__name__})
         # Public RSS search is best-effort; it is not a verification authority.
-        headline=lead.get('title_en') or lead.get('title') or bundle['event_title']
+        headline=query_terms(lead)
         queries=['site:'+p['domains'][0]+' '+headline[:140] for p in relevant_publishers[:1]]
         queries.append(headline[:140]+' official statement')
         for query in queries:

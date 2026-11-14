@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import patch
-from scripts.source_evidence import discover, publisher, public_url, relevant
+from scripts.source_evidence import discover, publisher, public_url, relevant, search_headline, query_terms
 
 class SourceEvidenceTests(unittest.TestCase):
     def test_domain_boundary_and_private_network_block(self):
@@ -34,3 +34,10 @@ class SourceEvidenceTests(unittest.TestCase):
         def fetch(url):raise TimeoutError()
         d=discover(self.edition(),[],fetch)
         self.assertEqual(d['events'][0]['status'],'retrieval_unavailable')
+
+    def test_search_prefers_event_report_over_commentary(self):
+        opinion={'title':'Commentary: Is an irreplaceable CEO a myth?'}
+        report={'title':'Acme appoints new chief after board investigation'}
+        chosen=search_headline([opinion,report],opinion)
+        self.assertIs(chosen,report)
+        self.assertNotIn(' after ',query_terms(chosen))
