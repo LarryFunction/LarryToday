@@ -1,44 +1,6 @@
 {
-  "ai_state": "complete",
-  "chinese_titles": 326,
-  "untranslated_titles": 0,
-  "failed_sources": 1,
-  "ai_stages": {
-    "edit": {
-      "calls": 49,
-      "prompt_tokens": 57070,
-      "completion_tokens": 22311
-    },
-    "compare": {
-      "calls": 1,
-      "prompt_tokens": 3013,
-      "completion_tokens": 389
-    }
-  },
-  "budget_exhausted": true,
-  "state": "degraded",
+  "state": "skipped",
   "target_date": "2026-11-15",
   "published_date": "2026-11-15",
-  "collected": 326,
-  "published": 326,
-  "events": 214,
-  "merged": 100,
-  "sources": 16,
-  "country_identified": 235,
-  "ai_country_decisions": 0,
-  "cached": 0,
-  "enriched": 0,
-  "basic_translated": 233,
-  "basic_cached": 11,
-  "failed": 0,
-  "remaining": 0,
-  "accounted_tokens": 82783,
-  "token_budget": 500000,
-  "planned_tokens": 140000,
-  "morning_selected": 8,
-  "prompt_tokens": 60083,
-  "completion_tokens": 22700,
-  "missing_usage": 0,
-  "reasoning_tokens": 0,
-  "finished_at": "2026-11-15T02:34:06.863178+00:00"
+  "finished_at": "2026-11-15T07:13:19.329663+00:00"
 }
