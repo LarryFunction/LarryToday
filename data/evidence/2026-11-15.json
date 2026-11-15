@@ -1,0 +1,98 @@
+{
+  "date": "2026-11-15",
+  "checked_at": "2026-11-15T02:34:06.966677+00:00",
+  "method": "primary-source-discovery-v1",
+  "events": [
+    {
+      "event_title": "微软全球服务中断后恢复",
+      "article_ids": [
+        "6dcaa14127ca8886",
+        "e20735a8100fd27c",
+        "ba94a2c3f1ae1f4f",
+        "b5a2d510401dfa5e",
+        "42b80b2e75c18f5d",
+        "44b0efdfcecb2056",
+        "334ebcca23065263",
+        "44454294e0b6a22b",
+        "d8581b9f4dc3e7ba"
+      ],
+      "priority_score": 41,
+      "materials": [],
+      "searches": [
+        {
+          "query": "site:microsoft.com Microsoft services fully restored global outage",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        },
+        {
+          "query": "Microsoft services fully restored global outage official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [
+        {
+          "stage": "citations",
+          "type": "HTTPError"
+        }
+      ],
+      "status": "no_relevant_material"
+    },
+    {
+      "event_title": "美国联邦航空管理局全国航班停飞事件",
+      "article_ids": [
+        "1e4c1fc5abc49ad2",
+        "0d61bee06bf3e00d",
+        "bc4fc00955f7d88d",
+        "b5bcb0000e7d4bec",
+        "3400cacf66481418",
+        "dc03a868a1fd93dc",
+        "ccca606b522fa519",
+        "dc26999e415f8234",
+        "00e38861d1d4cef3",
+        "183f08da7c3aa0c4",
+        "1dbada2c32b2d862"
+      ],
+      "priority_score": 32,
+      "materials": [],
+      "searches": [
+        {
+          "query": "Copper wire upgrade caused nationwide flight suspension US transport secretary official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [],
+      "status": "no_relevant_material"
+    },
+    {
+      "event_title": "泽连斯基称美方提出乌克兰以顿巴斯换取北约成员资格",
+      "article_ids": [
+        "4d3f357daa8cc28f",
+        "a01ce02146c65777",
+        "598ba954413433ee",
+        "f32b433add00247a",
+        "91089a8bcb4aaf1b",
+        "a94b39f88b2b7bd8",
+        "b3597e97289d05ac"
+      ],
+      "priority_score": 28,
+      "materials": [],
+      "searches": [
+        {
+          "query": "US has floated Ukraine ceding Donbas Nato membership Zelensky official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [],
+      "status": "no_relevant_material"
+    }
+  ],
+  "requests": 14,
+  "attempts": 1
+}
