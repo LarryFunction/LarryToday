@@ -138,3 +138,12 @@ dialog:has(.event-dossier){width:min(1020px,94vw);max-width:1020px;padding:clamp
 @media(max-width:440px){.event-card{grid-template-columns:minmax(0,1fr) 90px;gap:12px}.event-card .geo-mark{min-height:130px}.event-card .geo-code{font-size:34px}.event-card .geo-label{font-size:13px}}
 
 .event-navigation{width:100%;margin-left:0;margin-right:0;padding:0;justify-content:flex-start;border-top:0}.event-navigation button:focus-visible,.story-open:focus-visible{outline:2px solid var(--ink);outline-offset:5px}
+
+/* Event editorial hierarchy: ink, rules and paper, with existing section accents. */
+.editorial-divider{display:flex;align-items:center;gap:22px;padding:28px 0 12px;font:700 18px/1.4 Arial,"Microsoft YaHei",sans-serif;letter-spacing:.18em}.editorial-divider i{height:1px;background:currentColor;opacity:.3;flex:1}.editorial-divider:first-child{padding-top:8px}
+.topic-trail{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:15px;color:var(--accent);font-size:13px}.topic-trail>span{border-left:4px solid var(--accent);padding-left:9px;font-weight:700}.topic-trail button{border:0;background:none;color:inherit;padding:3px 0;cursor:pointer}
+.event-guide{border-top:2px solid var(--accent);margin:18px 0 16px;padding-top:16px;display:grid;gap:18px}.event-guide>div>span{display:block;color:var(--accent);font-size:13px;letter-spacing:.12em;font-weight:700}.event-guide p{font-size:18px;line-height:1.9;margin:6px 0}.event-guide a{font-size:12px;color:inherit;opacity:.7}.event-guide .guide-importance{background:var(--wash);border-left:3px solid var(--accent);padding:12px 16px}.guide-importance p{margin-bottom:0;font-size:16px}
+.claims-panel{border-top:3px solid var(--accent);padding:24px 0;margin:28px 0}.claims-panel article{border-bottom:1px solid #aaa7;display:grid;grid-template-columns:110px 1fr;gap:14px;padding:18px 0}.claims-panel article>span{color:var(--accent);font-size:13px}.claims-panel blockquote{margin:0;font:18px/1.9 Georgia,'Noto Serif SC',serif}.claims-panel a{grid-column:2;font-size:13px}.topic-dossier>article{padding:22px 0;border-top:1px solid #aaa7}.topic-dossier article>span{font-size:13px;opacity:.7}.topic-dossier button{font:inherit;text-align:left;border:0;background:none;cursor:pointer;color:inherit}.topic-dossier p{line-height:1.9}
+@media(max-width:700px){.event-guide p{font-size:16px}.claims-panel article{grid-template-columns:1fr;gap:8px}.claims-panel a{grid-column:1}.editorial-divider{font-size:16px}.topic-trail{font-size:12px}}
+
+.event-navigation{overflow:visible}

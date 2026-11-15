@@ -18,7 +18,7 @@ CONNECT=re.compile(r'外溢|蔓延|波及|受.{0,20}启发|引发.{0,20}(抗议|
 
 def title(row):return row.get('title_zh') or row.get('title') or ''
 def text(row):return ' '.join(str(row.get(k) or '') for k in ('title_zh','title','title_en'))+' '+str((row.get('event_assignment') or {}).get('title') or '')
-def event_title(row):return (row.get('event_assignment') or {}).get('title') or (named_event(row)[1] if named_event(row) else title(row))
+def event_title(row):return title(row) if named_event(row) else (row.get('event_assignment') or {}).get('title') or title(row)
 def named_event(row):
     value=text(row)
     year=(row.get('published_at') or '')[:4]
@@ -28,8 +28,8 @@ def named_event(row):
     return None
 
 def tokens(row):
-    result=lexical(text(row).lower()).copy()
-    if named_event(row):result.add('@'+named_event(row)[0])
+    result=lexical(' '.join(str(row.get(k) or '') for k in ('title','title_zh','title_en')).lower()).copy()
+    # A shared theme is not evidence of the same concrete event.
     return result
 
 @lru_cache(maxsize=50000)
@@ -68,7 +68,10 @@ def compatible(a,b):
 def similarity(a,b,ta,tb,weights):
     if not compatible(a,b):return 0
     if identity(a) and identity(a)==identity(b):return 1
-    if named_event(a) and named_event(a)==named_event(b):return 1
+    if named_event(a) and named_event(a)==named_event(b):
+        # Strip common theme vocabulary before comparing concrete developments.
+        common=lexical(named_event(a)[1].lower())|{'midterm','midterms','election','elections','iran','war'}
+        ta=ta-common;tb=tb-common
     shared=ta&tb
     if len(shared)<4:return 0
     weight=lambda ts:sum(weights.get(t,1) for t in ts)
@@ -87,6 +90,8 @@ def group_day(rows, legacy):
     for event in legacy:
         ids=[i for i in event.get('article_ids',[]) if i in by_id and i not in assigned]
         if not ids:continue
+        if len(ids)>1 and any(named_event(by_id[i]) for i in ids):
+            groups.extend({'ids':[i],'basis':'single_report'} for i in ids);assigned.update(ids);continue
         if len(ids)>1 and any(by_id[i].get('research_status')=='preprint' for i in ids) and (not identity(by_id[ids[0]]) or any(identity(by_id[i])!=identity(by_id[ids[0]]) for i in ids)):
             groups.extend({'ids':[i],'basis':'single_report'} for i in ids);assigned.update(ids);continue
         groups.append({'ids':ids,'basis':event.get('grouping_basis','source_comparison') if len(ids)>1 else 'single_report','comparison':event.get('comparison')})
@@ -188,7 +193,9 @@ def build_event_views(root=None, editions=None):
                          reporting_days=len({p['date'] for p in track['timeline']}),total_reports=len(track['_ids']),source_count=len({r['source_id'] for r in members}),
                          geography=country_mark(codes,'事件内来源报道提及') if codes else lead.get('geography'))
             result.append(event)
-        result.sort(key=lambda e:by_id[e['lead_id']].get('published_at') or '',reverse=True)
+        from scripts.event_presentation import enrich, topic_view
+        enrich(result,rows,tracks)
+        topics=topic_view(result,rows,named_event)
         # Only explicit reported connections between separate country event clusters.
         active=[e for e in result if primary_countries(by_id[e['lead_id']]) and action(by_id[e['lead_id']])]
         for event in active:
@@ -207,12 +214,10 @@ def build_event_views(root=None, editions=None):
                     pair=tuple(sorted((event['story_id'],other['story_id'])))
                     # This is an attributed lead, never an assertion of verified causality.
                     relations[pair]={'type':'reported_connection','date':day,'evidence':evidence,'source_id':r['source_id'],'source_name':r.get('source_name') or r['source_id'],'url':r['url'],'article_id':rid}
-        event_for={i:e for e in result for i in e['article_ids']};briefing=[];seen=set()
-        for b in edition.get('briefing',[]):
-            e=event_for.get(b.get('article_id'))
-            if e and e['id'] not in seen:
-                briefing.append(dict(b,event_id=e['id'],article_id=e['lead_id'],title=e['title'],summary=by_id[e['lead_id']].get('summary_zh') or b.get('summary','')));seen.add(e['id'])
-        days[day]={'date':day,'revision':edition.get('revision',1),'event_version':2,'events':result,'briefing':briefing}
+        briefing=[{'event_id':e['id'],'article_id':e['lead_id'],'title':e['title'],'category':e['category'],
+                   'summary':e['guide']['latest']['text'],'selection_reason':e['priority']} for e in sorted(result,key=lambda e:-e['priority']['score'])[:8]]
+        days[day]={'date':day,'revision':edition.get('revision',1),'event_version':2,'events':result,'topics':topics,'briefing':briefing}
+
     for (a,b),evidence in relations.items():
         tracks[a]['relations'].append(dict(evidence,target=b,title=tracks[b]['title']))
         tracks[b]['relations'].append(dict(evidence,target=a,title=tracks[a]['title']))

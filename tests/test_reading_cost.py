@@ -22,7 +22,9 @@ class ReadingCostTests(unittest.TestCase):
         self.assertEqual([r['id'] for c in chunks for r in c], [r['id'] for r in rows])
         self.assertNotIn('feed_excerpt',manifest['articles'][0])
         self.assertIn('可检索摘要',manifest['articles'][0]['_search'])
-        self.assertEqual(manifest['articles'][30]['_chunk'],'api/chunks/1.json')
+        self.assertRegex(manifest['articles'][30]['_chunk'],r'^api/chunks/2026-10-20/1-[a-f0-9]{12}/1.json$')
+        changed,_=paged_payload({'date':'2026-10-20','articles':rows+[{'id':'new'}]})
+        self.assertNotEqual(manifest['articles'][0]['_chunk'],changed['articles'][0]['_chunk'])
 
     def test_zero_budget_makes_no_generation_request(self):
         client=Client({'BASE_URL':'https://example.com','BASE_KEY_1':'test','BASE_KEY_2':'test','BASE_KEY_3':'test','AI_TOKEN_BUDGET':'0'})
@@ -86,6 +88,19 @@ class ReadingCostTests(unittest.TestCase):
             network.return_value.__enter__.return_value.read.return_value=json.dumps({'choices':[{'finish_reason':'stop','message':{'content':'{}'}}]}).encode()
             client.chat(2,'prompt',[])
             self.assertEqual(client.usage['missing_usage'],1)
+
+    def test_bootstrap_is_bounded_and_preserves_manifest(self):
+        from copy import deepcopy
+        from scripts.build_pages import bootstrap_payload
+        rows=[{'id':str(i),'title':'新闻','summary_zh':'摘要'} for i in range(100)]
+        events=[{'id':'e'+str(i),'lead_id':str(i),'article_ids':[str(i)]} for i in range(100)]
+        manifest,_=paged_payload({'date':'2026-11-15','articles':rows,'events':events,'event_version':2})
+        before=deepcopy(manifest);first=bootstrap_payload(manifest)
+        self.assertEqual(len(first['events']),30)
+        self.assertEqual(len(first['articles']),30)
+        self.assertEqual(first['event_total'],100)
+        self.assertEqual(manifest,before)
+        self.assertRegex(first['_full_index'],r'^api/readers/2026-11-15/1-[a-f0-9]{12}/index.json$')
 
 
 if __name__ == '__main__':

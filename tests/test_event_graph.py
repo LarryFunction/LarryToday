@@ -9,15 +9,15 @@ class EventGraphTests(unittest.TestCase):
         r.update(kw);return r
     def edition(self,day,rows):return {'date':day,'revision':1,'articles':rows,'briefing':[{'article_id':r['id'],'event_id':'old-'+r['id'],'title':r['title'],'category':r['category'],'summary':'摘要'} for r in rows]}
     def test_event_preserves_all_reports_and_deduplicates_morning(self):
-        rows=[self.row('a','US midterm elections: voters cast ballots'),self.row('b','美国中期选举：国会控制权之争')]
+        rows=[self.row('a','美国中期选举：内华达州选票复核诉讼开庭'),self.row('b','美国中期选举：内华达州选票复核诉讼开庭审理')]
         original=deepcopy(rows);days,stories=build_event_views(editions=[self.edition('2026-11-03',rows)])
         events=days['2026-11-03']['events'];self.assertEqual(len(events),1)
         self.assertEqual(set(events[0]['article_ids']),{'a','b'})
         self.assertEqual(len(days['2026-11-03']['briefing']),1)
         self.assertEqual(rows,original)
     def test_stable_id_and_historical_day_does_not_leak_future(self):
-        first=self.edition('2026-11-03',[self.row('a','US midterm elections: voters cast ballots')])
-        second=self.edition('2026-11-04',[self.row('b','美国中期选举：结果陆续揭晓','2026-11-04')])
+        first=self.edition('2026-11-03',[self.row('a','美国中期选举：内华达州选票复核诉讼开庭')])
+        second=self.edition('2026-11-04',[self.row('b','美国中期选举：内华达州选票复核诉讼继续审理','2026-11-04')])
         days,tracks=build_event_views(editions=[first]);before=deepcopy(days)
         both,tracks=build_event_views(editions=[first,second])
         self.assertEqual(before['2026-11-03'],both['2026-11-03'])
@@ -50,13 +50,13 @@ class EventGraphTests(unittest.TestCase):
         bad=deepcopy(good);bad['members'][1]['evidence']='made up quote'
         self.assertFalse(validate({'groups':[bad]},payload))
     def test_cross_year_elections_not_one_event(self):
-        rows=[self.row('a','US midterm elections voting','2022-11-03'),self.row('b','US midterm elections voting','2026-11-03')]
+        rows=[self.row('a','美国中期选举：内华达州选票复核诉讼开庭','2022-11-03'),self.row('b','美国中期选举：内华达州选票复核诉讼开庭','2026-11-03')]
         days,tracks=build_event_views(editions=[self.edition('2022-11-03',rows[:1]),self.edition('2026-11-03',rows[1:])])
         self.assertEqual(len(tracks),2)
 
     def test_reader_preserves_event_view_and_article_chunks(self):
         from scripts.build_pages import paged_payload
-        rows=[self.row('a','US midterm elections voting'),self.row('b','美国中期选举：投票开始')]
+        rows=[self.row('a','美国中期选举：内华达州选票复核诉讼开庭'),self.row('b','美国中期选举：内华达州选票复核诉讼开庭审理')]
         raw=self.edition('2026-11-03',rows);days,_=build_event_views(editions=[raw])
         raw.update(days[raw['date']]);manifest,chunks=paged_payload(raw)
         self.assertEqual(manifest['event_version'],2)
@@ -77,3 +77,21 @@ class EventGraphTests(unittest.TestCase):
         self.assertEqual(len(validate({'groups':[group]},payload)),1)
         group['title']='移民相关报道'
         self.assertFalse(validate({'groups':[group]},payload))
+
+    def test_topic_is_not_one_event_even_with_legacy_group(self):
+        rows=[self.row('a','美国中期选举：内华达州选票复核诉讼开庭'),self.row('b','美国中期选举：纽约州候选人筹款创纪录')]
+        edition=self.edition('2026-11-03',rows)
+        edition['events']=[{'article_ids':['a','b'],'lead_id':'a'}]
+        days,_=build_event_views(editions=[edition]);view=days[edition['date']]
+        self.assertEqual(len(view['events']),2)
+        self.assertEqual(len(view['topics'][0]['event_ids']),2)
+        self.assertEqual({i for e in view['events'] for i in e['article_ids']},{'a','b'})
+
+    def test_priority_and_claims_are_grounded(self):
+        rows=[self.row('game','桌游发布新版本'),self.row('policy','央行宣布利率决议',summary_zh='央行表示将下调利率。')]
+        days,_=build_event_views(editions=[self.edition('2026-11-03',rows)])
+        events=days['2026-11-03']['events'];self.assertEqual(events[0]['lead_id'],'policy')
+        claim=events[0]['guide']['claims'][0]
+        self.assertIn(claim['text'],rows[1]['summary_zh'])
+        self.assertEqual(claim['url'],rows[1]['url'])
+        self.assertEqual(events[0]['editorial_section'],'今日主线')

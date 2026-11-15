@@ -2,6 +2,8 @@
 import json
 import shutil
 import sys
+from functools import lru_cache
+from copy import deepcopy
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -18,12 +20,18 @@ def read_json(path):
 
 def write_json(path, value):
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    path.write_text(json.dumps(value, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
+
+
+@lru_cache(maxsize=32768)
+def classified_row(serialized):
+    from scripts.editorial import classify
+    row=json.loads(serialized)
+    return classify(row) if all(k in row for k in ('title','url','category')) else dict(row,geography=geography(row))
 
 
 def reader_rows(rows):
-    from scripts.editorial import classify
-    return [classify(dict(r)) if all(k in r for k in ('title','url','category')) else dict(r,geography=geography(r)) for r in rows]
+    return [deepcopy(classified_row(json.dumps(r,sort_keys=True,ensure_ascii=False))) for r in rows]
 
 
 def copy_json(source, target):
@@ -44,7 +52,10 @@ def paged_payload(edition):
     """Keep full archives; latest reader downloads index and needed chunks."""
     chunks=[]
     articles=reader_rows(edition.get('articles',[]))
-    manifest={k:v for k,v in edition.items() if k!='articles'}
+    manifest={k:edition[k] for k in ('date','revision','window','reading_minutes','updated_at','event_version','events','briefing','topics','background_events','social_posts') if k in edition}
+    import hashlib
+    content_key=hashlib.sha256(json.dumps(edition,sort_keys=True,ensure_ascii=False).encode()).hexdigest()[:12]
+    namespace=f"{edition.get('date','undated')}/{edition.get('revision',1)}-{content_key}"
     # Reader grouping is a presentation view; archived editions stay unchanged.
     if edition.get('events') is not None and edition.get('event_version')!=2:
         from scripts.editorial import events
@@ -52,13 +63,15 @@ def paged_payload(edition):
         manifest['events']=events(main,edition.get('comparisons',[]))
         event_for={id:e['id'] for e in manifest['events'] for id in e['article_ids']}
         manifest['briefing']=[dict(b,event_id=event_for.get(b.get('article_id'),b.get('event_id'))) for b in edition.get('briefing',[])]
+    # Detailed guides only travel with front-page leads; other dossiers use their reports.
+    manifest['events']=[dict(e,guide={k:v for k,v in e.get('guide',{}).items() if k!='claims'}) if e.get('editorial_section')=='今日主线' else {k:v for k,v in e.items() if k!='guide'} for e in manifest.get('events',[])]
     manifest['paged']=True
     manifest['articles']=[]
     for offset in range(0,len(articles),30):
-        chunk=f'api/chunks/{offset//30}.json'
+        chunk=f'api/chunks/{namespace}/{offset//30}.json'
         rows=[]
         for original in articles[offset:offset+30]:
-            row=dict(original,geography=geography(original))
+            row=dict(original)
             rows.append(row)
             small={k:row[k] for k in ('id','title','title_zh','title_en','category','source_id','source_name','published_at','url','tags','section','geography') if k in row}
             small['_chunk']=chunk
@@ -67,10 +80,25 @@ def paged_payload(edition):
         chunks.append(rows)
     return manifest,chunks
 
+def bootstrap_payload(manifest):
+    events=manifest.get('events',[])[:30]
+    ids={i for e in events for i in e['article_ids']}
+    value={k:v for k,v in manifest.items() if k not in ('articles','events','background_events','social_posts','topics')}
+    value.update(partial=True,article_total=len(manifest['articles']),event_total=len(manifest.get('events',[])),
+                 articles=[a for a in manifest['articles'] if a['id'] in ids],events=events)
+    first=manifest['articles'][0]['_chunk'] if manifest['articles'] else 'api/chunks/empty/0.json'
+    value['_full_index']=first.rsplit('/',1)[0].replace('api/chunks/','api/readers/')+'/index.json'
+    return value
+
+
 def write_paged(api, edition):
     manifest,chunks=paged_payload(edition)
-    for i,rows in enumerate(chunks): write_json(api/'chunks'/f'{i}.json',rows)
+    for i,rows in enumerate(chunks):
+        write_json(api.parent/manifest['articles'][i*30]['_chunk'],rows)
     write_json(api/'reader.json',manifest)
+    bootstrap=bootstrap_payload(manifest)
+    write_json(api.parent/bootstrap['_full_index'],manifest)
+    write_json(api/'bootstrap.json',bootstrap)
 
 
 def build_site(root=ROOT, out=None):

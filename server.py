@@ -42,17 +42,23 @@ class Handler(BaseHTTPRequestHandler):
             target=ROOT/'data'/'evidence'/(evidence_match[1]+'.json')
             if target.exists():return self.send_body(target.read_bytes(),'application/json')
             return self.send_error(404)
-        if path == '/api/reader' or re.fullmatch(r'/api/chunks/\d+',path):
+        if path in ('/api/reader','/api/bootstrap') or re.fullmatch(r'/api/readers/[0-9-]+/[0-9]+-[a-f0-9]+/index',path) or re.fullmatch(r'/api/chunks/(?:[0-9-]+/[0-9]+-[a-f0-9]+/)?\d+',path):
             from scripts.build_pages import paged_payload
             file=ROOT/'data/latest.json'
             if file.exists():
                 stat=file.stat()
                 manifest,chunks=reader_payload(str(file),stat.st_mtime_ns,stat.st_size)
             else: manifest,chunks=paged_payload({'articles':[]})
-            if path == '/api/reader': payload=manifest
+            from scripts.build_pages import bootstrap_payload
+            bootstrap=bootstrap_payload(manifest)
+            if path == '/api/bootstrap':payload=bootstrap
+            elif path == '/api/reader' or path.startswith('/api/readers/'):
+                if path.startswith('/api/readers/') and '/'+bootstrap['_full_index'].removesuffix('.json')!=path:return self.send_error(404)
+                payload=manifest
             else:
                 i=int(path.rsplit('/',1)[1])
                 if i>=len(chunks): return self.send_error(404)
+                if '/'+manifest['articles'][i*30]['_chunk'].removesuffix('.json')!=path and path.count('/')>3:return self.send_error(404)
                 payload=chunks[i]
             return self.send_body(json.dumps(payload,ensure_ascii=False).encode(),'application/json')
         routes = {'/':'public/index.html','/app.js':'public/app.js','/style.css':'public/style.css','/api/news':'data/latest.json','/api/archive':'data/archive.json','/api/sources':'srcs/sources.json','/api/status':'data/last-update.json'}

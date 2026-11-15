@@ -34,7 +34,9 @@ class PagesBuildTests(unittest.TestCase):
             app = (out / 'app.js').read_text(encoding='utf-8')
             self.assertIn("get('api/news.json')", app)
             self.assertNotIn("get('/api/news')", app)
-            self.assertIn("fetch(url,{cache:'no-store'})", app)
+            self.assertIn("'force-cache':'no-cache'", app)
+            reader=json.loads((out / 'api/reader.json').read_text(encoding='utf-8'))
+            for row in reader['articles']:self.assertTrue((out / row['_chunk']).exists())
 
 
 if __name__ == '__main__':

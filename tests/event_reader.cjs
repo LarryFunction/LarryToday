@@ -5,9 +5,12 @@ const context=vm.createContext({console,URL,Date,setTimeout,localStorage:{getIte
 vm.runInContext(fs.readFileSync('public/app.js','utf8'),context);
 vm.runInContext(`edition={date:'2026-11-03',revision:1,event_version:2,articles:[{id:'a',title:'Report one',title_zh:'报道甲',summary_zh:'甲的摘要',category:'国际政治',source_id:'one',url:'https://example.com/a'},{id:'b',title:'Report two',title_zh:'报道乙',summary_zh:'乙的摘要',category:'经济与投资',source_id:'two',url:'https://example.com/b'}],events:[{id:'event-story-1234567890abcdef',story_id:'story-1234567890abcdef',title:'同一具体事件',lead_id:'a',article_ids:['a','b'],category:'国际政治',categories:['国际政治','经济与投资'],source_count:2,reporting_days:2}],briefing:[{article_id:'b',event_id:'event-story-1234567890abcdef',category:'经济与投资',title:'晨读标题',summary:'晨读摘要'}],background_events:[]};`,context);
 (async()=>{
+ let chunkCalls=0;context.get=async()=>{chunkCalls++;throw Error('offline');};
  await vm.runInContext('render()',context);
+ assert.equal(chunkCalls,0,'event summaries must render without a body request');
  assert.match(el('#articles').innerHTML,/同一具体事件/);
- assert.match(el('#articles').innerHTML,/报道乙/,'non-lead sources remain accessible');
+ assert.match(el('#articles').innerHTML,/data-reports=/,'source reports are expanded on demand');
+ assert.match(vm.runInContext("sourceReports(['a','b'])",context),/报道乙/,'non-lead sources remain accessible');
  await vm.runInContext("category='经济与投资';focusOnly=true;render()",context);
  assert.match(el('#articles').innerHTML,/同一具体事件/,'category and briefing filters include non-lead members');
  await vm.runInContext("category='全部';focusOnly=false;readingMode='articles';render()",context);
@@ -30,5 +33,16 @@ vm.runInContext(`edition={date:'2026-11-03',revision:1,event_version:2,articles:
  await vm.runInContext("openStory('story-1234567890abcdef')",context);
  assert.match(el('#dialog-content').innerHTML,/当时的报道/);
  assert.doesNotMatch(el('#dialog-content').innerHTML,/未来才知道/);
+ assert.match(vm.runInContext("claimsPanel(null,[{id:'a',summary_zh:'甲公司否认相关指控。',source_id:'one',url:'https://example.com/a'}])",context),/回应与否认/);
+ context.get=async()=>({date:'2026-11-03',revision:1,articles:[],events:[]});
+ vm.runInContext("edition={date:'2026-11-03',revision:1,partial:true,_full_index:'index.json',articles:[],events:[]}",context);
+ await vm.runInContext('ensureFull()',context);
+ assert.equal(vm.runInContext('!!edition.partial',context),false);
+ let resolveIndex;context.get=()=>new Promise(resolve=>{resolveIndex=resolve;});
+ vm.runInContext("edition={date:'2026-11-03',partial:true,_full_index:'index.json',articles:[]}",context);
+ const pendingIndex=vm.runInContext('ensureFull()',context);
+ vm.runInContext("edition={date:'2026-10-20',articles:[]}",context);
+ resolveIndex({date:'2026-11-03',articles:[]});await pendingIndex;
+ assert.equal(vm.runInContext('edition.date',context),'2026-10-20','background index must not replace selected archive');
  console.log('Event reader tests passed');
 })().catch(error=>{console.error(error);process.exitCode=1;});
