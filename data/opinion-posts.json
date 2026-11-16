@@ -1,5 +1,26 @@
 [
   {
+    "id": "efe34ed43c04172a",
+    "title": "Meta’s Muse: How we launched the most successful consumer product this year | Mona Sarantakos",
+    "url": "https://www.lennysnewsletter.com/p/metas-muse-how-we-launched-the-most",
+    "source_id": "lenny-newsletter",
+    "category": "科技与 AI",
+    "published_at": "2026-11-15T13:31:28+00:00",
+    "feed_excerpt": "Listen now | Mona Sarantakos on going from a weekend with OpenClaw to shipping the fastest-growing consumer AI product in history",
+    "summary": "",
+    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
+    "date_precision": "timestamp",
+    "authors": [
+      "Lenny Rachitsky"
+    ],
+    "source_name": "Lenny's Newsletter",
+    "publisher_family": "lenny",
+    "source_region": "美国",
+    "source_kind": "opinion",
+    "content_type": "观点",
+    "section": "业界声音"
+  },
+  {
     "id": "12856f8358b389f6",
     "title": "🧠 Community Wisdom: When you become the bottleneck for your AI agents, the PULL framework for PMs, product growth vs. growth marketing, boosting feedback response rates, and more",
     "url": "https://www.lennysnewsletter.com/p/community-wisdom-when-you-become",
@@ -387,27 +408,6 @@
     "date_precision": "timestamp",
     "authors": [
       "Lenny Rachitsky"
-    ],
-    "source_name": "Lenny's Newsletter",
-    "publisher_family": "lenny",
-    "source_region": "美国",
-    "source_kind": "opinion",
-    "content_type": "观点",
-    "section": "业界声音"
-  },
-  {
-    "id": "3013f9811fb1e14c",
-    "title": "“Claude cuts my TikTok”: How this creator is scaling video with AI | Brooke Lacey",
-    "url": "https://www.lennysnewsletter.com/p/claude-cuts-my-tiktok-how-this-creator",
-    "source_id": "lenny-newsletter",
-    "category": "科技与 AI",
-    "published_at": "2026-10-19T12:04:52+00:00",
-    "feed_excerpt": "Watch now (37 mins) | 🎙️ Brooke Lacey shows live how Claude Code turns a raw phone video into a captioned, jump-cut TikTok in about 15 seconds",
-    "summary": "",
-    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
-    "date_precision": "timestamp",
-    "authors": [
-      "Claire Vo"
     ],
     "source_name": "Lenny's Newsletter",
     "publisher_family": "lenny",

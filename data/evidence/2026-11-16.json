@@ -1,0 +1,90 @@
+{
+  "date": "2026-11-16",
+  "checked_at": "2026-11-16T02:43:25.756346+00:00",
+  "method": "primary-source-discovery-v1",
+  "events": [
+    {
+      "event_title": "爱沙尼亚指称无人机工厂遭破坏图谋后关闭对俄边境口岸",
+      "article_ids": [
+        "fca971b253c07d0a",
+        "9d33fcad83a79bcf",
+        "80a6d9bc0dc9004e",
+        "686f4eb04e74ce3c",
+        "013e9ebf1cc0ec67",
+        "c99dd37204258f0a",
+        "a35f446124dd8cc1"
+      ],
+      "priority_score": 25,
+      "materials": [],
+      "searches": [
+        {
+          "query": "Estonia close all border crossings Russia attack drone maker official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [],
+      "status": "no_relevant_material"
+    },
+    {
+      "event_title": "英伟达丑闻与黄仁勋去留",
+      "article_ids": [
+        "d54f0911d187f02a",
+        "cb6fba1ba2cf4950",
+        "10aacb01750249b4",
+        "5d33c726c9a1dbd6",
+        "f307af3a264fee5c",
+        "c80623ea53a2bddf"
+      ],
+      "priority_score": 24,
+      "materials": [],
+      "searches": [
+        {
+          "query": "site:nvidia.com US Treasury chief calls outsider lead embattled tech firm Nvidia",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        },
+        {
+          "query": "US Treasury chief calls outsider lead embattled tech firm Nvidia official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [],
+      "status": "no_relevant_material"
+    },
+    {
+      "event_title": "捷克布拉格大规模集会抗议公共媒体资金改革",
+      "article_ids": [
+        "81abc0787cd1e9c5",
+        "d3a2c471fef7377b",
+        "1767661cd6ab2a44",
+        "2040d82e72f01ad6",
+        "bc033adbd8215c3f",
+        "5939aa334a931de9"
+      ],
+      "priority_score": 24,
+      "materials": [],
+      "searches": [
+        {
+          "query": "Czechs stage huge rally against public-media funding overhaul official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [
+        {
+          "stage": "citations",
+          "type": "HTTPError"
+        }
+      ],
+      "status": "no_relevant_material"
+    }
+  ],
+  "requests": 10,
+  "attempts": 1
+}
