@@ -1,5 +1,47 @@
 [
   {
+    "id": "77438fcd9f63e52e",
+    "title": "🎙️ How I AI: Fable 5.2 Review + How I fight token fraud as a solo founder + Building a Claude Code family OS",
+    "url": "https://www.lennysnewsletter.com/p/how-i-ai-fable-52-review-how-i-fight",
+    "source_id": "lenny-newsletter",
+    "category": "科技与 AI",
+    "published_at": "2026-11-16T16:02:55+00:00",
+    "feed_excerpt": "Your weekly listens from How I AI, part of the Lenny's Podcast Network",
+    "summary": "",
+    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
+    "date_precision": "timestamp",
+    "authors": [
+      "Lenny Rachitsky"
+    ],
+    "source_name": "Lenny's Newsletter",
+    "publisher_family": "lenny",
+    "source_region": "美国",
+    "source_kind": "opinion",
+    "content_type": "观点",
+    "section": "业界声音"
+  },
+  {
+    "id": "9d2e062ac6f18ad1",
+    "title": "How I fight token fraud as a solo founder",
+    "url": "https://www.lennysnewsletter.com/p/how-i-fight-token-fraud-as-a-solo",
+    "source_id": "lenny-newsletter",
+    "category": "科技与 AI",
+    "published_at": "2026-11-16T13:04:09+00:00",
+    "feed_excerpt": "Watch now (40 mins) | 🎙️ After losing tens of thousands of dollars to token fraud, I walk through six attack patterns, the defenses I built, and why I killed free trials",
+    "summary": "",
+    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
+    "date_precision": "timestamp",
+    "authors": [
+      "Claire Vo"
+    ],
+    "source_name": "Lenny's Newsletter",
+    "publisher_family": "lenny",
+    "source_region": "美国",
+    "source_kind": "opinion",
+    "content_type": "观点",
+    "section": "业界声音"
+  },
+  {
     "id": "efe34ed43c04172a",
     "title": "Meta’s Muse: How we launched the most successful consumer product this year | Mona Sarantakos",
     "url": "https://www.lennysnewsletter.com/p/metas-muse-how-we-launched-the-most",
@@ -366,48 +408,6 @@
     "date_precision": "timestamp",
     "authors": [
       "Kiyani"
-    ],
-    "source_name": "Lenny's Newsletter",
-    "publisher_family": "lenny",
-    "source_region": "美国",
-    "source_kind": "opinion",
-    "content_type": "观点",
-    "section": "业界声音"
-  },
-  {
-    "id": "ce20b0d6454246c4",
-    "title": "Claude Duet is beautiful. I still forgot to use it",
-    "url": "https://www.lennysnewsletter.com/p/claude-duet-is-beautiful-i-still",
-    "source_id": "lenny-newsletter",
-    "category": "科技与 AI",
-    "published_at": "2026-10-21T20:25:18+00:00",
-    "feed_excerpt": "Watch now (16 mins) | 🎙️ I tested Claude Duet, Anthropic's beautifully designed new personal agent, on real work to see if it can beat my personal agent fatigue and make the cut",
-    "summary": "",
-    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
-    "date_precision": "timestamp",
-    "authors": [
-      "Claire Vo"
-    ],
-    "source_name": "Lenny's Newsletter",
-    "publisher_family": "lenny",
-    "source_region": "美国",
-    "source_kind": "opinion",
-    "content_type": "观点",
-    "section": "业界声音"
-  },
-  {
-    "id": "d34982012b9aedbf",
-    "title": "🎙️ How I AI: Meta Muse Wonder + How Brooke Lacey is scaling video with AI",
-    "url": "https://www.lennysnewsletter.com/p/how-i-ai-meta-muse-wonder-how-brooke",
-    "source_id": "lenny-newsletter",
-    "category": "科技与 AI",
-    "published_at": "2026-10-19T15:03:35+00:00",
-    "feed_excerpt": "Your weekly listens from How I AI, part of the Lenny's Podcast Network",
-    "summary": "",
-    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
-    "date_precision": "timestamp",
-    "authors": [
-      "Lenny Rachitsky"
     ],
     "source_name": "Lenny's Newsletter",
     "publisher_family": "lenny",

@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-17",
+  "checked_at": "2026-11-17T05:04:55.937030+00:00",
+  "method": "primary-source-discovery-v1",
+  "events": [
+    {
+      "event_title": "特朗普访亚期间美中俄元首深圳会晤",
+      "article_ids": [
+        "53d78cef26fe239c",
+        "66cc25ec58970afb",
+        "e6652f0d8581c7ea",
+        "5d9a437be3b01143",
+        "fe69479f5451f128",
+        "e518d14acdf93a0f",
+        "b370b5a5430fe8b9",
+        "38fcb0436718262c",
+        "b338759cd243de29"
+      ],
+      "priority_score": 30,
+      "materials": [],
+      "searches": [
+        {
+          "query": "site:nvidia.com Trump s Asia Trip Will Bring Him Table Xi Putin What Know",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        },
+        {
+          "query": "Trump s Asia Trip Will Bring Him Table Xi Putin What Know official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [],
+      "status": "no_relevant_material"
+    },
+    {
+      "event_title": "五国宣布在卢旺达设立遣返中心协议",
+      "article_ids": [
+        "5f2ca0d474bb8492",
+        "77155c8e1635a9bd",
+        "38d2912ee0180cb0",
+        "6d0f201a7a0650d6",
+        "d61a491a0c5a17c3",
+        "bbbfc99286f63f53",
+        "bf13ead5f5c36b88",
+        "1e62fc2e7f60d3dd",
+        "90a3d8b406947f35"
+      ],
+      "priority_score": 27,
+      "materials": [],
+      "searches": [
+        {
+          "query": "Rwanda host hub rejected EU migrants official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [],
+      "status": "no_relevant_material"
+    },
+    {
+      "event_title": "罗伯特·帕丁森被宣布接任詹姆斯·邦德",
+      "article_ids": [
+        "bdf3a5c14e4f1161",
+        "41ea534b8fc963e9",
+        "e08a265cc2cb3ae7",
+        "8ebedea36150023c",
+        "a124adff6d8599f8",
+        "bcd181111f57da49",
+        "2a3f3310ea0c0ae8"
+      ],
+      "priority_score": 22,
+      "materials": [],
+      "searches": [
+        {
+          "query": "man golden touch James Bond franchise is money-spinner official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [],
+      "status": "no_relevant_material"
+    }
+  ],
+  "requests": 10,
+  "attempts": 1
+}
