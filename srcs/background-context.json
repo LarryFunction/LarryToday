@@ -1,0 +1,304 @@
+{
+  "version": 1,
+  "reviewed_at": "2026-11-18",
+  "items": [
+    {
+      "id": "apec",
+      "pattern": "\\bAPEC\\b|亚太经合",
+      "title": "APEC 是什么？",
+      "body": "亚太经合组织成立于 1989 年，是亚太地区的经济合作论坛。理解峰会报道时，可先区分长期合作框架、本届议程和会议期间的双边会谈。",
+      "links": [
+        {
+          "label": "APEC 官方介绍",
+          "url": "https://www.apec.org/who-we-are/about-us",
+          "kind": "官网"
+        },
+        {
+          "label": "APEC 的成立背景",
+          "url": "https://history.state.gov/milestones/1989-1992/apec",
+          "kind": "历史"
+        },
+        {
+          "label": "APEC 常见问题",
+          "url": "https://www.apec.org/faq",
+          "kind": "机构介绍"
+        }
+      ]
+    },
+    {
+      "id": "cop",
+      "pattern": "\\bCOP\\s?\\d{1,2}\\b|联合国气候.{0,5}(大会|会议)|气候变化大会",
+      "title": "气候大会与 COP",
+      "body": "COP 是《联合国气候变化框架公约》的缔约方会议，也是公约的最高决策机构；首届会议于 1995 年在柏林举行。各届大会讨论履约、减排与相关制度安排。",
+      "links": [
+        {
+          "label": "COP 的职责与历届会议",
+          "url": "https://unfccc.int/process/bodies/supreme-bodies/conference-of-the-parties-cop",
+          "kind": "官网与历史"
+        }
+      ]
+    },
+    {
+      "id": "us-election",
+      "pattern": "美国.{0,12}(选举|投票)|\\b(?:US|U\\.S\\.|American).{0,20}(?:election|midterm)|\\bmidterms?\\b",
+      "title": "美国选举：先分清选什么",
+      "body": "美国国会选举每两年举行一次。总统选举、国会选举和州及地方选举属于不同层次；理解结果时，应分别看选举职位、议席变化与此前的选举记录。",
+      "links": [
+        {
+          "label": "国会、州与地方选举",
+          "url": "https://www.usa.gov/midterm-state-and-local-elections",
+          "kind": "制度"
+        },
+        {
+          "label": "总统选举流程",
+          "url": "https://www.usa.gov/election",
+          "kind": "制度"
+        },
+        {
+          "label": "历届联邦选举结果",
+          "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+          "kind": "历史数据"
+        }
+      ],
+      "group": "election",
+      "country": "US"
+    },
+    {
+      "id": "election",
+      "pattern": "选举|大选|\\b(?:elections?|ballot|midterms?)\\b",
+      "title": "选举制度如何影响结果",
+      "body": "选举制度规定选票如何转化为代表席位，也影响政党竞争和政府组成。不同国家的制度不能直接类比；阅读时可对照该国选举职位、计票规则和历届结果。",
+      "links": [
+        {
+          "label": "按国家查询选举制度",
+          "url": "https://www.idea.int/data-tools/data/electoral-system-design-database",
+          "kind": "比较资料"
+        },
+        {
+          "label": "选举制度资料说明",
+          "url": "https://www.idea.int/publications/catalogue/electoral-system-design-database-codebook",
+          "kind": "资料方法"
+        }
+      ],
+      "group": "election"
+    },
+    {
+      "id": "eu",
+      "pattern": "欧盟|欧洲理事会|欧盟委员会|\\bEuropean Union\\b|\\bEU\\b",
+      "title": "理解欧盟的制度背景",
+      "body": "欧盟各成员国与欧盟机构处于不同决策层级。阅读峰会或政策报道时，可先确认行动主体，再查阅欧盟的机构职责、成员国情况和形成历史。",
+      "links": [
+        {
+          "label": "欧盟概况、国家与历史",
+          "url": "https://european-union.europa.eu/principles-countries-history_en",
+          "kind": "官方资料"
+        }
+      ]
+    },
+    {
+      "id": "nato",
+      "pattern": "北约|\\bNATO\\b",
+      "title": "北约的基本定位",
+      "body": "北约是以政治和军事手段维护成员安全的联盟。理解相关声明时，需区分联盟共同决定、个别成员国行动及非成员伙伴关系。",
+      "links": [
+        {
+          "label": "北约的宗旨",
+          "url": "https://www.nato.int/en/what-we-do/introduction-to-nato/natos-purpose",
+          "kind": "官网"
+        }
+      ]
+    },
+    {
+      "id": "monetary",
+      "pattern": "央行|加息|降息|货币政策|\\b(?:central bank|interest rates?|monetary policy)\\b",
+      "title": "利率决定背后的货币政策",
+      "body": "货币政策通过影响货币供给与金融条件，服务于价格稳定和经济活动等目标。利率决定需要放在通胀、就业与经济增长的背景中理解，政策目标之间也可能存在取舍。",
+      "links": [
+        {
+          "label": "货币政策入门",
+          "url": "https://www.imf.org/en/Publications/fandd/issues/Series/Back-to-Basics/Monetary-Policy",
+          "kind": "IMF 解释"
+        }
+      ]
+    },
+    {
+      "id": "trade",
+      "pattern": "关税|贸易协定|贸易战|\\b(?:tariffs?|trade deal|trade war|WTO)\\b",
+      "title": "关税与贸易规则",
+      "body": "多边贸易规则涉及货物、服务、知识产权等领域。最惠国待遇等原则及其例外，是理解关税争议的重要背景；具体措施还应查看适用范围和相关法律文件。",
+      "links": [
+        {
+          "label": "世界贸易体系的基本原则",
+          "url": "https://www.wto.org/english/thewto_e/whatis_e/tif_e/fact2_e.htm",
+          "kind": "WTO 解释"
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "pattern": "人工智能|大模型|\\b(?:AI|LLM|OpenAI|ChatGPT|Anthropic)\\b",
+      "title": "先区分 AI 系统与具体应用",
+      "body": "AI 系统可以根据输入产生预测、内容、建议或决策。阅读新模型与应用报道时，应区分模型本身、使用场景以及评测条件；单项测试成绩并不概括所有实际用途。",
+      "links": [
+        {
+          "label": "OECD：AI 系统定义说明",
+          "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/03/explanatory-memorandum-on-the-updated-oecd-definition-of-an-ai-system_3c815e51/623da898-en.pdf",
+          "kind": "基础定义 · PDF"
+        }
+      ]
+    },
+    {
+      "id": "preprint",
+      "pattern": "预印本|\\barXiv\\b",
+      "title": "预印本是什么？",
+      "body": "arXiv 是科研成果的开放传播平台。预印本的公开发布与期刊同行评审是不同环节；理解论文报道时，还需要查看论文版本、实验条件及后续正式发表情况。",
+      "links": [
+        {
+          "label": "arXiv 官方介绍",
+          "url": "https://info.arxiv.org/about/index.html",
+          "kind": "官网"
+        }
+      ],
+      "research": true
+    }
+  ],
+  "countries": {
+    "CN": "中国",
+    "US": "美国",
+    "GB": "英国",
+    "FR": "法国",
+    "DE": "德国",
+    "JP": "日本",
+    "KR": "韩国",
+    "RU": "俄罗斯",
+    "UA": "乌克兰",
+    "IN": "印度",
+    "IL": "以色列",
+    "PS": "巴勒斯坦",
+    "IR": "伊朗",
+    "CA": "加拿大",
+    "AU": "澳大利亚",
+    "SG": "新加坡",
+    "ES": "西班牙",
+    "IT": "意大利",
+    "BR": "巴西",
+    "MX": "墨西哥",
+    "ZA": "南非",
+    "TR": "土耳其",
+    "ID": "印度尼西亚",
+    "PK": "巴基斯坦",
+    "AR": "阿根廷",
+    "EC": "厄瓜多尔",
+    "QA": "卡塔尔",
+    "AT": "奥地利",
+    "PL": "波兰",
+    "KE": "肯尼亚",
+    "BG": "保加利亚",
+    "SD": "苏丹",
+    "SS": "南苏丹",
+    "EG": "埃及",
+    "SA": "沙特阿拉伯",
+    "AE": "阿联酋",
+    "LB": "黎巴嫩",
+    "SY": "叙利亚",
+    "IQ": "伊拉克",
+    "JO": "约旦",
+    "YE": "也门",
+    "AF": "阿富汗",
+    "BD": "孟加拉国",
+    "NP": "尼泊尔",
+    "LK": "斯里兰卡",
+    "MM": "缅甸",
+    "TH": "泰国",
+    "VN": "越南",
+    "MY": "马来西亚",
+    "PH": "菲律宾",
+    "KH": "柬埔寨",
+    "LA": "老挝",
+    "KP": "朝鲜",
+    "MN": "蒙古国",
+    "KZ": "哈萨克斯坦",
+    "UZ": "乌兹别克斯坦",
+    "AM": "亚美尼亚",
+    "AZ": "阿塞拜疆",
+    "GE": "格鲁吉亚",
+    "NL": "荷兰",
+    "BE": "比利时",
+    "CH": "瑞士",
+    "SE": "瑞典",
+    "NO": "挪威",
+    "DK": "丹麦",
+    "FI": "芬兰",
+    "IS": "冰岛",
+    "IE": "爱尔兰",
+    "PT": "葡萄牙",
+    "GR": "希腊",
+    "CZ": "捷克",
+    "HU": "匈牙利",
+    "RO": "罗马尼亚",
+    "RS": "塞尔维亚",
+    "HR": "克罗地亚",
+    "AL": "阿尔巴尼亚",
+    "BY": "白俄罗斯",
+    "MD": "摩尔多瓦",
+    "LT": "立陶宛",
+    "LV": "拉脱维亚",
+    "EE": "爱沙尼亚",
+    "SK": "斯洛伐克",
+    "SI": "斯洛文尼亚",
+    "BA": "波黑",
+    "NZ": "新西兰",
+    "NG": "尼日利亚",
+    "ET": "埃塞俄比亚",
+    "SO": "索马里",
+    "UG": "乌干达",
+    "TZ": "坦桑尼亚",
+    "RW": "卢旺达",
+    "GH": "加纳",
+    "MA": "摩洛哥",
+    "DZ": "阿尔及利亚",
+    "TN": "突尼斯",
+    "LY": "利比亚",
+    "ML": "马里",
+    "NE": "尼日尔",
+    "SN": "塞内加尔",
+    "CM": "喀麦隆",
+    "CD": "刚果民主共和国",
+    "ZW": "津巴布韦",
+    "CO": "哥伦比亚",
+    "PE": "秘鲁",
+    "CL": "智利",
+    "VE": "委内瑞拉",
+    "BO": "玻利维亚",
+    "UY": "乌拉圭",
+    "PY": "巴拉圭",
+    "CU": "古巴",
+    "HT": "海地",
+    "JM": "牙买加",
+    "PA": "巴拿马",
+    "CR": "哥斯达黎加",
+    "GT": "危地马拉",
+    "HN": "洪都拉斯",
+    "NI": "尼加拉瓜",
+    "SV": "萨尔瓦多",
+    "DO": "多米尼加共和国"
+  },
+  "country_profiles": {
+    "US": {
+      "body": "美国主要位于北美，是由 50 个州和联邦首都区组成的联邦共和国。理解其政治新闻时，需区分联邦与州层级，以及行政、立法和司法机构。",
+      "url": "https://en.wikipedia.org/wiki/United_States"
+    },
+    "FR": {
+      "body": "法国第五共和国建立于 1958 年，采用半总统制。总统、政府与议会的职责并不相同，选举报道中的总统选举和议会选举也应分别理解。",
+      "url": "https://en.wikipedia.org/wiki/France"
+    },
+    "GB": {
+      "body": "英国实行君主立宪和议会制；议会包括下议院和上议院。苏格兰、威尔士与北爱尔兰拥有处理部分地方事务的自治机构。",
+      "url": "https://en.wikipedia.org/wiki/United_Kingdom"
+    },
+    "JP": {
+      "body": "日本实行议会制君主立宪，国会为两院制。天皇承担礼仪性职责，行政权由首相与内阁行使。",
+      "url": "https://en.wikipedia.org/wiki/Japan"
+    }
+  }
+}

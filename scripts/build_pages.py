@@ -130,6 +130,9 @@ def build_site(root=ROOT, out=None):
     if evidence.exists():
         for path in evidence.glob('????-??-??.json'):copy_json(path,api/'evidence'/path.name)
 
+    background=root/'srcs'/'background-context.json'
+    if background.exists():copy_json(background,api/'background-context.json')
+
     catalog = merged_sources(root)
     write_json(api / 'sources.json', catalog)
 

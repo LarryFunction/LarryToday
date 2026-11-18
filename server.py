@@ -65,7 +65,7 @@ class Handler(BaseHTTPRequestHandler):
         target = routes.get(path)
         if path=='/api/sources':
             return self.send_body(json.dumps(merged_sources(ROOT),ensure_ascii=False).encode(),'application/json')
-        extras={'/api/source-health':'data/source-health.json','/api/social-status':'data/social-status.json','/api/social-posts':'data/social-posts.json'}
+        extras={'/api/background-context':'srcs/background-context.json','/api/source-health':'data/source-health.json','/api/social-status':'data/social-status.json','/api/social-posts':'data/social-posts.json'}
         target=extras.get(path,target)
         match=re.fullmatch(r'/api/revisions/(\d{4}-\d{2}-\d{2})(?:/(\d+))?',path)
         if match:

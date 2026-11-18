@@ -245,7 +245,7 @@ $('#sources-button').onclick=async()=>{directory=!directory;savedOnly=false;rend
 document.addEventListener('click',async e=>{const b=e.target.closest('[data-save]');if(!b)return;const id=b.dataset.save;if(saved.has(id)){saved.delete(id);delete savedArticles[id];}else{try{await loadRows(new Set([id]));}catch{notify('报道暂未加载，请稍后再收藏');return;}saved.add(id);const row=rowById(id)||(edition.social_posts||[]).find(a=>a.id===id)||storyReports.get(id);if(row)savedArticles[id]={...row,_editionDate:edition.date};}try{localStorage.setItem('larrytoday-saved',JSON.stringify([...saved]));persistSaved();notify('收藏已更新 · 原刊快照保存在此浏览器');b.textContent=saved.has(id)?'已收藏':'收藏报道';}catch{notify('浏览器未允许保存，收藏仅本次有效');}render();});
 
 $('#close-dialog').onclick=()=>$('#dialog').close();
-$('#help-button').onclick=()=>showDialog('<h2>从事件出发，读懂来龙去脉。</h2><p>今日事件汇集本期进展，持续追踪收录已有跨期报道的事件。点击“了解事件”可查阅时间线、各家报道与原始材料。</p><p>每条事件下都可以展开本期来源；“全部报道索引”按篇查阅，不遗漏任何已收录报道。收藏保存在当前浏览器中。</p><p>原始材料包括机构声明、文件或研究。材料由谁发布、说了什么，与其说法是否成立，是不同的问题。</p>');
+$('#help-button').onclick=()=>showDialog('<h2>从事件出发，读懂来龙去脉。</h2><p>今日事件汇集本期进展，持续追踪收录已有跨期报道的事件。点击“了解事件”可先阅读背景、制度简介和国家资料，再查阅时间线、各家报道与原始材料。</p><p>每条事件下都可以展开本期来源；“全部报道索引”按篇查阅，不遗漏任何已收录报道。收藏保存在当前浏览器中。</p><p>原始材料包括机构声明、文件或研究。材料由谁发布、说了什么，与其说法是否成立，是不同的问题。</p>');
 $('#archive-button').onclick=async()=>{try{const days=await get('api/archive.json');showDialog(`<h2>往期日报</h2><p>初版永久保留。选择日期后可查看初版、修订说明与各次版本。</p>${days.map(d=>`<button class="archive-day" data-day="${esc(d)}">${esc(d)} <span>阅读本期 ↗</span></button>`).join('')||'<p>尚无已发布日报。</p>'}`);}catch{notify('暂时无法读取往期日报');}};
 $('#dialog-content').addEventListener('click',async e=>{const day=e.target.closest('[data-day]');const rev=e.target.closest('[data-rev]');try{if(day)await revisionDialog(day.dataset.day);if(rev){edition=await decorateEdition(await get('api/revisions/'+rev.dataset.date+'/'+rev.dataset.rev+'.json'));resetEdition();$('#dialog').close();}}catch{notify('该期版本暂时不可用');}});
 
@@ -281,6 +281,39 @@ async function loadEvidence(story,asOf,request){
     slot.innerHTML=`<section class="source-evidence"><div class="evidence-heading"><span>溯源手记</span><h3>回到原始材料</h3></div>${materials.length?materials.map(m=>`<article><span class="material-kind">${esc(m.kind||'机构原始材料')}</span><h4><a href="${safe(m.url)}" target="_blank" rel="noopener noreferrer">${esc(m.title)} ↗</a></h4><p>${esc(m.publisher)} · ${esc(m.status==='retrieved'?'页面已读取':'已收录来源')}</p>${m.excerpt?`<blockquote>${esc(m.excerpt)}</blockquote>`:''}</article>`).join(''):bundles.some(b=>b.status==='retrieval_unavailable')?'<p>本次溯源连接暂不可用，尚不能判断是否存在相关原始材料。</p>':'<p>本次检索尚未找到足够相关的原始材料。</p>'}<p class="evidence-note">机构声明代表发布方立场；页面可访问不等于其中说法已获独立证实。</p></section>`;
   }catch{if(request===dossierRequest)slot.innerHTML='';}
 }
+let backgroundRequest;
+function wikiSearch(query){return 'https://zh.wikipedia.org/w/index.php?search='+encodeURIComponent(query);}
+function backgroundPanel(story,asOf,catalog={items:[],countries:{}}){
+  const timeline=(story.timeline||[]).filter(p=>p.date<=asOf).slice().sort((a,b)=>b.date.localeCompare(a.date));
+  const reports=timeline.flatMap(p=>p.reports), latest=reports[0];
+  if(!latest)return '';
+  const text=reports.slice(0,12).map(r=>[r.title_zh,r.title,r.title_en].filter(Boolean).join(' ')).join(' ');
+  const groups=new Set(), cards=[];
+  for(const item of catalog.items||[]){
+    if(item.group&&groups.has(item.group))continue;
+    if(item.country&&!reports.some(r=>r.geography?.countries?.includes(item.country)))continue;
+    const research=item.research&&reports.some(r=>r.research_status==='preprint'||/^https:\/\/(?:www\.)?arxiv\.org\//.test(r.url||''));
+    if(!research&&!new RegExp(item.pattern,'i').test(text))continue;
+    if(item.group)groups.add(item.group);
+    cards.push(item);if(cards.length===3)break;
+  }
+  const countries=[...new Set(reports.slice(0,12).flatMap(r=>r.geography?.countries||[]))].filter(c=>catalog.countries?.[c]).slice(0,3);
+  const earlier=timeline.filter(p=>p.date<asOf).slice(-1)[0];
+  const origin=earlier?.reports?.slice(-1)[0];
+  const external=(label,url,kind)=>`<a href="${safe(url)}" target="_blank" rel="noopener noreferrer"><span>${esc(kind)}</span>${esc(label)} ↗</a>`;
+  const countryLinks=countries.map(code=>{const country=catalog.countries[code],profile=catalog.country_profiles?.[code];return `<div><h4>${esc(country)}</h4>${profile?`<p>${esc(profile.body)}</p>`:''}<div class="background-links">${external(country+'：概况与历史',profile?.url||wikiSearch(country),profile?'维基百科 · 英文':'百科检索')}${/选举|大选|\b(elections?|midterms?)\b/i.test(text)?external(country+'：选举制度与历史',wikiSearch(country+' 选举'),'百科检索'):''}</div></div>`;}).join('');
+  const keyword=(latest.tags||[]).find(t=>!['国际事务','科技观察','经济观察','科学研究','环境观察','社会文化','专题观察'].includes(t));
+  const query=keyword||latest.title_zh||latest.title||story.title;
+  return `<section class="event-background"><div class="background-heading"><span class="background-symbol" aria-hidden="true">↳</span><div><span class="eyebrow">BEFORE THE HEADLINE</span><h3>读懂这件事</h3><p>背景 · 制度 · 来路</p></div></div>${origin?`<article class="background-origin"><span>本报较早的记录 · ${esc(earlier.date)}</span><h4>${esc(origin.title_zh||origin.title)}</h4><p>${esc(origin.summary_zh||origin.feed_excerpt||'')}</p>${external(origin.source_name||name(origin.source_id),origin.url,'此前报道')}</article>`:''}${cards.map(c=>`<article class="background-card"><h4>${esc(c.title)}</h4><p>${esc(c.body)}</p><div class="background-links">${c.links.map(l=>external(l.label,l.url,l.kind)).join('')}</div></article>`).join('')}${countryLinks?`<details class="background-countries"><summary>认识报道中的国家 <span>${countries.map(c=>esc(catalog.countries[c])).join(' / ')} ＋</span></summary>${countryLinks}</details>`:''}<div class="background-further"><span>${cards.length?'继续了解':'从这里了解背景'}</span><p>${cards.length?'可结合基础介绍与本期报道，分别了解长期背景和最新进展。':'尚无匹配的专题背景简介。可先检索相关概念，再结合来源报道阅读；检索入口不代表已找到对应词条。'}</p>${external(query,wikiSearch(query),'百科检索')}</div><p class="background-date">基础资料整理：${esc(catalog.reviewed_at||'待更新')} · 外部页面可能持续修订</p></section>`;
+}
+async function loadBackground(story,asOf,request){
+  const slot=$('#story-background');
+  if(!backgroundRequest)backgroundRequest=get('api/background-context.json').catch(error=>{backgroundRequest=null;throw error;});
+  let catalog;
+  try{catalog=await backgroundRequest;}catch{catalog={items:[],countries:{}};}
+  if(request!==dossierRequest||!$('#dialog').open)return;
+  slot.innerHTML=backgroundPanel(story,asOf,catalog);
+}
 async function openStory(id){
   if(!/^story-[a-f0-9]{16}$/.test(id))return;
   const request=++dossierRequest, asOf=edition.date;
@@ -303,7 +336,8 @@ async function openStory(id){
     const latest=timeline[0]?.reports[0];
     const related=(story.relations||[]).filter(r=>r.date<=asOf);
     const report=r=>`<div class="dossier-report"><div class="dossier-source"><span>${esc(r.source_name||name(r.source_id))}</span><time>${date(r.published_at)}</time></div><h4>${link(r)}</h4>${r.title_zh&&r.title!==r.title_zh?`<p class="dossier-original">${esc(r.title)}</p>`:''}<p>${esc(r.summary_zh||r.feed_excerpt||'')}</p><button class="report-save" data-save="${esc(r.id)}">${saved.has(r.id)?'已收藏':'收藏报道'}</button></div>`;
-    $('#dialog-content').innerHTML=`<section class="event-dossier theme-${themes[latest?.category]?.[0]||'world'}"><div class="dossier-heading"><span class="eyebrow">THE DEVELOPING STORY</span><h2>${esc(local?.title||story.title)}</h2><div class="dossier-stats"><span><b>${timeline.length}</b> 期追踪</span><span><b>${reports.length}</b> 篇报道</span><span>${esc(story.first_seen)} — ${esc(timeline[0]?.date||asOf)}</span></div></div>${claimsPanel(local,reports)}<div id="story-evidence"></div><h3 class="timeline-title">事件进展 <span>THE CHRONOLOGY</span></h3><p class="dossier-caption">按刊期整理各来源报道，保留不同说法与报道时间。</p><div class="event-timeline">${timeline.map((p,i)=>`<details class="timeline-day" ${i===0?'open':''}><summary><time>${esc(p.date)}</time><span>${p.reports.length} 篇报道</span><b>＋</b></summary>${p.reports.map(report).join('')}</details>`).join('')}</div>${related.length?`<section class="event-connections"><h3>事件之间</h3>${related.map(r=>`<article><button data-story="${esc(r.target)}">${esc(r.title)} ↗</button><p class="connection-label">报道中的关联线索</p><blockquote>${esc(r.evidence)}</blockquote><a href="${safe(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.source_name)} · ${esc(r.date)} ↗</a></article>`).join('')}</section>`:''}</section>`;
+    $('#dialog-content').innerHTML=`<section class="event-dossier theme-${themes[latest?.category]?.[0]||'world'}"><div class="dossier-heading"><span class="eyebrow">THE DEVELOPING STORY</span><h2>${esc(local?.title||story.title)}</h2><div class="dossier-stats"><span><b>${timeline.length}</b> 期追踪</span><span><b>${reports.length}</b> 篇报道</span><span>${esc(story.first_seen)} — ${esc(timeline[0]?.date||asOf)}</span></div></div><div id="story-background"><p class="background-loading">正在翻阅背景资料…</p></div>${claimsPanel(local,reports)}<div id="story-evidence"></div><h3 class="timeline-title">事件进展 <span>THE CHRONOLOGY</span></h3><p class="dossier-caption">按刊期整理各来源报道，保留不同说法与报道时间。</p><div class="event-timeline">${timeline.map((p,i)=>`<details class="timeline-day" ${i===0?'open':''}><summary><time>${esc(p.date)}</time><span>${p.reports.length} 篇报道</span><b>＋</b></summary>${p.reports.map(report).join('')}</details>`).join('')}</div>${related.length?`<section class="event-connections"><h3>事件之间</h3>${related.map(r=>`<article><button data-story="${esc(r.target)}">${esc(r.title)} ↗</button><p class="connection-label">报道中的关联线索</p><blockquote>${esc(r.evidence)}</blockquote><a href="${safe(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.source_name)} · ${esc(r.date)} ↗</a></article>`).join('')}</section>`:''}</section>`;
+    loadBackground(story,asOf,request);
     loadEvidence(story,asOf,request);
   }catch{if(request===dossierRequest&&$('#dialog').open)$('#dialog-content').innerHTML=`<h2>事件档案暂未加载</h2><p>本期的各家报道仍可在日报中展开阅读。</p><button data-story="${esc(id)}">重新读取档案</button>`;}
 }

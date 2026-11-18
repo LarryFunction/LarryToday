@@ -44,5 +44,16 @@ vm.runInContext(`edition={date:'2026-11-03',revision:1,event_version:2,articles:
  vm.runInContext("edition={date:'2026-10-20',articles:[]}",context);
  resolveIndex({date:'2026-11-03',articles:[]});await pendingIndex;
  assert.equal(vm.runInContext('edition.date',context),'2026-10-20','background index must not replace selected archive');
+ context.contextCatalog=JSON.parse(fs.readFileSync('srcs/background-context.json','utf8'));
+ const background=vm.runInContext(`backgroundPanel({title:'APEC 峰会',timeline:[{date:'2026-11-19',reports:[{title:'未来的背景',summary_zh:'不应泄漏'}]},{date:'2026-11-18',reports:[{title:'APEC 峰会',source_id:'one',tags:['APEC'],geography:{countries:['US']}}]}]},'2026-11-18',contextCatalog)`,context);
+ assert.match(background,/APEC 是什么/);assert.match(background,/who-we-are\/about-us/);
+ assert.doesNotMatch(background,/未来的背景|不应泄漏/);
+ assert.match(background,/百科检索/);
+ const election=vm.runInContext(`backgroundPanel({timeline:[{date:'2026-11-18',reports:[{title:'美国中期选举',source_id:'one',geography:{countries:['US']}}]}]},'2026-11-18',contextCatalog)`,context);
+ const otherElection=vm.runInContext(`backgroundPanel({timeline:[{date:'2026-11-18',reports:[{title:'French midterm election',source_id:'one',geography:{countries:['FR']}}]}]},'2026-11-18',contextCatalog)`,context);
+ assert.doesNotMatch(otherElection,/美国选举：先分清选什么/);
+ assert.match(election,/历届联邦选举结果/);assert.doesNotMatch(election,/选举制度如何影响结果/);
+ const fallback=vm.runInContext(`backgroundPanel({timeline:[{date:'2026-11-18',reports:[{title:'独特的新事件<script>',source_id:'one'}]}]},'2026-11-18',contextCatalog)`,context);
+ assert.match(fallback,/尚无匹配/);assert.doesNotMatch(fallback,/<script>/);
  console.log('Event reader tests passed');
 })().catch(error=>{console.error(error);process.exitCode=1;});

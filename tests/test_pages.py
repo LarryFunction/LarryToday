@@ -16,6 +16,8 @@ class PagesBuildTests(unittest.TestCase):
             self.assertTrue((out / 'style.css').exists())
             self.assertTrue((out / 'app.js').exists())
             self.assertTrue((out / '.nojekyll').exists())
+            background=json.loads((out / 'api/background-context.json').read_text(encoding='utf-8'))
+            self.assertGreaterEqual(len(background['items']),10)
             self.assertFalse((out / '.env').exists())
             self.assertGreater(result['editions'], 0)
             self.assertGreater(result['sources'], 0)
