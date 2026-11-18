@@ -1,26 +1,5 @@
 [
   {
-    "id": "dd05751b54a3a1ac",
-    "title": "Lenny’s Newsletter holiday gift guide 2026",
-    "url": "https://www.lennysnewsletter.com/p/lennys-newsletter-holiday-gift-guide-057",
-    "source_id": "lenny-newsletter",
-    "category": "科技与 AI",
-    "published_at": "2026-11-03T14:45:33+00:00",
-    "feed_excerpt": "100+ gift ideas—all things I actually use, love, and recommend",
-    "summary": "",
-    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
-    "date_precision": "timestamp",
-    "authors": [
-      "Lenny Rachitsky"
-    ],
-    "source_name": "Lenny's Newsletter",
-    "publisher_family": "lenny",
-    "source_region": "美国",
-    "source_kind": "opinion",
-    "content_type": "观点",
-    "section": "业界声音"
-  },
-  {
     "id": "4453ca977df4bdb8",
     "title": "Why PMs are suddenly valuable again | Tulsee Doshi (Head of Product, Gemini)",
     "url": "https://www.lennysnewsletter.com/p/what-it-actually-takes-to-build-frontier",
@@ -222,6 +201,27 @@
     "date_precision": "timestamp",
     "authors": [
       "Claire Vo"
+    ],
+    "source_name": "Lenny's Newsletter",
+    "publisher_family": "lenny",
+    "source_region": "美国",
+    "source_kind": "opinion",
+    "content_type": "观点",
+    "section": "业界声音"
+  },
+  {
+    "id": "dd86f379a3b90bb6",
+    "title": "35 premium tools free for a year—now with OpenRouter, LangChain, Sentry, TextExpander, and Ploy 💥",
+    "url": "https://www.lennysnewsletter.com/p/35-premium-tools-free-for-a-yearnow",
+    "source_id": "lenny-newsletter",
+    "category": "科技与 AI",
+    "published_at": "2026-11-17T18:02:02+00:00",
+    "feed_excerpt": "Over $40,000 in value, exclusively for Lenny’s Newsletter subscribers",
+    "summary": "",
+    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
+    "date_precision": "timestamp",
+    "authors": [
+      "Lenny Rachitsky"
     ],
     "source_name": "Lenny's Newsletter",
     "publisher_family": "lenny",

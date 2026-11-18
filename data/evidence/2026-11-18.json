@@ -1,0 +1,83 @@
+{
+  "date": "2026-11-18",
+  "checked_at": "2026-11-18T04:21:21.647672+00:00",
+  "method": "primary-source-discovery-v1",
+  "events": [
+    {
+      "event_title": "乌克兰袭击克里米亚大桥",
+      "article_ids": [
+        "09543f7a2b137148",
+        "2bfbd0aea0c20a6f",
+        "b3d40d0737d81bad",
+        "f1bd0e2fadb1cb2d",
+        "08db2c6a14bfd8db",
+        "b0b00be7208d3c82",
+        "6b220f133c3fccb8"
+      ],
+      "priority_score": 25,
+      "materials": [],
+      "searches": [
+        {
+          "query": "Putin's Crimean Bridge partly collapses Zelensky hails unprecedented' attack Ukraine official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [],
+      "status": "no_relevant_material"
+    },
+    {
+      "event_title": "以色列议会选举马坦·卡哈纳为议长",
+      "article_ids": [
+        "b6879f4f6f6dc95a",
+        "a0ccf12578407433",
+        "23c4e94c2af72ab9",
+        "6d6dd9eea7b6f9a8",
+        "0f0856a90608c0d2"
+      ],
+      "priority_score": 25,
+      "materials": [],
+      "searches": [
+        {
+          "query": "Isra l Matan Kahana un fid le de Gadi Eisenkot t lu pr sident de la Knesset official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [],
+      "status": "no_relevant_material"
+    },
+    {
+      "event_title": "五国宣布在卢旺达设立移民遣返中心",
+      "article_ids": [
+        "d42fc79b9acdce92",
+        "e25d760aa131d188",
+        "f75af33d84565393",
+        "6020be35dc28a1b0",
+        "8a89a626759eac45",
+        "1c8dfbcb75eaec87"
+      ],
+      "priority_score": 24,
+      "materials": [],
+      "searches": [
+        {
+          "query": "Alemania presupuestar millones de euros para enviar migrantes al centro de deportaci n en Ruanda official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [
+        {
+          "stage": "citations",
+          "type": "HTTPError"
+        }
+      ],
+      "status": "no_relevant_material"
+    }
+  ],
+  "requests": 9,
+  "attempts": 1
+}
