@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-19",
+  "checked_at": "2026-11-19T04:14:25.418363+00:00",
+  "method": "primary-source-discovery-v1",
+  "events": [
+    {
+      "event_title": "以军越过加沙停火线在黄线以西发动地面行动",
+      "article_ids": [
+        "4bae7c9dd7b588be",
+        "e55fb910b404a426",
+        "072bff48ae4c45ba",
+        "842ad9ad2dc7cf5d",
+        "ad61954bd8ff4829",
+        "094db73ddfe86508",
+        "3ea99db2529f3c8a",
+        "9caf8473edb42eef",
+        "ee25dc91f60d326f"
+      ],
+      "priority_score": 38,
+      "materials": [],
+      "searches": [
+        {
+          "query": "Israeli military launches rare ground operation Gaza beyond Yellow Line official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [],
+      "status": "no_relevant_material"
+    },
+    {
+      "event_title": "美国民主党提名杰弗里斯为众议院议长",
+      "article_ids": [
+        "6a35c83f83b2ebff",
+        "9b94409484b85efc",
+        "29e3d15185749f88",
+        "c28fe5b405c7981a",
+        "1a82a2206b264444",
+        "6fa8fb6c2f2fa303",
+        "d6660ca836de792f",
+        "83f5be6073ca6df6",
+        "380c6ed3ece312d8"
+      ],
+      "priority_score": 35,
+      "materials": [],
+      "searches": [
+        {
+          "query": "Democrats nominate Hakeem Jeffries be US Speaker House official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [],
+      "status": "no_relevant_material"
+    },
+    {
+      "event_title": "英伟达前CEO黄仁勋离任后董事会拒绝其复职",
+      "article_ids": [
+        "dbda739a24fc0d64",
+        "a201a3ef25e69296",
+        "58ccec08be884d74",
+        "18909266b671c142",
+        "c4c2a9c05d968f32",
+        "627a6341f51930ae",
+        "bb59199150f2453b"
+      ],
+      "priority_score": 28,
+      "materials": [],
+      "searches": [
+        {
+          "query": "site:nvidia.com Business usual' Nvidia's Kress passes first test board slams door Huang",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        },
+        {
+          "query": "Business usual' Nvidia's Kress passes first test board slams door Huang official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [],
+      "status": "no_relevant_material"
+    }
+  ],
+  "requests": 11,
+  "attempts": 1
+}
