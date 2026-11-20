@@ -1,0 +1,104 @@
+{
+  "date": "2026-11-20",
+  "checked_at": "2026-11-20T04:07:19.036720+00:00",
+  "method": "primary-source-discovery-v1",
+  "events": [
+    {
+      "event_title": "特朗普、习近平与普京在深圳APEC峰会举行三方会晤",
+      "article_ids": [
+        "a0058f2288313ceb",
+        "0d31e6ae534615a4",
+        "44673d48958c2b51",
+        "96932efa4198a6cc",
+        "eeaf96b77ff1efc7",
+        "f2c9a0a78b110bb0",
+        "ea7d45ec18e6c673",
+        "2db3d6e535316793",
+        "c0124492d55c311a",
+        "f1950917b8c47627",
+        "8a849231d450c3a3",
+        "9ea64aca799a6f73",
+        "2d45dd075896a4c6",
+        "1755ecd26d7a3825",
+        "0bb7c54e0bd6e5ab",
+        "1171f8f8cbabc107",
+        "64ddb9b93f18a95b",
+        "bca5cc911df68ca8",
+        "4a2c2944ea20a8f3",
+        "ce70231df7f5ffdf",
+        "3df57823bf56c3e4",
+        "137082b8954a2835",
+        "9224b6f26f8c49ca",
+        "0e21cc4208968165"
+      ],
+      "priority_score": 36,
+      "materials": [],
+      "searches": [
+        {
+          "query": "takeaways Trump Xi Putin's historic summit official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [],
+      "status": "no_relevant_material"
+    },
+    {
+      "event_title": "联合国国际法院裁定缅甸对罗兴亚人实施种族灭绝",
+      "article_ids": [
+        "ce33bbd6125c2caf",
+        "968ebb26e1aec61e",
+        "7700ac20dfb9c2d0",
+        "4981619b50a62680",
+        "f0ab3f55aa795ca6",
+        "666ba17e29533e1c",
+        "c265c519088b2765",
+        "45d10903096d43fa",
+        "5a9c64a2d43f289a"
+      ],
+      "priority_score": 30,
+      "materials": [],
+      "searches": [
+        {
+          "query": "site:un.org Les l ments d montrant la commission d actes de violence sexuelle d une grande brutalit au sein des communaut ",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        },
+        {
+          "query": "Les l ments d montrant la commission d actes de violence sexuelle d une grande brutalit au sein des communaut  official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [],
+      "status": "no_relevant_material"
+    },
+    {
+      "event_title": "美籍牧师萨农因参与海地总统莫伊兹遇刺案被定罪",
+      "article_ids": [
+        "29b28d61ecc7b2f0",
+        "c53bb15f7fe080ef",
+        "55ad0c8bc5740022",
+        "037fd18b4ebdf5c5",
+        "0c2b71c55c9e6a27"
+      ],
+      "priority_score": 20,
+      "materials": [],
+      "searches": [
+        {
+          "query": "Florida pastor found guilty over role assassination Haitian president official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [],
+      "status": "no_relevant_material"
+    }
+  ],
+  "requests": 10,
+  "attempts": 1
+}
