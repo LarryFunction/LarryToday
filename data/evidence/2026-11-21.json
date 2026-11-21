@@ -1,0 +1,86 @@
+{
+  "date": "2026-11-21",
+  "checked_at": "2026-11-21T04:02:31.575367+00:00",
+  "method": "primary-source-discovery-v1",
+  "events": [
+    {
+      "event_title": "英国与欧盟在布鲁塞尔峰会达成脱欧后关系重置协议",
+      "article_ids": [
+        "fb730324063a16ca",
+        "98dd0ef0cb849620",
+        "4341fc50aa213d71",
+        "fb622c5a1ee8951b",
+        "f2db6b5d7760f744",
+        "a4483be309fe1fa4",
+        "5ebce6e0e150aa02",
+        "056b6f43eeb305e3"
+      ],
+      "priority_score": 32,
+      "materials": [],
+      "searches": [
+        {
+          "query": "What new UK-EU deal could mean future post-Brexit relations official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 1
+        }
+      ],
+      "errors": [],
+      "status": "no_relevant_material"
+    },
+    {
+      "event_title": "美中俄领导人三方峰会",
+      "article_ids": [
+        "ade6296b88477175",
+        "a1d92a674730a120",
+        "5c6b853216a836f3",
+        "de6586fb5a55709c",
+        "507fd81809a6d691",
+        "4f65a194f0481a79",
+        "d274804cf5ed005f",
+        "a16cc5999447f03b",
+        "41f1e1de2ef9e9fe"
+      ],
+      "priority_score": 30,
+      "materials": [],
+      "searches": [
+        {
+          "query": "Trump Flaunts Camaraderie Xi Putin but Has Little Show official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [
+        {
+          "stage": "citations",
+          "type": "HTTPError"
+        }
+      ],
+      "status": "no_relevant_material"
+    },
+    {
+      "event_title": "特朗普威胁对在海外建AI数据中心的美国科技公司征税或设限",
+      "article_ids": [
+        "9a38142955443e68",
+        "2952a9f1bbe21693",
+        "d020b8aa67dc2154",
+        "cda6fdcfb798fd77"
+      ],
+      "priority_score": 24,
+      "materials": [],
+      "searches": [
+        {
+          "query": "Trump threatens tremendous penalties US tech firms build datacenters abroad official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [],
+      "status": "no_relevant_material"
+    }
+  ],
+  "requests": 9,
+  "attempts": 1
+}
