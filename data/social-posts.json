@@ -229,5 +229,26 @@
     "source_kind": "opinion",
     "content_type": "观点",
     "section": "业界声音"
+  },
+  {
+    "id": "00463851c0c232e2",
+    "title": "🧠 Community Wisdom: Handling context switching with multiple agents, giving feedback on AI-generated designs, getting AI to write less like AI, why PMs don’t share what they’re really working on",
+    "url": "https://www.lennysnewsletter.com/p/community-wisdom-handling-context",
+    "source_id": "lenny-newsletter",
+    "category": "科技与 AI",
+    "published_at": "2026-11-21T16:49:56+00:00",
+    "feed_excerpt": "Community Wisdom 306",
+    "summary": "",
+    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
+    "date_precision": "timestamp",
+    "authors": [
+      "Kiyani"
+    ],
+    "source_name": "Lenny's Newsletter",
+    "publisher_family": "lenny",
+    "source_region": "美国",
+    "source_kind": "opinion",
+    "content_type": "观点",
+    "section": "业界声音"
   }
 ]

@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-22",
+  "checked_at": "2026-11-22T03:03:09.657933+00:00",
+  "method": "primary-source-discovery-v1",
+  "events": [
+    {
+      "event_title": "墨西哥军方逮捕毒枭“矮子伊西德罗”并发生交火",
+      "article_ids": [
+        "e93718646f3eb521",
+        "8a04e8c5d17abf94",
+        "e017bbfe417464b6",
+        "c586bef53440f838",
+        "5b76dfe3de30c0fc",
+        "2681b8486e6260f1",
+        "01c2722abac485d3",
+        "4de2de04ed1faf58",
+        "053ed16412918bce",
+        "a0f895da587fc3a2"
+      ],
+      "priority_score": 42,
+      "materials": [],
+      "searches": [
+        {
+          "query": "Top Drug Kingpin Is Captured Mexican Army Gunfire Erupts official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [
+        {
+          "stage": "citations",
+          "type": "HTTPError"
+        }
+      ],
+      "status": "no_relevant_material"
+    },
+    {
+      "event_title": "COP31气候峰会因化石燃料条款争议陷入僵局并延期",
+      "article_ids": [
+        "0df862d48842935f",
+        "e54ec07f73645f1c",
+        "9b1ea44f69e8cf42",
+        "bb7c67e08b7b7c1e",
+        "c941522cb1a80ea9",
+        "8cef7018775e67fd",
+        "70d1dd5c556861e2"
+      ],
+      "priority_score": 33,
+      "materials": [],
+      "searches": [
+        {
+          "query": "Diplomats race compromise fossil fuels Cop teeters brink failure happened official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [],
+      "status": "no_relevant_material"
+    },
+    {
+      "event_title": "联合国自主武器系统谈判未达成具法律约束力禁令",
+      "article_ids": [
+        "cac4d486e46aeed2",
+        "f12e17e5c0d00f1e",
+        "b0788b0bd2d9aed1",
+        "235f6d2e0c82745e",
+        "0b100c419cad1d0d",
+        "64d023909b39cab8",
+        "6a56d190ddee69d3"
+      ],
+      "priority_score": 25,
+      "materials": [],
+      "searches": [
+        {
+          "query": "site:un.org International UN talks controlling use autonomous weapons collapse",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 7
+        },
+        {
+          "query": "International UN talks controlling use autonomous weapons collapse official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [],
+      "status": "no_relevant_material"
+    }
+  ],
+  "requests": 11,
+  "attempts": 1
+}
