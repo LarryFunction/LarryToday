@@ -1,26 +1,5 @@
 [
   {
-    "id": "4453ca977df4bdb8",
-    "title": "Why PMs are suddenly valuable again | Tulsee Doshi (Head of Product, Gemini)",
-    "url": "https://www.lennysnewsletter.com/p/what-it-actually-takes-to-build-frontier",
-    "source_id": "lenny-newsletter",
-    "category": "科技与 AI",
-    "published_at": "2026-11-08T13:31:32+00:00",
-    "feed_excerpt": "Listen now (59 mins) | Tulsee Doshi on building Google’s frontier models, why evals and vibes both matter, and her 60-20-20 framework for shipping ahead of the curve",
-    "summary": "",
-    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
-    "date_precision": "timestamp",
-    "authors": [
-      "Lenny Rachitsky"
-    ],
-    "source_name": "Lenny's Newsletter",
-    "publisher_family": "lenny",
-    "source_region": "美国",
-    "source_kind": "opinion",
-    "content_type": "观点",
-    "section": "业界声音"
-  },
-  {
     "id": "8acc04791c788b90",
     "title": "Claude Fable 5.2 review: fast, creative, and finally not annoying",
     "url": "https://www.lennysnewsletter.com/p/claude-fable-52-review-fast-creative",
@@ -243,6 +222,27 @@
     "date_precision": "timestamp",
     "authors": [
       "Kiyani"
+    ],
+    "source_name": "Lenny's Newsletter",
+    "publisher_family": "lenny",
+    "source_region": "美国",
+    "source_kind": "opinion",
+    "content_type": "观点",
+    "section": "业界声音"
+  },
+  {
+    "id": "650345130914650f",
+    "title": "First principles: What it takes to be a great product manager in the AI era | Sherif Mansour",
+    "url": "https://www.lennysnewsletter.com/p/first-principles-what-it-takes-to",
+    "source_id": "lenny-newsletter",
+    "category": "科技与 AI",
+    "published_at": "2026-11-22T13:31:53+00:00",
+    "feed_excerpt": "Sherif Mansour on why PMs are thriving in the AI era, the artist PM advantage, and why juniors are your secret weapon now",
+    "summary": "",
+    "verification": "作者博客/通讯 · 个人观点 · 未独立核验",
+    "date_precision": "timestamp",
+    "authors": [
+      "Lenny Rachitsky"
     ],
     "source_name": "Lenny's Newsletter",
     "publisher_family": "lenny",

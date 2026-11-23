@@ -1,0 +1,88 @@
+{
+  "date": "2026-11-23",
+  "checked_at": "2026-11-23T03:42:58.817044+00:00",
+  "method": "primary-source-discovery-v1",
+  "events": [
+    {
+      "event_title": "韩国教育部长因高考反AI作弊措施引发混乱辞职",
+      "article_ids": [
+        "1eb959388b3ab58c",
+        "520e56a219a4af17",
+        "e5837d1a34381f55",
+        "1702b449ef0b09d7",
+        "5556cd143c0d2397",
+        "4076aa2f4ccaabb8",
+        "e3f85fd9c690bff5"
+      ],
+      "priority_score": 25,
+      "materials": [],
+      "searches": [
+        {
+          "query": "South Korean minister quits AI cheating scandal engulfs university exams official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 9
+        }
+      ],
+      "errors": [],
+      "status": "no_relevant_material"
+    },
+    {
+      "event_title": "班加西附近船只遭海上无人机袭击",
+      "article_ids": [
+        "c14cd83a9958be23",
+        "8241a1f86543b2e9",
+        "c4ba5ba817ce7cf8",
+        "56e622bc084c0941",
+        "0a72272c8d43a3ce",
+        "176c628065fb0487",
+        "f6f8616d806cbffc"
+      ],
+      "priority_score": 25,
+      "materials": [],
+      "searches": [
+        {
+          "query": "EN DIRECT guerre en Ukraine deux navires dont au moins un russe cibl s par des attaques de drones Benghazi en  official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [
+        {
+          "stage": "citations",
+          "type": "HTTPError"
+        }
+      ],
+      "status": "no_relevant_material"
+    },
+    {
+      "event_title": "苏丹喀土穆民宅和联合国建筑遭无人机袭击",
+      "article_ids": [
+        "446cc5eb13f86394",
+        "8d694ed4036b95f7",
+        "c03a184cab8f23f0"
+      ],
+      "priority_score": 20,
+      "materials": [],
+      "searches": [
+        {
+          "query": "site:un.org Sudan Drones hit UN building residential area Khartoum",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        },
+        {
+          "query": "Sudan Drones hit UN building residential area Khartoum official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [],
+      "status": "no_relevant_material"
+    }
+  ],
+  "requests": 10,
+  "attempts": 1
+}
