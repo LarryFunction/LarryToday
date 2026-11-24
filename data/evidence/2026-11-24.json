@@ -1,0 +1,126 @@
+{
+  "date": "2026-11-24",
+  "checked_at": "2026-11-24T06:56:53.611662+00:00",
+  "method": "primary-source-discovery-v1",
+  "events": [
+    {
+      "event_title": "英伟达恢复黄仁勋CEO职务",
+      "article_ids": [
+        "c667e4d7ff7dc4d6",
+        "833a072f63c18c6f",
+        "9a4d2ab0e9b74b05",
+        "e55d9577214c9789",
+        "e6af0b3a2e40c497",
+        "0b7b3a362597fb09",
+        "fe676549fe07b788",
+        "0be675fc3105b1e3",
+        "536d483117342edb",
+        "1a69aac9014a76f0",
+        "c6858d58860a1331",
+        "c25bc30eff15a35e",
+        "00916c7a76a8c68a",
+        "4ac1fe94ae4878e2",
+        "539ca515c4d7d081",
+        "9a73c45d38f3622c",
+        "1c898528a8c5b7db",
+        "c13b0a7cbd809011",
+        "00800f54f4a29b68"
+      ],
+      "priority_score": 36,
+      "materials": [
+        {
+          "title": "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director | NVIDIA Newsroom  Artificial Intelligence Computing Leadership from NVIDIA ic_arrow-back-to-top Facebook LinkedIn Instagram YouTube NVIDIA",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+          "publisher": "NVIDIA",
+          "kind": "机构原始材料",
+          "status": "retrieved",
+          "excerpt": "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director | NVIDIA Newsroom NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director November 23, 2026 NVIDIA (NASDAQ: NVDA) today announced that effective imm",
+          "retrieved_at": "2026-11-24T06:56:53.611662+00:00"
+        }
+      ],
+      "searches": [
+        {
+          "query": "site:nvidia.com Jensen Huang reinstated Nvidia CEO Trump intervenes",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        },
+        {
+          "query": "Jensen Huang reinstated Nvidia CEO Trump intervenes official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [],
+      "status": "materials_found"
+    },
+    {
+      "event_title": "土耳其安塔利亚COP31气候谈判因化石燃料表述分歧破裂",
+      "article_ids": [
+        "f484cc612d2071eb",
+        "588a7fd4a572bcae",
+        "13fda4e36f38058e",
+        "ea677e4dfd44810d",
+        "4279a33688d6c96d",
+        "d25de59c6fa8a666",
+        "e4dc3fa8f4ea0ce6",
+        "1075c80c2e7003d6",
+        "2acb1654607c52ca"
+      ],
+      "priority_score": 35,
+      "materials": [],
+      "searches": [
+        {
+          "query": "site:un.org collapse UN climate talks over fossil fuels was years making",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 7
+        },
+        {
+          "query": "collapse UN climate talks over fossil fuels was years making official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 7
+        }
+      ],
+      "errors": [],
+      "status": "no_relevant_material"
+    },
+    {
+      "event_title": "乌克兰称在利比亚近海袭击俄罗斯舰船",
+      "article_ids": [
+        "8b0993be5d17e9fa",
+        "6cb055560ea590f6",
+        "ff327a037bc670c6",
+        "1e8645cf71f53901",
+        "fc898244b0296dcc",
+        "17ac524bad988f20",
+        "4b7fad258a938ce7",
+        "3b152dca00dd577e",
+        "af520c61c8b014f3",
+        "cb29a20e38ef835b"
+      ],
+      "priority_score": 28,
+      "materials": [],
+      "searches": [
+        {
+          "query": "site:un.org What strike Russian ship Libya spread Ukraine war",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        },
+        {
+          "query": "What strike Russian ship Libya spread Ukraine war official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [],
+      "status": "no_relevant_material"
+    }
+  ],
+  "requests": 14,
+  "attempts": 1
+}
