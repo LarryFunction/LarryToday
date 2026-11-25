@@ -1,0 +1,98 @@
+{
+  "date": "2026-11-25",
+  "checked_at": "2026-11-25T05:25:55.792419+00:00",
+  "method": "primary-source-discovery-v1",
+  "events": [
+    {
+      "event_title": "黄仁勋回归及其对市场与舆论的影响",
+      "article_ids": [
+        "2001d309ea8f126b",
+        "d7d928cc05d2d4f3",
+        "9324a8a467b6ccf3",
+        "e602c8d68b2a080f",
+        "2560dd6d5d55f05f",
+        "7d05e7c18613a4bf",
+        "efda50d063378404",
+        "69430a9ee07534ad",
+        "25ddd4deb804b01e"
+      ],
+      "priority_score": 27,
+      "materials": [],
+      "searches": [
+        {
+          "query": "site:nvidia.com Why Asia s AI rally faces tougher road even Jensen Huang s comeback",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        },
+        {
+          "query": "Why Asia s AI rally faces tougher road even Jensen Huang s comeback official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [
+        {
+          "stage": "citations",
+          "type": "HTTPError"
+        }
+      ],
+      "status": "no_relevant_material"
+    },
+    {
+      "event_title": "体育仲裁法庭恢复塞内加尔2025非洲杯冠军",
+      "article_ids": [
+        "0d709dc4ea27edbd",
+        "8a0fe2a7619c0938",
+        "2c7b1540ee017549",
+        "3e4222cda0d45ff3",
+        "c447fcadc019d2c0",
+        "bc73ea94109982c8",
+        "0a37cf2e608f4ba3",
+        "89f18164935e17c9"
+      ],
+      "priority_score": 20,
+      "materials": [],
+      "searches": [
+        {
+          "query": "Senegal reinstated AFCON winners official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 7
+        }
+      ],
+      "errors": [],
+      "status": "no_relevant_material"
+    },
+    {
+      "event_title": "方济各私人日记披露精神危机与见魔鬼记述",
+      "article_ids": [
+        "d2ef9752a8d7e51b",
+        "91b1e5479183d31c",
+        "cb8397f8ec712148",
+        "1d0e3400ffceba62",
+        "ae6860db03b7d513"
+      ],
+      "priority_score": 20,
+      "materials": [],
+      "searches": [
+        {
+          "query": "Pope Francis Diary Excerpts Published New Book official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [
+        {
+          "stage": "citations",
+          "type": "HTTPError"
+        }
+      ],
+      "status": "no_relevant_material"
+    }
+  ],
+  "requests": 10,
+  "attempts": 1
+}
