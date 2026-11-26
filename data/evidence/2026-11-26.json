@@ -1,0 +1,87 @@
+{
+  "date": "2026-11-26",
+  "checked_at": "2026-11-26T05:02:35.283359+00:00",
+  "method": "primary-source-discovery-v1",
+  "events": [
+    {
+      "event_title": "美国司法部调查英伟达芯片转运中国及黄仁勋复职受审视",
+      "article_ids": [
+        "f0fe67b6167649cf",
+        "8f015b899332f8e9",
+        "e60a4b00bb73328e",
+        "2a1422ea57bb08bb",
+        "d79e9fd97b5f3065",
+        "17d0eec6c4891db0",
+        "081c68f2f73557bf"
+      ],
+      "priority_score": 28,
+      "materials": [],
+      "searches": [
+        {
+          "query": "site:nvidia.com Le sauvetage de Nvidia est bien plus dangereux que celui des banques apr s la crise de",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 7
+        },
+        {
+          "query": "Le sauvetage de Nvidia est bien plus dangereux que celui des banques apr s la crise de official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 7
+        }
+      ],
+      "errors": [],
+      "status": "no_relevant_material"
+    },
+    {
+      "event_title": "基尔马·阿布雷戈·加西亚离美抵达西班牙",
+      "article_ids": [
+        "b566e2118890c0f7",
+        "0ef9df2957b10737",
+        "7c35b68fa8712013",
+        "d28edd583d67403a",
+        "50b869a36817d143",
+        "a2e477e46dc86007",
+        "e0ee458ad4118b14"
+      ],
+      "priority_score": 25,
+      "materials": [],
+      "searches": [
+        {
+          "query": "Aacute brego Garc iacute Salvadoran mistakenly deported U S goes Spain but hopes return Trump official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [],
+      "status": "no_relevant_material"
+    },
+    {
+      "event_title": "哥伦比亚卡塔赫纳超市人质事件",
+      "article_ids": [
+        "d4cc56dec4233154",
+        "86e9e9979fdc6f74",
+        "61d3b50337e5885f",
+        "75a3a86ed42c8779",
+        "3881ada4ae9becb3",
+        "69617caee408696a",
+        "35fd32e99f8136e5"
+      ],
+      "priority_score": 25,
+      "materials": [],
+      "searches": [
+        {
+          "query": "All hostages rescued Colombian security forces storm supermarket police say official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [],
+      "status": "no_relevant_material"
+    }
+  ],
+  "requests": 10,
+  "attempts": 1
+}

@@ -2,43 +2,43 @@
   "state": "complete",
   "model": "deepseek-flash",
   "enriched": 0,
-  "cached": 1,
+  "cached": 0,
   "failed": 0,
   "reviewed": 0,
   "budget_exhausted": true,
-  "processed_at": "2026-11-25T05:22:07.757151+00:00",
-  "basic_translated": 291,
-  "basic_cached": 9,
-  "planned_tokens": 160000,
-  "semantic_event_groups": 29,
-  "morning_selected": 7,
+  "processed_at": "2026-11-26T04:53:12.983150+00:00",
+  "basic_translated": 977,
+  "basic_cached": 10,
+  "planned_tokens": 410000,
+  "semantic_event_groups": 33,
+  "morning_selected": 8,
   "comparison_candidates": 12,
   "comparison_cached": 0,
   "comparison_state": "partial",
   "remaining": 0,
-  "detailed_remaining": 418,
+  "detailed_remaining": 1104,
   "usage": {
-    "calls": 61,
+    "calls": 176,
     "retries": 0,
-    "prompt_tokens": 70038,
-    "completion_tokens": 32574,
+    "prompt_tokens": 190587,
+    "completion_tokens": 75032,
     "missing_usage": 0,
     "reasoning_tokens": 0,
     "stages": {
       "edit": {
-        "calls": 60,
-        "prompt_tokens": 67110,
-        "completion_tokens": 32184
+        "calls": 175,
+        "prompt_tokens": 187675,
+        "completion_tokens": 74652
       },
       "compare": {
         "calls": 1,
-        "prompt_tokens": 2928,
-        "completion_tokens": 390
+        "prompt_tokens": 2912,
+        "completion_tokens": 380
       }
     }
   },
   "token_budget": 500000,
-  "accounted_tokens": 102612,
+  "accounted_tokens": 265619,
   "opening_daily_usage": 0,
   "budget_basis": "UTF-8 bytes + framing + max output reserved before every attempt; settled from provider usage when available; unknown attempts retain reservation. Not a billing guarantee."
 }
