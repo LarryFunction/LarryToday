@@ -1,0 +1,80 @@
+{
+  "date": "2026-11-27",
+  "checked_at": "2026-11-27T05:04:47.252518+00:00",
+  "method": "primary-source-discovery-v1",
+  "events": [
+    {
+      "event_title": "美国宣布对多国加征新关税及各方回应",
+      "article_ids": [
+        "a77b5085c9245e54",
+        "f31df0ea0f7150cb",
+        "1be510f9c0f79fab",
+        "be54e905a796b4ce",
+        "cef43ee5fddc2076",
+        "64e5fea73f93781a",
+        "2b19d0de7c5810f8",
+        "53f82322a6c54552"
+      ],
+      "priority_score": 34,
+      "materials": [],
+      "searches": [
+        {
+          "query": "China reserves right take necessary measures Trump s new tariff proposals official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 7
+        }
+      ],
+      "errors": [],
+      "status": "no_relevant_material"
+    },
+    {
+      "event_title": "金正恩视察核物质生产及核武器研究部门",
+      "article_ids": [
+        "ec1a697321ab37f7",
+        "53235b40ca7b0044",
+        "baf86825934fef5c",
+        "0304736cb836e6eb",
+        "268d27d19b07351f"
+      ],
+      "priority_score": 28,
+      "materials": [],
+      "searches": [
+        {
+          "query": "North Korea's Kim vows build more nuclear weapons ignoring Trump's overture official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [],
+      "status": "no_relevant_material"
+    },
+    {
+      "event_title": "科威特设施遭无人机袭击致两名意大利人死亡",
+      "article_ids": [
+        "12b0ecb4f66f0f9a",
+        "0f889ad86b232033",
+        "00c29130472c9a29",
+        "883022463dc7bbd8",
+        "3bb10810908cf48f",
+        "41d4fdc18052182b",
+        "a233189c1a4f6212"
+      ],
+      "priority_score": 25,
+      "materials": [],
+      "searches": [
+        {
+          "query": "Two Italians killed strike Kuwait Iran denies responsibility official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 7
+        }
+      ],
+      "errors": [],
+      "status": "no_relevant_material"
+    }
+  ],
+  "requests": 10,
+  "attempts": 1
+}
