@@ -1,0 +1,85 @@
+{
+  "date": "2026-11-28",
+  "checked_at": "2026-11-28T04:45:34.481227+00:00",
+  "method": "primary-source-discovery-v1",
+  "events": [
+    {
+      "event_title": "加拿大最高法院基本维持魁北克公职人员宗教标志禁令",
+      "article_ids": [
+        "5fc92096e6667226",
+        "acee0b65b4f551ee",
+        "fbdf956940c099f6",
+        "dc5d1f58493097bd",
+        "bfc42480da985a7c",
+        "5ef4be14e1a178df",
+        "ce0c9325ee8cb3e9"
+      ],
+      "priority_score": 36,
+      "materials": [],
+      "searches": [
+        {
+          "query": "La Cour supr me canadienne consacre la la cit au Qu bec dans une d cision historique official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [],
+      "status": "no_relevant_material"
+    },
+    {
+      "event_title": "西班牙提前大选选前民调与竞选活动",
+      "article_ids": [
+        "65e067513a05324a",
+        "03f5ee7b6c8f8be7",
+        "4a2d84dba9c6aa27",
+        "5e4d0a4534add3d5",
+        "1ca0cd14954f9889",
+        "97bb18b46d56bdfb",
+        "5cb7f43b4608f6cb",
+        "f0a62b2b913b8363",
+        "c5e1d62c5803183c",
+        "d350ff52540b82c7",
+        "43dc363ac23c11e8",
+        "fbf8e949015dcba8"
+      ],
+      "priority_score": 27,
+      "materials": [],
+      "searches": [
+        {
+          "query": "Spanish PM rivals rally supporters final pitch votes official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 10
+        }
+      ],
+      "errors": [],
+      "status": "no_relevant_material"
+    },
+    {
+      "event_title": "欧盟领导人峰会未能就2028至2034年预算达成一致",
+      "article_ids": [
+        "ce771adbf1523ad8",
+        "50d516346b36d434",
+        "de24a5d62d49e92c",
+        "231519cf55cfd9e8",
+        "c954655b54d1433d",
+        "04722b5fa6b7e484"
+      ],
+      "priority_score": 24,
+      "materials": [],
+      "searches": [
+        {
+          "query": "Ukraine loan is limbo EU budget talks stall Leaders will try again official statement",
+          "provider": "Bing RSS",
+          "status": "completed",
+          "results": 7
+        }
+      ],
+      "errors": [],
+      "status": "no_relevant_material"
+    }
+  ],
+  "requests": 9,
+  "attempts": 1
+}
